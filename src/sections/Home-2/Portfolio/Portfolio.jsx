@@ -1,125 +1,117 @@
-'use client';
-import Link from "next/link";
-import Slider from "react-slick";
-import React, { useEffect, useState } from 'react';
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+"use client";
 
 const Portfolio = () => {
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [lightboxIndex, setLightboxIndex] = useState(0);
-    const images = [
-        { imgSrc: "/main-assets/img/project/project2_1.png", category: "Building", title: "Building Construction" },
-        { imgSrc: "/main-assets/img/project/project2_2.png", category: "Construction", title: "General Construction" },
-        { imgSrc: "/main-assets/img/project/project2_3.png", category: "Remodeling", title: "Renovation & Remodeling" },
-    ];
+  return (
+    <main className="min-h-screen w-full text-white py-20">
+      <div className="max-w-7xl mx-auto px-4">
 
-    const openLightbox = (index) => {
-        setLightboxIndex(index);
-        setLightboxOpen(true);
-    };
+        {/* ================= HEADER ================= */}
+        <div className="text-center mb-14">
+          <span className="inline-block rounded-full bg-[#508A76] px-6 py-2 text-xs md:text-sm font-semibold tracking-widest uppercase shadow-lg">
+            Comparison
+          </span>
 
-    const settings = {
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 1500,
-        autoplaySpeed: 5000,
-        dots: false,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
+          <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+            Mechanical Property Comparison
+            <br />
+            <span className="text-[#508A76]">
+              Brownbar vs Metal Rebars
+            </span>
+          </h1>
 
-    return (
-        <div className="portfolio-area-2 space" id="project-sec">
-            <div className="container">
-                <div className="row justify-content-between">
-                    <div className="col-lg-7">
-                        <div className="title-area portfolio-area-content-text-extra-style">
-                            <span className="sub-title">
-                                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />Recent Work
-                            </span>
-                            <h2 className="sec-title">CHECK OUR LATEST PROJECTS</h2>
-                        </div>
-                    </div>
-                    <div className="col-lg-auto">
-                        <div className="sec-btn">
-                            <Link href="/pages/innerpage/project" className="btn">View All Projects <i className="ri-arrow-right-up-line"></i></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="portfolio-slider2 overflow-hidden">
-                    <Slider {...settings} className="row gy-30 gx-30 global-carousel slider-shadow slick-initialized slick-slider">
-                        {images.map((img, index) => (
-                            <div className="col-lg-4" key={index}>
-                                <div className="portfolio-card style2">
-                                    <div className="portfolio-card-thumb">
-                                        <img src={img.imgSrc} alt={`project-${index + 1}`} />
-                                        <span className="portfolio-card-number">{`0${index + 1}`}</span>
-                                        <button className="icon-btn popup-image" onClick={() => openLightbox(index)}>
-                                            <i className="ri-eye-line"></i>
-                                        </button>
-                                    </div>
-                                    <div className="portfolio-card-details">
-                                        <span className="portfolio-card-subtitle">{img.category}</span>
-                                        <h4 className="portfolio-card-title">
-                                            <Link href="/pages/innerpage/project-details">{img.title}</Link>
-                                        </h4>
-                                        <p className="portofolio-card-text">Building since 09,01,2024</p>
-                                        <Link href="/pages/innerpage/project-details" className="btn-with-icon">
-                                            VIEW DETAILS
-                                            <span className="btn-icon">
-                                                <i className="ri-arrow-right-up-line"></i>
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            </div>
-            <div className="extra-style">
-                {lightboxOpen && (
-                    <Lightbox
-                        mainSrc={images[lightboxIndex].imgSrc}
-                        nextSrc={images[(lightboxIndex + 1) % images.length].imgSrc}
-                        prevSrc={images[(lightboxIndex + images.length - 1) % images.length].imgSrc}
-                        onCloseRequest={() => setLightboxOpen(false)}
-                        onMovePrevRequest={() =>
-                            setLightboxIndex((lightboxIndex + images.length - 1) % images.length)
-                        }
-                        onMoveNextRequest={() =>
-                            setLightboxIndex((lightboxIndex + 1) % images.length)
-                        }
-                    />
-                )}
-            </div>
+          <p className="mt-4 max-w-3xl mx-auto text-sm md:text-base text-white/70">
+            A detailed comparison between conventional steel rebars and modern
+            GFRP rebars across mechanical, durability, and environmental
+            properties.
+          </p>
         </div>
-    );
+
+        {/* ================= TABLE CARD ================= */}
+        <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+
+          {/* Table Wrapper */}
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse text-sm md:text-base text-gray-800">
+
+              {/* Table Head */}
+              <thead className="sticky top-0 z-10">
+                <tr className="bg-[#508A76] text-white">
+                  <th className="px-6 py-4 text-center font-semibold">
+                    Properties of TMT Bars
+                  </th>
+                  <th className="px-6 py-4 text-center font-semibold">
+                    Steel Bar
+                  </th>
+                  <th className="px-6 py-4 text-center font-semibold">
+                    GFRP (Brownbar)
+                  </th>
+                </tr>
+              </thead>
+
+              {/* Table Body */}
+              <tbody>
+                {[
+                  ["Tensile Strength (MPa / N/mm²)", "500", "1000+"],
+                  ["Shear Strength (MPa / N/mm²)", "120", "170"],
+                  ["Bond Strength (MPa / N/mm²)", "14*", "12.5"],
+                  ["Compression Strength (MPa / N/mm²)", "500", "450"],
+                  ["Modulus of Elasticity (GPa)", "160 – 200", "65"],
+                  ["Elongation (%)", "25", "4"],
+                  [
+                    "Durability",
+                    "As per special building codes",
+                    "Not less than 80 years",
+                  ],
+                  ["Density (ton/m³)", "7.8", "1.9"],
+                  [
+                    "Corrosion Resistance",
+                    "Rust formation over time",
+                    "Corrosion-free in alkaline concrete",
+                  ],
+                  [
+                    "Ecological Compatibility",
+                    "Environment friendly",
+                    "No harmful or toxic emissions",
+                  ],
+                  [
+                    "Electrical Conductivity",
+                    "Conductive",
+                    "Dielectric (Non-conductive)",
+                  ],
+                ].map((row, index) => (
+                  <tr
+                    key={index}
+                    className={`border-b transition-colors duration-200 ${
+                      index % 2 === 0 ? "bg-gray-50" : "bg-gray-100"
+                    } hover:bg-[#508A76]/10`}
+                  >
+                    <td className="px-6 py-4 font-semibold text-[#508A76]">
+                      {row[0]}
+                    </td>
+                    <td className="px-6 py-4 text-center font-semibold text-[#508A76]">
+                      {row[1]}
+                    </td>
+                    <td className="px-6 py-4 text-center font-semibold text-[#508A76]">
+                      {row[2]}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+        {/* ================= FOOTER ================= */}
+        <div className="mt-10 text-center">
+          <p className="text-xs md:text-sm text-white/60">
+            © {new Date().getFullYear()} REBAR-X · Mechanical Property Comparison
+          </p>
+        </div>
+
+      </div>
+    </main>
+  );
 };
 
 export default Portfolio;

@@ -1,136 +1,138 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
+import { Phone } from "lucide-react";
 
 const Service = () => {
-    return (
-        <div className="service-area-2 space-top overflow-hidden shape-mockup-wrap background-image" style={{ backgroundImage: "url('/main-assets/img/bg/service-bg1-1.png')" }} id="service-sec">
-            <div className="service_shape_2-1 shape-mockup jump-reverse d-xl-block d-none" style={{ right: '0px', bottom: '10%' }}>
-                <img src="/main-assets/img/shape/sec-bg-shape1.png" alt="img" />
-            </div>
-            <div className="container">
-                <div className="row justify-content-xl-start justify-content-center">
-                    <div className="col-xxl-4 col-xl-5 col-md-6">
-                        <div className="title-area mb-0 service-area-content-text-extra-style">
-                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" /> What We Do</span>
-                            <h2 className="sec-title">OUR SERVICES THAT WE PROVIDE</h2>
-                            <div className="btn-group mt-50 justify-content-xl-start justify-content-center">
-                                <Link href="/pages/innerpage/service" className="btn">VIEW ALL SERVICES <i className="ri-arrow-right-up-line"></i></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="service-card-wrap2">
-                    <div className="row">
-                        <div className="col-xl-3 col-md-6 service-card-list">
-                            <div className="service-card style2">
-                                <div className="service-card-number">
-                                    01
-                                </div>
-                                <div className="service-card_content">
-                                    <div className="service-card_icon">
-                                        <img src="/main-assets/img/icon/service-icon2-1.svg" alt="img" />
-                                    </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">GENERAL CONSTRUCTION</Link></h4>
-                                    <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                    <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
-                                            READ MORE
-                                            <span className="btn-icon">
-                                                <i className="ri-arrow-right-up-line"></i>
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 service-card-list">
-                            <div className="service-card style2">
-                                <div className="service-card-number">
-                                    02
-                                </div>
-                                <div className="service-card_content">
-                                    <div className="service-card_icon">
-                                        <img src="/main-assets/img/icon/service-icon2-2.svg" alt="img" />
-                                    </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">RENOVATION AND REMODELING</Link></h4>
-                                    <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                    <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
-                                            READ MORE
-                                            <span className="btn-icon">
-                                                <i className="ri-arrow-right-up-line"></i>
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 service-card-list">
-                            <div className="service-card style2">
-                                <div className="service-card-number">
-                                    03
-                                </div>
-                                <div className="service-card_content">
-                                    <div className="service-card_icon">
-                                        <img src="/main-assets/img/icon/service-icon2-3.svg" alt="img" />
-                                    </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">COMMERCIAL CONSTRUCTION</Link></h4>
-                                    <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                    <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
-                                            READ MORE
-                                            <span className="btn-icon">
-                                                <i className="ri-arrow-right-up-line"></i>
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 service-card-list">
-                            <div className="service-card style2">
-                                <div className="service-card-number">
-                                    04
-                                </div>
-                                <div className="service-card_content">
-                                    <div className="service-card_icon">
-                                        <img src="/main-assets/img/icon/service-icon2-4.svg" alt="img" />
-                                    </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">VIRTUAL DESIGN & BUILDING</Link></h4>
-                                    <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                    <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
-                                            READ MORE
-                                            <span className="btn-icon">
-                                                <i className="ri-arrow-right-up-line"></i>
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-end right-end">
-                    <div className="cta-wrap2">
-                        <div className="cta-title-wrap">
-                            <h3 className="cta-title">Need any services?</h3>
-                            <p className="cta-text">Get in touch with us today !!</p>
-                        </div>
-                        <div className="cta-contact-grid">
-                            <div className="icon-btn">
-                                <i className="ri-phone-fill"></i>
-                            </div>
-                            <div className="cta-contact-grid-details">
-                                <Link className="link" href="tel:+123551579209">+123 551 579 209</Link>
-                                <h6 className="title">Mon - Sat : 10am - 07pm</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* ================= HEADER ================= */}
+        <div className="text-center mb-16">
+          {/* <p className="text-[#508A76] font-semibold tracking-wide uppercase mb-2">
+            What We Do
+          </p> */}
+          <div className="text-3xl md:text-[45px] font-bold text-[#508A76]">
+            Our Services That We Provide
+          </div>
         </div>
-    );
+
+        {/* ================= IMAGE SECTION ================= */}
+        <div className="mb-20">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+            <img
+              src="/main-assets/img/service/BAR.png"
+              alt="Rebar Services"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
+        {/* ================= SERVICES GRID ================= */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#508A76]">01</span>
+            <h4 className="mt-4 text-xl font-semibold text-gray-900">
+              General Construction
+            </h4>
+            <p className="mt-3 text-gray-600 text-sm">
+              There are many passages of lorem ipsum available.
+            </p>
+            <Link
+              href="/pages/innerpage/service-details"
+              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+            >
+              Read More →
+            </Link>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#508A76]">02</span>
+            <h4 className="mt-4 text-xl font-semibold text-gray-900">
+              Renovation & Remodeling
+            </h4>
+            <p className="mt-3 text-gray-600 text-sm">
+              There are many passages of lorem ipsum available.
+            </p>
+            <Link
+              href="/pages/innerpage/service-details"
+              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+            >
+              Read More →
+            </Link>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#508A76]">03</span>
+            <h4 className="mt-4 text-xl font-semibold text-gray-900">
+              Commercial Construction
+            </h4>
+            <p className="mt-3 text-gray-600 text-sm">
+              There are many passages of lorem ipsum available.
+            </p>
+            <Link
+              href="/pages/innerpage/service-details"
+              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+            >
+              Read More →
+            </Link>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#508A76]">04</span>
+            <h4 className="mt-4 text-xl font-semibold text-gray-900">
+              Virtual Design & Building
+            </h4>
+            <p className="mt-3 text-gray-600 text-sm">
+              There are many passages of lorem ipsum available.
+            </p>
+            <Link
+              href="/pages/innerpage/service-details"
+              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+            >
+              Read More →
+            </Link>
+          </div>
+        </div>
+
+        {/* ================= CTA SECTION ================= */}
+        <div className="mt-20 bg-[#508A76] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between text-white">
+          <div>
+            <div className="text-2xl font-bold">
+              Need any services?
+            </div>
+            <p className="text-white/70">
+              Get in touch with us today!
+            </p>
+          </div>
+
+          <div className="mt-6 md:mt-0 flex items-center gap-2">
+            <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-xl">
+              <Phone />
+            </div>
+            <div>
+              <Link
+                href="tel:+123551579209"
+                className="font-semibold text-white text-lg block"
+              >
+                +123 551 579 209
+              </Link>
+              <span className="text-sm text-white/80">
+                Mon - Sat : 10am - 07pm
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default Service;

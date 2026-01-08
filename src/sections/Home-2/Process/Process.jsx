@@ -1,63 +1,145 @@
+"use client";
+import {
+  Feather,
+  Droplets,
+  PiggyBank,
+  Dumbbell,
+  Flame,
+  Leaf,
+  Wrench,
+  Layers,
+  ZapOff,
+  ShieldCheck,
+} from "lucide-react";
 
 const Process = () => {
-    return (
-        <section className="process-area-2 space overflow-hidden shape-mockup-wrap">
-            <div className="section-animation-shape1-2 shape-mockup animation-infinite background-image" style={{ backgroundImage: "url('/main-assets/img/shape/global-line-shape2.png')", bottom: '0px' }}>
-            </div>
-            <div className="process_shape_2-1 shape-mockup jump" style={{ top: '0%', left: '3%' }}>
-                <img src="/main-assets/img/shape/sec-bg-shape2.png" alt="img" />
-            </div>
-            <div className="container">
-                <div className="row justify-content-between align-items-center gy-40">
-                    <div className="col-lg-6">
-                        <div className="title-area text-left content-text-extra-style">
-                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />Work Process</span>
-                            <h2 className="sec-title">WORK PROCESS</h2>
-                        </div>
-                        <div className="process-thumb2-1">
-                            <img src="/main-assets/img/normal/process-thumb2-1.png" alt="img" />
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="process-grid-list">
-                            <div className="process-grid-list-bg-text">
-                                STEP
-                            </div>
-                            <div className="process-grid">
-                                <div className="process-grid-number">01</div>
-                                <div className="process-grid-details">
-                                    <h3 className="process-grid-title">PRODUCT RESEARCH </h3>
-                                    <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                </div>
-                            </div>
-                            <div className="process-grid">
-                                <div className="process-grid-number">02</div>
-                                <div className="process-grid-details">
-                                    <h3 className="process-grid-title">Design Idea </h3>
-                                    <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                </div>
-                            </div>
-                            <div className="process-grid">
-                                <div className="process-grid-number">03</div>
-                                <div className="process-grid-details">
-                                    <h3 className="process-grid-title">PRODUCT RESEARCH </h3>
-                                    <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                </div>
-                            </div>
-                            <div className="process-grid">
-                                <div className="process-grid-number">04</div>
-                                <div className="process-grid-details">
-                                    <h3 className="process-grid-title">PRODUCT RESEARCH </h3>
-                                    <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+const advantages = [
+  {
+    title: "Lightweight & Durable",
+    desc: "Strong yet easy to handle",
+    icon: Feather,
+  },
+  {
+    title: "Corrosion & Water Resistant",
+    desc: "No rust, no decay",
+    icon: Droplets,
+  },
+  {
+    title: "Cost Effective & Low Maintenance",
+    desc: "Saves money for decades",
+    icon: PiggyBank,
+  },
+  {
+    title: "High Strength & Flexible",
+    desc: "Performs under heavy stress",
+    icon: Dumbbell,
+  },
+  {
+    title: "Thermal & Chemical Stable",
+    desc: "Withstands heat and chemicals",
+    icon: Flame,
+  },
+  {
+    title: "Eco-Friendly & Sustainable",
+    desc: "Greener, energy-efficient choice",
+    icon: Leaf,
+  },
+  {
+    title: "Easy Handling & Installation",
+    desc: "Quick and safe setup",
+    icon: Wrench,
+  },
+  {
+    title: "Reduced Concrete Coverage",
+    desc: "Saves material and cost",
+    icon: Layers,
+  },
+  {
+    title: "Non-Conductive & Radio Safe",
+    desc: "Ideal for sensitive sites",
+    icon: ZapOff,
+  },
+  {
+    title: "Long Life & Reliable",
+    desc: "Built to last generations",
+    icon: ShieldCheck,
+  },
+];
 
+
+  return (
+    <section className="w-full text-white py-20">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* ================= ADVANTAGES ================= */}
+        <div className="mb-20">
+          <span className="inline-block bg-[#508A76] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
+            ADVANTAGES
+          </span>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-8">
+      {advantages.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <div
+            key={index}
+            className="flex items-start gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#508A76]"
+          >
+            <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center">
+              <div className="bg-[#508A76] w-10 h-10 rounded-full border border-[#508A76] flex items-center justify-center">
+                <Icon className="w-6 h-6 text-white " />
+              </div>
             </div>
-        </section>
-    );
+            <div>
+              <div className="font-semibold text-[#508A76] text-[23px]">{item.title}</div>
+              <div className="text-base text-[#508A76]">
+                {item.desc}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+        </div>
+
+        {/* ================= PROJECTS ================= */}
+        <div>
+          <span className="inline-block bg-[#508A76] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
+            REBAR-X in Real-World Projects
+          </span>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              "Parking Areas",
+              "Concrete Slabs",
+              "Industrial Roofing",
+              "RCC Roads",
+              "Drainage Systems",
+              "Pavements",
+              "Friction Slabs",
+              "Foundations",
+              "Precast Elements",
+              "Crash Barriers",
+              "Chemical Plants",
+              "Walls",
+            ].map((title, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-md overflow-hidden shadow-md hover:shadow-xl transition"
+              >
+                <div className="p-3 text-center">
+                  <div className="text-sm font-semibold text-gray-900">
+                    {title}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default Process;
