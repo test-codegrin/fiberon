@@ -78,7 +78,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
-  --theme-color: #508A76;
+  --theme-color: #4c8b78;
   --title-color: #15161C;
   /* --body-color: #737373;
   --smoke-color: #FAFAFA;
@@ -91,7 +91,7 @@
   /* --white-color: #ffffff;
   --light-color: #9fa2ad;
   --yellow-color: #FFB539; */
-  --success-color: #508A76;
+  --success-color: #4c8b78;
   --error-color: #dc3545;
   --border-color: rgba(21, 22, 28, 0.15);
   --title-font: "Titillium Web", sans-serif;
@@ -198,7 +198,6 @@ th {
 }
 
 a {
-  color: var(--success-color);
   text-decoration: none;
   outline: 0;
   transition: all ease 0.4s;
@@ -5800,7 +5799,6 @@ ul.wp-block-latest-posts li:last-child {
 }
 
 .sidebar-shop .widget button {
-  border-radius: 5px;
   right: 3px;
   top: 3px;
   height: 54px;

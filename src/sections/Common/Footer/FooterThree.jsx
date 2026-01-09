@@ -1,80 +1,158 @@
-
-
 const FooterThree = () => {
-    return (
-        <footer className="footer-wrapper footer-layout2 bg-title shape-mockup-wrap">
-            <div className="footer_shape_2-1 shape-mockup" style={{ bottom: '0px', right: '0px' }}>
-                <img src="/main-assets/img/bg/testimonial-bg-shape2-1.png" alt="img" />
-            </div>
-            <div className="container">
-                <div className="widget-area">
-                    <div className="row justify-content-between">
-                        <div className="col-md-6 col-xl-4">
-                            <div className="widget widget-about footer-widget">
-                                <div className="footer-logo">
-                                    <a href="/pages/homepage/home-1"><img src="/main-assets/img/logo-white.svg" alt="Construz" /></a>
-                                </div>
-                                <p className="about-text">Holisticly underwhelm ethical solutions whereas maintainable strategic theme areas. Uniquely optimize quality interface before resource.</p>
-                                <h4 className="about-year">Since 2000</h4>
-                            </div>
-                        </div>
-                        <div className="col-auto d-xxl-block d-none">
-                            <div className="widget-divider"></div>
-                        </div>
-                        <div className="col-md-6 col-xl-auto">
-                            <div className="widget widget_nav_menu footer-widget">
-                                <h3 className="widget_title">Useful Links</h3>
-                                <div className="menu-all-pages-container grid-style">
-                                    <ul className="menu">
-                                        <li><a href="/pages/innerpage/about">About Us</a></li>
-                                        <li><a href="/pages/innerpage/service">What We Do</a></li>
-                                        <li><a href="/pages/innerpage/service">News & Article</a></li>
-                                        <li><a href="/pages/innerpage/service">Success Story</a></li>
-                                        <li><a href="/pages/innerpage/service">FAQ’s</a></li>
-                                    </ul>
-                                    <ul className="menu">
-                                        <li><a href="/pages/innerpage/team">Our Team</a></li>
-                                        <li><a href="/pages/innerpage/service">Careers</a></li>
-                                        <li><a href="/pages/innerpage/service">Testimonials</a></li>
-                                        <li><a href="/pages/innerpage/contact">Privacy Policy</a></li>
-                                        <li><a href="/pages/innerpage/contact">Terms of use</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-auto d-xxl-block d-none">
-                            <div className="widget-divider"></div>
-                        </div>
-                        <div className="col-md-6 col-xl-auto">
-                            <div className="widget footer-widget widget-newsletter">
-                                <h3 className="widget_title">Newsletter</h3>
-                                <p className="footer-text">Subscribe for the latest news. Stay updated on the latest trends.</p>
-                                <form className="newsletter-form">
-                                    <div className="form-group">
-                                        <input className="form-control style-border3" type="email" placeholder="Email Address..." required="" />
-                                    </div>
-                                    <button type="submit" className="btn-with-icon style3">
-                                        SUBMIT NOW
-                                        <span className="btn-icon">
-                                            <i className="ri-arrow-right-up-line"></i>
-                                        </span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <footer className="bg-white text-[#4c8b78]">
+      {/* ================= MAIN FOOTER ================= */}
+      <div className="max-w-[1400px]  mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+          {/* ================= ABOUT ================= */}
+          <div>
+            <a href="/pages/homepage/home-1" className="inline-block mb-6">
+              <img
+                src="/main-assets/img/logo.svg"
+                alt="Construz"
+                className="h-10"
+              />
+            </a>
 
-                </div>
+            <p className="text-base leading-relaxed text-[#4c8b78]">
+              Holisticly underwhelm ethical solutions whereas maintainable
+              strategic theme areas. Uniquely optimize quality interface before
+              resource.
+            </p>
+
+            <div className="mt-4 text-2xl text-[#4c8b78] font-semibold">Since 2000</div>
+          </div>
+
+          {/* ================= USEFUL LINKS ================= */}
+          <div>
+            <div className="text-[25px] text-[#4c8b78] font-semibold mb-6">
+              Useful Links
             </div>
-            <div className="copyright-wrap">
-                <div className="container">
-                    <div className="row gy-3 justify-content-center">
-                        <div className="col-auto align-self-center"><p className="copyright-text text-center">© 2024 <a href="#">Construz</a>  |  All rights reserved</p></div>
-                    </div>
-                </div>
+
+            <div className="grid grid-cols-2 w-[400px] gap-4 text-base">
+              <ul className="space-y-3">
+                <li>
+                  <a href="/pages/innerpage/about" className="hover:underline">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    What We Do
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    News & Article
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    Success Story
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    FAQ’s
+                  </a>
+                </li>
+              </ul>
+
+              <ul className="space-y-3">
+                <li>
+                  <a href="/pages/innerpage/team" className="hover:underline">
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/service"
+                    className="hover:underline"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/contact"
+                    className="hover:underline"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/innerpage/contact"
+                    className="hover:underline"
+                  >
+                    Terms of Use
+                  </a>
+                </li>
+              </ul>
             </div>
-        </footer>
-    );
+          </div>
+
+          {/* ================= NEWSLETTER ================= */}
+          <div>
+            <div className="text-[25px] font-semibold mb-6">Newsletter</div>
+            <p className="text-sm text-[#4c8b78] mb-5">
+              Subscribe for the latest news. Stay updated on the latest trends.
+            </p>
+
+            <form className="space-y-4">
+              <div className="rounded-md border-2 border-[#4c8b78]">
+                <input
+                  type="email"
+                  placeholder="Email Address..."
+                  required
+                  className="w-full px-4 py-3 text-gray-800 "
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full flex items-center justify-center gap-2 bg-[#4c8b78] text-white font-semibold py-3 rounded-md transition"
+              >
+                SUBMIT NOW
+                <span className="text-lg">↗</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* ================= COPYRIGHT ================= */}
+      <div className="border-t border-[#4c8b78] py-6">
+        <p className="text-center text-sm text-[#4c8b78]">
+          © 2024{" "}
+          <a href="#" className="font-semibold hover:underline">
+            Construz
+          </a>{" "}
+          | All rights reserved
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default FooterThree;

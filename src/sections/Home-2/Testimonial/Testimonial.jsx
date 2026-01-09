@@ -30,38 +30,36 @@ const ProductSpecificationPage = () => {
   ];
 
   return (
-    <section className="w-full bg-[#0E0F12]/95 py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full max-w-[1400px]  mx-auto py-12 md:py-16">
+      <div className="max-w-8xl mx-auto px-3 sm:px-4">
+
         {/* ================= HEADER ================= */}
-        <div className="text-center mb-14">
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4c8b78] mb-2">
             Table of Substitution
-          </h3>
-          <p className="text-white max-w-2xl mx-auto text-sm md:text-base">
-            Equivalent tensile strength comparison between Metal Rebar and FRP
-            Rebar
+          </h2>
+          <p className="text-[#4c8b78] max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
+            Equivalent tensile strength comparison between Metal Rebar and FRP Rebar
           </p>
         </div>
 
         {/* ================= TABLE WRAPPER ================= */}
-        <div className="rounded-2xl p-6 md:p-8 overflow-x-auto">
-          <div className="min-w-[900px] grid grid-cols-[1fr_80px_1fr] gap-6">
+        <div className="rounded-2xl p-4 sm:p-5 md:p-8 overflow-x-auto">
+          <div className="min-w-[280px] md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
+
             {/* ================= METAL TABLE ================= */}
             <div>
               <div className="bg-[#224F3E] p-3 mb-2">
-                <h4 className="text-center text-white font-semibold mb-3 tracking-wide">
+                <h4 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
                   METAL REBAR
                 </h4>
 
-                {/* Column header */}
-                <div className="">
-                  <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between">
-                    <div className="border text-[16px] w-[180px] py-2 flex items-center justify-center text-center">
-                      Weight <br /> (PER 12m BAR)
-                    </div>
-                    <div className="border text-[16px] w-[180px] py-2 flex items-center justify-center">
-                      Diameter
-                    </div>
+                <div className="max-w-[250px] w-full md:max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
+                  <div className="border w-[48%] py-2 text-center">
+                    Weight <br /> (PER 12m BAR)
+                  </div>
+                  <div className="border w-[48%] flex items-center justify-center py-2">
+                    Diameter
                   </div>
                 </div>
               </div>
@@ -70,24 +68,24 @@ const ProductSpecificationPage = () => {
                 {metalRebar.map((row, i) => (
                   <div
                     key={i}
-                    className={`grid grid-cols-2 text-center py-3
+                    className={`grid grid-cols-2 text-center py-2 md:py-3 text-xs sm:text-sm
                     ${i % 2 === 0 ? "bg-[#F3F3F3]" : "bg-[#DADADA]"}`}
                   >
-                    <div className="font-medium text-gray-800">{row[0]}</div>
-                    <div className="text-gray-700">{row[1]}</div>
+                    <div className="font-medium text-sm md:text-lg text-gray-800">{row[0]}</div>
+                    <div className="text-gray-700 text-sm md:text-lg">{row[1]}</div>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* ================= CENTER EQUAL ================= */}
-            <div className="flex flex-col items-center">
+            <div className="hidden md:flex flex-col items-center">
               <div className="h-[48px]" />
-              <div className="space-y-2 w-full mt-[125px]">
+              <div className="space-y-2 w-full mt-[114px]">
                 {metalRebar.map((_, i) => (
                   <div
                     key={i}
-                    className="h-[50px] mt-[16px] flex items-center justify-center bg-[#2B2B2B] text-white font-bold rounded-md"
+                    className="h-[38px] mt-[14px] flex items-center justify-center bg-[#4c8b78] text-white font-bold rounded-sm"
                   >
                     =
                   </div>
@@ -98,19 +96,16 @@ const ProductSpecificationPage = () => {
             {/* ================= FRP TABLE ================= */}
             <div>
               <div className="bg-[#224F3E] p-3 mb-2">
-                <h4 className="text-center text-white font-semibold mb-3 tracking-wide">
+                <h4 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
                   FIBERGLASS REBAR (FRP)
                 </h4>
 
-                {/* Column header */}
-                <div className="">
-                  <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between">
-                    <div className="border text-[16px] w-[180px] py-2 flex items-center justify-center text-center">
-                      Weight <br /> (PER 12m BAR)
-                    </div>
-                    <div className="border text-[16px] w-[180px] py-2 flex items-center justify-center">
-                      Diameter
-                    </div>
+                <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
+                  <div className="border w-[48%] py-2 text-center">
+                    Weight <br /> (PER 12m BAR)
+                  </div>
+                  <div className="border w-[48%] py-2 items-center justify-center flex">
+                    Diameter
                   </div>
                 </div>
               </div>
@@ -119,11 +114,11 @@ const ProductSpecificationPage = () => {
                 {frpRebar.map((row, i) => (
                   <div
                     key={i}
-                    className={`grid grid-cols-2 text-center py-3
+                    className={`grid grid-cols-2 text-center py-2 md:py-3 text-xs sm:text-sm
                     ${i % 2 === 0 ? "bg-[#F3F3F3]" : "bg-[#DADADA]"}`}
                   >
-                    <div className="font-medium text-gray-800">{row[0]}</div>
-                    <div className="text-gray-700">{row[1]}</div>
+                    <div className="font-medium text-sm md:text-lg text-gray-800">{row[0]}</div>
+                    <div className="text-gray-700 text-sm md:text-lg">{row[1]}</div>
                   </div>
                 ))}
               </div>
@@ -132,33 +127,26 @@ const ProductSpecificationPage = () => {
         </div>
 
         {/* ================= INFO SECTION ================= */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-[#508A76] font-semibold mb-2">Metal Rebar</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Steel reinforcement with higher weight and susceptibility to
-              corrosion in harsh environments.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-md">
-            <h3 className="text-[#508A76] font-semibold mb-2">
-              Strength Equivalence
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Each row shows equivalent tensile strength between metal and FRP
-              rebars.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-md">
-            <h3 className="text-[#508A76] font-semibold mb-2">FRP Rebar</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Lightweight, corrosion-resistant alternative offering long-term
-              durability and reduced dead load.
-            </p>
-          </div>
+        <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          {[
+            ["Metal Rebar", "Steel reinforcement with higher weight and susceptibility to corrosion in harsh environments."],
+            ["Strength Equivalence", "Each row shows equivalent tensile strength between metal and FRP rebars."],
+            ["FRP Rebar", "Lightweight, corrosion-resistant alternative offering long-term durability and reduced dead load."]
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-xl p-5 md:p-6 shadow-md border-[#4c8b78] border-t-4"
+            >
+              <div className="text-[#4c8b78] text-lg md:text-[25px] font-semibold mb-2">
+                {item[0]}
+              </div>
+              <div className="text-sm md:text-base text-[#4c8b78] leading-relaxed">
+                {item[1]}
+              </div>
+            </div>
+          ))}
         </div>
+
       </div>
     </section>
   );

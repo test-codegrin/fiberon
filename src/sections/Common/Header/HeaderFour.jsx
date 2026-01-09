@@ -17,8 +17,8 @@ export default function HeaderFour() {
   return (
     <>
       {/* ===== Top green Bar ===== */}
-      <div className="bg-[#508A76] text-white text-sm">
-        <div className="max-w-full mx-auto flex justify-between items-center px-4 py-2">
+      <div className="bg-[#4c8b78] text-white text-sm">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-2">
           <span className="hidden md:block">
             ALL INDIA FIRST BIS License holder for GFRP Bars
           </span>
@@ -28,18 +28,21 @@ export default function HeaderFour() {
 
       {/* ===== Contact Info Bar ===== */}
       <div className="bg-white border-b text-sm">
-        <div className="max-w-full mx-auto flex flex-wrap justify-between items-center px-4 py-3 gap-3">
+        <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-center px-4 xl:px-0 py-3">
           <div className="flex flex-wrap gap-6 text-gray-600">
             <span>📞 +91 96595 89896</span>
             <span>✉️ india@mrg-composites.com</span>
             <span>📦 We Ship Worldwide</span>
           </div>
-          <Link
-            href="#"
-            className="text-[#508A76] font-medium hover:underline"
-          >
-            Download Company Profile
-          </Link>
+
+          <div className="">
+            <Link
+              href="#"
+              className="text-[#4c8b78] font-medium hover:underline"
+            >
+              Download Company Profile
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -49,7 +52,7 @@ export default function HeaderFour() {
           isSticky ? "fixed top-0 z-50 shadow-md" : "relative"
         }`}
       >
-        <div className="max-w-full mx-auto flex items-center justify-between px-4 py-4">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
@@ -60,43 +63,40 @@ export default function HeaderFour() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden text-[18px] lg:flex items-center gap-8 text-[#508A76] font-medium">
-            <Link href="/" className="hover:text-[#508A76]">
+          <nav className="hidden text-[18px] lg:flex items-center gap-8 text-[#4c8b78] font-medium">
+            <Link href="/" className="hover:text-[#4c8b78]">
               Home
             </Link>
-            <Link href="/about" className="hover:text-[#508A76]">
+            <Link href="/about" className="hover:text-[#4c8b78]">
               About
             </Link>
-            <Link href="/products" className="hover:text-[#508A76]">
+            <Link href="/products" className="hover:text-[#4c8b78]">
               GFRP Rebar Products
             </Link>
-            <Link href="/applications" className="hover:text-[#508A76]">
+            <Link href="/applications" className="hover:text-[#4c8b78]">
               Application
             </Link>
-            <Link href="/contact" className="hover:text-[#508A76]">
+            <Link href="/contact" className="hover:text-[#4c8b78]">
               Contact Us
             </Link>
           </nav>
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="p-2 flex item-center gap-2 hover:text-[#508A76]">
+            <button className="p-2 flex item-center gap-2 hover:text-[#4c8b78]">
               Search
               <Search size={20} />
             </button>
             <Link
               href="/contact"
-              className="flex items-center gap-2 bg-[#508A76] text-white px-5 py-2 font-semibold hover:bg-[#508A76] transition"
+              className="flex items-center gap-2 bg-[#4c8b78] text-white px-5 py-2 font-semibold hover:bg-[#4c8b78] transition"
             >
               Get a Quote <ArrowRight size={18} />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenu(true)}
-            className="lg:hidden p-2"
-          >
+          <button onClick={() => setMobileMenu(true)} className="lg:hidden p-2">
             <Menu size={26} />
           </button>
         </div>
@@ -107,17 +107,13 @@ export default function HeaderFour() {
         <div className="fixed inset-0 z-50 bg-black/50">
           <div className="bg-white w-72 h-full p-6">
             <div className="flex justify-between items-center mb-6">
-              <img
-                src="/main-assets/img/logo.svg"
-                alt="logo"
-                className="h-8"
-              />
+              <img src="/main-assets/img/logo.svg" alt="logo" className="h-8" />
               <button onClick={() => setMobileMenu(false)}>
                 <X size={22} />
               </button>
             </div>
 
-            <nav className="flex flex-col gap-4 font-medium text-[#508A76]">
+            <nav className="flex flex-col gap-4 font-medium text-[#4c8b78]">
               <Link href="/">Home</Link>
               <Link href="/about">Company</Link>
               <Link href="/products">GFRP Rebar Products</Link>
@@ -127,7 +123,7 @@ export default function HeaderFour() {
 
             <Link
               href="/contact"
-              className="mt-6 inline-block bg-[#508A76] px-4 py-2 font-semibold"
+              className="mt-6 inline-block bg-[#4c8b78] px-4 py-2 font-semibold"
             >
               Get a Quote
             </Link>

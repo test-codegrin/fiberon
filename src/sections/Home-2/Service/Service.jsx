@@ -5,15 +5,15 @@ import { Phone } from "lucide-react";
 
 const Service = () => {
   return (
-    <section className="w-full py-20">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full max-w-[1400px] mx-auto py-20">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
 
         {/* ================= HEADER ================= */}
         <div className="text-center mb-16">
-          {/* <p className="text-[#508A76] font-semibold tracking-wide uppercase mb-2">
+          {/* <p className="text-[#4c8b78] font-semibold tracking-wide uppercase mb-2">
             What We Do
           </p> */}
-          <div className="text-3xl md:text-[45px] font-bold text-[#508A76]">
+          <div className="text-3xl md:text-[45px] font-bold text-[#4c8b78]">
             Our Services That We Provide
           </div>
         </div>
@@ -33,8 +33,8 @@ const Service = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
 
           {/* Card 1 */}
-          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
-            <span className="text-4xl font-bold text-[#508A76]">01</span>
+          <div className="bg-white rounded-2xl border-t-4 border-[#4c8b78] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#4c8b78]">01</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
               General Construction
             </h4>
@@ -43,15 +43,15 @@ const Service = () => {
             </p>
             <Link
               href="/pages/innerpage/service-details"
-              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 mt-5 text-[#4c8b78] font-semibold hover:underline"
             >
               Read More →
             </Link>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
-            <span className="text-4xl font-bold text-[#508A76]">02</span>
+          <div className="bg-white rounded-2xl border-t-4 border-[#4c8b78] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#4c8b78]">02</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
               Renovation & Remodeling
             </h4>
@@ -60,15 +60,15 @@ const Service = () => {
             </p>
             <Link
               href="/pages/innerpage/service-details"
-              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 mt-5 text-[#4c8b78] font-semibold hover:underline"
             >
               Read More →
             </Link>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
-            <span className="text-4xl font-bold text-[#508A76]">03</span>
+          <div className="bg-white rounded-2xl border-t-4 border-[#4c8b78] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#4c8b78]">03</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
               Commercial Construction
             </h4>
@@ -77,15 +77,15 @@ const Service = () => {
             </p>
             <Link
               href="/pages/innerpage/service-details"
-              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 mt-5 text-[#4c8b78] font-semibold hover:underline"
             >
               Read More →
             </Link>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white rounded-2xl border-t-4 border-[#508A76] shadow-md p-6 hover:shadow-xl transition">
-            <span className="text-4xl font-bold text-[#508A76]">04</span>
+          <div className="bg-white rounded-2xl border-t-4 border-[#4c8b78] shadow-md p-6 hover:shadow-xl transition">
+            <span className="text-4xl font-bold text-[#4c8b78]">04</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
               Virtual Design & Building
             </h4>
@@ -94,7 +94,7 @@ const Service = () => {
             </p>
             <Link
               href="/pages/innerpage/service-details"
-              className="inline-flex items-center gap-2 mt-5 text-[#508A76] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 mt-5 text-[#4c8b78] font-semibold hover:underline"
             >
               Read More →
             </Link>
@@ -102,7 +102,7 @@ const Service = () => {
         </div>
 
         {/* ================= CTA SECTION ================= */}
-        <div className="mt-20 bg-[#508A76] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between text-white">
+        <div className="mt-20 bg-[#4c8b78] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between text-white">
           <div>
             <div className="text-2xl font-bold">
               Need any services?
