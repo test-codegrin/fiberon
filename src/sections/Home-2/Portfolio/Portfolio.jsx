@@ -7,7 +7,7 @@ const Portfolio = () => {
 
         {/* ================= HEADER ================= */}
         <div className="text-center mb-10 md:mb-14">
-          <span className="inline-block rounded-full bg-[#4c8b78] px-4 sm:px-6 py-2 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest uppercase shadow-lg">
+          <span className="inline-block rounded-full bg-[#4c8b78] text-white px-4 sm:px-6 py-2 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest uppercase shadow-lg">
             Comparison
           </span>
 
