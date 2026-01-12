@@ -24,7 +24,7 @@ const Hero = () => {
                 performance in any environment.
               </p>
 
-              <button className="mt-6 bg-[#4c8b78] w-[200px] h-[50px] rounded flex items-center justify-center text-white font-semibold hover:bg-[#4c8b78] transition">
+              <button className="mt-6 bg-[#347A64] w-[200px] h-[50px] rounded flex items-center justify-center text-white font-semibold hover:bg-[#347A64] transition">
                 Download Brochure
               </button>
             </div>
@@ -52,7 +52,7 @@ const Hero = () => {
           >
             {/* Sliding Text */}
             <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#4c8b78] shadow-md border-2 border-[#4c8b78]
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "email"
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
 
             {/* Fixed Icon */}
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#4c8b78] text-white flex items-center justify-center">
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
               <div className="">
                 <Mail size={20} />
               </div>
@@ -79,7 +79,7 @@ const Hero = () => {
             className="relative h-[50px] w-[260px]"
           >
             <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#4c8b78] shadow-md border-2 border-[#4c8b78]
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "phone"
@@ -92,7 +92,7 @@ const Hero = () => {
               </span>
             </div>
 
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#4c8b78] text-white flex items-center justify-center">
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
               <Phone size={20} />
             </div>
           </div>
@@ -103,7 +103,7 @@ const Hero = () => {
             className="relative h-[50px] w-[260px]"
           >
             <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#4c8b78] border-2 border-[#4c8b78]
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "location"
@@ -116,7 +116,7 @@ const Hero = () => {
               </span>
             </div>
 
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#4c8b78] text-white flex items-center justify-center">
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
               <MapPin size={20} />
             </div>
           </div>

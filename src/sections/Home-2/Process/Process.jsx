@@ -71,7 +71,7 @@ const Process = () => {
       <div className="max-w-8xl mx-auto px-4">
         {/* ================= ADVANTAGES ================= */}
         <div className="mb-20">
-          <span className="inline-block text-white bg-[#4c8b78] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
+          <span className="inline-block text-white bg-[#347A64] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
             ADVANTAGES
           </span>
 
@@ -81,18 +81,18 @@ const Process = () => {
               return (
                 <div
                   key={index}
-                  className="flex items-start gap-2  md:gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#4c8b78]"
+                  className="flex items-start gap-2  md:gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#347A64]"
                 >
                   <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center">
-                    <div className="bg-[#4c8b78] w-10 h-10 rounded-full border border-[#4c8b78] flex items-center justify-center">
+                    <div className="bg-[#347A64] w-10 h-10 rounded-full border border-[#347A64] flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white " />
                     </div>
                   </div>
                   <div>
-                    <div className="font-semibold text-[#4c8b78] md:text-[23px]">
+                    <div className="font-semibold text-[#347A64] md:text-[23px]">
                       {item.title}
                     </div>
-                    <div className="text-base text-[#4c8b78]">{item.desc}</div>
+                    <div className="text-base text-[#347A64]">{item.desc}</div>
                   </div>  
                 </div>
               );
@@ -102,8 +102,8 @@ const Process = () => {
 
         {/* ================= PROJECTS ================= */}
         <div>
-          <span className="inline-block text-white bg-[#4c8b78] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
-            REBAR-X in Real-World Projects
+          <span className="inline-block text-white bg-[#347A64] px-4 py-2 text-sm font-semibold tracking-wide mb-10">
+            FIBERON in Real-World Projects
           </span>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">

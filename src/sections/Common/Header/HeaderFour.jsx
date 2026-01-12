@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, Search, X, ArrowRight } from "lucide-react";
+import { Menu, Search, X, ArrowRight, ChevronDown } from "lucide-react";
 
 export default function HeaderFour() {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [productOpen, setProductOpen] = useState(false);
+  const [desktopDropdown, setDesktopDropdown] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setIsSticky(window.scrollY > 120);
@@ -16,8 +18,8 @@ export default function HeaderFour() {
 
   return (
     <>
-      {/* ===== Top green Bar ===== */}
-      <div className="bg-[#4c8b78] text-white text-sm">
+      {/* ===== Top Bar ===== */}
+      <div className="bg-[#347A64] text-white text-sm">
         <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-2">
           <span className="hidden md:block">
             ALL INDIA FIRST BIS License holder for GFRP Bars
@@ -26,23 +28,17 @@ export default function HeaderFour() {
         </div>
       </div>
 
-      {/* ===== Contact Info Bar ===== */}
+      {/* ===== Contact Bar ===== */}
       <div className="bg-white border-b text-sm">
-        <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-center px-4 xl:px-0 py-3">
-          <div className="flex flex-wrap gap-6 text-gray-600">
+        <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-center px-4 py-3">
+          <div className="flex gap-6 text-gray-600">
             <span>📞 +91 96595 89896</span>
             <span>✉️ india@mrg-composites.com</span>
             <span>📦 We Ship Worldwide</span>
           </div>
-
-          <div className="">
-            <Link
-              href="#"
-              className="text-[#4c8b78] font-medium hover:underline"
-            >
-              Download Company Profile
-            </Link>
-          </div>
+          <Link href="#" className="text-[#347A64] font-medium hover:underline">
+            Download Company Profile
+          </Link>
         </div>
       </div>
 
@@ -52,87 +48,126 @@ export default function HeaderFour() {
           isSticky ? "fixed top-0 z-50 shadow-md" : "relative"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between py-4">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/main-assets/img/logo.svg"
+              src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
               alt="MRG Composites"
-              className="h-10 w-auto"
+              className="h-[150px] w-[150px] object-contain"
             />
           </Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden text-[18px] lg:flex items-center gap-8 text-[#4c8b78] font-medium">
-            <Link href="/" className="hover:text-[#4c8b78]">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-[#4c8b78]">
-              About
-            </Link>
-            <Link href="/products" className="hover:text-[#4c8b78]">
-              GFRP Rebar Products
-            </Link>
-            <Link href="/applications" className="hover:text-[#4c8b78]">
-              Application
-            </Link>
-            <Link href="/contact" className="hover:text-[#4c8b78]">
-              Contact Us
-            </Link>
+          {/* ================= DESKTOP MENU ================= */}
+          <nav className="hidden lg:flex items-center gap-8 text-[#347A64] font-medium text-[18px]">
+            <Link href="/">Home</Link>
+            <Link href="/pages/innerpage/about">About</Link>
+
+            {/* ===== FIXED DROPDOWN ===== */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDesktopDropdown(true)}
+              onMouseLeave={() => setDesktopDropdown(false)}
+            >
+              <button className="flex items-center gap-1 cursor-pointer">
+                GFRP Rebar Products <ChevronDown size={18} />
+              </button>
+
+              {desktopDropdown && (
+                <div className="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md overflow-hidden">
+                  <Link
+                    href="/section/home/product/Gfrp"
+                    className="block px-4 py-3 hover:bg-[#347A64]/10"
+                  >
+                    GFRP Rebar
+                  </Link>
+                  <Link
+                    href="/product/gfrp-mesh"
+                    className="block px-4 py-3 hover:bg-[#347A64]/10"
+                  >
+                    GFRP Mesh
+                  </Link>
+                  <Link
+                    href="/product/gfrp-bent-bars"
+                    className="block px-4 py-3 hover:bg-[#347A64]/10"
+                  >
+                    Bent Bars
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/applications">Application</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="p-2 flex item-center gap-2 hover:text-[#4c8b78]">
-              Search
-              <Search size={20} />
+            <button className="flex items-center gap-2 hover:text-[#347A64]">
+              Search <Search size={20} />
             </button>
             <Link
               href="/contact"
-              className="flex items-center gap-2 bg-[#4c8b78] text-white px-5 py-2 font-semibold hover:bg-[#4c8b78] transition"
+              className="flex items-center gap-2 bg-[#347A64] text-white px-5 py-2 font-semibold hover:opacity-90"
             >
               Get a Quote <ArrowRight size={18} />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setMobileMenu(true)} className="lg:hidden p-2">
+          <button onClick={() => setMobileMenu(true)} className="lg:hidden">
             <Menu size={26} />
           </button>
         </div>
       </header>
 
-      {/* ===== Mobile Menu ===== */}
+      {/* ================= MOBILE MENU ================= */}
       {mobileMenu && (
         <div className="fixed inset-0 z-50 bg-black/50">
           <div className="bg-white w-72 h-full p-6">
             <div className="flex justify-between items-center mb-6">
-              <img src="/main-assets/img/logo.svg" alt="logo" className="h-8" />
+              <img
+                src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
+                alt="logo"
+                className="h-10"
+              />
               <button onClick={() => setMobileMenu(false)}>
                 <X size={22} />
               </button>
             </div>
 
-            <nav className="flex flex-col gap-4 font-medium text-[#4c8b78]">
+            <nav className="flex flex-col gap-4 font-medium text-[#347A64]">
               <Link href="/">Home</Link>
               <Link href="/about">Company</Link>
-              <Link href="/products">GFRP Rebar Products</Link>
+
+              <button
+                onClick={() => setProductOpen(!productOpen)}
+                className="flex items-center justify-between"
+              >
+                GFRP Rebar Products
+                <ChevronDown
+                  size={18}
+                  className={`${productOpen ? "rotate-180" : ""} transition`}
+                />
+              </button>
+
+              {productOpen && (
+                <div className="ml-4 flex flex-col gap-2 text-sm">
+                  <Link href="/products/gfrp-rebar">GFRP Rebar</Link>
+                  <Link href="/products/gfrp-mesh">GFRP Mesh</Link>
+                  <Link href="/products/gfrp-bent-bars">Bent Bars</Link>
+                </div>
+              )}
+
               <Link href="/applications">Application</Link>
               <Link href="/contact">Contact Us</Link>
             </nav>
-
-            <Link
-              href="/contact"
-              className="mt-6 inline-block bg-[#4c8b78] px-4 py-2 font-semibold"
-            >
-              Get a Quote
-            </Link>
           </div>
         </div>
       )}
 
-      {/* Spacer for sticky header */}
-      {isSticky && <div className="h-[88px]" />}
+      {/* Spacer */}
+      {isSticky && <div className="h-[96px]" />}
     </>
   );
 }

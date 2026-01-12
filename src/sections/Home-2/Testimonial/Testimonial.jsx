@@ -30,23 +30,22 @@ const ProductSpecificationPage = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1400px]  mx-auto py-12 md:py-16">
-      <div className="max-w-8xl mx-auto px-3 sm:px-4">
-
+    <section className="w-full max-w-[1400px] mx-auto py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4">
         {/* ================= HEADER ================= */}
         <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4c8b78] mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-2">
             Table of Substitution
           </h2>
-          <p className="text-[#4c8b78] max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
-            Equivalent tensile strength comparison between Metal Rebar and FRP Rebar
+          <p className="text-[#347A64] max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
+            Equivalent tensile strength comparison between Metal Rebar and FRP
+            Rebar
           </p>
         </div>
 
         {/* ================= TABLE WRAPPER ================= */}
         <div className="rounded-2xl p-4 sm:p-5 md:p-8 overflow-x-auto">
           <div className="min-w-[280px] md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
-
             {/* ================= METAL TABLE ================= */}
             <div>
               <div className="bg-[#224F3E] p-3 mb-2">
@@ -54,7 +53,7 @@ const ProductSpecificationPage = () => {
                   METAL REBAR
                 </h4>
 
-                <div className="max-w-[250px] w-full md:max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
+                <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
                   <div className="border w-[48%] py-2 text-center">
                     Weight <br /> (PER 12m BAR)
                   </div>
@@ -68,11 +67,15 @@ const ProductSpecificationPage = () => {
                 {metalRebar.map((row, i) => (
                   <div
                     key={i}
-                    className={`grid grid-cols-2 text-center py-2 md:py-3 text-xs sm:text-sm
+                    className={`grid grid-cols-2 text-center py-2 md:py-3
                     ${i % 2 === 0 ? "bg-[#F3F3F3]" : "bg-[#DADADA]"}`}
                   >
-                    <div className="font-medium text-sm md:text-lg text-gray-800">{row[0]}</div>
-                    <div className="text-gray-700 text-sm md:text-lg">{row[1]}</div>
+                    <div className="font-medium text-sm md:text-lg text-gray-800">
+                      {row[0]}
+                    </div>
+                    <div className="text-gray-700 text-sm md:text-lg">
+                      {row[1]}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -85,7 +88,7 @@ const ProductSpecificationPage = () => {
                 {metalRebar.map((_, i) => (
                   <div
                     key={i}
-                    className="h-[38px] mt-[14px] flex items-center justify-center bg-[#4c8b78] text-white font-bold rounded-sm"
+                    className="h-[38px] mt-[14px] flex items-center justify-center bg-[#347A64] text-white font-bold rounded-sm"
                   >
                     =
                   </div>
@@ -104,7 +107,7 @@ const ProductSpecificationPage = () => {
                   <div className="border w-[48%] py-2 text-center">
                     Weight <br /> (PER 12m BAR)
                   </div>
-                  <div className="border w-[48%] py-2 items-center justify-center flex">
+                  <div className="border w-[48%] flex items-center justify-center py-2">
                     Diameter
                   </div>
                 </div>
@@ -114,11 +117,15 @@ const ProductSpecificationPage = () => {
                 {frpRebar.map((row, i) => (
                   <div
                     key={i}
-                    className={`grid grid-cols-2 text-center py-2 md:py-3 text-xs sm:text-sm
+                    className={`grid grid-cols-2 text-center py-2 md:py-3
                     ${i % 2 === 0 ? "bg-[#F3F3F3]" : "bg-[#DADADA]"}`}
                   >
-                    <div className="font-medium text-sm md:text-lg text-gray-800">{row[0]}</div>
-                    <div className="text-gray-700 text-sm md:text-lg">{row[1]}</div>
+                    <div className="font-medium text-sm md:text-lg text-gray-800">
+                      {row[0]}
+                    </div>
+                    <div className="text-gray-700 text-sm md:text-lg">
+                      {row[1]}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -126,27 +133,79 @@ const ProductSpecificationPage = () => {
           </div>
         </div>
 
+        {/* ================= TYPES OF PACKING ================= */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+          <div className="mb-14 border-2 border-[#347A64] max-w-[600px] rounded-xl p-6 md:p-8 mt-20">
+            <div className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 tracking-wide">
+              TYPES OF PACKING
+            </div>
+
+            <div className="bg-[#fff] rounded-xl p-4 md:p-6">
+              <img
+                src="/mnt/data/213bc59b-b6ba-4a41-86b2-f167cabb08e4.png"
+                alt="Types of Packing"
+                className="w-full rounded-lg object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="mb-14 border-2 border-[#347A64] max-w-[600px] rounded-xl p-6 md:p-8 mt-20">
+            <div className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 tracking-wide">
+              TYPES OF PACKING
+            </div>
+
+            <div className="bg-[#fff] rounded-xl p-4 md:p-6">
+              <img
+                src="/mnt/data/213bc59b-b6ba-4a41-86b2-f167cabb08e4.png"
+                alt="Types of Packing"
+                className="w-full rounded-lg object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#347A64] max-w-full mx-auto  h-[50px] text-white text-center py-1 px-4 mt-10 md:mt-14">
+          <ul className="flex gap-40 justify-center items-center pt-2">
+            <li>6 mm to 12 mm - 40 ft Length - Round</li>
+            <li>6 mm to 12 mm - 40 ft Length - Straight</li>
+          </ul>
+        </div>
+
+        <div className="mt-20 flex items-center justify-center text-[#347A64] text-sm md:text-base font-medium">
+          <div className="text-white w-[100px] h-[40px] font-semibold flex items-center justify-center bg-[#347A64] text-[20px]">Notes</div>
+
+          <div className="border-[#347A64] border-2 w-[300px] h-[40px] flex items-center justify-center">Also can Supply in customized Length</div>
+        </div>
+
         {/* ================= INFO SECTION ================= */}
-        <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {[
-            ["Metal Rebar", "Steel reinforcement with higher weight and susceptibility to corrosion in harsh environments."],
-            ["Strength Equivalence", "Each row shows equivalent tensile strength between metal and FRP rebars."],
-            ["FRP Rebar", "Lightweight, corrosion-resistant alternative offering long-term durability and reduced dead load."]
+            [
+              "Metal Rebar",
+              "Steel reinforcement with higher weight and susceptibility to corrosion in harsh environments.",
+            ],
+            [
+              "Strength Equivalence",
+              "Each row shows equivalent tensile strength between metal and FRP rebars.",
+            ],
+            [
+              "FRP Rebar",
+              "Lightweight, corrosion-resistant alternative offering long-term durability and reduced dead load.",
+            ],
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl p-5 md:p-6 shadow-md border-[#4c8b78] border-t-4"
+              className="bg-white rounded-xl p-5 md:p-6 shadow-md border-t-4 border-[#347A64]"
             >
-              <div className="text-[#4c8b78] text-lg md:text-[25px] font-semibold mb-2">
+              <div className="text-[#347A64] text-lg md:text-[22px] font-semibold mb-2">
                 {item[0]}
               </div>
-              <div className="text-sm md:text-base text-[#4c8b78] leading-relaxed">
+              <div className="text-sm md:text-base text-[#347A64] leading-relaxed">
                 {item[1]}
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

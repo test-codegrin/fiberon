@@ -1,35 +1,40 @@
+import Link from "next/link";
+import { Globe, Mail, MapPin, Phone, PhoneCall } from "lucide-react";
+
 const FooterThree = () => {
   return (
-    <footer className="bg-white text-[#4c8b78]">
+    <footer className="bg-white text-[#347A64]">
       {/* ================= MAIN FOOTER ================= */}
-      <div className="max-w-[1400px]  mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+      <div className="max-w-[1400px] mx-auto px-[30px] py-13">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-15">
           {/* ================= ABOUT ================= */}
           <div>
-            <a href="/pages/homepage/home-1" className="inline-block mb-6">
+            <Link href="/" className="inline-block mb-6">
               <img
-                src="/main-assets/img/logo.svg"
-                alt="Construz"
-                className="h-10"
+                src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
+                alt="MRG Composites"
+                className="h-[150px] w-[150px] object-contain"
               />
-            </a>
+            </Link>
 
-            <p className="text-base leading-relaxed text-[#4c8b78]">
+            <p className="text-base leading-relaxed text-[#347A64]">
               Holisticly underwhelm ethical solutions whereas maintainable
               strategic theme areas. Uniquely optimize quality interface before
               resource.
             </p>
 
-            <div className="mt-4 text-2xl text-[#4c8b78] font-semibold">Since 2000</div>
+            <div className="mt-4 text-2xl text-[#347A64] font-semibold">
+              Since 2000
+            </div>
           </div>
 
           {/* ================= USEFUL LINKS ================= */}
           <div>
-            <div className="text-[25px] text-[#4c8b78] font-semibold mb-6">
+            <div className="text-[25px] text-[#347A64] font-semibold mb-6">
               Useful Links
             </div>
 
-            <div className="grid grid-cols-2 w-[400px] gap-4 text-base">
+            <div className="grid grid-cols-1 w-auto text-base">
               <ul className="space-y-3">
                 <li>
                   <a href="/pages/innerpage/about" className="hover:underline">
@@ -69,58 +74,62 @@ const FooterThree = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
 
-              <ul className="space-y-3">
-                <li>
-                  <a href="/pages/innerpage/team" className="hover:underline">
-                    Our Team
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/pages/innerpage/service"
-                    className="hover:underline"
-                  >
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/pages/innerpage/service"
-                    className="hover:underline"
-                  >
-                    Testimonials
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/pages/innerpage/contact"
-                    className="hover:underline"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/pages/innerpage/contact"
-                    className="hover:underline"
-                  >
-                    Terms of Use
-                  </a>
-                </li>
-              </ul>
+          {/* ================= ADDRESS ================= */}
+          <div>
+            <div className="text-[20px] text-[#347A64] font-semibold mb-2">
+              ADDRESS
+            </div>
+
+            <div className="flex w-[400px] gap-2 text-base">
+              <div className="mt-1">
+                <MapPin size={20} />
+              </div>
+
+              <div className="">
+                Behind Hotel Fern, 8 /A National Highway, Kandla Road,
+                Mahendrnagar, Morbi - 363641.
+              </div>
+            </div>
+
+            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+              <div>
+                <PhoneCall size={20} />
+              </div>
+
+              <div className="">+91 92748 31310</div>
+            </div>
+
+            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+              <div>
+                <Mail size={20} />
+              </div>
+
+              <div className="">info@fiberonrebar.com</div>
+            </div>
+
+            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+              <div>
+                <Globe size={20} />
+              </div>
+
+              <a href="http://www.fiberonrebar.com">
+                <div className="">www.fiberonrebar.com</div>
+              </a>
             </div>
           </div>
 
           {/* ================= NEWSLETTER ================= */}
-          <div>
+          {/* <div>
             <div className="text-[25px] font-semibold mb-6">Newsletter</div>
-            <p className="text-sm text-[#4c8b78] mb-5">
+            <p className="text-sm text-[#347A64] mb-5">
               Subscribe for the latest news. Stay updated on the latest trends.
             </p>
 
             <form className="space-y-4">
-              <div className="rounded-md border-2 border-[#4c8b78]">
+              <div className="rounded-md border-2 border-[#347A64]">
                 <input
                   type="email"
                   placeholder="Email Address..."
@@ -131,19 +140,19 @@ const FooterThree = () => {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-[#4c8b78] text-white font-semibold py-3 rounded-md transition"
+                className="w-full flex items-center justify-center gap-2 bg-[#347A64] text-white font-semibold py-3 rounded-md transition"
               >
                 SUBMIT NOW
                 <span className="text-lg">↗</span>
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* ================= COPYRIGHT ================= */}
-      <div className="border-t border-[#4c8b78] py-6">
-        <p className="text-center text-sm text-[#4c8b78]">
+      <div className="border-t border-[#347A64] py-6">
+        <p className="text-center text-sm text-[#347A64]">
           © 2024{" "}
           <a href="#" className="font-semibold hover:underline">
             Construz
