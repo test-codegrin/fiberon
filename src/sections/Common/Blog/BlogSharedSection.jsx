@@ -33,7 +33,7 @@ const BlogSharedSection = () => {
           <div className="col-lg-6">
             <div className="title-area text-lg-start text-center text-left">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 Latest News
               </span>
               <h2 className="sec-title">Recent news and events</h2>

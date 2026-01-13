@@ -5,6 +5,8 @@ import { useRef } from "react";
 import Slider from "react-slick";
 
 const TestimonialThree = () => {
+  const sliderRef = useRef(null);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -16,177 +18,111 @@ const TestimonialThree = () => {
     autoplaySpeed: 5000,
   };
 
-  const sliderRef = useRef(null);
-
-  const goToPrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
-
-  const goToNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
+  const goToPrev = () => sliderRef.current?.slickPrev();
+  const goToNext = () => sliderRef.current?.slickNext();
 
   return (
-    <div
-      className="testimonial-area-1 home-one-testimonial overflow-hidden space bg-smoke shape-mockup-wrap background-image"
-      style={{ backgroundImage: "url('/main-assets/img/bg/testimonial-bg1-1.png')" }}
-    >
-      <div
-        className="testimonial_shape_1-1 shape-mockup jump d-xxl-block d-none"
-        style={{ top: "0px", right: "4%" }}
-      >
-        <img src="/main-assets/img/shape/sec-bg-shape2.png" alt="img" />
-      </div>
-      <div className="container">
-        <div className="row gx-100 gy-60 flex-row-reverse">
-          <div className="col-xl-6">
-            <div className="title-area">
-              <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+    <section className="w-full py-20 mt-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 items-center">
+
+          {/* ================= LEFT : TESTIMONIALS ================= */}
+          <div>
+            {/* TITLE */}
+            <div className="mb-10">
+              <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-lg uppercase">
                 Testimonials
               </span>
-              <h2 className="sec-title">Our happy customers</h2>
+              <div className="mt-2 text-3xl md:text-4xl font-bold text-[#347A64]">
+                Our Happy Customers
+              </div>
             </div>
 
-            <Slider
-              {...settings}
-              className="row global-carousel testi-slider1"
-              data-slide-show="1"
-              ref={sliderRef}
-            >
-              <div className="col-lg-6">
-                <div className="testi-card">
-                  <div className="quote-icon">
-                    <img src="/main-assets/img/icon/quote.svg" alt="img" />
-                  </div>
-                  <div className="testi-card-thumb">
-                    <img src="/main-assets/img/testimonial/testi_1_1.png" alt="img" />
-                  </div>
-                  <div className="testi-card_content">
-                    <h4 className="testi-card_title">Best Company!</h4>
-                    <p className="testi-card_text">
-                      Tortor posuere ac ut consequat. Tellusi elem isis etum
-                      sagittis vitae et leo duis ut diam. Odio ut sem nulla
-                      phar. Purus sit ame nus mas do eiusmod.
-                    </p>
-                    <div className="testi-card-profile">
-                      <h4 className="testi-profile-title">Aleesha brown.</h4>
-                      <span className="testi-profile-desig">
-                        CEO at Construz
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* SLIDER */}
+            <Slider ref={sliderRef} {...settings}>
+              {[1, 2, 3].map((item) => (
+                <div key={item}>
+                  <div className="bg-white border-b-4 border-[#347A64] h-[330px] rounded-2xl p-5 relative">
 
-              <div className="col-lg-6">
-                <div className="testi-card">
-                  <div className="quote-icon">
-                    <img src="/main-assets/img/icon/quote.svg" alt="img" />
-                  </div>
-                  <div className="testi-card-thumb">
-                    <img src="/main-assets/img/testimonial/testi_1_2.png" alt="img" />
-                  </div>
-                  <div className="testi-card_content">
-                    <h4 className="testi-card_title">Best Company!</h4>
-                    <p className="testi-card_text">
-                      Tortor posuere ac ut consequat. Tellusi elem isis etum
-                      sagittis vitae et leo duis ut diam. Odio ut sem nulla
-                      phar. Purus sit ame nus mas do eiusmod.
-                    </p>
-                    <div className="testi-card-profile">
-                      <h4 className="testi-profile-title">Aleesha brown.</h4>
-                      <span className="testi-profile-desig">
-                        CEO at Construz
-                      </span>
+                    {/* QUOTE */}
+                    <div className="absolute top-5 right-8 bg-[#347A64] w-12 h-12 flex items-center justify-center rounded-full">
+                      <img
+                        src="/main-assets/img/icon/quote.svg"
+                        alt="quote"
+                        className="w-6 h-6"
+                      />
                     </div>
-                  </div>
-                </div>
-              </div>
 
-              <div className="col-lg-6">
-                <div className="testi-card">
-                  <div className="quote-icon">
-                    <img src="/main-assets/img/icon/quote.svg" alt="img" />
-                  </div>
-                  <div className="testi-card-thumb">
-                    <img src="/main-assets/img/testimonial/testi_1_1.png" alt="img" />
-                  </div>
-                  <div className="testi-card_content">
-                    <h4 className="testi-card_title">Best Company!</h4>
-                    <p className="testi-card_text">
-                      Tortor posuere ac ut consequat. Tellusi elem isis etum
-                      sagittis vitae et leo duis ut diam. Odio ut sem nulla
-                      phar. Purus sit ame nus mas do eiusmod.
-                    </p>
-                    <div className="testi-card-profile">
-                      <h4 className="testi-profile-title">Aleesha brown.</h4>
-                      <span className="testi-profile-desig">
-                        CEO at Construz
-                      </span>
+                    {/* PROFILE */}
+                    <div className="flex items-center gap-5 mt-5 mb-6">
+                      <img
+                        src={`/main-assets/img/testimonial/testi_1_${item === 2 ? 2 : 1}.png`}
+                        alt="user"
+                        className="w-16 h-16 rounded-full object-cover"
+                      />
+                      <div>
+                        <div className="font-bold text-xl text-gray-900">
+                          Aleesha Brown
+                        </div>
+                        <span className="text-md text-gray-500">
+                          CEO at Construz
+                        </span>
+                      </div>
                     </div>
+
+                    {/* CONTENT */}
+                    <div className="text-2xl font-semibold text-[#347A64] mb-3">
+                      Best Company!
+                    </div>
+                    <p className="text-gray-600 leading-relaxed text-md">
+                      Tortor posuere ac ut consequat. Tellusi elem isis etum
+                      sagittis vitae et leo duis ut diam. Odio ut sem nulla phar.
+                      Purus sit ame nus mas do eiusmod.
+                    </p>
                   </div>
                 </div>
-              </div>
+              ))}
             </Slider>
 
-            <div className="btn-wrap mt-70">
-              <div className="icon-box">
+            {/* CONTROLS */}
+            <div className="flex items-center justify-between mt-10">
+              <div className="flex gap-4">
                 <button
                   onClick={goToPrev}
-                  data-slick-prev=".testi-slider1"
-                  className="slick-arrow style2 default"
+                  className="w-12 h-12 rounded-full border border-[#347A64] text-[#347A64] hover:bg-[#347A64] hover:text-white font-bold transition"
                 >
-                  <i className="ri-arrow-left-down-line"></i>
+                  ←
                 </button>
                 <button
                   onClick={goToNext}
-                  data-slick-next=".testi-slider1"
-                  className="slick-arrow style2 default"
+                  className="w-12 h-12 rounded-full border border-[#347A64] text-[#347A64] hover:bg-[#347A64] hover:text-white transition"
                 >
-                  <i className="ri-arrow-right-up-line"></i>
+                  →
                 </button>
-              </div>
-              <div className="client-group-thumb">
-                <img src="/main-assets/img/normal/client_group_1-2.png" alt="img" />
-              </div>
-              <div className="testi-counter-wrap">
-                <h3 className="testi-counter-number">
-                  <span className="counter-number">2</span>m+
-                </h3>
-                <p className="testi-counter-text">Success Peoples</p>
               </div>
             </div>
           </div>
 
-          <div className="col-xl-6">
-            <div
-              className="testimonial-card background-image"
-              style={{
-                backgroundImage: "url('/main-assets/img/bg/testimonial-card-bg1-1.png')",
-              }}
-            >
-              <h3 className="testimonial-card-title">
-                Have you any questions?
-              </h3>
-              <p className="testimonial-card-text">
-                Podcasting operational change management inside of making this
-                the first true generator.
-              </p>
-              <div className="btn-group">
-                <Link href="landing-assets/contact" className="btn style6">
-                  Contact with Us <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
+          {/* ================= RIGHT : CTA CARD ================= */}
+          <div className="bg-[#347A64] text-white rounded-2xl p-10">
+            <div className="text-2xl font-bold mb-4">
+              Have you any questions?
             </div>
+            <p className="text-white/90 mb-8">
+              Podcasting operational change management inside of making this
+              the first true generator.
+            </p>
+
+            <Link
+              href="landing-assets/contact"
+              className="inline-flex items-center gap-2 bg-white text-[#347A64] px-6 py-3 rounded-full font-semibold transition"
+            >
+              Contact With Us →
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

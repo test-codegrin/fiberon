@@ -40,7 +40,7 @@ const AboutTwo = () => {
           <div className="col-xl-6">
             <div className="title-area mb-25">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 ABOUT US
               </span>
               <h2 className="sec-title">

@@ -8,7 +8,7 @@ const PortfolioTwo = () => {
           <div className="col-lg-7">
             <div className="title-area text-lg-start text-center">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 Recent Work
               </span>
               <h2 className="sec-title">CHECK OUR LATEST PROJECTS</h2>

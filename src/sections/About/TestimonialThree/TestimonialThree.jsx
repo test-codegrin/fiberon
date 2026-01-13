@@ -46,7 +46,7 @@ const TestimonialThree = () => {
           <div className="col-xl-6">
             <div className="title-area">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 Testimonials
               </span>
               <h2 className="sec-title">Our happy customers</h2>

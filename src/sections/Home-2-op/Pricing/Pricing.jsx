@@ -8,7 +8,7 @@ const Pricing = () => {
           <div className="col-xxl-7">
             <div className="title-area text-xxl-start text-center">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 Package
               </span>
               <h2 className="sec-title">AFFORDABLE PRICING PLANS</h2>

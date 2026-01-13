@@ -1,107 +1,129 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
+import React from "react";
+import Image from "next/image";
+
 const WhyChooseThree = () => {
   return (
-    <div className="space-top text-center overflow-hidden shape-mockup-wrap">
-      <div class="section-animation-shape1-1 shape-mockup animation-infinite background-image" style={{ backgroundImage: "url('/main-assets/img/shape/global-line-shape2.png')", bottom: '0px' }}>
-      </div>
-      <div className="container">
-        <div className="title-area text-center">
-          <div className="shadow-title">Why Choose Us</div>
-          <span className="sub-title">
-            <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+    <section className="w-full py-20 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* ===== SECTION TITLE ===== */}
+        <div className="text-center mb-16">
+          <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-md uppercase tracking-wide">
+            {/* <img  
+              src="/main-assets/img/icon/section-subtitle-icon.svg"
+              width={18}
+              height={18}
+              alt="icon"
+            /> */}
             Why Choose Us
           </span>
-          <h2 className="sec-title">High Quality Innovate Design</h2>
+
+          <div className="mt-4 text-3xl md:text-4xl text-[#347A64] font-bold">
+            High Quality Innovative Design
+          </div>
+
+          <p className="mt-4 max-w-2xl mx-auto text-gray-600">
+            We deliver smart, reliable, and cost-effective solutions that help
+            your business grow faster.
+          </p>
         </div>
-        <div className="row gy-50 align-items-center">
-          <div className="col-xl-4 col-md-6">
-            <div className="wcu-card-wrap left-align">
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-1.svg" alt="img" />
+
+        {/* ===== CONTENT GRID ===== */}
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 items-center">
+
+          {/* ===== LEFT FEATURES ===== */}
+          <div className="space-y-8">
+            {[
+              {
+                title: "Technology",
+                text: "We use modern technologies to build scalable and secure solutions.",
+                icon: "/main-assets/img/icon/why-icon1-1.svg",
+              },
+              {
+                title: "Core Planning",
+                text: "Strategic planning ensures long-term success and growth.",
+                icon: "/main-assets/img/icon/why-icon1-2.svg",
+              },
+              {
+                title: "Project Result",
+                text: "Delivering measurable results with proven methodologies.",
+                icon: "/main-assets/img/icon/why-icon1-3.svg",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64] hover:border-[#347A64] transition"
+              >
+                <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#347A64]/10">
+                  <img src={item.icon} width={32} height={32} alt="icon" />
                 </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Technology</h4>
-                  <p className="wcu-card-text">
-                    We are expert your all work is very nice waiting for next
-                    project.
+                <div>
+                  <div className="text-2xl font-semibold text-[#347A64]">
+                    {item.title}
+                  </div>
+                  <p className="mt-2 text-gray-600 text-sm">
+                    {item.text}
                   </p>
                 </div>
               </div>
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-2.svg" alt="img" />
-                </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Core Planning</h4>
-                  <p className="wcu-card-text">
-                    All the Lorem Ipsum generators on the Internet tend to
-                    repeat predefined
-                  </p>
-                </div>
-              </div>
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-3.svg" alt="img" />
-                </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Project Result</h4>
-                  <p className="wcu-card-text">
-                    Making this the first true generator on the Internet uses a
-                    dictionary
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="col-xl-4 col-md-6 order-xl-3">
-            <div className="wcu-card-wrap right-align">
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-4.svg" alt="img" />
-                </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Trusted Clients</h4>
-                  <p className="wcu-card-text">
-                    Passage of Lorem Ipsum, you need to be sure there isn't
-                    anything
-                  </p>
-                </div>
-              </div>
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-5.svg" alt="img" />
-                </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Skilled Team</h4>
-                  <p className="wcu-card-text">
-                    We are expert your all work is very nice waiting for next
-                    project.
-                  </p>
-                </div>
-              </div>
-              <div className="wcu-card">
-                <div className="wcu-card-icon">
-                  <img src="/main-assets/img/icon/why-icon1-6.svg" alt="img" />
-                </div>
-                <div className="wcu-card-details">
-                  <h4 className="wcu-card-title">Save Money</h4>
-                  <p className="wcu-card-text">
-                    We are expert your all work is very nice waiting for next
-                    project.
-                  </p>
-                </div>
-              </div>
-            </div>
+
+          {/* ===== CENTER IMAGE ===== */}
+          <div className="flex justify-center">
+            <img
+              src="/main-assets/img/normal/why_1-1.png"
+              width={420}
+              height={420}
+              alt="Why Choose Us"
+              className="rounded-2xl"
+            />
           </div>
-          <div className="col-xl-4">
-            <div className="wcu-thumb1-1">
-              <img src="/main-assets/img/normal/why_1-1.png" alt="img" />
-            </div>
+
+          {/* ===== RIGHT FEATURES ===== */}
+          <div className="space-y-8">
+            {[
+              {
+                title: "Trusted Clients",
+                text: "Long-term relationships built on trust and quality.",
+                icon: "/main-assets/img/icon/why-icon1-4.svg",
+              },
+              {
+                title: "Skilled Team",
+                text: "Experienced professionals dedicated to excellence.",
+                icon: "/main-assets/img/icon/why-icon1-5.svg",
+              },
+              {
+                title: "Save Money",
+                text: "Optimized solutions that reduce cost without compromise.",
+                icon: "/main-assets/img/icon/why-icon1-6.svg",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64] hover:border-[#347A64] transition"
+              >
+                <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#347A64]/10">
+                  <img src={item.icon} width={32} height={32} alt="icon" />
+                </div>
+                <div>
+                  <div className="text-2xl font-semibold text-[#347A64]">
+                    {item.title}
+                  </div>
+                  <p className="mt-2 text-gray-600 text-sm">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

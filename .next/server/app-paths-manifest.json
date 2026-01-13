@@ -1,4 +1,22 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/pages/homepage/home-2-op/page": "app/pages/homepage/home-2-op/page.js",
+  "/pages/innerpage/about/page": "app/pages/innerpage/about/page.js",
+  "/pages/homepage/home-2/page": "app/pages/homepage/home-2/page.js",
+  "/pages/innerpage/cart/page": "app/pages/innerpage/cart/page.js",
+  "/pages/innerpage/blog-details/page": "app/pages/innerpage/blog-details/page.js",
+  "/pages/innerpage/blog/page": "app/pages/innerpage/blog/page.js",
+  "/pages/innerpage/checkout/page": "app/pages/innerpage/checkout/page.js",
+  "/pages/innerpage/contact/page": "app/pages/innerpage/contact/page.js",
+  "/pages/innerpage/gfrp/page": "app/pages/innerpage/gfrp/page.js",
+  "/pages/innerpage/project-details/page": "app/pages/innerpage/project-details/page.js",
+  "/pages/innerpage/service-details/page": "app/pages/innerpage/service-details/page.js",
+  "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js",
+  "/pages/innerpage/service/page": "app/pages/innerpage/service/page.js",
+  "/pages/innerpage/shop/page": "app/pages/innerpage/shop/page.js",
+  "/pages/innerpage/shop-details/page": "app/pages/innerpage/shop-details/page.js",
+  "/pages/innerpage/team-details/page": "app/pages/innerpage/team-details/page.js",
+  "/pages/innerpage/team/page": "app/pages/innerpage/team/page.js",
+  "/pages/innerpage/wishlist/page": "app/pages/innerpage/wishlist/page.js"
 }

@@ -6,7 +6,7 @@ const Process = () => {
                 <div className="row justify-content-between align-items-center gy-40">
                     <div className="col-lg-6">
                         <div className="title-area text-left content-text-extra-style">
-                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />Our Benefits</span>
+                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />Our Benefits</span>
                             <h2 className="sec-title">Why choose us</h2>
                         </div>
                         <div className="process-thumb2-1">

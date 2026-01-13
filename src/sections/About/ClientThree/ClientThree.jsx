@@ -37,7 +37,7 @@ const ClientThree = () => {
       <div className="container">
         <div className="title-area text-center">
           <span className="sub-title text-white">
-            <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+            <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
             Happy Clients
           </span>
           <h2 className="sec-title text-white">Our trusted partners</h2>

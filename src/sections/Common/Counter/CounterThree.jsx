@@ -4,66 +4,62 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const CounterThree = () => {
-  const { ref: counterRef, inView: counterInView } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <div className="counter-area-1 space-bottom shape-mockup-wrap" ref={counterRef}>
-      <div
-        className="section-animation-shape1-1 shape-mockup animation-infinite background-image"
-        style={{ backgroundImage: "url('/main-assets/img/shape/global-line-shape2.png')", bottom: '0px' }}
-      ></div>
-      <div className="container">
-        <div className="row justify-content-between gy-40">
-          <div className="col-auto">
-            <div className="counter-card">
-              <h2 className="counter-card_number">
-                <span className="counter-number">
-                  {counterInView && <CountUp start={0} end={26} />}
-                </span>
-                k+
-              </h2>
-              <p className="counter-card_text">Projects Completed</p>
+    <section
+      ref={ref}
+      className="w-full max-w-[1200px] bg-[#347A64] rounded-2xl mx-auto py-20 mt-16"
+    >
+      <div className="max-w-7xl mx-auto px-10 py-25">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+
+          {/* ===== ITEM 1 ===== */}
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-white">
+              {inView && <CountUp start={0} end={26} />}k+
             </div>
+            <p className="mt-3 text-white font-medium">
+              Projects Completed
+            </p>
           </div>
-          <div className="col-auto">
-            <div className="counter-card">
-              <h2 className="counter-card_number">
-                <span className="counter-number">
-                  {counterInView && <CountUp start={0} end={98} />}
-                </span>
-                %
-              </h2>
-              <p className="counter-card_text">Customers Satisfied</p>
+
+          {/* ===== ITEM 2 ===== */}
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-white">
+              {inView && <CountUp start={0} end={98} />}%
             </div>
+            <p className="mt-3 text-white font-medium">
+              Customers Satisfied
+            </p>
           </div>
-          <div className="col-auto">
-            <div className="counter-card">
-              <h2 className="counter-card_number">
-                <span className="counter-number">
-                  {counterInView && <CountUp start={0} end={20} />}
-                </span>
-                M
-              </h2>
-              <p className="counter-card_text">Special Machinery</p>
+
+          {/* ===== ITEM 3 ===== */}
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-white">
+              {inView && <CountUp start={0} end={20} />}M
             </div>
+            <p className="mt-3 text-white font-medium">
+              Special Machinery
+            </p>
           </div>
-          <div className="col-auto">
-            <div className="counter-card">
-              <h2 className="counter-card_number">
-                <span className="counter-number">
-                  {counterInView && <CountUp start={0} end={30} />}
-                </span>
-                +
-              </h2>
-              <p className="counter-card_text">Years in Business</p>
+
+          {/* ===== ITEM 4 ===== */}
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-white">
+              {inView && <CountUp start={0} end={30} />}+
             </div>
+            <p className="mt-3 text-white font-medium">
+              Years in Business
+            </p>
           </div>
+
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

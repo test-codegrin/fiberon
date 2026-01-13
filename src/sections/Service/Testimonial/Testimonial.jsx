@@ -6,7 +6,7 @@ const Testimonial = () => {
                 <div className="row justify-content-between">
                     <div className="col-lg-7">
                         <div className="title-area text-lg-start text-left">
-                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" /> Testimonials</span>
+                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" /> Testimonials</span>
                             <h2 className="sec-title">What client saying about us</h2>
                         </div>
                     </div>

@@ -2,235 +2,129 @@
 
 import Link from "next/link";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 
 const PortfolioThree = () => {
   const settings = {
-    dots: true,
-    focusOnSelect: true,
+    dots: false,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
     centerPadding: "20%",
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: false,
-          centerPadding: "0%",
-          dots: true,
-        },
-      },
-    ],
+    autoplaySpeed: 1000,
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       centerMode: false,
+    //       centerPadding: "10%",
+    //       dots: false,
+    //     },
+    //   },
+    // ],
   };
 
-  useEffect(() => {
-    const dots = document.querySelector(".slick-dots");
-    if (dots) {
-      dots.setAttribute("role", "tablist");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const dots = document.querySelector(".slick-dots");
+  //   if (dots) {
+  //     dots.classList.add(
+  //       "w-[100px]",
+  //       "flex",
+  //       "justify-center",
+  //       "gap-3",
+  //       "mt-8"
+  //     );
+  //   }
+  // }, []);
 
   return (
-    <div className="portfolio-area-1 space">
-      <div className="container">
-        <div className="title-area text-center">
-          <span className="sub-title">
-            <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+    <section className="w-full py-20 mt-10 rounded-2xl overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* ===== TITLE ===== */}
+        <div className="text-center mb-14">
+          <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-md uppercase">
             Recent Work
           </span>
-          <h2 className="sec-title">Check our latest projects</h2>
-          <p className="sec-text">
+
+          <div className="mt-4 text-3xl md:text-4xl font-bold text-[#347A64]">
+            Check our latest projects
+          </div>
+
+          <p className="mt-3 text-gray-600">
             We are the best construction agency in the world
           </p>
         </div>
-        <div className="portfolio-slider1 overflow-hidden">
+
+        {/* ===== SLIDER ===== */}
+        <div className="overflow-hidden">
           <Slider {...settings}>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_1.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_1.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
+            {[
+              "/main-assets/img/project/project1_1.png",
+              "/main-assets/img/project/project1_2.png",
+              "/main-assets/img/project/project1_3.png",
+              "/main-assets/img/project/project1_1.png",
+              "/main-assets/img/project/project1_2.png",
+              "/main-assets/img/project/project1_3.png",
+            ].map((img, index) => (
+              <div key={index} className="px-4">
+                <div className="bg-white border-b-4 border-[#347A64] rounded-2xl hover:shadow-lg overflow-hidden">
+
+                  {/* IMAGE */}
+                  <div className="relative group">
+                    <img
+                      src={img}
+                      alt="project"
+                      className="w-full h-[280px] object-cover"
+                    />
+
+                    {/* <Link
+                      href={img}
+                      className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition"
+                    >
+                      <span className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#347A64] text-xl font-bold">
+                        👁
+                      </span>
+                    </Link> */}
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="p-6 text-left">
+                    <span className="text-base font-semibold text-[#347A64]">
+                      Building
+                    </span>
+
+                    <div className="mt-2 text-lg font-bold text-gray-900">
                       <Link href="/pages/innerpage/project-details">
                         General Construction
                       </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
+                    </div>
+
+                    <p className="mt-2 text-sm text-gray-600">
                       Building since 09,01,2024
                     </p>
+
+                    <div className="bg-[#347A64] w-[200px] h-[50px]">
+                      <Link
+                      href="/pages/innerpage/project-details"
+                      className="flex items-center justify-center pt-[12px] font-semibold text-white hover:underline"
+                    >
+                      Explore Service {""} →
+                    </Link>
+                    </div>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
               </div>
-            </div>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_2.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_2.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
-                      Building since 09,01,2024
-                    </p>
-                  </div>
-                </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_3.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_3.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
-                      Building since 09,01,2024
-                    </p>
-                  </div>
-                </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_1.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_1.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
-                      Building since 09,01,2024
-                    </p>
-                  </div>
-                </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_2.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_2.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
-                      Building since 09,01,2024
-                    </p>
-                  </div>
-                </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-            <div>
-              <div className="portfolio-card" style={{ margin: "0px 1rem" }}>
-                <div className="portfolio-card-thumb">
-                  <img src="/main-assets/img/project/project1_3.png" alt="img" />
-                  <Link
-                    className="icon-btn popup-image"
-                    href="/main-assets/img/project/project1_3.png"
-                  >
-                    <i className="ri-eye-line"></i>
-                  </Link>
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-subtitle">Building</span>
-                    <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </h4>
-                    <p className="portofolio-card-text">
-                      Building since 09,01,2024
-                    </p>
-                  </div>
-                </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
-                  Explore Service <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -29,7 +29,7 @@ const TestimonialTwo = () => {
           <div className="col-lg-7 testimonial-extra-padding">
             <div className="title-area text-lg-start text-center services-title-area testimonial-area-bottom-space-row content-text-extra-style service-testimonial-align">
               <span class="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="" />
                 Testimonials
               </span>
               <h2 class="sec-title">What client saying about us</h2>

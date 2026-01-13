@@ -11,7 +11,7 @@ const Contact = () => {
                         <div className="col-xl-7">
                             <div className="contact-form-wrap">
                                 <div className="title-area">
-                                    <span className="sub-title text-theme"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />Get Free Quote </span>
+                                    <span className="sub-title text-theme"><img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />Get Free Quote </span>
                                     <h2 className="sec-title">Have a project in mind?</h2>
                                 </div>
                                 <form action="mail.php" method="POST" className="contact-form ajax-contact">

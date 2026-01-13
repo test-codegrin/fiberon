@@ -12,7 +12,7 @@ const FooterTwo = () => {
                         <div className="footer-logo">
                             <Link href="/pages/homepage/home-1">
                                 <img src="/main-assets/img/logo-white.svg" alt="Construz" />
-                            </Link>
+                            </Link> 
                         </div>
                         <div className="subscribe-box">
                             <p className="subscribe-box_text">

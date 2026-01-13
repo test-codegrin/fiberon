@@ -22,7 +22,7 @@ const ContactSix = () => {
                             <div className="contact-form-wrap">
                                 <div className="title-area">
                                     <span className="sub-title text-theme">
-                                        <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                                        <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                                         Get Free Quote
                                     </span>
                                     <h2 className="sec-title">Have a project in mind?</h2>

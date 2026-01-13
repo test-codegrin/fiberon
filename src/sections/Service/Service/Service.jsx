@@ -7,7 +7,7 @@ const Service = () => {
                 <div className="row gy-30 gx-30">
                     <div className="col-xl-4 col-md-6">
                         <div className="title-area mb-0 text-left content-text-extra-style">
-                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" /> What We Do</span>
+                            <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" /> What We Do</span>
                             <h2 className="sec-title">Our services that we provide</h2>
                             <p>We craft unique digital experiences. With more than 7 years of expertise we design and code clean</p>
                         </div>

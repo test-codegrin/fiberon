@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, Search, X, ArrowRight, ChevronDown } from "lucide-react";
+import Image from "next/image";
+import { Menu, Search, X, ArrowRight, ChevronDown, Phone, Mail } from "lucide-react";
 
 export default function HeaderFour() {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,8 +33,8 @@ export default function HeaderFour() {
       <div className="bg-white border-b text-sm">
         <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-center px-4 py-3">
           <div className="flex gap-6 text-gray-600">
-            <span>📞 +91 96595 89896</span>
-            <span>✉️ india@mrg-composites.com</span>
+            <span className="flex gap-2"><Phone />  +91 96595 89896</span>
+            <span className="flex gap-2"><Mail /> india@mrg-composites.com</span>
             <span>📦 We Ship Worldwide</span>
           </div>
           <Link href="#" className="text-[#347A64] font-medium hover:underline">
@@ -54,6 +55,8 @@ export default function HeaderFour() {
             <img
               src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
               alt="MRG Composites"
+              height={150}
+              width={150}
               className="h-[150px] w-[150px] object-contain"
             />
           </Link>
@@ -76,7 +79,7 @@ export default function HeaderFour() {
               {desktopDropdown && (
                 <div className="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md overflow-hidden">
                   <Link
-                    href="/section/home/product/Gfrp"
+                    href="/pages/innerpage/shop"
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                   >
                     GFRP Rebar

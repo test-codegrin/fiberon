@@ -18,7 +18,7 @@ const ProcessTwo = () => {
           <div className="col-lg-6">
             <div className="title-area text-md-start text-center">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 Work Process
               </span>
               <h2 className="sec-title">WORK PROCESS</h2>

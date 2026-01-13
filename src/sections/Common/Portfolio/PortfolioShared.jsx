@@ -43,7 +43,7 @@ const PortfolioShared = () => {
       <div className="container">
         <div className="title-area text-center">
           <span className="sub-title">
-            <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+            <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
             Recent Work
           </span>
           <h2 className="sec-title">Check our latest projects</h2>

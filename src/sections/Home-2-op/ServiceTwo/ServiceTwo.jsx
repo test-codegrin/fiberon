@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const ServiceTwo = () => {
   return (
     <div
@@ -12,14 +12,14 @@ const ServiceTwo = () => {
         data-bottom="10%"
         data-right="0"
       >
-        <img src="/main-assets/img/shape/sec-bg-shape1.png" alt="img" />
+        <img src="/main-assets/img/shape/sec-bg-shape1.png" width={200} height={200} alt="img" />
       </div>
       <div className="container">
         <div className="row justify-content-xl-start justify-content-center">
           <div className="col-xxl-4 col-xl-5 col-md-6">
             <div className="title-area mb-0 text-xl-start text-center">
               <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+                <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
                 What We Do
               </span>
               <h2 className="sec-title">OUR SERVICES THAT WE PROVIDE</h2>

@@ -44,11 +44,11 @@ export default function HomePage() {
       <Counter />
       <Portfolio />
       <Testimonial />
-      <Pricing />
-      <FAQ />
-      <Client />
+      {/* <Pricing />
+      <FAQ /> */}
+      {/* <Client />
       <Blog />
-      <Contact />
+      <Contact /> */}
       <FooterThree />
       <Scroll />
     </div>

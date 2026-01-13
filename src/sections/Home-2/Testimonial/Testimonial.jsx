@@ -34,9 +34,9 @@ const ProductSpecificationPage = () => {
       <div className="max-w-6xl mx-auto px-3 sm:px-4">
         {/* ================= HEADER ================= */}
         <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-2">
+          <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-2">
             Table of Substitution
-          </h2>
+          </div>
           <p className="text-[#347A64] max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
             Equivalent tensile strength comparison between Metal Rebar and FRP
             Rebar

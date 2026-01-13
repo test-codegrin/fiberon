@@ -15,7 +15,7 @@ const Hero = () => {
             {/* Left Content */}
             <div className="w-[430px]">
               <p className="text-[50px] leading-1 w-full font-bold leading-tight">
-                GFRP REBAR <br /> MANUFACTURER
+                <span className="text-[#347A64]">GFRP </span>REBAR <br /> MANUFACTURER
               </p>
 
               <p className="text-[16px] mt-4 text-gray-600">

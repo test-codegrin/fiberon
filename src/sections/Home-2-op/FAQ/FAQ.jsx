@@ -16,7 +16,7 @@ const FAQ = () => {
       <div className="container">
         <div className="title-area text-center">
           <span className="sub-title">
-            <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
+            <img src="/main-assets/img/icon/section-subtitle-icon.svg" width={20} height={20} alt="img" />
             FAQS
           </span>
           <h2 className="sec-title">Frequently Asked Questions</h2>

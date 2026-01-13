@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import Slider from "react-slick";
 
@@ -9,239 +10,111 @@ const BlogThree = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 1000,
     dots: false,
     arrows: false,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-      { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
-    <section className="blog-area-1 space shape-mockup-wrap">
-      <div
-        className="section-animation-shape1-1 shape-mockup animation-infinite background-image"
-        style={{
-          backgroundImage: "url('/main-assets/img/shape/global-line-shape1.png')",
-          top: "0px",
-        }}
-      ></div>
-      <div className="container">
-        <div className="row justify-content-lg-between justify-content-center align-items-center">
-          <div className="col-lg-6">
-            <div className="title-area blog-area-content-text-extra-style">
-              <span className="sub-title">
-                <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
-                Latest News
-              </span>
-              <h2 className="sec-title">Recent news and events</h2>
+    <section className="w-full py-10 bg-white max-w-[1400px] mb-10 mx-auto overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-0">
+        {/* ===== HEADER ===== */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-14">
+          <div>
+            <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-base uppercase">
+              Latest News
+            </span>
+            <div className="mt-2 text-3xl md:text-4xl font-bold text-[#347A64]">
+              Recent news and events
             </div>
-          </div>aiii
-          <div className="col-md-auto">
-            <div className="sec-btn">
-              <Link href="/pages/innerpage/blog" className="btn style-border">
-                View All News <i className="ri-arrow-right-up-line"></i>
-              </Link>
-            </div>
+          </div>
+
+          <div className="hover:bg-[#347A64] hover:text-white inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition">
+            <Link href="/pages/innerpage/blog" className="">
+              View All News →
+            </Link>
           </div>
         </div>
-        <Slider
-          {...settings}
-          className="row global-carousel blog-slider slider-shadow slick-initialized slick-slider"
-        >
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_1.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to hire a contractor home renovation service
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_2.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Started to develop a specific testing programs
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+        {/* ===== BLOG SLIDER ===== */}
+        <Slider {...settings}>
+          {[
+            "/main-assets/img/blog/blog_1_1.png",
+            "/main-assets/img/blog/blog_1_2.png",
+            "/main-assets/img/blog/blog_1_3.png",
+            "/main-assets/img/blog/blog_1_1.png",
+            "/main-assets/img/blog/blog_1_2.png",
+            "/main-assets/img/blog/blog_1_3.png",
+          ].map((img, index) => (
+            <div key={index} className="px-4">
+              <div className="bg-white border-b-4 border-[#347A64] rounded-2xl hover:shadow-lg overflow-hidden">
+                {/* IMAGE */}
+                <div className="relative">
+                  <img
+                    src={img}
+                    alt="blog"
+                    className="w-full h-[240px] object-cover"
+                  />
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_3.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
+                  {/* DATE */}
+                  <div className="absolute top-4 left-4 bg-[#347A64] text-white rounded-lg px-3 py-2 text-center">
+                    <span className="block text-lg font-bold leading-none">
+                      17
+                    </span>
+                    <span className="text-xs uppercase">Jun</span>
+                    <span className="block text-xs">2024</span>
+                  </div>
                 </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to stay motivated until a project is finished
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_1.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to hire a contractor home renovation service
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+                {/* CONTENT */}
+                <div className="p-6">
+                  {/* META */}
+                  <div className="flex gap-4 text-sm text-gray-500 mb-3">
+                    <Link
+                      href="/pages/innerpage/blog"
+                      className="hover:text-[#347A64]"
+                    >
+                      By Rebecca
+                    </Link>
+                    <Link
+                      href="/pages/innerpage/blog"
+                      className="hover:text-[#347A64]"
+                    >
+                      Construction
+                    </Link>
+                  </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_2.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Started to develop a specific testing programs
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+                  {/* TITLE */}
+                  <div className="text-xl font-bold text-[#347A64] mb-3">
+                    <Link href="/pages/innerpage/blog-details">
+                      How to hire a contractor home renovation service
+                    </Link>
+                  </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card slider-padding">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_3.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
+                  {/* TEXT */}
+                  <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                    Tortor posuere ac ut consequat. Tellusi elem isis etum
+                    sagittis vitae et leo duis ut diam. Odio ut sem nulla phar.
+                  </p>
+
+                  {/* BUTTON */}
+                  <div className="hover:bg-[#347A64] hover:text-white cursor-pointer inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition">
+                    <Link
+                      href="/pages/innerpage/blog-details"
+                      className="inline-flex items-center gap-2 font-semibold"
+                    >
+                      More Details →
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to stay motivated until a project is finished
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
               </div>
             </div>
-          </div>
+          ))}
         </Slider>
       </div>
     </section>

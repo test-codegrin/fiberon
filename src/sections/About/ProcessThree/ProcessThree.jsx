@@ -1,126 +1,112 @@
 "use client";
-import Link from "next/link";
+
 import React, { useState } from "react";
-import PopupVideo from "../../Common/PopupVideo/PopupVideo";
+import Image from "next/image";
+// import PopupVideo from "../../Common/PopupVideo/PopupVideo";
 
 const ProcessThree = () => {
   const [popup, setPopup] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const openPopup = () => {
-    setPopup(true);
-    const iframe = document.getElementById("youtube-video");
-    if (iframe) {
-      iframe.src = "https://www.youtube.com/embed/Mp8IXI1kzvQ?si=UQVMsmBriHPfD6Vf";
-    }
-    setIsActive(true);
-    document.body.style.overflow = 'hidden';
-  };
+
+  // const openPopup = () => {
+  //   setPopup(true);
+  //   setIsActive(true);
+
+  //   const iframe = document.getElementById("youtube-video") | null;
+  //   if (iframe) {
+  //     iframe.src =
+  //       "https://www.youtube.com/embed/Mp8IXI1kzvQ?autoplay=1";
+  //   }
+
+  //   document.body.style.overflow = "hidden";
+  // };
+
   return (
     <>
-      <section
-        className="process-area-1 space-top bg-attachment process-bg-half"
-        data-overlay="title"
-        data-opacity="8"
-        style={{ backgroundImage: "url('/main-assets/img/bg/process-bg1-1.png')" }}
-      >
-        <div className="process_shape_1-1 movingX shape-mockup d-lg-block d-none"></div>
-        <div className="process_shape_1-2 moving shape-mockup d-lg-block d-none"></div>
-        <div
-          className="process_shape_1-3 shape-mockup jump-reverse d-xl-block d-none"
-          style={{ bottom: '-50%', right: '0px' }}
-        >
-          <img src="/main-assets/img/shape/sec-bg-shape1.png" alt="img" />
-        </div>
-        <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-lg-4 col-md-6">
-              <div className="title-area text-left content-text-extra-style">
-                <span className="sub-title text-white">
-                  <img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" />
-                  Work Process
-                </span>
-                <h2 className="sec-title text-white">
-                  Our services that we provide
-                </h2>
+      {/* ===== PROCESS SECTION ===== */}
+      <section className="relative w-full max-w-[1400px] mt-16 mx-auto rounded-2xl py-20 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6">
+
+          {/* ===== HEADER ===== */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-16">
+            <div className="w-full">
+              <span className="flex items-center justify-center text-[#347A64] text-md font-semibold uppercase tracking-wide">
+                Work Process
+              </span>
+
+              <div className="mt-4 text-3xl md:text-4xl font-bold text-center text-[#347A64]">
+                Our Services That We Provide
               </div>
             </div>
-            <div className="col-md-auto">
-              <div className="sec-btn text-center">
-                <a onClick={openPopup}
-                  className=" play-btn-wrap"
-                >
-                  Play Video
-                  <span className="play-btn style2">
-                    <i className="ri-play-fill"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
+
+            {/* <button
+              onClick={openPopup}
+              className="inline-flex items-center gap-4 px-6 py-3 bg-white text-[#347A64] font-semibold rounded-full hover:bg-gray-100 transition"
+            >
+              Play Video
+              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#347A64] text-white">
+                ▶
+              </span>
+            </button> */}
           </div>
-          <div className="process-card-wrap">
-            <div className="row gy-30 gx-30">
-              <div className="col-xl-3 col-md-6">
-                <div className="process-card">
-                  <div className="process-card-number">
-                    <span> 01 </span>
-                    STEP
-                  </div>
-                  <h4 className="process-card-title">
-                    Meet and consultant about project
-                  </h4>
-                  <p className="process-card-text">
-                    Industry standard dummy text took since the when an unknown
-                  </p>
+
+          {/* ===== PROCESS STEPS ===== */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Meet & Consult",
+                text: "Discuss project goals and understand requirements clearly.",
+              },
+              {
+                step: "02",
+                title: "Design & Planning",
+                text: "Create structured planning and modern product design.",
+              },
+              {
+                step: "03",
+                title: "Testing & Quality",
+                text: "Ensure reliability with strict testing and quality checks.",
+              },
+              {
+                step: "04",
+                title: "Final Delivery",
+                text: "Complete execution and successful project handover.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white border-t-4 border-[#347A64] hover:border-[#347A64] hover:border-2 rounded-2xl p-8 text-center hover:shadow-xl transition"
+              >
+                <div className="mb-6 flex flex-col items-center">
+                  <span className="text-4xl font-bold text-[#347A64]">
+                    {item.step}
+                  </span>
+                  <span className="text-sm font-semibold text-gray-500 uppercase">
+                    Step
+                  </span>
                 </div>
-              </div>
-              <div className="col-xl-3 col-md-6">
-                <div className="process-card">
-                  <div className="process-card-number">
-                    <span> 02 </span>
-                    STEP
-                  </div>
-                  <h4 className="process-card-title">
-                    Product design and planning
-                  </h4>
-                  <p className="process-card-text">
-                    Known printer took a galley of type and scrambled it to make
-                  </p>
+
+                <div className="text-2xl font-semibold text-[#347A64]">
+                  {item.title}
                 </div>
+
+                <p className="mt-3 text-gray-600 text-md leading-relaxed">
+                  {item.text}
+                </p>
               </div>
-              <div className="col-xl-3 col-md-6">
-                <div className="process-card">
-                  <div className="process-card-number">
-                    <span> 03 </span>
-                    STEP
-                  </div>
-                  <h4 className="process-card-title">
-                    Testing and quality control
-                  </h4>
-                  <p className="process-card-text">
-                    It has survived not only centuries also the leap into
-                    electronic
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-md-6">
-                <div className="process-card">
-                  <div className="process-card-number">
-                    <span> 04 </span>
-                    STEP
-                  </div>
-                  <h4 className="process-card-title">
-                    Final assembly and project handover
-                  </h4>
-                  <p className="process-card-text">
-                    Electronic typesetting conta the popularised in the 1960s
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      <PopupVideo popup={popup} setPopup={setPopup} isActive={isActive} setIsActive={setIsActive}></PopupVideo>
+
+      {/* ===== POPUP VIDEO ===== */}
+      {/* <PopupVideo
+        popup={popup}
+        setPopup={setPopup}
+        isActive={isActive}
+        setIsActive={setIsActive}
+      /> */}
     </>
   );
 };
