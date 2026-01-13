@@ -1,1 +1,3 @@
-{}
+{
+  "/pages/innerpage/about/page": "app/pages/innerpage/about/page.js"
+}
