@@ -79,21 +79,18 @@
 
 :root {
   --theme-color: #347A64;
-  --title-color: #15161C;
+  /* --title-color: #15161C; */
   /* --body-color: #737373;
   --smoke-color: #FAFAFA;
   --smoke-color2: #EBEBEB;
   --smoke-color3: #F5F5F5;
   --smoke-color4: #F4F4F4;
   --smoke-color5: #F2F2F2; */
-  --black-color: #202020;
-  --gray-color: #232323;
   /* --white-color: #ffffff;
   --light-color: #9fa2ad;
   --yellow-color: #FFB539; */
   --success-color: #347A64;
   --error-color: #dc3545;
-  --border-color: rgba(21, 22, 28, 0.15);
   --title-font: "Titillium Web", sans-serif;
   --body-font: "Archivo", sans-serif;
   --icon-font: remixicon !important;
@@ -115,7 +112,6 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: 400;
-  color: var(--body-color);
   line-height: 26px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -152,7 +148,7 @@ iframe {
   width: 100%;
 }
 
-.slick-slide:focus,
+/* .slick-slide:focus,
 button:focus,
 a:focus,
 a:active,
@@ -165,20 +161,20 @@ textarea:hover,
 textarea:focus,
 textarea:active {
   outline: none;
-}
+} */
 
-input:focus {
+/* input:focus {
   outline: none;
   box-shadow: none;
-}
+} */
 
-img:not([draggable]),
+/* img:not([draggable]),
 embed,
 object,
 video {
   max-width: 100%;
   height: auto;
-}
+} */
 
 ul {
   list-style-type: disc;
@@ -212,13 +208,13 @@ a {
   transition: all ease 0.4s;
 }
 
-a:hover {
+/* a:hover {
   color: var(--title-color);
-}
+} */
 
 a:active,
 a:focus,
-a:hover,
+/* a:hover, */
 a:visited {
   text-decoration: none;
   outline: 0;
@@ -228,10 +224,10 @@ button {
   transition: all ease 0.4s;
 }
 
-img {
+/* img {
   border: none;
   max-width: 100%;
-}
+} */
 
 ins {
   text-decoration: none;
@@ -254,13 +250,13 @@ p:empty {
   display: none;
 }
 
-p {
+/* p {
   font-family: var(--body-font);
   margin: 0 0 18px 0;
   color: var(--body-color);
-}
+} */
 
-h1 a,
+/* h1 a,
 h2 a,
 h3 a,
 h4 a,
@@ -272,9 +268,9 @@ span a {
   font-family: inherit;
   font-weight: inherit;
   line-height: inherit;
-}
+} */
 
-.h1,
+/* .h1,
 h1,
 .h2,
 h2,
@@ -292,9 +288,9 @@ h6 {
   font-weight: 700;
   line-height: 1.4;
   margin: 0 0 15px 0;
-}
+} */
 
-.h1,
+/* .h1,
 h1 {
   font-size: 82px;
   line-height: 0.9333em;
@@ -328,7 +324,7 @@ h5 {
 h6 {
   font-size: 18px;
   line-height: 1.5;
-}
+} */
 
 /* Medium Large devices */
 @media (max-width: 1399px) {
@@ -1335,7 +1331,7 @@ ul.wp-block-rss a {
 }
 
 /*------------------- 2.3. Input -------------------*/
-select,
+/* select,
 .single-select,
 .form-control,
 .form-select,
@@ -1352,9 +1348,9 @@ input {
   transition: 0.4s ease-in-out;
   padding-right: 45px;
   border-radius: 2px;
-}
+} */
 
-select:focus,
+/* select:focus,
 .single-select:focus,
 .form-control:focus,
 .form-select:focus,
@@ -1364,45 +1360,45 @@ input:focus {
   box-shadow: none;
   border-color: var(--theme-color);
   background-color: var(--smoke-color);
-}
+} */
 
-select::-moz-placeholder,
+/* select::-moz-placeholder,
 .single-select::-moz-placeholder,
 .form-control::-moz-placeholder,
 .form-select::-moz-placeholder,
 textarea::-moz-placeholder,
 input::-moz-placeholder {
   color: var(--body-color);
-}
+} */
 
-select::-webkit-input-placeholder,
+/* select::-webkit-input-placeholder,
 .single-select::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
   color: var(--body-color);
-}
+} */
 
-select:-ms-input-placeholder,
+/* select:-ms-input-placeholder,
 .single-select:-ms-input-placeholder,
 .form-control:-ms-input-placeholder,
 .form-select:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 input:-ms-input-placeholder {
   color: var(--body-color);
-}
+} */
 
-select::placeholder,
+/* select::placeholder,
 .single-select::placeholder,
 .form-control::placeholder,
 .form-select::placeholder,
 textarea::placeholder,
 input::placeholder {
   color: var(--body-color);
-}
+} */
 
-select.style2,
+/* select.style2,
 .single-select.style2,
 .form-control.style2,
 .form-select.style2,
@@ -1425,7 +1421,7 @@ input.style2 option {
   background-color: var(--title-color);
   color: var(--body-color);
   padding: 2px 15px;
-}
+} */
 
 select.style2::-moz-placeholder,
 .single-select.style2::-moz-placeholder,
@@ -5331,10 +5327,10 @@ a.text-theme:hover,
   text-decoration: none;
 }
 
-.wp-block-calendar a:hover,
+/* .wp-block-calendar a:hover,
 .calendar_wrap a:hover {
   color: var(--title-color);
-}
+} */
 
 /***wp-calender***/
 .wp-block-calendar {

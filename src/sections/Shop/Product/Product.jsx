@@ -52,7 +52,7 @@ export default function Product() {
           </button>
         </div>
 
-        <div className="w-[350px] h-[320px] bg-gray-100 rounded-xl">
+        <div className="max-w-[400px] h-[320px] rounded-xl">
           <img
             src="/main-assets/img/product/steel-3.webp"
             alt="steel-3"
@@ -114,7 +114,7 @@ export default function Product() {
       <section className="bg-gray-50 py-24">
         {/* Section Title */}
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
-          MRG GFRP Rebar Advantages
+          REBAR-X GFRP Rebar Advantages
         </div>
 
         {/* Advantages Grid */}
@@ -202,7 +202,7 @@ export default function Product() {
 
       {/* ================= ATTRIBUTES ================= */}
       <section
-        className="relative max-w-[1400px] mx-auto py-24 bg-center bg-cover bg-no-repeat"
+        className="relative max-w-[1400px] mx-auto py-24 bg-center rounded-lg mt-[50px] bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/main-assets/img/product/steel-1.webp')",
         }}
@@ -212,9 +212,9 @@ export default function Product() {
 
         {/* Content */}
         <div className="relative">
-          <div className="text-4xl font-semibold text-white max-w-155 w-full mx-auto h-15 bg-[#347A64] mb-16">
+          <div className="text-4xl font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
             <div className="flex items-center justify-center h-full">
-              Attributes of MRG GFRP Rebars
+              Attributes of REBAR-X GFRP Rebars
             </div>
           </div>
 
@@ -443,93 +443,7 @@ export default function Product() {
       <Portfolio />
 
       {/* ================= CONTACT ================= */}
-      <section className="relative max-w-[1400px] rounded-xl mx-auto bg-[#347A64] py-28 text-white">
-        {/* Decorative Overlay */}
-        <div className="relative max-w-[1300px] mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
-          {/* ================= LEFT INFO ================= */}
-          <div className="space-y-6">
-            <div className="text-4xl font-bold mb-6">Contact Us</div>
-
-            <p className="text-white/90 mb-10 text-lg max-w-md">
-              Get high-performance GFRP composite solutions designed for
-              durability, safety, and long-term cost savings.
-            </p>
-
-            <div className="space-y-4 text-sm">
-              <div className="flex items-center gap-3">
-                <span className="text-xl">
-                  <MapPin />
-                </span>
-                <span>Nashik, Maharashtra, India</span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <span className="text-xl">
-                  <Mail />
-                </span>
-                <span>info@mrg-composites.com</span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <span className="text-xl">
-                  <Phone />
-                </span>
-                <span>+91 98765 43210</span>
-              </div>
-            </div>
-
-            <button className="mt-10 bg-white text-[#347A64] px-10 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">
-              Download Brochure
-            </button>
-          </div>
-
-          {/* ================= RIGHT FORM ================= */}
-          <div className="bg-white p-10 rounded-2xl shadow-2xl text-black">
-            <h3 className="text-2xl font-bold text-[#347A64] mb-6">
-              Send Us a Message
-            </h3>
-
-            <form className="grid grid-cols-2 gap-5">
-              <div className="rounded-lg border border-[#347A64]">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="col-span-2 md:col-span-1 p-4 focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-                />
-              </div>
-
-              <div className="rounded-lg border border-[#347A64]">
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="col-span-2 md:col-span-1 p-4 focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-                />
-              </div>
-
-              <div className="rounded-lg border border-[#347A64]">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="col-span-2 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-                />
-              </div>
-
-              <textarea
-                rows="4"
-                placeholder="Your Message"
-                className="col-span-2 p-4 rounded-lg border focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="col-span-2 bg-[#347A64] text-white py-3 font-semibold rounded-lg hover:opacity-90 transition"
-              >
-                Submit Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

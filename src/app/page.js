@@ -31,6 +31,7 @@ import Video from "~/sections/Home-2/Video";
 import FooterThree from "~/sections/Common/Footer/FooterThree";
 import Scroll from "~/sections/Common/Scroll";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import ClientReviews from "~/sections/clintreview";
 
 export default function HomePage() {
   return (
@@ -49,6 +50,7 @@ export default function HomePage() {
       {/* <Client />
       <Blog />
       <Contact /> */}
+      <ClientReviews />
       <FooterThree />
       <Scroll />
     </div>

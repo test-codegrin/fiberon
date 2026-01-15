@@ -11,15 +11,15 @@ const Hero = () => {
       <div className="pb-50 max-w-[1400px] mx-auto">
         {/* ================= HERO SECTION ================= */}
         <div className="relative">
-          <div className="max-w-[1300px] mx-auto mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
+          <div className="max-w-[1200px] mx-auto mt-[80px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
-            <div className="w-[430px]">
+            <div className="w-[530px]">
               <p className="text-[50px] leading-1 w-full font-bold leading-tight">
                 <span className="text-[#347A64]">GFRP </span>REBAR <br /> MANUFACTURER
               </p>
 
-              <p className="text-[16px] mt-4 text-gray-600">
-                Revolutionize your projects with MRG GFRP Rebar — twice the
+              <p className="text-[16px] max-w-[480px] mt-4 text-gray-600">
+                Revolutionize your projects with  <span className="text-[#347A63] underline">REBAR-X</span> GFRP Rebar — twice the
                 strength, zero corrosion, and a lighter build for enduring
                 performance in any environment.
               </p>
@@ -30,11 +30,11 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="mt-20">
+            <div className="mt-20 max-w-[400px]">
               <img
-                src="/main-assets/img/hero/building.png"
+                src="/main-assets/img/hero/hero_img.png"
                 alt="Building"
-                className="max-w-[500px]"
+                className=""
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                india@mrg-composites.com
+                info@fiberonrebar.com
               </span>
             </div>
 
@@ -88,7 +88,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                +91 63515 37947
+                +91 92748 31310
               </span>
             </div>
 
@@ -112,7 +112,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                Our Location
+                Morbi, Gujrat, India
               </span>
             </div>
 

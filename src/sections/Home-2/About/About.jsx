@@ -17,7 +17,7 @@ const About = () => {
               <img
                 src="/main-assets/img/normal/about_2-1.png"
                 alt="About"
-                className="w-full max-w-[200px] rounded-xl shadow-lg"
+                className="w-full max-w-[550px] rounded-xl shadow-lg"
               />
             </div>
 
@@ -96,7 +96,7 @@ const About = () => {
             </div>
 
             <div className="bg-[#347A64] p-1.5 text-center text-white text-[19px] my-6 border-l-4 border-[#347A64]">
-              <p className="text-gray-700 mb-6 max-w-[280px] mx-auto mt-3 md:mt-0 md:max-w-full md:w-full">
+              <p className="text-white mb-6 max-w-[280px] mx-auto mt-3 md:mt-0 md:max-w-full md:w-full">
                 GFRP REBAR IS APPROVED BY HYDERABAD IIT - MUMBAI IIT AND
                 ALSO APPROVED BY GOVT OF INDIA
               </p>

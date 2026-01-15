@@ -12,6 +12,7 @@ import TestimonialThree from "~/sections/Common/Testimonial/TestimonialThree";
 import Scroll from "~/sections/Common/Scroll";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
 import FooterThree from "~/sections/Common/Footer/FooterThree";
+import ClientReviews from "~/sections/clintreview";
 export default function AboutPage() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function AboutPage() {
       <TeamThree />
       {/* <ClientThree /> */}
       <BlogThree />
+      <ClientReviews />
       <FooterThree />
       <Scroll />
     </>

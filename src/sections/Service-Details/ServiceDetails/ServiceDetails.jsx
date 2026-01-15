@@ -1,328 +1,161 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
-import Link from "next/link";
-import PopupVideo from "../../Common/PopupVideo/PopupVideo";
-import { useEffect, useRef, useState } from "react";
 
-const ServiceDetails = () => {
-  const [popup, setPopup] = useState(false);
-  const [isActive, setIsActive] = useState(false);
-  const openPopup = () => {
-    setPopup(true);
-    const iframe = document.getElementById("youtube-video");
-    if (iframe) {
-      iframe.src =
-        "https://www.youtube.com/embed/Mp8IXI1kzvQ?si=UQVMsmBriHPfD6Vf";
-    }
-    setIsActive(true);
-    document.body.style.overflow = 'hidden';
-  };
+import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
-  // progress bar js code
-  const progressBarRefs = useRef([]);
-  const counterRefs = useRef([]);
-
-  useEffect(() => {
-    const bars = [
-      { targetValue: 89, duration: 2000 },
-      { targetValue: 92, duration: 2000 },
-      { targetValue: 78, duration: 2000 },
-    ];
-
-    bars.forEach((bar, index) => {
-      let startTime = null;
-      const updateCounter = (timestamp) => {
-        if (!startTime) startTime = timestamp;
-        const progress = timestamp - startTime;
-        const value = Math.min(
-          Math.floor((progress / bar.duration) * bar.targetValue),
-          bar.targetValue
-        );
-        counterRefs.current[index].innerText = value;
-
-        if (progress < bar.duration) {
-          requestAnimationFrame(updateCounter);
-        }
-      };
-
-      requestAnimationFrame(updateCounter);
-    });
-  }, []);
+const Hero = () => {
+  const [activeHover, setActiveHover] = useState(null);
 
   return (
     <>
-      <div className="service-details-area space-top overflow-hidden">
-        <div className="container3">
-          <div className="row gy-30 gx-30">
-            <div className="col-12">
-              <div className="single-page">
-                <div className="service-thumb mb-50">
-                  <img
-                    className="w-100"
-                    src="/main-assets/img/service/service_details1_1.png"
-                    alt="img"
-                  />
-                </div>
-                <h2 className="sec-title2 mb-25">General Construction</h2>
-                <p className="mb-50">
-                  Industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make
-                  a type specimen book. It has survived not only five centuries,
-                  but also the leapinto electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release letraset sheets containing. Richard Clintock a
-                  Latin professor at Hampden-Sydney College in Virginia, looked
-                  up one of the more obscure latin words, consectetur, from a
-                  Lorem Ipsum passage.
-                </p>
-                <div className="row gy-4 justify-content-center">
-                  <div className="col-xl-4 col-lg-6">
-                    <div className="service-card style4">
-                      <div className="service-card_icon">
-                        <img src="/main-assets/img/icon/service-icon1-1.png" alt="img" />
-                      </div>
-                      <div className="service-card_content item-decoration">
-                        <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
-                            Full Principal Contractor service
-                          </Link>
-                        </h4>
-                        <p className="service-card_text">
-                          There are many passages of lorem ipsum available
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-6">
-                    <div className="service-card style4">
-                      <div className="service-card_icon">
-                        <img src="/main-assets/img/icon/service-icon1-2.png" alt="img" />
-                      </div>
-                      <div className="service-card_content item-decoration">
-                        <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
-                            Full-time Onsite Supervision
-                          </Link>
-                        </h4>
-                        <p className="service-card_text">
-                          There are many passages of lorem ipsum available
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-6">
-                    <div className="service-card style4">
-                      <div className="service-card_icon">
-                        <img src="/main-assets/img/icon/service-icon1-3.png" alt="img" />
-                      </div>
-                      <div className="service-card_content item-decoration">
-                        <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
-                            Timber and steel frame construction
-                          </Link>
-                        </h4>
-                        <p className="service-card_text">
-                          There are many passages of lorem ipsum available
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-60 mb-60 service-details-absolute-container">
-                  <div className="row justify-content-between align-items-center gy-40">
-                    <div className="col-lg-6">
-                      <div className="title-area text-md-start text-center">
-                        <h2 className="sec-title2">Awesome Benefits</h2>
-                      </div>
-                      <div className="process-thumb2-1">
-                        <img src="/main-assets/img/normal/process-thumb2-1.png" alt="img" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="process-grid-list style2 service-details-top-extra-space">
-                        <div className="process-grid-list-bg-text">BENEFIT</div>
-                        <div className="process-grid">
-                          <div className="process-grid-number">01</div>
-                          <div className="process-grid-details">
-                            <h3 className="process-grid-title">
-                              Advanced Technology{" "}
-                            </h3>
-                            <p className="process-grid-text">
-                              We craft unique digital experiences. With more
-                              years of expertise we design{" "}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="process-grid">
-                          <div className="process-grid-number">02</div>
-                          <div className="process-grid-details">
-                            <h3 className="process-grid-title">
-                              Trusted Company{" "}
-                            </h3>
-                            <p className="process-grid-text">
-                              We craft unique digital experiences. With more
-                              years of expertise we design{" "}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="process-grid">
-                          <div className="process-grid-number">03</div>
-                          <div className="process-grid-details">
-                            <h3 className="process-grid-title">
-                              Professional Teams{" "}
-                            </h3>
-                            <p className="process-grid-text">
-                              We craft unique digital experiences. With more
-                              years of expertise we design{" "}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="process-grid">
-                          <div className="process-grid-number">04</div>
-                          <div className="process-grid-details">
-                            <h3 className="process-grid-title">
-                              Stylistic formula method
-                            </h3>
-                            <p className="process-grid-text">
-                              We craft unique digital experiences. With more
-                              years of expertise we design{" "}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* solution and planing section */}
-                <div className="row align-items-end gy-40 justify-content-between">
-                  <div className="col-xl-6">
-                    <h2 className="fw-semibold service-text-adjustment">Solutions & Planning</h2>
-                    <p>
-                      Industry's standard dummy text ever since the 1500s, when
-                      an unknown printer took a galley of type and scrambled it
-                      to make a type specimen book. It has survived not only
-                      five centuries, but also the leapinto electronic
-                      typesetting.
-                    </p>
-                    <div className="mb-35">
-                      <div className="row gy-2">
-                        <div className="col-lg-6">
-                          <div className="checklist style6">
-                            <ul>
-                              <li>Powerful Product Strategy</li>
-                              <li>Professional Team Works</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="col-lg-6">
-                          <div className="checklist style6">
-                            <ul>
-                              <li>Quality Control System</li>
-                              <li>Budget Friendly Project</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* progress bar section here */}
-                    <div className="skill-feature style3">
-                      <h3 className="skill-feature_title">
-                        Construction Works
-                      </h3>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-barOne"
-                          ref={(el) => (progressBarRefs.current[0] = el)}
-                          style={{ width: "89%" }}
-                        ></div>
-                        <div className="progress-value">
-                          <span
-                            className="counter-number counter-numberOne"
-                            ref={(el) => (counterRefs.current[0] = el)}
-                            data-count="89"
-                          >
-                            0
-                          </span>
-                          %
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* progress bar section here */}
-                    <div className="skill-feature style3">
-                      <h3 className="skill-feature_title">Building Services</h3>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-barTwo"
-                          ref={(el) => (progressBarRefs.current[1] = el)}
-                          style={{ width: "92%" }}
-                        ></div>
-                        <div className="progress-value">
-                          <span
-                            className="counter-number counter-numberTwo"
-                            ref={(el) => (counterRefs.current[1] = el)}
-                            data-count="92"
-                          >
-                            0
-                          </span>
-                          %
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* progress bar section here */}
-                    <div className="skill-feature style3">
-                      <h3 className="skill-feature_title">
-                        Industrial Solution
-                      </h3>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-barThree"
-                          ref={(el) => (progressBarRefs.current[2] = el)}
-                          style={{ width: "78%" }}
-                        ></div>
-                        <div className="progress-value">
-                          <span
-                            className="counter-number counter-numberThree"
-                            ref={(el) => (counterRefs.current[2] = el)}
-                            data-count="78"
-                          >
-                            0
-                          </span>
-                          %
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-xxl-5 col-xl-6">
-                    <div className="video-wrap service-details-top-extra-space">
-                      <img
-                        className="w-100"
-                        src="/main-assets/img/service/service_details1_2.png"
-                        alt="img"
-                      />
-                      <a onClick={openPopup} className="play-btn style7">
-                        <i className="ri-play-fill"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+      <div className="pb-50 max-w-[1400px] mx-auto">
+        {/* ================= HERO SECTION ================= */}
+        <div className="relative">
+          <div className="max-w-[1200px] mx-auto mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
+            {/* Left Content */}
+            <div className="w-[730px]">
+              <div className="text-[40px] leading-2 w-full text-[#347A64] font-bold leading-tight">
+                What is Bent GFRP Rebar?
               </div>
+
+              <div className="mb-6 mt-2 text-gray-600 leading-1 font-semibold">
+                The Smart Choice for Base Slabs and Floors
+              </div>
+
+              <p className="text-[16px] mt-4 text-gray-600">
+                Bent GFRP Rebar is a modern composite material that consists of
+                a high tensile strength GFRP Rebar and polymer resin matrix.
+                Engineers craft it into shapes such as hooks, angles, or curves
+                to cater to specific construction requirements. Unlike
+                traditional steel, bent GFRP rebar is designed to endure harsh
+                environmental conditions without corroding or deteriorating.
+              </p>
+
+              <p className="text-[16px] mt-4 text-gray-600">
+                This makes it especially useful in projects requiring
+                long-lasting durability, resistance to chemical exposure, and
+                superior performance in demanding conditions.
+              </p>
+
+              <button className="mt-6 bg-[#347A64] w-[200px] h-[50px] rounded flex items-center justify-center text-white font-semibold hover:bg-[#347A64] transition">
+                Download Brochure
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="mt-20 h-[400px] w-[300px] flex items-center justify-center">
+              <img
+                src="/main-assets/img/service/Bent-GFRP.jpg"
+                alt="Building"
+                className=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-[1200px] mx-auto mt-10 px-6 space-y-4 text-gray-600">
+          <p>
+            The composition of Bent GFRP rebar allows it to combine strength
+            with flexibility. This unique combination ensures that it meets the
+            structural demands of modern construction while being easy to work
+            with. Whether used in infrastructure projects or industrial
+            settings, bent GFRP rebar proves to be an invaluable addition to the
+            construction industry.
+          </p>
+
+          <p>
+            Bent GFRP Rebar, Bent Glass Fibre Reinforced Polymer, is a modern
+            construction material. It is a substitute for steel reinforcement
+            bars. Bent GFRP Rebar offers durability, corrosion resistance,
+            strength, lightweight, and non-conductive properties, making it an
+            ideal choice for various construction applications.
+          </p>
+        </div>
+
+        {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
+        <div
+          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          onMouseLeave={() => setActiveHover(null)}
+        >
+          {/* ===== Email ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("email")}
+            className="relative h-[50px] w-[260px]"
+          >
+            {/* Sliding Text */}
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "email"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                india@mrg-composites.com
+              </span>
+            </div>
+
+            {/* Fixed Icon */}
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <div className="">
+                <Mail size={20} />
+              </div>
+            </div>
+          </div>
+
+          {/* ===== Phone ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("phone")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "phone"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                +91 63515 37947
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <Phone size={20} />
+            </div>
+          </div>
+
+          {/* ===== Location ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("location")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "location"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                Our Location
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <MapPin size={20} />
             </div>
           </div>
         </div>
       </div>
-      <PopupVideo
-        popup={popup}
-        setPopup={setPopup}
-        isActive={isActive}
-        setIsActive={setIsActive}
-      ></PopupVideo>
     </>
   );
 };
 
-export default ServiceDetails;
+export default Hero;

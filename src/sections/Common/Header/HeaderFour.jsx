@@ -33,8 +33,8 @@ export default function HeaderFour() {
       <div className="bg-white border-b text-sm">
         <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-center px-4 py-3">
           <div className="flex gap-6 text-gray-600">
-            <span className="flex gap-2"><Phone />  +91 96595 89896</span>
-            <span className="flex gap-2"><Mail /> india@mrg-composites.com</span>
+            <span className="flex gap-2"><Phone />  +91 92748 31310</span>
+            <span className="flex gap-2"><Mail /> info@fiberonrebar.com</span>
             <span>📦 We Ship Worldwide</span>
           </div>
           <Link href="#" className="text-[#347A64] font-medium hover:underline">
@@ -85,23 +85,23 @@ export default function HeaderFour() {
                     GFRP Rebar
                   </Link>
                   <Link
-                    href="/product/gfrp-mesh"
+                    href="/pages/innerpage/gfrp-mesh"
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                   >
-                    GFRP Mesh
+                    GFRP Bent Bars
                   </Link>
                   <Link
                     href="/product/gfrp-bent-bars"
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                   >
-                    Bent Bars
+                    GFRP Mesh
                   </Link>
                 </div>
               )}
             </div>
 
             <Link href="/applications">Application</Link>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/pages/innerpage/contact">Contact Us</Link>
           </nav>
 
           {/* Right Actions */}
