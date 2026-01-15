@@ -243,14 +243,14 @@ sup {
   top: -0.5em;
 }
 
-a {
+/* a {
   color: #0d6efd;
   text-decoration: underline;
-}
+} */
 
-a:hover {
+/* a:hover {
   color: #0a58ca;
-}
+} */
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -4772,11 +4772,11 @@ fieldset:disabled .btn {
   color: rgba(0, 0, 0, 0.55);
 }
 
-.navbar-light .navbar-text a,
+/* .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:focus,
 .navbar-light .navbar-text a:hover {
   color: rgba(0, 0, 0, 0.9);
-}
+} */
 
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -4818,11 +4818,11 @@ fieldset:disabled .btn {
   color: rgba(255, 255, 255, 0.55);
 }
 
-.navbar-dark .navbar-text a,
+/* .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:focus,
 .navbar-dark .navbar-text a:hover {
   color: #fff;
-}
+} */
 
 .card {
   position: relative;
@@ -7817,9 +7817,9 @@ fieldset:disabled .btn {
   padding: 1rem !important;
 }
 
-.p-4 {
+/* .p-4 {
   padding: 1.5rem !important;
-}
+} */
 
 .p-5 {
   padding: 3rem !important;

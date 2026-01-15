@@ -209,9 +209,9 @@ a {
   outline: 0;
   transition: all ease 0.4s;
 }
-a:hover {
+/* a:hover {
   color: var(--title-color);
-}
+} */
 a:active, a:focus, a:hover, a:visited {
   text-decoration: none;
   outline: 0;
@@ -3496,18 +3496,18 @@ a.text-theme:hover,
   color: var(--body-color);
   font-family: var(--title-font);
 }
-.main-menu a:hover {
+/* .main-menu a:hover {
   color: var(--title-color);
-}
+} */
 .main-menu > ul > li {
   margin: 0 27px;
 }
 .main-menu > ul > li > a {
   padding: 36px 0;
 }
-.main-menu > ul > li > a:hover {
+/* .main-menu > ul > li > a:hover {
   color: var(--title-color);
-}
+} */
 .main-menu ul {
   margin: 0;
   padding: 0;
@@ -5220,9 +5220,9 @@ blockquote.has-very-dark-gray-color {
   font-weight: 600;
   font-family: var(--body-font);
 }
-.comments-wrap .reply_and_edit a:hover {
+/* .comments-wrap .reply_and_edit a:hover {
   color: var(--title-color);
-}
+} */
 .comments-wrap .reply_and_edit a i {
   margin-left: 3px;
   margin-right: 0;
@@ -5908,10 +5908,10 @@ ul.comment-list .comment-item:first-child:not(.children .comment-item) > .post-c
   color: var(--white-color);
   text-decoration: underline;
 }
-.woocommerce-message a:hover,
+/* .woocommerce-message a:hover,
 .woocommerce-info a:hover {
   color: var(--title-color);
-}
+} */
 .woocommerce-message:before,
 .woocommerce-info:before {
   content: "\f06a";
@@ -5940,9 +5940,9 @@ ul.comment-list .comment-item:first-child:not(.children .comment-item) > .post-c
 .woocommerce-form-login-toggle .woocommerce-info a {
   color: inherit;
 }
-.woocommerce-form-login-toggle .woocommerce-info a:hover {
+/* .woocommerce-form-login-toggle .woocommerce-info a:hover {
   color: var(--title-color);
-}
+} */
 
 .woocommerce-form-register,
 .woocommerce-form-coupon,
