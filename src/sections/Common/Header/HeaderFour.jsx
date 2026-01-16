@@ -40,7 +40,7 @@ export default function HeaderFour() {
 
       {/* ===== Contact Bar ===== */}
       <div className="bg-white border-b text-sm">
-        <div className="max-w-[1400px] mx-auto md:flex flex-wrap justify-between items-center px-4 py-3">
+        <div className="max-w-[1400px] mx-auto md:flex flex-wrap justify-between items-center px-4 xl:px-0 py-3">
           <div className="md:flex hidden gap-6 text-gray-600">
             <span className="flex gap-2">
               <Phone size={18} className="text-[#347A63]" /> +91 92748 31310

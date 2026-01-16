@@ -19,7 +19,7 @@ const Hero = () => {
               </p>
 
               <p className="text-[16px] max-w-[480px] mt-4 text-gray-600">
-                Revolutionize your projects with  <span className="text-[#347A63] underline">FIBERON-X</span> GFRP FIBERON — twice the
+                Revolutionize your projects with  <span className="text-[#347A63] underline">FIBERON</span> GFRP REBER — twice the
                 strength, zero corrosion, and a lighter build for enduring
                 performance in any environment.
               </p>
