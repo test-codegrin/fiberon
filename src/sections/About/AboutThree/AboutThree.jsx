@@ -1,13 +1,15 @@
 "use client";
-
+import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 import CountUp from "react-countup";
 
 const About = () => {
+  const [activeHover, setActiveHover] = useState(null);
   return (
     <section
       id="about-sec"
-      className="relative overflow-hidden max-w-[1400px] mx-auto py-20 bg-white"
+      className="relative overflow-hidden max-w-[1400px] mx-auto py-0 bg-white"
     >
       <div className="relative md:h-[1000px] py-50 max-w-[1400px] mx-auto px-6 xl:px-0">
         <div className="grid grid-cols-1 xl:grid-cols-2 items-center">
@@ -113,6 +115,88 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
+        <div
+          className="fixed right-0 md:top-80 lg:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          onMouseLeave={() => setActiveHover(null)}
+        >
+          {/* ===== Email ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("email")}
+            className="relative h-[50px] w-[260px]"
+          >
+            {/* Sliding Text */}
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "email"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                info@fiberonrebar.com
+              </span>
+            </div>
+
+            {/* Fixed Icon */}
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <div className="">
+                <Mail size={20} />
+              </div>
+            </div>
+          </div>
+
+          {/* ===== Phone ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("phone")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "phone"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                +91 92748 31310
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <Phone size={20} />
+            </div>
+          </div>
+
+          {/* ===== Location ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("location")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "location"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                Morbi, Gujrat, India
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <MapPin size={20} />
+            </div>
+          </div>
+        </div>
     </section>
   );
 };

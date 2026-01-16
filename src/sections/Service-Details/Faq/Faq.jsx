@@ -15,14 +15,14 @@ export default function Advantages() {
           <div className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-30 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-30 w-45 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   Corrosion Resistance
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Unlike steel, Bent GFRP rebar does not rust or degrade when
                   exposed to moisture, chemicals, or salts. This eliminates the
                   need for frequent repairs and replacements, significantly
@@ -33,12 +33,12 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-38 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-38 w-57 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">Lightweight</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Bent GFRP rebar weighs significantly less than steel, making
                   it easier to transport and handle. It also reduces the
                   transportation cost. It is an ideal choice for construction
@@ -50,14 +50,14 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-24 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-24 w-34 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   Non-Conductive and Non-Magnetic
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   The non-conductive properties of GFRP rebar make it ideal for
                   applications where electromagnetic neutrality is required,
                   such as medical facilities and power plants.
@@ -67,14 +67,14 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-28 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-28 w-40 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   Environmentally Friendly
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Producing GFRP rebar generates a smaller carbon footprint
                   compared to steel manufacturing. Its durability also reduces
                   the environmental impact associated with frequent material
@@ -88,14 +88,14 @@ export default function Advantages() {
           <div className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-33 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-33 w-46 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   High Strength-to-Weight Ratio
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Despite its lightweight nature, bent GFRP rebar provides
                   exceptional tensile strength. This ensures robust
                   reinforcement without adding unnecessary weight to the
@@ -107,14 +107,14 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-26 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-26 w-38 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   Customizability
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Manufacturers can mould GFRP rebar into specific shapes and
                   sizes, enhancing its versatility. This adaptability makes it
                   suitable for projects with unique design requirements.
@@ -124,14 +124,14 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-5 items-start">
-              <span className="w-26 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-26 w-37 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
                 <h3 className="text-xl text-[#347A64] font-semibold mb-2">
                   Thermal Compatibility
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 max-w-[100%] w-[90%] md:w-[100%] leading-relaxed">
                   Bent GFRP rebar exhibits minimal thermal expansion, ensuring
                   compatibility with concrete in fluctuating temperatures. This
                   minimizes the risk of cracking and structural damage.

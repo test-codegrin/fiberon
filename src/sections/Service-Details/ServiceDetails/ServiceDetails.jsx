@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="max-w-[1200px] mx-auto mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
             <div className="w-[730px]">
-              <div className="text-[40px] leading-2 w-full text-[#347A64] font-bold leading-tight">
+              <div className="md:text-[40px] text-[30px] leading-2 w-full text-[#347A64] font-bold leading-tight">
                 What is Bent GFRP Rebar?
               </div>
 
@@ -74,7 +74,7 @@ const Hero = () => {
 
         {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
         <div
-          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          className="fixed right-0 top-90 md:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
           onMouseLeave={() => setActiveHover(null)}
         >
           {/* ===== Email ===== */}
@@ -93,7 +93,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                india@mrg-composites.com
+                info@fiberonrebar.com
               </span>
             </div>
 
@@ -120,7 +120,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                +91 63515 37947
+                +91 92748 31310
               </span>
             </div>
 
@@ -144,7 +144,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                Our Location
+                Morbi, Gujrat, India
               </span>
             </div>
 

@@ -164,10 +164,10 @@ const ProductSpecificationPage = () => {
           </div>
         </div>
 
-        <div className="bg-[#347A64] max-w-full mx-auto  h-[50px] text-white text-center py-1 px-4 mt-10 md:mt-14">
-          <ul className="flex gap-40 justify-center items-center pt-2">
-            <li>6 mm to 12 mm - 40 ft Length - Round</li>
-            <li>6 mm to 12 mm - 40 ft Length - Straight</li>
+        <div className="bg-[#347A64] max-w-full mx-auto sm:h-[70px] md:h-[50px] text-white text-center py-1 px-0 md:px-4 mt-2 md:mt-14">
+          <ul className="md:flex md:gap-3 lg:gap-40 justify-center items-center pt-2">
+            <li className="">6 mm to 12 mm - 40 ft Length - Round</li>
+            <li className="">6 mm to 12 mm - 40 ft Length - Straight</li>
           </ul>
         </div>
 
@@ -178,7 +178,7 @@ const ProductSpecificationPage = () => {
         </div>
 
         {/* ================= INFO SECTION ================= */}
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             [
               "Metal Rebar",

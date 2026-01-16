@@ -1,9 +1,11 @@
 "use client";
 
 import Portfolio from "~/sections/Home-2/Portfolio";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Product() {
+  const [activeHover, setActiveHover] = useState(null);
   const metalRebar = [
     ["2.75 kg", "Ø6"],
     ["4.74 kg", "Ø8"],
@@ -35,9 +37,9 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section className="max-w-[1200px] mx-auto px-6 py-24 flex justify-between items-center">
+      <section className="max-w-[1200px] mx-auto px-6 py-24 md:flex justify-between items-center">
         <div className="w-[600px]">
-          <div className="text-4xl md:text-5xl font-bold leading-tight text-[#347A64]">
+          <div className="text-3xl md:text-5xl font-bold leading-tight text-[#347A64]">
             GFRP Rebar
             <span className="block text-black">Building Tomorrow Today</span>
           </div>
@@ -52,7 +54,7 @@ export default function Product() {
           </button>
         </div>
 
-        <div className="max-w-[400px] h-[320px] rounded-xl">
+        <div className="max-w-[400px] h-[320px] mt-[50px] md:mt-0 rounded-xl">
           <img
             src="/main-assets/img/product/steel-3.webp"
             alt="steel-3"
@@ -212,7 +214,7 @@ export default function Product() {
 
         {/* Content */}
         <div className="relative">
-          <div className="text-4xl font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
+          <div className="md:text-4xl text-xl font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
             <div className="flex items-center justify-center h-full">
               Attributes of REBAR-X GFRP Rebars
             </div>
@@ -442,7 +444,87 @@ export default function Product() {
 
       <Portfolio />
 
-      {/* ================= CONTACT ================= */}
+      {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
+        <div
+          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          onMouseLeave={() => setActiveHover(null)}
+        >
+          {/* ===== Email ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("email")}
+            className="relative h-[50px] w-[260px]"
+          >
+            {/* Sliding Text */}
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "email"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                info@fiberonrebar.com
+              </span>
+            </div>
+
+            {/* Fixed Icon */}
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <div className="">
+                <Mail size={20} />
+              </div>
+            </div>
+          </div>
+
+          {/* ===== Phone ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("phone")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "phone"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                +91 92748 31310
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <Phone size={20} />
+            </div>
+          </div>
+
+          {/* ===== Location ===== */}
+          <div
+            onMouseEnter={() => setActiveHover("location")}
+            className="relative h-[50px] w-[260px]"
+          >
+            <div
+              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
+              transition-transform duration-500 ease-in-out
+              ${
+                activeHover === "location"
+                  ? "translate-x-0"
+                  : "translate-x-[230px]"
+              }`}
+            >
+              <span className="px-4 text-sm whitespace-nowrap">
+                Morbi, Gujrat, India
+              </span>
+            </div>
+
+            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+              <MapPin size={20} />
+            </div>
+          </div>
+        </div>
       
     </main>
   );

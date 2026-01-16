@@ -15,11 +15,11 @@ const Hero = () => {
             {/* Left Content */}
             <div className="w-[530px]">
               <p className="text-[50px] leading-1 w-full font-bold leading-tight">
-                <span className="text-[#347A64]">GFRP </span>REBAR <br /> MANUFACTURER
+                <span className="text-[#347A64]">GFRP </span>FIBERON <br /> MANUFACTURER
               </p>
 
               <p className="text-[16px] max-w-[480px] mt-4 text-gray-600">
-                Revolutionize your projects with  <span className="text-[#347A63] underline">REBAR-X</span> GFRP Rebar — twice the
+                Revolutionize your projects with  <span className="text-[#347A63] underline">FIBERON-X</span> GFRP FIBERON — twice the
                 strength, zero corrosion, and a lighter build for enduring
                 performance in any environment.
               </p>
@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
         <div
-          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          className="fixed right-0 top-80 xl:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
           onMouseLeave={() => setActiveHover(null)}
         >
           {/* ===== Email ===== */}
@@ -61,7 +61,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                info@fiberonrebar.com
+                info@fiberonFIBERON.com
               </span>
             </div>
 

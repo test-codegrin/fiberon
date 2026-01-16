@@ -45,12 +45,10 @@ const TestimonialThree = () => {
                   <div className="bg-white border-b-4 border-[#347A64] h-[330px] rounded-2xl p-5 relative">
 
                     {/* QUOTE */}
-                    <div className="absolute top-5 right-8 bg-[#347A64] w-12 h-12 flex items-center justify-center rounded-full">
-                      <img
-                        src="/main-assets/img/icon/quote.svg"
-                        alt="quote"
-                        className="w-6 h-6"
-                      />
+                    <div className="absolute text-white text-6xl top-5 right-8 bg-[#347A64] w-12 h-12 flex items-center justify-center rounded-full">
+                      <div className="-mt-9">
+                        ,,
+                      </div>
                     </div>
 
                     {/* PROFILE */}

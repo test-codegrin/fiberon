@@ -118,18 +118,18 @@ export default function Advantages() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white border-b-4 border-[#347A63] rounded-lg shadow-lg p-6 flex gap-5"
+                className="bg-white border-b-4 border-[#347A63] rounded-lg shadow-lg p-6 md:flex gap-5"
               >
-                <div className="w-34 h-34 relative flex-shrink-0 rounded-md overflow-hidden">
+                <div className="md:w-34 w-full h-34 relative flex-shrink-0 rounded-md overflow-hidden">
                   <img
                     src={item.img}
                     alt={item.title}
                     fill
-                    className="object-cover"
+                    className="object-cover w-full md:w-34 h-34"
                   />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#347A63] mb-2">{item.title}</h3>
+                  <h3 className="text-lg mt-4 md:mt-0 font-semibold text-[#347A63] mb-2">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.text}</p>
                 </div>
               </div>

@@ -19,7 +19,7 @@ const Portfolio = () => {
             </span>
           </h2>
 
-          <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-xs sm:text-sm md:text-base text-white/70 px-2 sm:px-0">
+          <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-xs sm:text-sm md:text-base px-2 sm:px-0">
             A detailed comparison between conventional steel rebars and modern
             GFRP rebars across mechanical, durability, and environmental
             properties.

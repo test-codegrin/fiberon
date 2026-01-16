@@ -1,7 +1,5 @@
 "use client";
-
 import { useState } from "react";
-
 const PRIMARY = "#347A64";
 
 export default function WhyChooseBentGFRP() {
@@ -26,13 +24,7 @@ export default function WhyChooseBentGFRP() {
   ];
 
   return (
-    <section
-      className="relative w-full bg-cover bg-center py-24"
-    //   style={{
-    //     backgroundImage:
-    //       "url('/main-assets/img/service/bent-gfrp-bg.png')",
-    //   }}
-    >
+    <section className="relative w-full bg-cover bg-center py-24">
       {/* OVERLAY */}
       <div className="absolute inset-0"></div>
 
@@ -45,7 +37,7 @@ export default function WhyChooseBentGFRP() {
               Why Choose Bent GFRP Rebar?
             </h2>
 
-            <p className="text-gray-200 leading-relaxed mb-10 max-w-xl">
+            <p className="text-gray-600 leading-relaxed mb-10 max-w-xl">
               Choosing bent GFRP rebar ensures that construction projects
               achieve superior performance, cost savings, and sustainability.
               Its unique properties make it the material of choice for

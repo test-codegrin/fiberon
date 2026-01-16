@@ -9,11 +9,11 @@ const About = () => {
       id="about-sec"
       className="relative overflow-hidden max-w-[1400px] mx-auto py-20 bg-white"
     >
-      <div className="relative md:h-[1000px] py-50 max-w-[1400px] mx-auto px-6 xl:px-0">
+      <div className="relative h-[2350px] md:h-[1800px] lg:h-[1650px] xl:h-[1000px] py-50 max-w-[1400px] mx-auto px-6 xl:px-0">
         <div className="grid grid-cols-1 xl:grid-cols-2 items-center">
           {/* Image Section */}
-          <div className="relative flex justify-between">
-            <div className="h-[800px]">
+          <div className="relative md:flex justify-between">
+            <div className="max-h-[800px] max-w-[600px] mx-auto">
               <img
                 src="/main-assets/img/normal/about_2-1.png"
                 alt="About"
@@ -22,7 +22,7 @@ const About = () => {
             </div>
 
             {/* Experience Counter */}
-            <div className="absolute bottom-30 md:bottom-0 w-[250px] h-[210px] right-10 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
+            <div className="md:absolute mt-5 ml-40 md:-bottom-20 w-[250px] h-[210px] right-10 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
               <div className="flex justify-center gap-4">
                 <div className="w-25 h-25">
                   <img
@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           {/* Content Section */}
-          <div>
+          <div className="h-[900px] mt-[50px] md:mt-[100px] xl:mt-0">
             <div className="flex justify-center md:justify-start underline leading-2 items-center gap-1.5 text-2xl font-semibold text-[#347A64] uppercase">
               About Us
             </div>
