@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 const About = () => {
   return (
     <section
-      id="about-sec"
+      id=""
       className="relative overflow-hidden max-w-[1400px] mx-auto py-20 bg-white"
     >
       <div className="relative h-[2350px] md:h-[1800px] lg:h-[1650px] xl:h-[1000px] py-50 max-w-[1400px] mx-auto px-6 xl:px-0">

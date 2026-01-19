@@ -1,218 +1,153 @@
 import Link from "next/link";
 
-const BlogFour = () => {
+const blogs = [
+  {
+    id: 1,
+    img: "/main-assets/img/blog/blog_1_1.png",
+    day: "17",
+    month: "JUN",
+    year: "2024",
+    title: "How to hire a contractor home renovation service",
+  },
+  {
+    id: 2,
+    img: "/main-assets/img/blog/blog_1_2.png",
+    day: "06",
+    month: "JUN",
+    year: "2024",
+    title: "Started to develop a specific testing programs",
+  },
+  {
+    id: 3,
+    img: "/main-assets/img/blog/blog_1_3.png",
+    day: "12",
+    month: "JUN",
+    year: "2024",
+    title: "How to stay motivated until a project is finished",
+  },
+  {
+    id: 4,
+    img: "/main-assets/img/blog/blog_1_4.png",
+    day: "05",
+    month: "JUN",
+    year: "2024",
+    title: "Home improvements that will save you money this winter",
+  },
+  {
+    id: 5,
+    img: "/main-assets/img/blog/blog_1_5.png",
+    day: "15",
+    month: "JUN",
+    year: "2024",
+    title: "Panelized construction streamline process",
+  },
+  {
+    id: 6,
+    img: "/main-assets/img/blog/blog_1_6.png",
+    day: "24",
+    month: "JUN",
+    year: "2024",
+    title: "Renovations that add the most resale value to your home",
+  },
+];
+
+export default function BlogFour() {
   return (
-    <section className="blog-area space-top space-extra-bottom">
-      <div className="container">
-        <div className="row gy-40 justify-content-center">
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_1.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>17</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to hire a contractor home renovation service
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* BLOG GRID */}
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {blogs.map((blog) => (
+            <div
+              key={blog.id}
+              className="bg-white border-[#347A63] border-b-4 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition"
+            >
+              {/* IMAGE */}
+              <div className="relative">
+                <img
+                  src={blog.img}
+                  alt="blog"
+                  className="w-full h-56 object-cover"
+                />
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_2.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>06</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
+                {/* DATE */}
+                <div className="absolute top-0 left-0 bg-[#347A63] text-white px-3 py-2 text-center rounded-t-r-lg">
+                  <span className="block text-lg font-bold">{blog.day}</span>
+                  <span className="text-xs uppercase">{blog.month}</span>
+                  <span className="block text-xs opacity-80">{blog.year}</span>
                 </div>
               </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Started to develop a specific testing programs
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_3.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>12</span>JUN
+              {/* CONTENT */}
+              <div className="p-6">
+                <div className="flex gap-4 text-sm text-gray-500 mb-3">
+                  <Link href="/pages/innerpage/blog" className="hover:text-[#347A63]">
+                    By Rebecca
                   </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    How to stay motivated until a project is finished
+                  <Link href="/pages/innerpage/blog" className="hover:text-[#347A63]">
+                    Construction
                   </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+                </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_4.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>05</span>JUN
+                <h4 className="text-lg mb-3 leading-snug">
+                  <Link
+                    href="/pages/innerpage/blog-details"
+                    className="text-[#347A63] font-semibold"
+                  >
+                    {blog.title}
                   </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Home improvements that will save you money this winter
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+                </h4>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_5.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>15</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Panelized construction streamline process
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
+                <p className="text-gray-600 text-sm mb-5">
+                  Tortor posuere ac ut consequat. Tellusi elem isis etum sagittis
+                  vitae et leo duis ut diam.
                 </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="blog-card">
-              <div className="blog-img">
-                <img src="/main-assets/img/blog/blog_1_6.png" alt="blog image" />
-                <div className="blog-date">
-                  <Link href="/pages/innerpage/blog">
-                    <span>24</span>JUN
-                  </Link>
-                  <div className="year">2024</div>
-                </div>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <Link href="/pages/innerpage/blog">By Rebecca</Link>
-                  <Link href="/pages/innerpage/blog">Construction</Link>
-                </div>
-                <h3 className="blog-title">
-                  <Link href="/pages/innerpage/blog-details">
-                    Renovations that add the most resale value to your home
-                  </Link>
-                </h3>
-                <p className="blog-text">
-                  Tortor posuere ac ut consequat. Tellusi elem isis etum sag
-                  ittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                </p>
-                <Link href="/pages/innerpage/blog-details" className="btn">
-                  More Details <i className="ri-arrow-right-up-line"></i>
+                <Link
+                  href="/pages/innerpage/blog-details"
+                  className="inline-flex items-center gap-2 text-[#347A63] font-semibold hover:underline"
+                >
+                  More Details
+                  <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-        <div className="pagination justify-content-center">
-          <ul>
+
+        {/* PAGINATION */}
+        <div className="flex justify-center mt-14">
+          <ul className="flex gap-4">
             <li>
-              <Link className="active" href="landing-assets/blog">
+              <Link
+                href="#"
+                className="px-4 py-2 rounded-md bg-[#347A63] text-white font-semibold"
+              >
                 01
               </Link>
             </li>
             <li>
-              <Link href="/pages/innerpage/blog">02</Link>
+              <Link
+                href="/pages/innerpage/blog"
+                className="px-4 py-2 rounded-md border hover:bg-[#347A63] hover:text-white transition"
+              >
+                02
+              </Link>
             </li>
             <li>
-              <Link href="/pages/innerpage/blog">03</Link>
+              <Link
+                href="/pages/innerpage/blog"
+                className="px-4 py-2 rounded-md border hover:bg-[#347A63] hover:text-white transition"
+              >
+                03
+              </Link>
             </li>
             <li>
-              <Link href="/pages/innerpage/blog">
-                <i className="ri-arrow-right-line"></i>
+              <Link
+                href="/pages/innerpage/blog"
+                className="px-4 py-2 rounded-md border hover:bg-[#347A63] hover:text-white transition"
+              >
+                →
               </Link>
             </li>
           </ul>
@@ -220,6 +155,4 @@ const BlogFour = () => {
       </div>
     </section>
   );
-};
-
-export default BlogFour;
+}

@@ -1,487 +1,241 @@
-'use client';
+"use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import PopupVideo from "../../Common/PopupVideo/PopupVideo";
 
-const BlogFive = () => {
+export default function BlogFive() {
   const [popup, setPopup] = useState(false);
   const [isActive, setIsActive] = useState(false);
+
   const openPopup = () => {
     setPopup(true);
     const iframe = document.getElementById("youtube-video");
     if (iframe) {
-      iframe.src = "https://www.youtube.com/embed/Mp8IXI1kzvQ?si=UQVMsmBriHPfD6Vf";
+      iframe.src =
+        "https://www.youtube.com/embed/Mp8IXI1kzvQ?si=UQVMsmBriHPfD6Vf";
     }
     setIsActive(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
+
   return (
     <>
-      <section className="blog-area space-top space-extra-bottom">
-        <div className="container">
-          <div className="row gx-60">
-            <div className="col-xxl-8 col-lg-7">
-              <div className="blog-single">
-                <div className="blog-img">
-                  <img src="/main-assets/img/blog/blog_details1_1.png" alt="img" />
-                  <div className="blog-date">
-                    <Link href="/pages/innerpage/blog">
-                      <span>22</span>MAR
-                    </Link>
-                    <div className="year">2024</div>
-                  </div>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link href="/pages/innerpage/blog-details">By Rebecca</Link>
-                    <Link href="/pages/innerpage/blog">506 Views</Link>
-                    <Link href="/pages/innerpage/blog">Construction</Link>
-                    <Link href="/pages/innerpage/blog">02 Comment</Link>
-                  </div>
-                  <h3 className="blog-title">Construction Process Streamlines</h3>
-                  <p className="mb-20">
-                    Construction standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make
-                    a type specimen book.
-                  </p>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti quos
-                    dolores et quas molestias excepturi sint occaecati cupiditate
-                    non provident, similique sunt in culpa qui officia deserunt
-                    mollitia animi, id est laborum et dolorum fuga harum quidem
-                    rerum facilis est et expedita distinctio.
-                  </p>
-                  <blockquote>
-                    <p>
-                      “Tortor posuere ac ut consequat tellusi elem isis etum sag
-                      ittis vitae atleo duis ut diam odio ut sem nulla phar.”
-                    </p>
-                    <cite>Aleesha brown</cite>
-                    <span className="desig">Company, CEO</span>
-                  </blockquote>
-                  <h3 className="blog-inner-title">
-                    Growth and meaning of mechanical technology
-                  </h3>
-                  <p className="mb-30">
-                    Construction standard dummy text ever since the when an
-                    unknown printer took a galley vero eos et accusamus et iusto
-                    odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident expedita
-                    distinctio.
-                  </p>
-                  <div className="row">
-                    <div className="col-sm-6">
-                      <div className="blog-img">
-                        <img src="/main-assets/img/blog/blog_details1_2.png" alt="img" />
-                      </div>
-                    </div>
-                    <div className="col-sm-6">
-                      <div className="blog-img">
-                        <img src="/main-assets/img/blog/blog_details1_3.png" alt="img" />
-                      </div>
-                    </div>
-                  </div>
-                  <h3 className="blog-inner-title">
-                    Engineering and mechanics money for a better future.
-                  </h3>
-                  <p className="mb-30">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti quos
-                    dolores et quas molestias excepturi sint occaecation.
-                  </p>
-                  <div className="checklist style2 mb-35">
-                    <ul>
-                      <li>Powerful Product Strategy</li>
-                      <li>Quality Control System</li>
-                      <li>Professional Team Works</li>
-                    </ul>
-                  </div>
-
-                  <div className="blog-img" data-overlay="black" data-opacity="5">
-                    <img src="/main-assets/img/blog/blog_details1_4.png" alt="Blog Image" />
-                    <a
-                      onClick={openPopup}
-                      className="play-btn style3"
-                    >
-                      <i className="ri-play-fill"></i>
-                    </a>
-                  </div>
-                  <p className="mt-35">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium voluptatum deleniti atque corrupti quos
-                    dolores et quas molestias excepturi sint occaecati cupiditate
-                    non provident.
-                  </p>
-                </div>
-                <div className="share-links clearfix">
-                  <div className="row justify-content-between">
-                    <div className="col-md-auto">
-                      <div className="tagcloud">
-                        <Link href="/pages/innerpage/blog">Factory</Link>
-                        <Link href="/pages/innerpage/blog">Metallurgy</Link>
-                        <Link href="/pages/innerpage/blog">Construction</Link>
-                        <Link href="/pages/innerpage/blog">Industry</Link>
-                      </div>
-                    </div>
-                    <div className="col-md-auto text-xl-end">
-                      <div className="social-btn style3">
-                        <Link href="https://www.twitter.com/">
-                          <i className="ri-twitter-x-line"></i>
-                        </Link>
-                        <Link href="https://instagram.com/">
-                          <i className="ri-instagram-line"></i>
-                        </Link>
-                        <Link href="https://facebook.com/">
-                          <i className="ri-facebook-fill"></i>
-                        </Link>
-                        <Link href="https://linkedin.com/">
-                          <i className="ri-linkedin-fill"></i>
-                        </Link>
-                      </div>
-                    </div>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            {/* ================= BLOG CONTENT ================= */}
+            <div className="lg:col-span-8">
+              <article className="space-y-8">
+                {/* IMAGE */}
+                <div className="relative rounded-xl overflow-hidden">
+                  <img
+                    src="/main-assets/img/blog/blog_details1_1.png"
+                    alt="blog"
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute top-4 left-4 bg-[#347A63] text-white px-4 py-2 rounded-lg text-center">
+                    <span className="block text-lg font-bold">22</span>
+                    <span className="text-xs uppercase">Mar</span>
+                    <span className="block text-xs opacity-80">2024</span>
                   </div>
                 </div>
 
-                <div className="blog-author bg-smoke">
-                  <div className="auhtor-img">
-                    <img
-                      src="/main-assets/img/blog/blog-author.png"
-                      alt="Blog Author Image"
-                    />
-                  </div>
-                  <div className="media-body">
-                    <h3 className="author-name">
-                      <Link href="/pages/innerpage/team-details">John Maxwell</Link>
-                    </h3>
-                    <span className="author-desig">CEO of Construz</span>
-                    <p className="author-text">
-                      Blanditiis praesentium voluptatum deleniti atque corrupti
-                      quos dolores at vero eos accusamus iusto odio dignissimos
-                      ducimus blanditiis praesentium.
-                    </p>
-                    <div className="social-btn style4">
-                      <Link href="https://www.twitter.com/">
-                        <i className="ri-twitter-x-line"></i>
-                      </Link>
-                      <Link href="https://instagram.com/">
-                        <i className="ri-instagram-line"></i>
-                      </Link>
-                      <Link href="https://facebook.com/">
-                        <i className="ri-facebook-fill"></i>
-                      </Link>
-                      <Link href="https://linkedin.com/">
-                        <i className="ri-linkedin-fill"></i>
-                      </Link>
-                    </div>
-                  </div>
+                {/* META */}
+                <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+                  <Link href="#">By Rebecca</Link>
+                  <span>506 Views</span>
+                  <span>Construction</span>
+                  <span>02 Comments</span>
                 </div>
-              </div>
-              <div className="comments-wrap">
-                <h3 className="blog-inner-title mt-n2">03 Comments</h3>
-                <ul className="comment-list">
-                  <li className="comment-item">
-                    <div className="post-comment">
-                      <div className="comment-avater">
-                        <img
-                          src="/main-assets/img/blog/blog_comment1.png"
-                          alt="Comment Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <h3 className="name">Abraham John</h3>
-                        <span className="commented-on">Feb 03, 2024</span>
-                        <p className="text">
-                          Construction praesentium voluptatum deleniti atque
-                          corrupti quos dolores at vero eos accusamus iusto odio
-                          dignissimos.
-                        </p>
-                        <div className="reply_and_edit">
-                          <Link href="/pages/innerpage/blog-details" className="reply-btn">
-                            Reply <i className="ri-arrow-right-up-line"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="children">
-                      <li className="comment-item">
-                        <div className="post-comment">
-                          <div className="comment-avater">
-                            <img
-                              src="/main-assets/img/blog/blog_comment2.png"
-                              alt="Comment Author"
-                            />
-                          </div>
-                          <div className="comment-content">
-                            <h3 className="name">John Smith</h3>
-                            <span className="commented-on">Feb 04, 2024</span>
-                            <p className="text">
-                              Accusamus iusto odio dignissimos ducimus blanditiis
-                              praesentium voluptatum deleniti atque corrupti quos
-                              dolores
-                            </p>
-                            <div className="reply_and_edit">
-                              <Link href="/pages/innerpage/blog-details" className="reply-btn">
-                                Reply <i className="ri-arrow-right-up-line"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="comment-item">
-                    <div className="post-comment">
-                      <div className="comment-avater">
-                        <img
-                          src="/main-assets/img/blog/blog_comment3.png"
-                          alt="Comment Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <h3 className="name">Zenelia Lozhe</h3>
-                        <span className="commented-on">Jun 04, 2024</span>
-                        <p className="text">
-                          Collaboratively empower multifunctional e-commerce for
-                          prospective applications. Seamlessly productivate
-                          plug-and-play markets whereas synergistic scenarios.
-                        </p>
-                        <div className="reply_and_edit">
-                          <Link href="/pages/innerpage/blog-details" className="reply-btn">
-                            Reply <i className="ri-arrow-right-up-line"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <h3 className="blog-inner-title mt-n2 mb-15">Leave a Reply</h3>
-                <p>
-                  Your email address will not be published. Required fields are
-                  marked *
+
+                <h1 className="text-3xl font-bold text-gray-900">
+                  Construction Process Streamlines
+                </h1>
+
+                <p className="text-gray-600">
+                  Construction standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make
+                  a type specimen book.
                 </p>
-                <div className="comment-form mb-30 mt-30">
-                  <div className="row">
-                    <div className="col-xl-4 form-group">
-                      <input
-                        type="text"
-                        placeholder="Full Name"
-                        className="form-control style-white"
-                      />
-                    </div>
-                    <div className="col-xl-4 form-group">
-                      <input
-                        type="email"
-                        placeholder="Email Address"
-                        className="form-control style-white"
-                      />
-                    </div>
-                    <div className="col-xl-4 form-group">
-                      <input
-                        type="text"
-                        placeholder="Website"
-                        className="form-control style-white"
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <textarea
-                        placeholder="Your Comment..."
-                        className="form-control style-white"
-                      ></textarea>
-                    </div>
-                    <div className="col-12 form-group mb-0">
-                      <button className="btn">
-                        Submit Now <i className="ri-arrow-right-up-line"></i>
-                      </button>
-                    </div>
+
+                <p className="text-gray-600">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi.
+                </p>
+
+                {/* BLOCKQUOTE */}
+                <blockquote className="border-l-4 border-[#347A63] pl-6 italic text-gray-700 bg-gray-50 py-4 rounded-md">
+                  “Tortor posuere ac ut consequat tellusi elem isis etum sagittis
+                  vitae atleo duis ut diam odio ut sem nulla phar.”
+                  <footer className="mt-2 text-sm font-semibold text-[#347A63]">
+                    — Aleesha Brown, CEO
+                  </footer>
+                </blockquote>
+
+                <h2 className="text-2xl font-semibold">
+                  Growth and meaning of mechanical technology
+                </h2>
+
+                <p className="text-gray-600">
+                  Construction standard dummy text ever since the when an
+                  unknown printer took a galley vero eos et accusamus et iusto
+                  odio dignissimos ducimus.
+                </p>
+
+                {/* IMAGE GRID */}
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <img
+                    src="/main-assets/img/blog/blog_details1_2.png"
+                    className="rounded-lg"
+                    alt=""
+                  />
+                  <img
+                    src="/main-assets/img/blog/blog_details1_3.png"
+                    className="rounded-lg"
+                    alt=""
+                  />
+                </div>
+
+                <h2 className="text-2xl font-semibold">
+                  Engineering and mechanics money for a better future
+                </h2>
+
+                <ul className="space-y-2 list-disc list-inside text-gray-600">
+                  <li>Powerful Product Strategy</li>
+                  <li>Quality Control System</li>
+                  <li>Professional Team Works</li>
+                </ul>
+
+                {/* VIDEO */}
+                <div className="relative rounded-xl overflow-hidden">
+                  <img
+                    src="/main-assets/img/blog/blog_details1_4.png"
+                    alt=""
+                    className="w-full"
+                  />
+                  <button
+                    onClick={openPopup}
+                    className="absolute inset-0 flex items-center justify-center"
+                  >
+                    <span className="w-16 h-16 rounded-full bg-[#347A63] text-white flex items-center justify-center text-3xl hover:scale-110 transition">
+                      ▶
+                    </span>
+                  </button>
+                </div>
+
+                {/* TAGS + SOCIAL */}
+                <div className="flex flex-wrap justify-between items-center gap-6 pt-6 border-t">
+                  <div className="flex flex-wrap gap-2">
+                    {["Factory", "Metallurgy", "Construction", "Industry"].map(
+                      (tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 text-sm border rounded-full hover:bg-[#347A63] hover:text-white transition"
+                        >
+                          {tag}
+                        </span>
+                      )
+                    )}
                   </div>
+
+                  <div className="flex gap-4 text-xl text-gray-600">
+                    <Link href="#">𝕏</Link>
+                    <Link href="#">IG</Link>
+                    <Link href="#">FB</Link>
+                    <Link href="#">IN</Link>
+                  </div>
+                </div>
+
+                {/* AUTHOR */}
+                <div className="flex gap-6 bg-gray-50 p-6 rounded-xl">
+                  <img
+                    src="/main-assets/img/blog/blog-author.png"
+                    alt=""
+                    className="w-24 h-24 rounded-full"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold">John Maxwell</h3>
+                    <p className="text-sm text-[#347A63]">
+                      CEO of Construz
+                    </p>
+                    <p className="text-gray-600 mt-2">
+                      Blanditiis praesentium voluptatum deleniti atque corrupti
+                      quos dolores.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            {/* ================= SIDEBAR ================= */}
+            <aside className="lg:col-span-4 space-y-8">
+              {/* SEARCH */}
+              <div className="border rounded-xl p-5">
+                <h3 className="font-semibold mb-4">Search</h3>
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-full border rounded-md px-4 py-2 focus:outline-[#347A63]"
+                />
+              </div>
+
+              {/* CATEGORIES */}
+              <div className="border rounded-xl p-5">
+                <h3 className="font-semibold mb-4">Categories</h3>
+                <ul className="space-y-2 text-gray-600">
+                  {[
+                    "Construction",
+                    "Architecture",
+                    "Business",
+                    "Engineering",
+                    "Building",
+                  ].map((cat) => (
+                    <li
+                      key={cat}
+                      className="flex justify-between hover:text-[#347A63]"
+                    >
+                      <span>{cat}</span>
+                      <span>•</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* TAGS */}
+              <div className="border rounded-xl p-5">
+                <h3 className="font-semibold mb-4">Popular Tags</h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Architecture",
+                    "Building",
+                    "Home",
+                    "Factory",
+                    "Construction",
+                    "Business",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 border rounded-full text-sm hover:bg-[#347A63] hover:text-white transition"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
-            </div>
-
-            <div className="col-xxl-4 col-lg-5">
-              <aside className="sidebar-area">
-                <div className="widget widget_search">
-                  <h3 className="widget_title">Search Here</h3>
-                  <form className="search-form">
-                    <input type="text" placeholder="Search..." />
-                    <button type="submit">
-                      <i className="ri-search-line"></i>
-                    </button>
-                  </form>
-                </div>
-
-                <div className="widget widget_categories">
-                  <h3 className="widget_title">Categories</h3>
-                  <ul>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        Construction <span>12</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        Architecture <span>7</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        Business <span>5</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        Engineering <span>3</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        Building <span>2</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="widget">
-                  <h3 className="widget_title">Recent Posts</h3>
-                  <div className="recent-post-wrap">
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link href="/pages/innerpage/blog-details">
-                          <img
-                            src="/main-assets/img/blog/recent-post1.png"
-                            alt="Blog Image"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" href="/pages/innerpage/blog-details">
-                            Best features of Building construction work
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                          <Link href="/pages/innerpage/blog">30 min ago</Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link href="/pages/innerpage/blog-details">
-                          <img
-                            src="/main-assets/img/blog/recent-post2.png"
-                            alt="Blog Image"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" href="/pages/innerpage/blog-details">
-                            The beast team is a around and how we make it
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                          <Link href="/pages/innerpage/blog">2 days ago</Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link href="/pages/innerpage/blog-details">
-                          <img
-                            src="/main-assets/img/blog/recent-post3.png"
-                            alt="Blog Image"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" href="/pages/innerpage/blog-details">
-                            Construction site security guideline
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                          <Link href="/pages/innerpage/blog">5 days ago</Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link href="/pages/innerpage/blog-details">
-                          <img
-                            src="/main-assets/img/blog/recent-post4.png"
-                            alt="Blog Image"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" href="/pages/innerpage/blog-details">
-                            A well designed construction website is user
-                            accessible
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                          <Link href="/pages/innerpage/blog">3 week ago</Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="widget widget_categories">
-                  <h3 className="widget_title">Archives</h3>
-                  <ul>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        January 26, 2024 <span>1</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        December 17, 2023 <span>2</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/pages/innerpage/blog">
-                        November 02, 2023 <span>1</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="widget widget_tag_cloud">
-                  <h3 className="widget_title">Popular Tags</h3>
-                  <div className="tagcloud">
-                    <Link href="/pages/innerpage/blog">Architecture</Link>
-                    <Link href="/pages/innerpage/blog">Building</Link>
-                    <Link href="/pages/innerpage/blog">Home</Link>
-                    <Link href="/pages/innerpage/blog">Factory</Link>
-                    <Link href="/pages/innerpage/blog">Construction</Link>
-                    <Link href="/pages/innerpage/blog">Business</Link>
-                    <Link href="/pages/innerpage/blog">Design</Link>
-                    <Link href="/pages/innerpage/blog">Industry</Link>
-                  </div>
-                </div>
-
-                <div className="widget widget_banner">
-                  <Link href="#">
-                    <img src="/main-assets/img/widget/widget-add.png" alt="img" />
-                  </Link>
-                </div>
-              </aside>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
-      <PopupVideo popup={popup} setPopup={setPopup} isActive={isActive} setIsActive={setIsActive}></PopupVideo>
+
+      <PopupVideo
+        popup={popup}
+        setPopup={setPopup}
+        isActive={isActive}
+        setIsActive={setIsActive}
+      />
     </>
   );
-};
-
-export default BlogFive;
+}
+    

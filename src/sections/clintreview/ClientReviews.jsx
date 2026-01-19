@@ -25,6 +25,7 @@ const sliderData = [...reviews, ...reviews];
 
 export default function ClientReviews() {
   const sliderRef = useRef(null);
+  const positionRef = useRef(0);
   let position = 0;
 
   useEffect(() => {
@@ -32,14 +33,14 @@ export default function ClientReviews() {
     let animationFrame;
 
     const animate = () => {
-      position -= 2; // speed control (smaller = slower)
+      positionRef.current -= 2; // speed control (smaller = slower)
 
       // Reset seamlessly at half width
-      if (Math.abs(position) >= slider.scrollWidth / 2) {
-        position = 0;
+      if (Math.abs(positionRef.current) >= slider.scrollWidth / 2) {
+        positionRef.current = 0;
       }
 
-      slider.style.transform = `translateX(${position}px)`;
+      slider.style.transform = `translateX(${positionRef.current}px)`;
       animationFrame = requestAnimationFrame(animate);
     };
 
@@ -49,8 +50,8 @@ export default function ClientReviews() {
   }, []);
 
   return (
-    <section className="w-full py-20 bg-gray-50 mb-[50px] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6">
+    <section className="w-full py-20 bg-gray-50 mb-12.5 overflow-hidden">
+      <div className="max-w-350 mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
           <div className="text-[#347A64] font-semibold uppercase tracking-wide">
@@ -67,7 +68,7 @@ export default function ClientReviews() {
             {sliderData.map((item, i) => (
               <div
                 key={i}
-                className="w-[320px] md:w-[380px] lg:w-[420px] px-4 flex-shrink-0"
+                className="w-[320px] md:w-95 lg:w-105 px-4 shrink-0"
               >
                 <div className="h-full bg-white rounded-xl hover:shadow-lg p-8 border-t-4 border-[#347A64]">
                   {/* Stars */}
@@ -80,7 +81,7 @@ export default function ClientReviews() {
                   </div>
 
                   {/* Review */}
-                  <p className="text-gray-700 max-h-[120px] h-full leading-relaxed mb-8">
+                  <p className="text-gray-700 max-h-30 h-full leading-relaxed mb-8">
                     {item.text}
                   </p>
 
@@ -95,7 +96,7 @@ export default function ClientReviews() {
                       </p>
                     </div>
 
-                    <div className="w-[45px] w-[60px] h-[60px] text-6xl rounded-full bg-[#347A64] text-white font-bold">
+                    <div className="w-15.25 h-15 text-6xl rounded-full bg-[#347A64] text-white font-bold">
                       <div className="flex pt-2.5 items-center justify-center">
                         “
                       </div>

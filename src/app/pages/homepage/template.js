@@ -1,11 +1,10 @@
 "use client";
-import Preloader from "~/sections/Common/Preloader";
+import UniversalLoader from "~/sections/loader";
 
 export default function Template({ children }) {
 
     return (
         <>
-            <Preloader />
             {children}
         </>
     );
