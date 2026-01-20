@@ -148,13 +148,13 @@ export default function HeaderFour() {
                       <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/pages/innerpage/Durable">
                         Durable
                       </Link>
-                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/pages/innerpage/lighter">
                         Lighter
                       </Link>
-                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/pages/innerpage/strength">
                         Strength
                       </Link>
-                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/pages/innerpage/non-Conductive">
                         Non Conductive
                       </Link>
                     </div>
