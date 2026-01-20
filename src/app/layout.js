@@ -2,6 +2,14 @@
 import "~/public/main-assets/css/fonts.css";
 import "./globals.css";
 import Script from "next/script";
+import "~/public/main-assets/css/bootstrap.min.css";
+import "~/public/main-assets/css/bootstrap.rtl.min.css";
+import "~/public/main-assets/css/fontawesome.min.css";
+import "~/public/main-assets/css/nice-select.min.css";
+import "~/public/main-assets/css/remixicon.css";
+import "~/public/main-assets/css/slick.min.css";
+import "~/public/main-assets/css/style.css";
+import "~/public/main-assets/css/react-adjustment.css";
 
 /* ✅ Site Metadata */
 export const metadata = {

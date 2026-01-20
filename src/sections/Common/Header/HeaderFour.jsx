@@ -16,13 +16,12 @@ import {
 export default function HeaderFour() {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
-
-  // Desktop dropdowns
+  const [advantagesOpen, setAdvantagesOpen] = useState(false);
+  // Desktop dropdown states
   const [companyOpen, setCompanyOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [applicationOpen, setApplicationOpen] = useState(false);
-  const [advantagesOpen, setAdvantagesOpen] = useState(false);
-
+  const [projectsOpen, setProjectsOpen] = useState(false)
   // Mobile dropdown
   const [productOpenMobile, setProductOpenMobile] = useState(false);
 
@@ -32,11 +31,9 @@ export default function HeaderFour() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const toggle = (setter) => setter((prev) => !prev);
-
   return (
     <>
-      {/* TOP BAR */}
+      {/* ================= TOP BAR ================= */}
       <div className="bg-[#347A64] text-white text-sm px-4">
         <div className="max-w-350 mx-auto flex justify-between items-center py-2">
           <span className="hidden md:block">
@@ -46,18 +43,18 @@ export default function HeaderFour() {
         </div>
       </div>
 
-      {/* CONTACT BAR */}
+      {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
         <div className="max-w-350 mx-auto flex justify-between items-center px-4 py-3">
           <div className="flex gap-6 text-gray-600">
             <span className="flex gap-2">
-              <Phone size={18} className="text-[#347A64]" /> +91 92748 31310
+              <Phone size={18} className="text-[#347A63]" /> +91 92748 31310
             </span>
             <span className="flex gap-2">
-              <Mail size={18} className="text-[#347A64]" /> info@fiberonrebar.com
+              <Mail size={18} className="text-[#347A63]" /> info@fiberonrebar.com
             </span>
             <span className="flex gap-2">
-              <Box size={18} className="text-[#347A64]" /> We Ship Worldwide
+              <Box size={18} className="text-[#347A63]" /> We Ship Worldwide
             </span>
           </div>
           <Link href="#" className="text-[#347A64] font-medium hover:underline">
@@ -66,44 +63,43 @@ export default function HeaderFour() {
         </div>
       </div>
 
-      {/* HEADER */}
+      {/* ================= HEADER ================= */}
       <header
         className={`bg-white transition-all duration-300 ${
-          isSticky ? "fixed top-0 z-50 w-full shadow-md" : "relative"
+          isSticky ? "fixed top-0 z-999 w-full shadow-md" : "relative"
         }`}
       >
         <div className="max-w-350 mx-auto flex justify-between items-center px-4 py-2">
           {/* LOGO */}
-          <Link href="/">
+          <div className="h-30">
+            <Link href="/">
             <img
               src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
               alt="logo"
               className="h-26 object-contain"
             />
           </Link>
+          </div>
 
-          {/* DESKTOP MENU */}
+          {/* ================= DESKTOP MENU ================= */}
           <nav className="hidden xl:flex items-center gap-8 text-[#347A64] font-medium text-lg">
             <Link href="/">Home</Link>
 
-            {/* COMPANY */}
+            {/* ================= COMPANY MEGA MENU ================= */}
             <div
               className="relative"
               onMouseEnter={() => setCompanyOpen(true)}
               onMouseLeave={() => {
                 setCompanyOpen(false);
-                setAdvantagesOpen(false);
               }}
             >
-              <button
-                onClick={() => toggle(setCompanyOpen)}
-                className="flex items-center gap-1"
-              >
+              <button className="flex items-center gap-1">
                 Company <ChevronDown size={18} />
               </button>
 
               {companyOpen && (
-                <div className="absolute left-0 top-full z-50 bg-white shadow-xl rounded-lg flex">
+                <div className="absolute left-0 top-full mt-0 z-50 bg-white shadow-xl rounded-lg flex">
+                  {/* LEFT COLUMN */}
                   <div className="w-64">
                     <Link
                       href="/pages/innerpage/about"
@@ -114,28 +110,44 @@ export default function HeaderFour() {
 
                     <button
                       onMouseEnter={() => setAdvantagesOpen(true)}
-                      onClick={() => toggle(setAdvantagesOpen)}
-                      className="w-full flex items-center gap-1 px-6 py-4 hover:bg-[#347A64]/10"
+                      onMouseLeave={() => setProjectsOpen(false)}
+                      
+                      className="w-full flex items-center gap-1 text-left px-6 py-4 text-[#347A63] hover:bg-[#347A64]/10"
                     >
                       Advantages <ChevronDown size={18} />
                     </button>
 
-                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
-                      Projects
-                    </Link>
-                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                    <button
+                      onMouseEnter={() => setProjectsOpen(true)}
+                      
+                      className="w-full flex items-center gap-1 text-left px-6 py-4 text-[#347A63] hover:bg-[#347A64]/10"
+                    >
+                      Projects <ChevronDown size={18} />
+                    </button>
+
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/achievement">
                       Achievement
                     </Link>
-                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/certificates">
                       Certificates
+                    </Link>
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                      GFRP Rebar Video
+                    </Link>
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/blog">
+                      GFRP Rebar Blog
+                    </Link>
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="#">
+                      GFRP Rebar FAQs
+                    </Link>
+                    <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/construction">
+                      Construction – The Complete Guide
                     </Link>
                   </div>
 
+                  {/* RIGHT COLUMN – ADVANTAGES */}
                   {advantagesOpen && (
-                    <div
-                      className="w-72"
-                      onMouseLeave={() => setAdvantagesOpen(false)}
-                    >
+                    <div className="w-72" onMouseLeave={() => setAdvantagesOpen(false)}>
                       <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/pages/innerpage/cost">
                         Cost Effective
                       </Link>
@@ -156,6 +168,27 @@ export default function HeaderFour() {
                       </Link>
                     </div>
                   )}
+
+                  {/* RIGHT COLUMN – ADVANTAGES */}
+                  {projectsOpen && (
+                    <div className="w-72" >
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/project/RCCRoad">
+                        RCC Road Construction Ahmedabad
+                      </Link>
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/project/JammuDrainageWork">
+                        Jammu Drainage Work
+                      </Link>
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/project/bavla">
+                        Bavla Industrial Flooring
+                      </Link>
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/project/industrialFlooring">
+                        Industrial Flooring Amravati Maharashtra
+                      </Link>
+                      <Link className="block px-6 py-4 hover:bg-[#347A64]/10" href="/project/sixLane">
+                       Six Lane Karala Kanjhawala Road
+                      </Link>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -166,15 +199,11 @@ export default function HeaderFour() {
               onMouseEnter={() => setProductsOpen(true)}
               onMouseLeave={() => setProductsOpen(false)}
             >
-              <button
-                onClick={() => toggle(setProductsOpen)}
-                className="flex items-center gap-1"
-              >
+              <button className="flex items-center gap-1">
                 GFRP FIBERON Products <ChevronDown size={18} />
               </button>
-
               {productsOpen && (
-                <div className="absolute left-0 top-full w-56 bg-white shadow-lg rounded-md">
+                <div className="absolute left-0 z-999 top-full w-56 bg-white shadow-lg rounded-md overflow-hidden">
                   <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/pages/innerpage/shop">
                     GFRP FIBERON
                   </Link>
@@ -191,15 +220,11 @@ export default function HeaderFour() {
               onMouseEnter={() => setApplicationOpen(true)}
               onMouseLeave={() => setApplicationOpen(false)}
             >
-              <button
-                onClick={() => toggle(setApplicationOpen)}
-                className="flex items-center gap-1"
-              >
+              <button className="flex items-center gap-1">
                 Application <ChevronDown size={18} />
               </button>
-
               {applicationOpen && (
-                <div className="absolute left-0 top-full w-56 bg-white shadow-lg rounded-md">
+                <div className="absolute left-0 z-999  top-full w-56 bg-white shadow-lg rounded-md overflow-hidden">
                   <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/applications">
                     Applications
                   </Link>
@@ -229,6 +254,44 @@ export default function HeaderFour() {
           </button>
         </div>
       </header>
+
+      {/* ================= MOBILE MENU ================= */}
+      {mobileMenu && (
+        <div className="fixed inset-0 z-50 bg-black/50">
+          <div className="bg-white w-72 h-full p-6">
+            <div className="flex justify-between mb-6">
+              <img src="/main-assets/img/hero/Fibron_Logo_Black_New.png" className="h-10" />
+              <button onClick={() => setMobileMenu(false)}>
+                <X size={22} />
+              </button>
+            </div>
+
+            <nav className="flex flex-col gap-4 text-[#347A64] font-medium text-center">
+              <Link href="/">Home</Link>
+              <Link href="/pages/innerpage/about">About</Link>
+
+              <button
+                onClick={() => setProductOpenMobile(!productOpenMobile)}
+                className="flex justify-center items-center gap-2"
+              >
+                Products <ChevronDown
+                  className={`${productOpenMobile ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {productOpenMobile && (
+                <div className="flex flex-col gap-2 text-sm">
+                  <Link href="/pages/innerpage/shop">GFRP FIBERON</Link>
+                  <Link href="/pages/innerpage/gfrp-mesh">GFRP Mesh</Link>
+                </div>
+              )}
+
+              <Link href="/applications">Application</Link>
+              <Link href="/contact">Contact</Link>
+            </nav>
+          </div>
+        </div>
+      )}
 
       {isSticky && <div className="h-24" />}
     </>
