@@ -20,12 +20,63 @@ const Service = () => {
 
         {/* ================= IMAGE SECTION ================= */}
         <div className="mb-20">
-          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+          <div className="relative overflow-hidden">
+            {/* ===== Rod Image ===== */}
             <img
-              src="/main-assets/img/service/BAR.png"
-              alt="Rebar Services"
+              src="/main-assets/img/hero/All Rods.png"
+              alt="Rebar Rod Sizes"
               className="w-full h-auto object-cover"
             />
+
+            {/* ===== Sizes Bar ===== */}
+            <div className="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur">
+              <div className="max-w-350 bg-[#347A63] text-white flex-1 flex gap-20 mx-auto">
+                <div className="flex gap-20 items-center text-xs sm:text-sm font-medium ">
+                  {[
+                    "6 mm",
+                    "8 mm",
+                    "10 mm",
+                  ].map((size) => (
+                    <div
+                      key={size}
+                      className="flex text-center py-2"
+                    >
+                      {size}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex gap-21 items-center text-xs sm:text-sm font-medium">
+                  {[
+                    "12 mm",
+                    "14 mm",
+                    "16 mm",
+                  ].map((size) => (
+                    <div
+                      key={size}
+                      className="flex text-center py-2 w-[80px] items-center justify-center"
+                    >
+                      {size}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex gap-30 items-center text-xs sm:text-sm font-medium">
+                  {[
+                    "18 mm",
+                    "20 mm",
+                    "22 mm",
+                  ].map((size) => (
+                    <div
+                      key={size}
+                      className="flex text-center py-2 w-[88px] items-center justify-center"
+                    >
+                      {size}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

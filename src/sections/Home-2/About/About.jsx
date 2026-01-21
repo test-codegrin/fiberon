@@ -9,7 +9,7 @@ const About = () => {
       id=""
       className="relative overflow-hidden max-w-[1400px] mx-auto py-20 bg-white"
     >
-      <div className="relative h-[2350px] md:h-[1800px] lg:h-[1650px] xl:h-[1000px] py-50 max-w-[1400px] mx-auto px-6 xl:px-0">
+      <div className="relative h-[2350px] md:h-[1800px] lg:h-[1650px] xl:h-[1000px] py-0 max-w-[1400px] mx-auto px-6 xl:px-0">
         <div className="grid grid-cols-1 xl:grid-cols-2 items-center">
           {/* Image Section */}
           <div className="relative md:flex justify-between">
@@ -23,7 +23,7 @@ const About = () => {
 
             {/* Experience Counter */}
             <div className="md:absolute mt-5 ml-40 md:-bottom-20 w-[250px] h-[210px] right-10 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
-              <div className="flex justify-center gap-4">
+              <div className="flex justify-center h-full items-center gap-3">
                 <div className="w-25 h-25">
                   <img
                     src="/main-assets/img/hero/trusted-white.webp"
