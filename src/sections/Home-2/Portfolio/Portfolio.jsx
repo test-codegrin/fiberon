@@ -3,7 +3,7 @@
 const Portfolio = () => {
   return (
     <main className="min-h-screen max-w-[1400px] mx-auto w-full py-14 md:py-20 xl:py-10">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-4">
+      <div className="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-4">
 
         {/* ================= HEADER ================= */}
         <div className="text-center mb-10 md:mb-14">
@@ -11,13 +11,13 @@ const Portfolio = () => {
             Comparison
           </span>
 
-          <h2 className="mt-5 md:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug md:leading-tight">
+          <div className="mt-5 md:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug md:leading-tight">
             Mechanical Property Comparison
             <br />
             <span className="text-[#347A64] text-[25px] sm:text-2xl md:text-3xl lg:text-4xl">
               Brownbar vs Metal Rebars
             </span>
-          </h2>
+          </div>
 
           <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-xs sm:text-sm md:text-base px-2 sm:px-0">
             A detailed comparison between conventional steel rebars and modern
@@ -49,10 +49,10 @@ const Portfolio = () => {
               {/* Table Head */}
               <thead className="sticky top-0 z-10">
                 <tr className="bg-[#347A64] text-white">
-                  <th className="px-3 sm:px-4 md:px-6 py-3 md:py-4 text-center font-semibold whitespace-nowrap">
+                  <th className="px-3 sm:px-4 w-300 md:px-6 py-3 md:py-4 text-center font-semibold whitespace-nowrap">
                     Properties of TMT Bars
                   </th>
-                  <th className="px-3 sm:px-4 md:px-6 py-3 md:py-4 text-center font-semibold whitespace-nowrap">
+                  <th className="px-3 sm:px-4  md:px-6 py-3 md:py-4 text-center font-semibold whitespace-nowrap">
                     Steel Bar
                   </th>
                   <th className="px-3 sm:px-4 md:px-6 py-3 md:py-4 text-center font-semibold whitespace-nowrap">

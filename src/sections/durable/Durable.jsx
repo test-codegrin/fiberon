@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function DurablePage() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
-          <div className="p-3 rounded">
+          <div>
             <img
               src="/main-assets/img/product/13.png"
               alt="Corrosion Resistant Icon"
@@ -46,32 +46,56 @@ export default function DurablePage() {
           infrastructure.
         </p>
 
-        <ul className="space-y-3 mb-12">
-          <li className="flex gap-3">
-            <span className="text-[#347A64] font-bold">✓</span>
-            <p className="text-gray-700">
-              <b>Structural Integrity:</b> Environmental stress, such as
-              moisture and chemical exposure, degrade materials, causing cracks
-              and structural failure.
-            </p>
+        <ul className="mb-12">
+          <li className="flex items-center gap-3">
+            <div className="">
+              <img
+                src="/main-assets/img/hero/RightSign.png"
+                alt="GFRP Info"
+                className="w-7 h-auto object-contain"
+              />
+            </div>
+            <div className="pt-3">
+              <p className="text-gray-700">
+                <b>Structural Integrity:</b> Environmental stress, such as
+                moisture and chemical exposure, degrade materials, causing
+                cracks and structural failure.
+              </p>
+            </div>
           </li>
 
           <li className="flex gap-3">
-            <span className="text-[#347A64] font-bold">✓</span>
-            <p className="text-gray-700">
-              <b>Increased Maintenance Costs:</b> Regular repairs and
-              replacements due to material degradation inflate maintenance
-              expenses over time.
-            </p>
+            <div className="">
+              <img
+                src="/main-assets/img/hero/RightSign.png"
+                alt="GFRP Info"
+                className="w-7 h-auto object-contain"
+              />
+            </div>
+            <div className="">
+              <p className="text-gray-700">
+                <b>Increased Maintenance Costs:</b> Regular repairs and
+                replacements due to material degradation inflate maintenance
+                expenses over time.
+              </p>
+            </div>
           </li>
 
           <li className="flex gap-3">
-            <span className="text-[#347A64] font-bold">✓</span>
-            <p className="text-gray-700">
-              <b>Reduced Lifespan of Structures:</b> Poor material durability
-              shortens the lifespan of construction, requiring premature
-              replacements and increasing long-term costs.
-            </p>
+            <div className="">
+              <img
+                src="/main-assets/img/hero/RightSign.png"
+                alt="GFRP Info"
+                className="w-7 h-auto object-contain"
+              />
+            </div>
+            <div className="">
+              <p className="text-gray-700">
+                <b>Reduced Lifespan of Structures:</b> Poor material durability
+                shortens the lifespan of construction, requiring premature
+                replacements and increasing long-term costs.
+              </p>
+            </div>
           </li>
 
           <p>

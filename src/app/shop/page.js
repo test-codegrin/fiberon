@@ -9,8 +9,8 @@ export default function ShopPage() {
         <div>
             <HeaderFour />
             <Product />
-            <Contact />
             <ClientReviews />
+            <Contact />
             <FooterThree />
             <Scroll />
         </div>

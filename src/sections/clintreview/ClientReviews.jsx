@@ -54,10 +54,7 @@ export default function ClientReviews() {
       <div className="max-w-350 mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
-          <div className="text-[#347A64] font-semibold uppercase tracking-wide">
-            Testimonials
-          </div>
-          <div className="text-4xl font-bold text-[#347A64] mt-2">
+          <div className="text-4xl font-bold uppercase text-[#347A64] mt-2">
             Client Reviews
           </div>
         </div>
@@ -81,7 +78,7 @@ export default function ClientReviews() {
                   </div>
 
                   {/* Review */}
-                  <p className="text-gray-700 max-h-40 md:h-30 h-full leading-relaxed mb-8">
+                  <p className="text-gray-700 font-medium max-h-40 md:h-30 h-full leading-relaxed mb-8">
                     {item.text}
                   </p>
 

@@ -21,6 +21,8 @@ import FooterThree from "~/sections/Common/Footer/FooterThree";
 import Scroll from "~/sections/Common/Scroll";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
 import ClientReviews from "~/sections/clintreview";
+import Contect from "~/sections/Contact";
+import Contact from "~/sections/Contact";
 
 export default function HomePage() {
   return (
@@ -32,14 +34,15 @@ export default function HomePage() {
       <Process />
       <Video />
       <Counter />
-      <Portfolio />
-      <Testimonial />
+      {/* <Portfolio /> */}
+      {/* <Testimonial /> */}
       {/* <Pricing />
       <FAQ /> */}
       {/* <Client />
       <Blog />
       <Contact /> */}
       <ClientReviews />
+      <Contact />
       <FooterThree />
       <Scroll />
     </div>

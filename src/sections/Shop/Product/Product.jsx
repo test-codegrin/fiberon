@@ -37,11 +37,11 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section className="max-w-[1200px] mx-auto px-6 py-24 md:flex justify-between items-center">
-        <div className="sm:w-[600px] w-[300px]">
-          <div className="">
-            <div className="text-3xl md:text-5xl font-bold leading-tight text-[#347A64]">GFRP Rebar</div>
-            <span className="block text-2xl font-bold text-black">Building Tomorrow Today</span>
+      <section className="max-w-[1400px] mx-auto px-6 py-24 md:flex justify-between items-center">
+        <div className="sm:w-full w-[300px]">
+          <div className="w-full">
+            <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight"><span className="text-[#347A64]">GFRP</span> Rebar</div>
+            <span className="block text-2xl xl:text-[50px] font-bold text-black">Building Tomorrow Today</span>
           </div>
 
           <p className="mt-6 text-gray-600 text-lg">
@@ -119,7 +119,7 @@ export default function Product() {
       </section>
 
       {/* ================= ADVANTAGES ================= */}
-      <section className="bg-gray-50 py-20">
+      <section className="max-w-[1400px] mx-auto py-20 px-4">
         {/* Section Title */}
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
           REBAR-X GFRP Rebar Advantages
@@ -210,7 +210,7 @@ export default function Product() {
 
       {/* ================= ATTRIBUTES ================= */}
       <section
-        className="relative max-w-[1400px] mx-auto py-24 bg-center rounded-lg mt-[50px] bg-cover bg-no-repeat"
+        className="relative max-w-350 px-6 mx-auto py-24 bg-center rounded-lg mt-[50px] bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/main-assets/img/product/steel-1.webp')",
         }}

@@ -36,7 +36,7 @@ export default function HeaderFour() {
   return (
     <>
       {/* ================= TOP BAR ================= */}
-      <div className="bg-[#347A64] text-white text-xs px-4">
+      <div className="bg-[#347A64] text-white text-xs px-4 xl:px-0">
         <div className="max-w-360 mx-auto flex justify-between py-2">
           <span className="hidden md:block">
             ALL INDIA FIRST BIS License holder for GFRP Bars
@@ -47,7 +47,7 @@ export default function HeaderFour() {
 
       {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
-        <div className="max-w-350 mx-auto flex justify-between items-center px-4 py-3">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-3">
           <div className="flex gap-6 text-gray-600">
             <span className="flex gap-2">
               <Phone size={18} className="text-[#347A63]" /> +91 9274831310

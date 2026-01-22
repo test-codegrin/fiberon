@@ -3,7 +3,7 @@
 export default function CostEffectivePage() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-[1400px] mx-auto px-6">
 
         {/* ================= TITLE ================= */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#347A64] mb-6">

@@ -8,29 +8,29 @@ const Hero = () => {
 
   return (
     <>
-      <div className="pb-50 max-w-[1400px] mx-auto">
+      <div className="pb-50 max-w-350 mx-auto">
         {/* ================= HERO SECTION ================= */}
         <div className="relative">
-          <div className="max-w-[1200px] mx-auto mt-[80px] md:flex items-center justify-between md:h-[500px] px-6">
+          <div className="max-w-350 mx-auto mt-[80px] md:flex items-center justify-between md:h-125 px-6">
             {/* Left Content */}
-            <div className="w-[530px]">
-              <p className="md:text-[50px] text-[35px] leading-1 w-full font-bold leading-tight">
+            <div className="">
+              <div className="md:text-[50px] xl:text-[83px] text-[35px] leading-20 w-full font-bold">
                 <span className="text-[#347A64]">GFRP </span>REBER <br /> MANUFACTURER
-              </p>
+              </div>
 
-              <p className="text-[16px] max-w-[480px] mt-4 text-gray-600">
+              <p className="text-[16px] max-w-120 mt-4 text-gray-600">
                 Revolutionize your projects with  <span className="text-[#347A63] underline">FIBERON</span> GFRP REBER — twice the
                 strength, zero corrosion, and a lighter build for enduring
                 performance in any environment.
               </p>
 
-              <button className="mt-6 bg-[#347A64] w-[200px] h-[50px] rounded flex items-center justify-center text-white font-semibold hover:bg-[#347A64] transition">
+              <button className="mt-6 bg-[#347A64] w-45 h-12.5 rounded flex items-center justify-center text-white font-semibold hover:bg-[#347A64] transition">
                 Download Brochure
               </button>
             </div>
 
             {/* Right Image */}
-            <div className="mt-20 max-w-[400px]">
+            <div className="mt-20 max-w-100">
               <img
                 src="/main-assets/img/hero/hero_img.png"
                 alt="Building"

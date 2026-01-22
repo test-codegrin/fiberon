@@ -30,7 +30,7 @@ const ProductSpecificationPage = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1400px] mx-auto py-12 md:py-16">
+    <section className="w-full max-w-[1400px] mx-auto py-12 xl:mt-[70px] md:py-16">
       <div className="max-w-6xl mx-auto px-3 sm:px-4">
         {/* ================= HEADER ================= */}
         <div className="text-center mb-10 md:mb-14">

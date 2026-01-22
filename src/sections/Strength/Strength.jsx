@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function StrengthPage() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
           <div className="p-3 rounded">
