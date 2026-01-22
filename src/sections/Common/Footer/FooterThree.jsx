@@ -83,7 +83,7 @@ const FooterThree = () => {
               ADDRESS
             </div>
 
-            <div className="flex w-[400px] gap-2 text-base">
+            <div className="flex w-[300px] md:w-[400px] gap-2 text-base">
               <div className="mt-1">
                 <MapPin size={20} />
               </div>
@@ -94,7 +94,7 @@ const FooterThree = () => {
               </div>
             </div>
 
-            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+            <div className="flex items-center md:w-[400px] gap-2 mt-3 text-base">
               <div>
                 <PhoneCall size={20} />
               </div>
@@ -102,7 +102,7 @@ const FooterThree = () => {
               <div className="">+91 92748 31310</div>
             </div>
 
-            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+            <div className="flex items-center md:w-[400px] gap-2 mt-3 text-base">
               <div>
                 <Mail size={20} />
               </div>
@@ -110,7 +110,7 @@ const FooterThree = () => {
               <div className="">info@fiberonrebar.com</div>
             </div>
 
-            <div className="flex items-center w-[400px] gap-2 mt-3 text-base">
+            <div className="flex items-center md:w-[400px] gap-2 mt-3 text-base">
               <div>
                 <Globe size={20} />
               </div>

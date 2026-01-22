@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="max-w-[1200px] mx-auto mt-[80px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
             <div className="w-[530px]">
-              <p className="text-[50px] leading-1 w-full font-bold leading-tight">
+              <p className="md:text-[50px] text-[35px] leading-1 w-full font-bold leading-tight">
                 <span className="text-[#347A64]">GFRP </span>REBER <br /> MANUFACTURER
               </p>
 

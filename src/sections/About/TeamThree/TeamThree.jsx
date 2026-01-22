@@ -9,13 +9,13 @@ const TeamThree = () => {
         style={{ backgroundImage: "url('/main-assets/img/shape/global-line-shape2.png')", bottom: '0px' }}
       ></div>
       <div className="container">
-        <div className="flex justify-between items-center mb-12 flex-wrap gap-4">
+        <div className="flex md:justify-between justify-center items-center mb-12 flex-wrap gap-4">
           <div className="col-lg-7 col-md-7">
             <div className="">
               <span className="text-[#347A64] font-semibold text-lg uppercase">
                 Our Team
               </span>
-              <div className="text-[#347A64] font-semibold text-4xl uppercase">Meet our leadership</div>
+              <div className="text-[#347A64] font-semibold text-2xl md:text-4xl uppercase">Meet our leadership</div>
             </div>
           </div>
           <div className="">

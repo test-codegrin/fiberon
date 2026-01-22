@@ -6,18 +6,12 @@ import Image from "next/image";
 
 const WhyChooseThree = () => {
   return (
-    <section className="w-full py-20 bg-white overflow-hidden">
+    <section className="w-full md:py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* ===== SECTION TITLE ===== */}
         <div className="text-center mb-16">
           <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-md uppercase tracking-wide">
-            {/* <img  
-              src="/main-assets/img/icon/section-subtitle-icon.svg"
-              width={18}
-              height={18}
-              alt="icon"
-            /> */}
             Why Choose Us
           </span>
 

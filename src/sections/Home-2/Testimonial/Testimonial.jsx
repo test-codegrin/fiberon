@@ -166,8 +166,9 @@ const ProductSpecificationPage = () => {
 
         <div className="bg-[#347A64] max-w-full mx-auto sm:h-[70px] md:h-[50px] text-white text-center py-1 px-0 md:px-4 mt-2 md:mt-14">
           <ul className="md:flex md:gap-3 lg:gap-40 justify-center items-center pt-2">
-            <li className="">6 mm to 12 mm - 40 ft Length - Round</li>
-            <li className="">6 mm to 12 mm - 40 ft Length - Straight</li>
+            <li>6 mm to 12 mm - 40 ft Length - Round</li>
+            {/* <li className="w-[290px] px-0">6 mm to 12 mm - 40 ft Length - Straight</li> */}
+            <li className="w-[276px]">6 mm to 12 mm - 40 ft Length - Straight</li>
           </ul>
         </div>
 

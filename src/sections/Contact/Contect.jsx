@@ -39,7 +39,7 @@ export default function Contect() {
               </div>
             </div>
 
-            <button className="mt-10 bg-white text-[#347A64] px-10 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">
+            <button className="mt-10 border-white border text-[#FFF] px-10 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">
               Download Brochure
             </button>
           </div>

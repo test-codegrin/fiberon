@@ -16,11 +16,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/pages/innerpage/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/pages/innerpage/about/page.js"
-    ],
     "/pages/innerpage/template": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -32,15 +27,35 @@
       "static/css/app/pages/layout.css",
       "static/chunks/app/pages/layout.js"
     ],
-    "/pages/innerpage/shop/page": [
+    "/achievement/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/pages/innerpage/shop/page.js"
+      "static/chunks/app/achievement/page.js"
     ],
-    "/pages/innerpage/gfrp-mesh/page": [
+    "/certificates/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/pages/innerpage/gfrp-mesh/page.js"
+      "static/chunks/app/certificates/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
+    ],
+    "/cost/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cost/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

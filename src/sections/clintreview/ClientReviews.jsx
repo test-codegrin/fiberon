@@ -81,7 +81,7 @@ export default function ClientReviews() {
                   </div>
 
                   {/* Review */}
-                  <p className="text-gray-700 max-h-30 h-full leading-relaxed mb-8">
+                  <p className="text-gray-700 max-h-40 md:h-30 h-full leading-relaxed mb-8">
                     {item.text}
                   </p>
 

@@ -13,12 +13,12 @@ const Hero = () => {
         <div className="relative">
           <div className="max-w-[1200px] mx-auto mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
-            <div className="w-[730px]">
-              <div className="md:text-[40px] text-[30px] leading-2 w-full text-[#347A64] font-bold leading-tight">
+            <div className="lg:w-[730px]">
+              <div className="md:text-[40px] text-[24px] leading-2 w-full text-[#347A64] font-bold leading-tight">
                 What is Bent GFRP Rebar?
               </div>
 
-              <div className="mb-6 mt-2 text-gray-600 leading-1 font-semibold">
+              <div className="mb-6 mt-2 text-gray-600 md:leading-1 font-semibold">
                 The Smart Choice for Base Slabs and Floors
               </div>
 

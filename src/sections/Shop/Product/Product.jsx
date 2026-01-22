@@ -38,10 +38,10 @@ export default function Product() {
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
       <section className="max-w-[1200px] mx-auto px-6 py-24 md:flex justify-between items-center">
-        <div className="w-[600px]">
-          <div className="text-3xl md:text-5xl font-bold leading-tight text-[#347A64]">
-            GFRP Rebar
-            <span className="block text-black">Building Tomorrow Today</span>
+        <div className="sm:w-[600px] w-[300px]">
+          <div className="">
+            <div className="text-3xl md:text-5xl font-bold leading-tight text-[#347A64]">GFRP Rebar</div>
+            <span className="block text-2xl font-bold text-black">Building Tomorrow Today</span>
           </div>
 
           <p className="mt-6 text-gray-600 text-lg">
@@ -64,8 +64,8 @@ export default function Product() {
       </section>
 
       {/* ================= STATS SECTION ================= */}
-      <section className="bg-[#347A64] max-w-[1400px] mx-auto py-20 text-white">
-        <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-10 items-center text-center">
+      <section className="bg-[#347A64] max-w-350 mx-auto py-20 text-white">
+        <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-10 items-center text-center">
           {[
             ["5000+", "Projects Completed"],
             ["17+", "Years of Experience"],
@@ -78,10 +78,10 @@ export default function Product() {
             </div>
           ))}
 
-          <div className="w-full h-[220px]">
+          <div className="w-87.5 ml-auto h-55">
             <img
-              src="/main-assets/img/product/shop-man.png"
-              className="h-100 max-w-auto mx-auto"
+              src="/main-assets/img/hero/ManWithBar.png"
+              className="h-100 max-w-full w-50 mx-auto"
               alt=""
             />
           </div>
@@ -89,31 +89,37 @@ export default function Product() {
       </section>
 
       {/* ================= GFRP INFO ================= */}
-      <section className="max-w-[1400px] mx-auto px-6 py-24 grid md:grid-cols-2 gap-14 items-center">
-        <div className="w-full h-[360px] bg-[#347A64] rounded-xl">
-          <img src="/main-assets/img/product/steel.png" alt="GFRP Info" />
+      <section className="max-w-350 mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+        {/* IMAGE BOX */}
+        <div className="w-full max-w-115 mx-auto  rounded-xl flex items-center justify-center p-6 sm:p-10">
+          <img
+            src="/main-assets/img/hero/RightSign.png"
+            alt="GFRP Info"
+            className="w-40 md:w-100 h-auto object-contain"
+          />
         </div>
 
-        <div>
-          <div className="text-4xl font-bold text-[#347A64] mb-6">
+        {/* CONTENT */}
+        <div className="md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-4 sm:mb-6">
             What is GFRP Rebar?
-          </div>
+          </h2>
 
-          <p className="text-gray-600 leading-relaxed text-lg">
+          <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
             Glass Fibre Reinforced Polymer (GFRP) Rebar is a next-generation
             reinforcement solution. It is corrosion-resistant, lightweight,
             stronger than steel, non-conductive, and highly durable for
             aggressive environments.
           </p>
 
-          <button className="mt-8 bg-[#347A64] text-white px-8 py-4 font-semibold rounded-md hover:opacity-90 transition">
+          <button className="mt-6 sm:mt-8 bg-[#347A64] text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold rounded-md hover:opacity-90 transition">
             Download Brochure
           </button>
         </div>
       </section>
 
       {/* ================= ADVANTAGES ================= */}
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-20">
         {/* Section Title */}
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
           REBAR-X GFRP Rebar Advantages
@@ -255,14 +261,14 @@ export default function Product() {
       </section>
 
       {/* ================= APPLICATION GRID ================= */}
-      <section className="py-24 max-w-[1400px] mx-auto px-6">
+      <section className="py-24 max-w-350 mx-auto px-6">
         {/* Section Title */}
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
           GFRP Rebar Applications
         </div>
 
         {/* Application Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {[
             {
               title: "Parking Areas",
@@ -445,87 +451,86 @@ export default function Product() {
       <Portfolio />
 
       {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
+      <div
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+        onMouseLeave={() => setActiveHover(null)}
+      >
+        {/* ===== Email ===== */}
         <div
-          className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
-          onMouseLeave={() => setActiveHover(null)}
+          onMouseEnter={() => setActiveHover("email")}
+          className="relative h-[50px] w-[260px]"
         >
-          {/* ===== Email ===== */}
+          {/* Sliding Text */}
           <div
-            onMouseEnter={() => setActiveHover("email")}
-            className="relative h-[50px] w-[260px]"
-          >
-            {/* Sliding Text */}
-            <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+            className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "email"
                   ? "translate-x-0"
                   : "translate-x-[230px]"
               }`}
-            >
-              <span className="px-4 text-sm whitespace-nowrap">
-                info@fiberonrebar.com
-              </span>
-            </div>
-
-            {/* Fixed Icon */}
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
-              <div className="">
-                <Mail size={20} />
-              </div>
-            </div>
+          >
+            <span className="px-4 text-sm whitespace-nowrap">
+              info@fiberonrebar.com
+            </span>
           </div>
 
-          {/* ===== Phone ===== */}
+          {/* Fixed Icon */}
+          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+            <div className="">
+              <Mail size={20} />
+            </div>
+          </div>
+        </div>
+
+        {/* ===== Phone ===== */}
+        <div
+          onMouseEnter={() => setActiveHover("phone")}
+          className="relative h-[50px] w-[260px]"
+        >
           <div
-            onMouseEnter={() => setActiveHover("phone")}
-            className="relative h-[50px] w-[260px]"
-          >
-            <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+            className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "phone"
                   ? "translate-x-0"
                   : "translate-x-[230px]"
               }`}
-            >
-              <span className="px-4 text-sm whitespace-nowrap">
-                +91 92748 31310
-              </span>
-            </div>
-
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
-              <Phone size={20} />
-            </div>
+          >
+            <span className="px-4 text-sm whitespace-nowrap">
+              +91 92748 31310
+            </span>
           </div>
 
-          {/* ===== Location ===== */}
+          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+            <Phone size={20} />
+          </div>
+        </div>
+
+        {/* ===== Location ===== */}
+        <div
+          onMouseEnter={() => setActiveHover("location")}
+          className="relative h-[50px] w-[260px]"
+        >
           <div
-            onMouseEnter={() => setActiveHover("location")}
-            className="relative h-[50px] w-[260px]"
-          >
-            <div
-              className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
+            className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "location"
                   ? "translate-x-0"
                   : "translate-x-[230px]"
               }`}
-            >
-              <span className="px-4 text-sm whitespace-nowrap">
-                Morbi, Gujrat, India
-              </span>
-            </div>
+          >
+            <span className="px-4 text-sm whitespace-nowrap">
+              Morbi, Gujrat, India
+            </span>
+          </div>
 
-            <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
-              <MapPin size={20} />
-            </div>
+          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+            <MapPin size={20} />
           </div>
         </div>
-      
+      </div>
     </main>
   );
 }

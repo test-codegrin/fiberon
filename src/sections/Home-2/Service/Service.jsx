@@ -5,8 +5,8 @@ import { Phone } from "lucide-react";
 
 const Service = () => {
   return (
-    <section className="w-full max-w-[1400px] lg:mt-[50px] xl:mt-0 mx-auto py-20">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
+    <section className="w-full max-w-350 lg:mt-12.5 xl:mt-0 mx-auto py-20">
+      <div className="max-w-350 mx-auto px-4 md:px-8 lg:px-10">
 
         {/* ================= HEADER ================= */}
         <div className="text-center mb-16">
@@ -20,18 +20,18 @@ const Service = () => {
 
         {/* ================= IMAGE SECTION ================= */}
         <div className="mb-20">
-          <div className="relative overflow-hidden">
+          <div className="relative max-w-350 overflow-hidden">
             {/* ===== Rod Image ===== */}
             <img
-              src="/main-assets/img/hero/All Rods.png"
+              src="/main-assets/img/hero/AllRoads.png"
               alt="Rebar Rod Sizes"
-              className="w-full h-auto object-cover"
+              className="max-w-350 w-full h-auto object-cover"
             />
 
             {/* ===== Sizes Bar ===== */}
-            <div className="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur">
-              <div className="max-w-350 bg-[#347A63] text-white flex-1 flex gap-20 mx-auto">
-                <div className="flex gap-20 items-center text-xs sm:text-sm font-medium ">
+            <div className="absolute hidden xl:block bottom-0 left-0 w-full bg-white/90 backdrop-blur">
+              <div className="max-w-350 bg-[#347A63] text-white flex-1 flex gap-19 mx-auto">
+                <div className="flex gap-15 ml-[18px] items-center text-xs sm:text-sm font-medium ">
                   {[
                     "6 mm",
                     "8 mm",
@@ -39,14 +39,14 @@ const Service = () => {
                   ].map((size) => (
                     <div
                       key={size}
-                      className="flex text-center py-2"
+                      className="flex w-13 text-center py-2"
                     >
                       {size}
                     </div>
                   ))}
                 </div>
 
-                <div className="flex gap-21 items-center text-xs sm:text-sm font-medium">
+                <div className="flex gap-18 items-center text-xs sm:text-sm font-medium">
                   {[
                     "12 mm",
                     "14 mm",
@@ -54,14 +54,14 @@ const Service = () => {
                   ].map((size) => (
                     <div
                       key={size}
-                      className="flex text-center py-2 w-[80px] items-center justify-center"
+                      className="flex text-center py-2 w-20 items-center justify-center"
                     >
                       {size}
                     </div>
                   ))}
                 </div>
 
-                <div className="flex gap-30 items-center text-xs sm:text-sm font-medium">
+                <div className="flex gap-27 ml-3 items-center text-xs sm:text-sm font-medium">
                   {[
                     "18 mm",
                     "20 mm",
@@ -69,7 +69,7 @@ const Service = () => {
                   ].map((size) => (
                     <div
                       key={size}
-                      className="flex text-center py-2 w-[88px] items-center justify-center"
+                      className="flex text-center py-2 w-22 items-center justify-center"
                     >
                       {size}
                     </div>

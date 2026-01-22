@@ -43,7 +43,7 @@ export default function ContactPage() {
           {/* LEFT INFO */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
+              <div className="md:w-12 w-17 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
                 <MapPin />
               </div>
               <div>

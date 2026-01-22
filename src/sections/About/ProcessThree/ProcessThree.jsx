@@ -76,7 +76,7 @@ const ProcessThree = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white border-t-4 border-[#347A64] hover:border-[#347A64] hover:border-2 rounded-2xl p-8 text-center hover:shadow-xl transition"
+                className="bg-white border-b-4 border-[#347A64] hover:border-[#347A64] hover:border-2 rounded-2xl p-8 text-center hover:shadow-xl transition"
               >
                 <div className="mb-6 flex flex-col items-center">
                   <span className="text-4xl font-bold text-[#347A64]">

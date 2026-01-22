@@ -8,24 +8,39 @@ const PortfolioThree = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 1.5,
-    slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    speed: 1200,
+    pauseOnHover: true,
+    slidesToScroll: 1,
     centerMode: true,
     centerPadding: "20%",
-    autoplay: true,
-    speed: 1500,
-    autoplaySpeed: 1000,
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       centerMode: false,
-    //       centerPadding: "10%",
-    //       dots: false,
-    //     },
-    //   },
-    // ],
+
+    responsive: [
+      {
+        breakpoint: 1280, // laptop
+        settings: {
+          slidesToShow: 1.3,
+          centerPadding: "15%",
+        },
+      },
+      {
+        breakpoint: 1024, // tablet
+        settings: {
+          slidesToShow: 1.1,
+          centerPadding: "10%",
+        },
+      },
+      {
+        breakpoint: 768, // mobile
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
 
   // useEffect(() => {
@@ -51,7 +66,7 @@ const PortfolioThree = () => {
             Recent Work
           </span>
 
-          <div className="mt-4 text-3xl md:text-4xl font-bold text-[#347A64]">
+          <div className="mt-2 text-2xl md:text-4xl font-bold text-[#347A64]">
             Check our latest projects
           </div>
 
@@ -71,7 +86,7 @@ const PortfolioThree = () => {
               "/main-assets/img/project/project1_2.png",
               "/main-assets/img/project/project1_3.png",
             ].map((img, index) => (
-              <div key={index} className="px-4">
+              <div key={index} className="px-2 md:px-4">
                 <div className="bg-white border-b-4 border-[#347A64] rounded-2xl hover:shadow-lg overflow-hidden">
 
                   {/* IMAGE */}
@@ -79,17 +94,8 @@ const PortfolioThree = () => {
                     <img
                       src={img}
                       alt="project"
-                      className="w-full h-[280px] object-cover"
+                      className="w-full h-70 object-cover"
                     />
-
-                    {/* <Link
-                      href={img}
-                      className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition"
-                    >
-                      <span className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#347A64] text-xl font-bold">
-                        👁
-                      </span>
-                    </Link> */}
                   </div>
 
                   {/* CONTENT */}
