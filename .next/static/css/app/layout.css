@@ -2932,6 +2932,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .xl\:mt-100 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 100);
+    }
+  }
   .xl\:mt-\[70px\] {
     @media (width >= 80rem) {
       margin-top: 70px;

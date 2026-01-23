@@ -28,7 +28,7 @@ export default function ContactPage() {
     <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[#347A64] mb-4">
             Contact Us
           </h2>
@@ -39,7 +39,7 @@ export default function ContactPage() {
         </div>
 
         {/* GRID */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT INFO */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
