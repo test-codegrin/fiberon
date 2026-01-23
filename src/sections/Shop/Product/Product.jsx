@@ -40,8 +40,12 @@ export default function Product() {
       <section className="max-w-[1400px] mx-auto px-6 py-24 md:flex justify-between items-center">
         <div className="sm:w-full w-[300px]">
           <div className="w-full">
-            <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight"><span className="text-[#347A64]">GFRP</span> Rebar</div>
-            <span className="block text-2xl xl:text-[50px] font-bold text-black">Building Tomorrow Today</span>
+            <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight">
+              <span className="text-[#347A64]">GFRP</span> Rebar
+            </div>
+            <span className="block text-2xl xl:text-[50px] font-bold text-black">
+              Building Tomorrow Today
+            </span>
           </div>
 
           <p className="mt-6 text-gray-600 max-w-150 text-lg">
@@ -80,9 +84,9 @@ export default function Product() {
 
           <div className="w-87.5 ml-auto h-55">
             <img
-              src="/main-assets/img/product/ManWithBar.png"
+              src="/main-assets/img/product/Man-Bar.png"
+              alt="steel-3"
               className="h-100 max-w-full w-50 mx-auto"
-              alt="Man with Bar"
             />
           </div>
         </div>
