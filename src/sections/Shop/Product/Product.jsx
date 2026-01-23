@@ -82,7 +82,7 @@ export default function Product() {
             <img
               src="/main-assets/img/hero/ManWithBar.png"
               className="h-100 max-w-full w-50 mx-auto"
-              alt=""
+              alt="Man with Bar"
             />
           </div>
         </div>

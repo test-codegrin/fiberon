@@ -3,7 +3,7 @@
 export default function CostEffectivePage() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="max-w-[1400px]  mx-auto px-6">
+      <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
           <div className="p-3 rounded">
@@ -31,7 +31,7 @@ export default function CostEffectivePage() {
 
         {/* ================= WHY CHOOSE ================= */}
         <div className="">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl md:text-2xl text-[#347A63] font-semibold mb-4">
             What Are the Problems Caused by Heavy Construction Materials?
           </h2>
 
@@ -81,7 +81,7 @@ export default function CostEffectivePage() {
 
         {/* ================= COMPARISON ================= */}
         <div className="">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
             The Advantages of Lightweight Construction Materials
           </h2>
 
@@ -189,7 +189,7 @@ export default function CostEffectivePage() {
 
         {/* WHY CHOOSE */}
         <div className="">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
             What Are the Problems Caused by Heavy Construction Materials?
           </h2>
 
@@ -239,7 +239,7 @@ export default function CostEffectivePage() {
 
         {/* APPLICATIONS */}
         <div className="">
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
             How GFRP Rebar Supports Lightweight Construction
           </h2>
 

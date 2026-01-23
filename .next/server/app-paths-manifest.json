@@ -1,6 +1,7 @@
 {
-  "/about/page": "app/about/page.js",
   "/certificates/page": "app/certificates/page.js",
-  "/page": "app/page.js",
-  "/shop/page": "app/shop/page.js"
+  "/lighter/page": "app/lighter/page.js",
+  "/about/page": "app/about/page.js",
+  "/shop/page": "app/shop/page.js",
+  "/page": "app/page.js"
 }
