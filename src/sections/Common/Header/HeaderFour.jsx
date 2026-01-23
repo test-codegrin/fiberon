@@ -37,7 +37,7 @@ export default function HeaderFour() {
     <>
       {/* ================= TOP BAR ================= */}
       <div className="bg-[#347A64] text-white text-xs px-4 xl:px-0">
-        <div className="max-w-360 mx-auto flex justify-between py-2">
+        <div className="max-w-350 mx-auto flex justify-between py-2">
           <span className="hidden md:block">
             ALL INDIA FIRST BIS License holder for GFRP Bars
           </span>
@@ -47,7 +47,7 @@ export default function HeaderFour() {
 
       {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
-        <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-3">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center px-0 py-3">
           <div className="flex gap-6 text-gray-600">
             <span className="flex gap-2">
               <Phone size={18} className="text-[#347A63]" /> +91 9274831310
@@ -124,12 +124,12 @@ export default function HeaderFour() {
                     >
                       Achievement
                     </Link>
-                    <Link
+                    {/* <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
                       href="/certificates"
                     >
                       Certificates
-                    </Link>
+                    </Link> */}
                   </div>
 
                   {advantagesOpen && (
@@ -206,7 +206,7 @@ export default function HeaderFour() {
                 Products <ChevronDown size={18} />
               </button>
               {productsOpen && (
-                <div className="absolute top-full w-56 bg-white shadow-lg rounded-md">
+                <div className="absolute z-999 top-full w-56 bg-white shadow-lg rounded-md">
                   <Link
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                     href="/shop"
@@ -222,15 +222,16 @@ export default function HeaderFour() {
                 </div>
               )}
             </div>
+            
             <Link href="/applications">Application</Link>
             <Link href="/contact">Contact</Link>
           </nav>
           
           {/* ACTIONS */}
           <div className="hidden xl:flex gap-4">
-            <button className="border-2 border-[#347A64] text-[#347A64] px-5 py-2 rounded-full hover:bg-[#347A64] hover:text-white transition flex gap-2">
+            {/* <button className="border-2 border-[#347A64] text-[#347A64] px-5 py-2 rounded-full hover:bg-[#347A64] hover:text-white transition flex gap-2">
               Search <Search className="mt-1" size={18} />
-            </button>
+            </button> */}
             <Link
               href="/contact"
               className="border-2 border-[#347A64] text-[#347A64] px-5 py-2 rounded-full hover:bg-[#347A64] hover:text-white transition flex gap-2"

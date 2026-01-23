@@ -7,10 +7,10 @@ const About = () => {
   return (
     <section className="relative overflow-hidden max-w-350 mx-auto py-5 bg-white">
       <div className="relative h-550.5 md:h-450 lg:h-412.5 xl:h-250 py-0 max-w-350 mx-auto px-6 xl:px-0">
-        <div className="grid grid-cols-1 xl:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 max-w-[1400px] items-center">
           {/* Image Section */}
-          <div className="relative md:flex justify-between">
-            <div className="max-h-200 max-w-150 mx-auto">
+          <div className="relative max-w-150 md:flex justify-between">
+            <div className="max-h-200 mx-auto">
               <img
                 src="/main-assets/img/normal/about_2-1.png"
                 alt="About"
@@ -19,7 +19,7 @@ const About = () => {
             </div>
 
             {/* Experience Counter */}
-            <div className="md:absolute mt-5 ml-40 md:-bottom-20 w-62.5 h-52.5 right-10 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
+            <div className="md:absolute mt-5 ml-40 md:-bottom-20 w-62.5 h-52.5 right-0 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
               <div className="flex justify-center items-center h-full gap-3">
                 <div className="w-25 h-25">
                   <img

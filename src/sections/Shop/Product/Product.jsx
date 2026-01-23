@@ -44,7 +44,7 @@ export default function Product() {
             <span className="block text-2xl xl:text-[50px] font-bold text-black">Building Tomorrow Today</span>
           </div>
 
-          <p className="mt-6 text-gray-600 text-lg">
+          <p className="mt-6 text-gray-600 max-w-150 text-lg">
             The pioneers of GFRP Rebar manufacturing in India, delivering
             corrosion-free and future-ready construction solutions.
           </p>

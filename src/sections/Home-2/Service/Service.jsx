@@ -172,7 +172,7 @@ const Service = () => {
                 href="tel:+123551579209"
                 className="font-semibold text-white text-lg block"
               >
-                +123 551 579 209
+                +91 9274831310
               </Link>
               <span className="text-sm text-white/80">
                 Mon - Sat : 10am - 07pm

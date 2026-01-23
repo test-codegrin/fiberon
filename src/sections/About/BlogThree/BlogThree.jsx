@@ -15,7 +15,7 @@ const BlogThree = () => {
     slidesToScroll: 1,
 
     // Desktop default
-    slidesToShow: 3,
+    slidesToShow: 2,
     centerMode: true,
     centerPadding: "8%",
 
@@ -61,12 +61,14 @@ const BlogThree = () => {
             </h2>
           </div>
 
-          <Link
+          <div className="">
+            <Link
             href="/pages/innerpage/blog"
             className="mx-auto lg:mx-0 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition hover:bg-[#347A64] hover:text-white"
           >
             View All News →
           </Link>
+          </div>
         </div>
 
         {/* ================= BLOG SLIDER ================= */}
