@@ -80,7 +80,7 @@ export default function Product() {
 
           <div className="w-87.5 ml-auto h-55">
             <img
-              src="/main-assets/img/hero/ManWithBar.png"
+              src="/main-assets/img/product/ManWithBar.png"
               className="h-100 max-w-full w-50 mx-auto"
               alt="Man with Bar"
             />

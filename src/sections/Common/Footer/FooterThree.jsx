@@ -37,13 +37,13 @@ const FooterThree = () => {
             <div className="grid grid-cols-1 w-auto text-base">
               <ul className="space-y-3">
                 <li>
-                  <a href="/pages/innerpage/about" className="hover:underline">
+                  <a href="/about" className="hover:underline">
                     About Us
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/pages/innerpage/service"
+                    href="/shop"
                     className="hover:underline"
                   >
                     What We Do
@@ -51,7 +51,7 @@ const FooterThree = () => {
                 </li>
                 <li>
                   <a
-                    href="/pages/innerpage/service"
+                    href="/shop"
                     className="hover:underline"
                   >
                     News & Article
@@ -59,7 +59,7 @@ const FooterThree = () => {
                 </li>
                 <li>
                   <a
-                    href="/pages/innerpage/service"
+                    href="/achievement"
                     className="hover:underline"
                   >
                     Success Story
@@ -67,7 +67,7 @@ const FooterThree = () => {
                 </li>
                 <li>
                   <a
-                    href="/pages/innerpage/service"
+                    href="/contact"
                     className="hover:underline"
                   >
                     FAQ’s
