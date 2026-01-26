@@ -39,9 +39,12 @@ export default function ContactPage() {
         </div>
 
         {/* GRID */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16">
           {/* LEFT INFO */}
-          <div className="space-y-8">
+          <div className="space-y-8 xl:pt-[150px]">
+            <div className="font-bold text-xl md:text-2xl lg:text-4xl text-[#347A63]">
+              Rebar-X Composites Industries
+            </div>
             <div className="flex items-start gap-4">
               <div className="md:w-12 w-17 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
                 <MapPin />

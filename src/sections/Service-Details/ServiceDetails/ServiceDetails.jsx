@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="pb-50 max-w-[1400px] mx-auto">
         {/* ================= HERO SECTION ================= */}
         <div className="relative">
-          <div className="max-w-[1200px] mx-auto mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
+          <div className="max-w-[1200px] mx-auto mt-[50px] xl:mt-[100px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
             <div className="lg:w-[730px]">
               <div className="md:text-[40px] text-[24px] leading-2 w-full text-[#347A64] font-bold leading-tight">
@@ -74,7 +74,7 @@ const Hero = () => {
 
         {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
         <div
-          className="fixed right-0 top-90 md:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          className="fixed right-0 top-90 md:top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-3"
           onMouseLeave={() => setActiveHover(null)}
         >
           {/* ===== Email ===== */}

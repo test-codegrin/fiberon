@@ -1,7 +1,7 @@
 {
-  "/certificates/page": "app/certificates/page.js",
-  "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/cost/page": "app/cost/page.js",
   "/shop/page": "app/shop/page.js",
-  "/achievement/page": "app/achievement/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/about/page": "app/about/page.js",
+  "/gfrp-mesh/page": "app/gfrp-mesh/page.js"
 }

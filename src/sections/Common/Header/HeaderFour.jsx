@@ -36,14 +36,14 @@ export default function HeaderFour() {
   return (
     <>
       {/* ================= TOP BAR ================= */}
-      <div className="bg-[#347A64] text-white text-xs px-4 xl:px-0">
+      {/* <div className="bg-[#347A64] text-white text-xs px-4 xl:px-0">
         <div className="max-w-350 mx-auto flex justify-between py-2">
           <span className="hidden md:block">
             ALL INDIA FIRST BIS License holder for GFRP Bars
           </span>
           <span className="font-semibold">ISO 9001:2015 CERTIFIED</span>
         </div>
-      </div>
+      </div> */}
 
       {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
@@ -118,12 +118,12 @@ export default function HeaderFour() {
                       </button>
                     </div>
 
-                    <Link
+                    {/* <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
-                      href="/achievement"
+                      href="#"
                     >
                       Achievement
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
                       href="/certificates"
@@ -302,8 +302,8 @@ export default function HeaderFour() {
                     </div>
                   )}
 
-                  <Link href="/achievement">Achievement</Link>
-                  <Link href="/certificates">Certificates</Link>
+                  {/* <Link href="/achievement">Achievement</Link>
+                  <Link href="/certificates">Certificates</Link> */}
                 </div>
               )}
 

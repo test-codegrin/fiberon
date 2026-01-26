@@ -4,11 +4,11 @@ import { MapPin, Mail, Phone } from 'lucide-react'
 export default function Contect() {
   return (
     <div>
-      <section className="relative max-w-[1400px] mt-[100px] mb-[50px] rounded-xl mx-auto bg-[#347A64] py-12 text-white">
+      <section className="relative max-w-350 mt-25 mb-12.5 rounded-xl mx-auto bg-[#347A64] py-12 text-white">
         {/* Decorative Overlay */}
-        <div className="relative max-w-[1300px] mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+        <div className="relative max-w-325 mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
           {/* ================= LEFT INFO ================= */}
-          <div className="space-y-6 mt-[150px] ml-auto max-w-[550px] w-full">
+          <div className="space-y-6 md:mt-37.5 ml-auto max-w-137.5 w-full">
             <div className="text-4xl font-bold mb-6">Contact Us</div>
 
             <p className="text-white/90 mb-10 text-lg max-w-md">
@@ -51,8 +51,8 @@ export default function Contect() {
             </h3>
 
             <form className="gap-5">
-              <div className="grid grid-cols-2 gap-5 mb-4">
-                <div className="rounded-lg h-[60px] border border-[#347A64]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="rounded-lg h-15 border border-[#347A64]">
                 <input
                   type="text"
                   placeholder="First Name"
@@ -60,7 +60,7 @@ export default function Contect() {
                 />
               </div>
 
-              <div className="rounded-lg h-[60px] border border-[#347A64]">
+              <div className="rounded-lg h-15 border border-[#347A64]">
                 <input
                   type="text"
                   placeholder="Last Name"
@@ -69,7 +69,7 @@ export default function Contect() {
               </div>
               </div>
 
-              <div className="rounded-lg h-[60px] mt-3 border border-[#347A64]">
+              <div className="rounded-lg h-15 mt-3 border border-[#347A64]">
                 <input
                   type="email"
                   placeholder="Email Address"
@@ -77,7 +77,7 @@ export default function Contect() {
                 />
               </div>
 
-              <div className="rounded-lg mt-3 h-[60px] border border-[#347A64]">
+              <div className="rounded-lg mt-3 h-15 border border-[#347A64]">
                 <input
                   type="phone"
                   placeholder="Phone Number"
@@ -85,7 +85,7 @@ export default function Contect() {
                 />
               </div>
 
-              <div className="rounded-lg mt-3 h-[60px] border border-[#347A64]">
+              <div className="rounded-lg mt-3 h-15 border border-[#347A64]">
                 <input
                   type="city"
                   placeholder="City"

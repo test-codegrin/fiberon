@@ -11,10 +11,10 @@ const Hero = () => {
       <div className="pb-50 max-w-350 mx-auto">
         {/* ================= HERO SECTION ================= */}
         <div className="relative">
-          <div className="max-w-350 mx-auto mt-[80px] md:flex items-center justify-between md:h-125 px-6">
+          <div className="max-w-350 mx-auto mt-[80px] lg:flex items-center justify-between lg:h-125 px-6">
             {/* Left Content */}
-            <div className="">
-              <div className="md:text-[50px] xl:text-[83px] text-[35px] leading-20 w-full font-bold">
+            <div className="mx-auto max-w-full w-[700px] lg:w-full">
+              <div className="md:text-[50px] xl:text-[83px] text-[35px] leading-10 md:leading-12 xl:leading-20 w-full font-bold">
                 <span className="text-[#347A64]">GFRP </span>REBER <br /> MANUFACTURER
               </div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="mt-20 max-w-100">
+            <div className="mt-20 mx-auto max-w-100">
               <img
                 src="/main-assets/img/hero/hero_img.png"
                 alt="Building"
@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
         <div
-          className="fixed right-0 top-80 xl:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
+          className="fixed right-0  hidden top-80 xl:top-1/2 -translate-y-1/2 z-50 lg:flex flex-col gap-3"
           onMouseLeave={() => setActiveHover(null)}
         >
           {/* ===== Email ===== */}

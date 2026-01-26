@@ -46,63 +46,25 @@ export default function DurablePage() {
           infrastructure.
         </p>
 
-        <ul className="mb-12">
-          <li className="flex items-center gap-3">
-            <div className="">
-              <img
-                src="/main-assets/img/hero/RightSign.png"
-                alt="GFRP Info"
-                className="w-7 h-auto object-contain"
-              />
+        <div className="space-y-4 mb-6">
+          {[
+            "Superior Durability: GFRP rebar resists moisture, chemicals, and environmental stress, ensuring long-term structural integrity.",
+            "Corrosion Resistance: Unlike steel, GFRP rebar does not rust, eliminating costly maintenance caused by corrosion.",
+            "Lightweight and Easy Installation: GFRP rebar is lightweight, simplifying transportation and reducing installation time and labor costs.",
+            "Cost-Effectiveness: Reduced maintenance and longer lifespan translate into lower lifecycle costs.",
+            "High Strength-to-Weight Ratio: GFRP rebar provides excellent load-bearing capacity while remaining lightweight.",
+          ].map((item, index) => (
+            <div key={index} className="flex gap-3">
+              <span className="text-[#347A64] font-bold">✓</span>
+              <p className="text-gray-700">{item}</p>
             </div>
-            <div className="pt-3">
-              <p className="text-gray-700">
-                <b>Structural Integrity:</b> Environmental stress, such as
-                moisture and chemical exposure, degrade materials, causing
-                cracks and structural failure.
-              </p>
-            </div>
-          </li>
+          ))}
+        </div>
 
-          <li className="flex gap-3">
-            <div className="">
-              <img
-                src="/main-assets/img/hero/RightSign.png"
-                alt="GFRP Info"
-                className="w-7 h-auto object-contain"
-              />
-            </div>
-            <div className="">
-              <p className="text-gray-700">
-                <b>Increased Maintenance Costs:</b> Regular repairs and
-                replacements due to material degradation inflate maintenance
-                expenses over time.
-              </p>
-            </div>
-          </li>
-
-          <li className="flex gap-3">
-            <div className="">
-              <img
-                src="/main-assets/img/hero/RightSign.png"
-                alt="GFRP Info"
-                className="w-7 h-auto object-contain"
-              />
-            </div>
-            <div className="">
-              <p className="text-gray-700">
-                <b>Reduced Lifespan of Structures:</b> Poor material durability
-                shortens the lifespan of construction, requiring premature
-                replacements and increasing long-term costs.
-              </p>
-            </div>
-          </li>
-
-          <p>
-            Builders need a solution that ensures lasting durability and reduces
-            the need for frequent maintenance.
-          </p>
-        </ul>
+        <p>
+          Builders need a solution that ensures lasting durability and reduces
+          the need for frequent maintenance.
+        </p>
 
         {/* TWO COLUMN SECTION */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -199,14 +161,14 @@ export default function DurablePage() {
           Applications of GFRP Rebars
         </h2>
 
-        <div className="space-y-3 mb-16">
+        <div className="space-y-3 mb-16 list-none">
           <li>
-            <b>Marine Structures:</b> It resists saltwater and humidity,
+            <b className="text-[#347A64]">Marine Structures:</b> It resists saltwater and humidity,
             ensuring lasting durability in coastal and offshore projects.
           </li>
 
           <li>
-            <b>Industrial Plants:</b> GFRP Rebar withstands chemicals and
+            <b className="text-[#347A64]">Industrial Plants:</b> GFRP Rebar withstands chemicals and
             corrosive materials, making it ideal for industrial floors and power
             plants. GFRP Rebar is a stronger material that can handle heavy
             traffic in industrial plants and make it more durable for industrial
@@ -214,7 +176,7 @@ export default function DurablePage() {
           </li>
 
           <li>
-            <b>Bridges and Highways:</b> Its corrosion resistance enhances the
+            <b className="text-[#347A64]">Bridges and Highways:</b> Its corrosion resistance enhances the
             lifespan of infrastructure exposed to de-icing salts and
             environmental wear. GFRP Rebar is a stronger and lighter material.
             Bridges and highways go through heavy transportation, and
@@ -223,13 +185,13 @@ export default function DurablePage() {
           </li>
 
           <li>
-            <b>Water Treatment Plants:</b> GFRP Rebar endures moisture and
+            <b className="text-[#347A64]">Water Treatment Plants:</b> GFRP Rebar endures moisture and
             chemical exposure, making it a reliable choice for wastewater
             treatment facilities.
           </li>
 
           <p>
-            <b>Residential and Commercial Buildings:</b> GFRP Rebar strengthens
+            <b className="text-[#347A64]">Residential and Commercial Buildings:</b> GFRP Rebar strengthens
             foundations, parking garages, and rooftop pools, offering a
             long-lasting solution for urban construction.
           </p>

@@ -23,9 +23,9 @@ const FooterThree = () => {
               resource.
             </p>
 
-            <div className="mt-4 text-2xl text-[#347A64] font-semibold">
+            {/* <div className="mt-4 text-2xl text-[#347A64] font-semibold">
               Since 2000
-            </div>
+            </div> */}
           </div>
 
           {/* ================= USEFUL LINKS ================= */}
@@ -79,8 +79,8 @@ const FooterThree = () => {
 
           {/* ================= ADDRESS ================= */}
           <div>
-            <div className="text-[20px] text-[#347A64] font-semibold mb-2">
-              ADDRESS
+            <div className="text-[25px] text-[#347A64] font-bold mb-6">
+              Rebar-X Composites Industries
             </div>
 
             <div className="flex w-[300px] md:w-[400px] gap-2 text-base">

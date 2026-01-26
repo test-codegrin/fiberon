@@ -24,7 +24,7 @@ const BlogThree = () => {
         breakpoint: 1280, // laptop
         settings: {
           slidesToShow: 2,
-          centerPadding: "6%",
+          centerPadding: "15%",
         },
       },
       {
@@ -32,7 +32,7 @@ const BlogThree = () => {
         settings: {
           slidesToShow: 1,
           centerMode: false,
-          centerPadding: "6%",
+          centerPadding: "10%",
         },
       },
       {
@@ -49,9 +49,8 @@ const BlogThree = () => {
   return (
     <section className="w-full bg-white py-14 sm:py-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
-
         {/* ================= HEADER ================= */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-12 sm:mb-14">
+        <div className="flex flex-col lg:flex-row max-w-[1400px] lg:items-center justify-between mb-12 sm:mb-14">
           <div className="text-center lg:text-left">
             <span className="block text-[#347A64] font-semibold text-sm sm:text-base uppercase">
               Latest News
@@ -63,11 +62,11 @@ const BlogThree = () => {
 
           <div className="">
             <Link
-            href="/pages/innerpage/blog"
-            className="mx-auto lg:mx-0 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition hover:bg-[#347A64] hover:text-white"
-          >
-            View All News →
-          </Link>
+              href="/pages/innerpage/blog"
+              className="mx-auto lg:mx-0 ml-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition hover:bg-[#347A64] hover:text-white"
+            >
+              View All News{""} →
+            </Link>
           </div>
         </div>
 
@@ -81,9 +80,8 @@ const BlogThree = () => {
             "/main-assets/img/blog/blog_1_2.png",
             "/main-assets/img/blog/blog_1_3.png",
           ].map((img, index) => (
-            <div key={index} className="px-3 sm:px-4">
-              <div className="bg-white border-b-4 border-[#347A64] rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-
+            <div key={index} className="px-4">
+              <div className="bg-white border-b-4 border-[#347A64] rounded-2xl overflow-hidden h-full hover:shadow-lg transition-shadow">
                 {/* IMAGE */}
                 <div className="relative">
                   <img
@@ -103,31 +101,33 @@ const BlogThree = () => {
                 </div>
 
                 {/* CONTENT */}
-                <div className="p-5 sm:p-6">
-                  {/* META */}
+                <div className="p-4 md:p-6 xl:p-5">
                   <div className="flex gap-4 text-xs sm:text-sm text-gray-500 mb-3">
-                    <Link href="/pages/innerpage/blog" className="hover:text-[#347A64]">
+                    <Link
+                      href="/pages/innerpage/blog"
+                      className="hover:text-[#347A64]"
+                    >
                       By Rebecca
                     </Link>
-                    <Link href="/pages/innerpage/blog" className="hover:text-[#347A64]">
+                    <Link
+                      href="/pages/innerpage/blog"
+                      className="hover:text-[#347A64]"
+                    >
                       Construction
                     </Link>
                   </div>
 
-                  {/* TITLE */}
                   <h3 className="text-lg sm:text-xl font-bold text-[#347A64] mb-3">
                     <Link href="/pages/innerpage/blog-details">
                       How to hire a contractor home renovation service
                     </Link>
                   </h3>
 
-                  {/* TEXT */}
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">
                     Tortor posuere ac ut consequat. Tellusi elem isis etum
                     sagittis vitae et leo duis ut diam.
                   </p>
 
-                  {/* BUTTON */}
                   <Link
                     href="/pages/innerpage/blog-details"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition hover:bg-[#347A64] hover:text-white"

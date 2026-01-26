@@ -6,17 +6,17 @@ const reviews = [
   {
     name: "Suresh",
     role: "DASHLANK PVT LTD",
-    text: "MRG Composites' GFRP rebar made a remarkable difference in our project. Lightweight yet strong, it sped up installation effortlessly.",
+    text: "REBAR-X Composites' GFRP rebar made a remarkable difference in our project. Lightweight yet strong, it sped up installation effortlessly.",
   },
   {
     name: "Raj",
     role: "Founder & CEO",
-    text: "Working with MRG Composites Rebar was a game-changer for us. Their expertise and dedication helped us achieve our goals faster.",
+    text: "Working with REBAR-X Composites Rebar was a game-changer for us. Their expertise and dedication helped us achieve our goals faster.",
   },
   {
     name: "Kacey",
     role: "Purchase Manager",
-    text: "MRG Composites truly understands our needs. Their personalized approach and attention to detail made all the difference.",
+    text: "REBAR-X Composites truly understands our needs. Their personalized approach and attention to detail made all the difference.",
   },
 ];
 
