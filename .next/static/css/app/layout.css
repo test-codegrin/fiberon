@@ -3111,6 +3111,16 @@
       top: calc(1/2 * 100%);
     }
   }
+  .xl\:-mt-7 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * -7);
+    }
+  }
+  .xl\:-mt-8 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * -8);
+    }
+  }
   .xl\:-mt-10 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * -10);

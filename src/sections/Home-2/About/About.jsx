@@ -25,7 +25,7 @@ const About = () => {
                   <img
                     src="/main-assets/img/hero/trusted-white.webp"
                     alt="icon"
-                    className="-mt-7 md:mt-0"
+                    className="-mt-7 md:mt-0 xl:-mt-7"
                   />
                 </div>
                 <div>
