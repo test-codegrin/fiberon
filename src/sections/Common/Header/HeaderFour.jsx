@@ -80,7 +80,7 @@ export default function HeaderFour() {
             <img
               src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
               alt="logo"
-              className="h-20 xl:h-28 object-contain"
+              className="h-18 xl:h-28 object-contain"
             />
           </Link>
           {/* DESKTOP NAV */}
