@@ -2,7 +2,7 @@
 
 export default function NonConductive() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-0 mt-3">
       <div className="max-w-[1400px]  mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
@@ -13,8 +13,7 @@ export default function NonConductive() {
 
         {/* ================= INTRO ================= */}
         <div className="">
-          <h3>What is Non conductive in Construction?</h3>
-
+          <div className="text-[#347A63] font-semibold text-2xl md:text-3xl">What is Non conductive in Construction?</div>
           <p className="text-gray-700 leading-relaxed mb-6">
             In Construction, “Non-Conductive” refers to materials or substances
             that do not conduct electricity. These materials are used in various
@@ -35,9 +34,9 @@ export default function NonConductive() {
 
         {/* ================= WHY CHOOSE ================= */}
         <div className="">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">
+          <div className="text-2xl md:text-3xl text-[#347A63] font-semibold mb-4">
             Importance Of Non-conductive Material in Construction
-          </h3>
+          </div>
 
           <p>
             Non-conductive material plays a crucial role in Construction for a
@@ -47,14 +46,14 @@ export default function NonConductive() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Electrical Safety: </b> <br /> Non-conductive materials are
+              <b className="text-[#347A63]">Electrical Safety: </b> <br /> Non-conductive materials are
               essential for ensuring electrical safety in construction projects.
               They prevent the flow of electrical current and reduce the risk of
               electrical shocks and accidents, protecting workers and occupants.
             </li>
 
             <li>
-              <b>Avoiding Electromagnetic Interference (EMI): </b> <br /> In
+              <b className="text-[#347A63]">Avoiding Electromagnetic Interference (EMI): </b> <br /> In
               sensitive areas such as hospitals, labs, and data centres, where
               EMI can disrupt electronic equipment and systems. Non-conductive
               materials help mitigate EMI, ensuring the proper functioning of
@@ -62,7 +61,7 @@ export default function NonConductive() {
             </li>
 
             <li>
-              <b>Safety:</b>
+              <b className="text-[#347A63]">Safety:</b>
               <br />
               Non-conductive materials are essential for places where
               electricity is a major concern. It reduces the major incidents.
@@ -72,10 +71,10 @@ export default function NonConductive() {
 
         {/* ================= COMPARISON ================= */}
         <div className="">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">
+          <div className="text-2xl md:text-3xl text-[#347A63] font-semibold mb-4">
             Glass Fiber Polymer Rebar (GFRP Rebar) - Non Conductive Construction
             Material
-          </h3>
+          </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
             Glass Fiber Polymer Resin is a non-conductive material. It provides
@@ -85,7 +84,7 @@ export default function NonConductive() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Material Composition: </b> <br /> GFRP Rebar is made of Glass
+              <b className="text-[#347A63]">Material Composition: </b> <br /> GFRP Rebar is made of Glass
               Fibers embedded in the polymer resin matrix. Glass fibres are
               non-conductive, and the polymer matrix used in GFRP rebar
               formulations is also non-conductive. As a result, the GFRP rebar
@@ -93,13 +92,13 @@ export default function NonConductive() {
             </li>
 
             <li>
-              <b>Electrical Insulation: </b> <br /> It prevents the flow of
+              <b className="text-[#347A63]">Electrical Insulation: </b> <br /> It prevents the flow of
               electrical current, reducing the risk of electrical accidents,
               short circuits, and other electrical hazards.
             </li>
 
             <li>
-              <b>Reduced Electromagnetic Interference (EMI):</b>
+              <b className="text-[#347A63]">Reduced Electromagnetic Interference (EMI):</b>
               <br />
               GFRP rebar’s non-conductive properties help minimize
               electromagnetic interference in environments where sensitive

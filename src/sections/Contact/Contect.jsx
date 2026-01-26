@@ -45,13 +45,13 @@ export default function Contect() {
           </div>
 
           {/* ================= RIGHT FORM ================= */}
-          <div className="bg-white p-10 rounded-2xl shadow-2xl text-black">
+          <div className="bg-white p-3 rounded-2xl shadow-2xl text-black">
             <h3 className="text-2xl font-bold text-[#347A64] mb-6">
               Send Us a Message
             </h3>
 
             <form className="gap-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <div className="rounded-lg h-15 border border-[#347A64]">
                 <input
                   type="text"

@@ -19,12 +19,13 @@ const About = () => {
             </div>
 
             {/* Experience Counter */}
-            <div className="md:absolute mt-5 ml-40 md:-bottom-20 w-62.5 h-52.5 right-0 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
+            <div className="md:absolute mt-5 md:ml-40 md:-bottom-20 w-full md:w-62.5 h-52.5 right-0 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
               <div className="flex justify-center items-center h-full gap-3">
                 <div className="w-25 h-25">
                   <img
                     src="/main-assets/img/hero/trusted-white.webp"
                     alt="icon"
+                    className="-mt-7 md:mt-0"
                   />
                 </div>
                 <div>
@@ -102,7 +103,7 @@ const About = () => {
             {/* CTA Button */}
             <Link
               href="/pages/innerpage/about"
-              className="inline-flex items-center gap-1.5 px-8 py-3 text-white font-semibold rounded-md bg-[#347A64] transition"
+              className="inline-flex items-center justify-center w-full md:w-[300px] gap-1.5 px-8 py-3 text-white font-semibold rounded-md bg-[#347A64] transition"
             >
               Explore Our Company
               <i className="ri-arrow-right-up-line text-[20px]"></i>

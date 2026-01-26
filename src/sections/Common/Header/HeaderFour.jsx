@@ -47,7 +47,7 @@ export default function HeaderFour() {
 
       {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
-        <div className="max-w-[1400px] mx-auto flex justify-between items-center px-0 py-3">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center md:px-0 px-3 py-3">
           <div className="flex gap-6 text-gray-600">
             <span className="flex gap-2">
               <Phone size={18} className="text-[#347A63]" /> +91 9274831310
@@ -80,7 +80,7 @@ export default function HeaderFour() {
             <img
               src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
               alt="logo"
-              className="h-28 object-contain"
+              className="h-20 xl:h-28 object-contain"
             />
           </Link>
           {/* DESKTOP NAV */}
@@ -254,7 +254,7 @@ export default function HeaderFour() {
             <div className="flex justify-between items-center mb-6">
               <img
                 src="/main-assets/img/hero/Fibron_Logo_Black_New.png"
-                className="h-10"
+                className="h-15"
               />
               <button onClick={() => setMobileMenu(false)}>
                 <X size={22} />

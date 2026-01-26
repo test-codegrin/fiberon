@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function DurablePage() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-0 md:mt-3">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
@@ -34,9 +34,9 @@ export default function DurablePage() {
         </p>
 
         {/* CHALLENGES */}
-        <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+        <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-3">
           Challenges to Achieving Durable Structures
-        </h2>
+        </div>
 
         <p className="text-gray-700 mb-6">
           In construction, durability determines the ability of structures to
@@ -70,10 +70,10 @@ export default function DurablePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* TEXT */}
           <div>
-            <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+            <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-3">
               What Is GFRP Rebar?
-            </h2>
-            <p className="text-gray-700 mb-4">
+            </div>
+            <p className="text-gray-700 mb-3">
               GFRP Rebar stands for Glass Fiber Reinforced Polymer Rebar. This
               advanced composite material consists of high-strength glass fibres
               bonded with a polymer resin matrix. Unlike steel rebar, GFRP Rebar
@@ -104,12 +104,11 @@ export default function DurablePage() {
         </div>
 
         {/* WHY CHOOSE */}
-
         <div>
           {/* ================= EFFECTS ================= */}
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-6">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-6">
             Why Choose GFRP Rebar for Durable Construction?
-          </h2>
+          </div>
 
           <p>
             GFRP Rebar provides unparalleled durability for modern construction
@@ -118,7 +117,7 @@ export default function DurablePage() {
 
           <ol className="list-decimal px-3 space-y-4 text-gray-700 leading-relaxed mb-8">
             <li>
-              <b>Superior Durability:</b> GFRP Rebar resists moisture,
+              <b className="text-[#347A64]">Superior Durability:</b> GFRP Rebar resists moisture,
               chemicals, and environmental stressors, ensuring long-term
               structural integrity. GFRP Rebar is 2 times stronger and ¼ lighter
               than traditional steel rebar. It makes the construction stronger
@@ -126,7 +125,7 @@ export default function DurablePage() {
             </li>
 
             <li>
-              <b>Corrosion Resistance:</b> Unlike steel, GFRP Rebar does not
+              <b className="text-[#347A64]">Corrosion Resistance:</b> Unlike steel, GFRP Rebar does not
               rust, even in humid or chemically aggressive conditions. The
               combination of glass fibres and polymer resin ensures that GFRP
               Rebar can withstand exposure to water, humidity, and harsh
@@ -134,20 +133,20 @@ export default function DurablePage() {
             </li>
 
             <li>
-              <b>Lightweight and Easy Installation:</b> GFRP Rebar is ¼ the
+              <b className="text-[#347A64]">Lightweight and Easy Installation:</b> GFRP Rebar is ¼ the
               weight of steel, simplifying transportation and reducing
               installation time and labour costs. GFRP Rebar is an ideal choice
               for construction where weight is a major concern.
             </li>
 
             <li>
-              <b>Cost-Effectiveness:</b> GFRP Rebar is a durable construction
+              <b className="text-[#347A64]">Cost-Effectiveness:</b> GFRP Rebar is a durable construction
               material That increases the life span of construction. It
               decreases the maintenance costs and time.
             </li>
 
             <li>
-              <b>High Strength-to-Weight Ratio:</b> GFRP Rebar provides twice
+              <b className="text-[#347A64]">High Strength-to-Weight Ratio:</b> GFRP Rebar provides twice
               the tensile strength of steel, ensuring stronger and more reliable
               construction. GFRP bars are ¼ lighter than traditional steel
               rebar. It makes the construction lighter and provides more
@@ -157,9 +156,9 @@ export default function DurablePage() {
         </div>
 
         {/* APPLICATIONS */}
-        <h2 className="text-2xl font-semibold text-[#347A64] mb-6">
+        <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-6">
           Applications of GFRP Rebars
-        </h2>
+        </div>
 
         <div className="space-y-3 mb-16 list-none">
           <li>
@@ -199,9 +198,9 @@ export default function DurablePage() {
 
         {/* CONCLUSION */}
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-3">
             Comparison: GFRP Rebar vs Steel Rebar for Durability
-          </h2>
+          </div>
           <p className="text-gray-700">
             Glass Fibre Glass-reinforced polymer comes with various properties
             such as corrosion resistance, strength, lightweight, non-conductive,
@@ -219,7 +218,7 @@ export default function DurablePage() {
         </div>
 
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <h2 className="text-2xl font-semibold text-[#347A64] mb-3">
             Conclusion: GFRP Rebar – The Key to Durable Construction
           </h2>
           <p className="text-gray-700">

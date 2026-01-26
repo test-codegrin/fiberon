@@ -47,7 +47,7 @@ const TestimonialThree = () => {
 
                     {/* QUOTE */}
                     <div className="absolute top-4 right-4 sm:top-5 sm:right-8 bg-[#347A64] w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full text-white text-4xl sm:text-6xl">
-                      <span className="-mt-6">,,</span>
+                      <span className="-mt-6 xl:-mt-10">,,</span>
                     </div>
 
                     {/* PROFILE */}
@@ -100,7 +100,7 @@ const TestimonialThree = () => {
 
           {/* ================= RIGHT : CTA CARD ================= */}
           <div className="bg-[#347A64] text-white rounded-2xl p-8 sm:p-10 text-center xl:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 pb-3">
               Have you any questions?
             </h3>
             <p className="text-white/90 text-sm sm:text-base mb-8">

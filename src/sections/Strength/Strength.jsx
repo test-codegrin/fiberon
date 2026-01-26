@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function StrengthPage() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-0 mt-3">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
         <div className="flex items-center gap-4 mb-8">
@@ -25,7 +25,7 @@ export default function StrengthPage() {
         {/* INTRO */}
         <div className="">
           <div className="">
-            <h2>Understanding Strength: The Construction Problem</h2>
+            <div className="text-[#347A64] text-2xl md:text-3xl font-semibold">Understanding Strength: The Construction Problem</div>
 
             <p className="text-gray-700 leading-relaxed mb-10">
               Modern construction relies heavily on strength attributes to
@@ -41,7 +41,7 @@ export default function StrengthPage() {
           </div>
 
           <div className="">
-            <h2>How Strength Matters in Construction</h2>
+            <div className="text-[#347A64] text-2xl md:text-3xl font-semibold">How Strength Matters in Construction</div>
 
             <p className="text-gray-700 leading-relaxed mb-10">
               Construction projects depend on their strength to guarantee safety
@@ -61,24 +61,24 @@ export default function StrengthPage() {
 
         {/* CHALLENGES */}
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
             How does corrosion affect construction?
-          </h2>
+          </div>
 
           <ol>
             <li>
-              <b>Structural Integrity:</b> Corrosion weakens the construction,
+              <b className="text-[#347A63]">Structural Integrity:</b> Corrosion weakens the construction,
               leads to cracks, and reduces load-bearing capacity.
             </li>
 
             <li>
-              <b>Increase maintenance cost: </b>corrosion weakens the
+              <b className="text-[#347A63]">Increase maintenance cost: </b>corrosion weakens the
               construction. So, the construction requires regular maintenance,
               increasing the maintenance cost and time.
             </li>
 
             <li>
-              <b>Short construction lifespan:</b> Coronavirus damages the
+              <b className="text-[#347A63]">Short construction lifespan:</b> Coronavirus damages the
               construction, requiring regular maintenance or replacements.
               Builders need to rebuild the structure, which also increases the
               cost of construction and time.
@@ -87,7 +87,7 @@ export default function StrengthPage() {
 
           <p>
             Builders and contractors need a material that resists{" "}
-            <b>corrosion</b> and provides lasting durability. GFRP Rebar
+            <b className="text-[#347A63]">corrosion</b> and provides lasting durability. GFRP Rebar
             completes this requirement, offering more strength and lighter
             corrosion resistance at lower prices.
           </p>
@@ -97,12 +97,12 @@ export default function StrengthPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* TEXT */}
           <div>
-            <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+            <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
               What Is GFRP Rebar?
-            </h2>
+            </div>
             <p className="text-gray-700 mb-4">
-              <span className="font-bold underline ">GFRP Rebar</span>, or{" "}
-              <b>Glass Fiber Reinforced Polymer Rebar</b>, provides exceptional
+              <span className="font-bold underline text-[#347A63]">GFRP Rebar</span>, or{" "}
+              <b className="text-[#347A63]">Glass Fiber Reinforced Polymer Rebar</b>, provides exceptional
               performance capabilities in construction applications. The blended
               material called GFRP rods incorporates glass fibers with polymer
               matrix to serve as a steel reinforcement replacement. Modern
@@ -131,38 +131,38 @@ export default function StrengthPage() {
         {/* WHY CHOOSE */}
         <div>
           {/* ================= EFFECTS ================= */}
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-6">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-6">
             Key Features of GFRP Rebar:
-          </h2>
+          </div>
 
           <ol className="list-decimal px-3 space-y-4 text-gray-700 leading-relaxed mb-8">
             <li>
-              <b>Strength:</b> GFRP Rebar is 2 times stronger than traditional
+              <b className="text-[#347A63]">Strength:</b> GFRP Rebar is 2 times stronger than traditional
               steel rebar. GFRP Rebar makes the construction stronger. It
               consists of Glass Fiber and polymer rebar.
             </li>
 
             <li>
-              <b>Lighter:</b> GFRP Rebars is ¼ lighter than traditional steel
+              <b className="text-[#347A63]">Lighter:</b> GFRP Rebars is ¼ lighter than traditional steel
               rebar. GFRP Rebar is an ideal choice where weight is major
               concern. It makes the construction more lighter and provides more
               strength.
             </li>
 
             <li>
-              <b>Corrosion Resistance:</b> Unlike steel, GFRP bars are
+              <b className="text-[#347A63]">Corrosion Resistance:</b> Unlike steel, GFRP bars are
               impervious to rust, ensuring durability in harsh conditions like
               coastal areas or chemical facilities.
             </li>
 
             <li>
-              <b>Non-Magnetic Properties:</b> These materials work optimally in
+              <b className="text-[#347A63]">Non-Magnetic Properties:</b> These materials work optimally in
               systems which need electromagnetic stability since they do not
               hold magnetic attraction.
             </li>
 
             <li>
-              <b>Extended Lifespan:</b> GFRP offers a prolonged service life
+              <b className="text-[#347A63]">Extended Lifespan:</b> GFRP offers a prolonged service life
               span because it retains its structural properties during many
               decades which decreases the necessity to replace or repair
               structures.
@@ -172,9 +172,9 @@ export default function StrengthPage() {
 
         {/* APPLICATIONS */}
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-6">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-6">
             Why GFRP Rebar is Stronger for Construction
-          </h2>
+          </div>
 
           <p>
             GFRP Rebars demonstrate their strength through physical properties
@@ -185,35 +185,35 @@ export default function StrengthPage() {
 
           <div className="space-y-3 mb-16">
             <li>
-              <b>Corrosion Resistance:</b> The main factor causing damage to
+              <b className="text-[#347A63]">Corrosion Resistance:</b> The main factor causing damage to
               structures results from corrosion. Both water and salts alongside
               chemicals cannot damage glass fiber reinforced polymer rebars
               since these materials resist these substances completely.
             </li>
 
             <li>
-              <b>Lightweight</b> The lightweight nature of GFRP rebar reduces
+              <b className="text-[#347A63]">Lightweight</b> The lightweight nature of GFRP rebar reduces
               the total cost of project delivery because it weighs only
               one-fourth as much as steel materials. It is an ideal choice where
               weight is major concern such as bridge, marine structure, etc.
             </li>
 
             <li>
-              <b>Superior Tensile Strength: </b> GFRP rods deliver exceptional
+              <b className="text-[#347A63]">Superior Tensile Strength: </b> GFRP rods deliver exceptional
               tensile strength capacity which allows them to resist both
               cracking alongside deformation during applications with demanding
               load requirements.
             </li>
 
             <li>
-              <b>Thermal and Electrical Neutrality: </b> The absence of
+              <b className="text-[#347A63]">Thermal and Electrical Neutrality: </b> The absence of
               electrical and thermal conductivity properties in GFRP makes it
               suitable for particular applications that require this
               characteristic.
             </li>
 
             <p>
-              <b>Cost Efficiency:</b> The initial higher price of GFRP rebar
+              <b className="text-[#347A63]">Cost Efficiency:</b> The initial higher price of GFRP rebar
               becomes economical due to reduced maintenance requirements and
               extended service time.
             </p>
@@ -221,9 +221,9 @@ export default function StrengthPage() {
         </div>
 
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-6">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-6">
             Application of GFRP Rebar: Where Strength Matters
-          </h2>
+          </div>
 
           <p>
             Glass fiber reinforced polymer bars provide the construction
@@ -233,19 +233,19 @@ export default function StrengthPage() {
 
           <div className="space-y-3 mb-16">
             <li>
-              <b>Durability:</b> GFRP Rebar is a{" "}
-              <span className="font-bold underline">durable</span> construction
+              <b className="text-[#347A63]">Durability:</b> GFRP Rebar is a{" "}
+              <span className="font-bold underline text-[#347A63]">durable</span> construction
               material. It provides longer life span of construction.
             </li>
 
             <li>
-              <b>Corrosion resistant:</b> GFRP rebar is compatible with water,
+              <b className="text-[#347A63]">Corrosion resistant:</b> GFRP rebar is compatible with water,
               saltwater and other chemicals. It is an ideal choice for marine
               structure, bridges on water, structures on water.
             </li>
 
             <li>
-              <b>Industrial Flooring: </b> Handles heavy machinery and chemical
+              <b className="text-[#347A63]">Industrial Flooring: </b> Handles heavy machinery and chemical
               exposure without degradation.
             </li>
 
@@ -269,9 +269,9 @@ export default function StrengthPage() {
 
         {/* CONCLUSION */}
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
             GFRP Rebar vs Steel Rebar Strength
-          </h2>
+          </div>
           <p className="text-gray-700">
             The construction industry shows increased favor towards GFRP Rebar
             as opposed to Steel Rebar due to several noteworthy factors.
@@ -292,9 +292,9 @@ export default function StrengthPage() {
         </div>
 
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
             Conclusion
-          </h2>
+          </div>
           <p className="text-gray-700">
             GFRP Rebar stands as an innovative material for construction because
             it enables stronger and more reliable while maintaining cost

@@ -42,7 +42,7 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* LEFT INFO */}
           <div className="space-y-8 xl:pt-[150px]">
-            <div className="font-bold text-xl md:text-2xl lg:text-4xl text-[#347A63]">
+            <div className="font-bold text-xl flex items-center justify-center md:justify-start md:text-2xl lg:text-4xl text-[#347A63]">
               Rebar-X Composites Industries
             </div>
             <div className="flex items-start gap-4">

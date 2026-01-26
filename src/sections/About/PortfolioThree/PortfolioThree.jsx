@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Slider from "react-slick";
-import { useEffect } from "react";
 
 const PortfolioThree = () => {
   const settings = {
@@ -10,26 +9,28 @@ const PortfolioThree = () => {
     infinite: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2500,
-    speed: 1200,
+    autoplaySpeed: 3000,
+    speed: 1000,
     pauseOnHover: true,
     slidesToScroll: 1,
+    slidesToShow: 2,
     centerMode: true,
-    centerPadding: "20%",
+    centerPadding: "12%",
 
     responsive: [
       {
-        breakpoint: 1280, // laptop
+        breakpoint: 1280, // laptops
         settings: {
-          slidesToShow: 1.3,
-          centerPadding: "15%",
+          slidesToShow: 2,
+          centerPadding: "10%",
         },
       },
       {
-        breakpoint: 1024, // tablet
+        breakpoint: 1024, // tablets
         settings: {
-          slidesToShow: 1.1,
-          centerPadding: "10%",
+          slidesToShow: 2,
+          centerMode: false,
+          centerPadding: "0px",
         },
       },
       {
@@ -43,92 +44,76 @@ const PortfolioThree = () => {
     ],
   };
 
-  // useEffect(() => {
-  //   const dots = document.querySelector(".slick-dots");
-  //   if (dots) {
-  //     dots.classList.add(
-  //       "w-[100px]",
-  //       "flex",
-  //       "justify-center",
-  //       "gap-3",
-  //       "mt-8"
-  //     );
-  //   }
-  // }, []);
+  const projects = [
+    "/main-assets/img/project/project1_1.png",
+    "/main-assets/img/project/project1_2.png",
+    "/main-assets/img/project/project1_3.png",
+    "/main-assets/img/project/project1_1.png",
+    "/main-assets/img/project/project1_2.png",
+    "/main-assets/img/project/project1_3.png",
+  ];
 
   return (
-    <section className="w-full py-20 mt-10 rounded-2xl overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="w-full py-10 mt-14 xl:mt-22 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-2 sm:px-6">
 
         {/* ===== TITLE ===== */}
-        <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-md uppercase">
+        <div className="text-center mb-14 px-3">
+          <span className="inline-block text-[#347A64] font-semibold uppercase tracking-wide">
             Recent Work
           </span>
 
-          <div className="mt-2 text-2xl md:text-4xl font-bold text-[#347A64]">
-            Check our latest projects
-          </div>
+          <h2 className="mt-2 text-xl md:text-4xl font-bold text-[#347A64]">
+            Check our Latest Projects
+          </h2>
 
-          <p className="mt-3 text-gray-600">
+          <p className="mt-3 text-gray-600 max-w-xl mx-auto">
             We are the best construction agency in the world
           </p>
         </div>
 
         {/* ===== SLIDER ===== */}
-        <div className="overflow-hidden">
-          <Slider {...settings}>
-            {[
-              "/main-assets/img/project/project1_1.png",
-              "/main-assets/img/project/project1_2.png",
-              "/main-assets/img/project/project1_3.png",
-              "/main-assets/img/project/project1_1.png",
-              "/main-assets/img/project/project1_2.png",
-              "/main-assets/img/project/project1_3.png",
-            ].map((img, index) => (
-              <div key={index} className="px-2 md:px-4">
-                <div className="bg-white border-b-4 border-[#347A64] rounded-2xl hover:shadow-lg overflow-hidden">
+        <Slider {...settings}>
+          {projects.map((img, index) => (
+            <div key={index} className="px-3">
+              <div className="bg-white rounded-2xl border-b-4 border-[#347A64] overflow-hidden transition-all hover:shadow-xl">
 
-                  {/* IMAGE */}
-                  <div className="relative group">
-                    <img
-                      src={img}
-                      alt="project"
-                      className="w-full h-70 object-cover"
-                    />
-                  </div>
+                {/* IMAGE */}
+                <div className="relative">
+                  <img
+                    src={img}
+                    alt="project"
+                    className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover"
+                  />
+                </div>
 
-                  {/* CONTENT */}
-                  <div className="p-6 text-left">
-                    <span className="text-base font-semibold text-[#347A64]">
-                      Building
-                    </span>
+                {/* CONTENT */}
+                <div className="p-6 text-left">
+                  <span className="text-sm font-semibold text-[#347A64] uppercase">
+                    Building
+                  </span>
 
-                    <div className="mt-2 text-lg font-bold text-gray-900">
-                      <Link href="/pages/innerpage/project-details">
-                        General Construction
-                      </Link>
-                    </div>
-
-                    <p className="mt-2 text-sm text-gray-600">
-                      Building since 09,01,2024
-                    </p>
-
-                    <div className="bg-[#347A64] w-[200px] h-[50px]">
-                      <Link
-                      href="/pages/innerpage/project-details"
-                      className="flex items-center justify-center pt-[12px] font-semibold text-white hover:underline"
-                    >
-                      Explore Service {""} →
+                  <h3 className="mt-2 text-lg font-bold text-gray-900">
+                    <Link href="/pages/innerpage/project-details">
+                      General Construction
                     </Link>
-                    </div>
-                  </div>
+                  </h3>
+
+                  <p className="mt-2 text-sm text-gray-600">
+                    Building since 09,01,2024
+                  </p>
+
+                  <Link
+                    href="/pages/innerpage/project-details"
+                    className="inline-flex items-center justify-center mt-5 px-6 py-3 bg-[#347A64] text-white font-semibold rounded-md hover:bg-[#2e6b58] transition"
+                  >
+                    Explore Service →
+                  </Link>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );

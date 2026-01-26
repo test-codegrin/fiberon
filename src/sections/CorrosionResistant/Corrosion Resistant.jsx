@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function CorrosionResistantPage() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-0">
       <div className="max-w-[1400px] mx-auto md:px-6 px-7">
         {/* ================= TITLE ================= */}
-        <div className="flex items-center gap-3 md:gap-4 mb-8">
+        <div className="flex items-center pt-3 md:pt-4 gap-3 md:gap-4 mb-8">
           <div className="rounded">
             <img
               src="/main-assets/img/product/1-1.png"

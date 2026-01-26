@@ -24,7 +24,7 @@ export default function WhyChooseBentGFRP() {
   ];
 
   return (
-    <section className="relative w-full bg-cover bg-center py-24">
+    <section className="relative w-full bg-cover bg-center py-10">
       {/* OVERLAY */}
       <div className="absolute inset-0"></div>
 

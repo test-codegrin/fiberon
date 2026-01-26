@@ -2,10 +2,10 @@
 
 export default function CostEffectivePage() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-0 mt-3">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER */}
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center gap-3 mb-8">
           <div className="p-3 rounded">
             <img
               src="/main-assets/img/product/3.png"
@@ -22,18 +22,20 @@ export default function CostEffectivePage() {
         {/* ================= INTRO ================= */}
         <p className="text-gray-700 leading-relaxed mb-6">
           In the world of modern construction, innovation drives efficiency,
-          durability, and sustainability. Among these advancements, <b>GFRP (Glass
-          Fiber Reinforced Polymer) Rebar</b> has emerged as a game-changer. Known
-          for its exceptional strength and lightweight properties, GFRP rebar
-          addresses traditional challenges in construction while setting a new
-          benchmark for performance.
+          durability, and sustainability. Among these advancements,{" "}
+          <b className="text-[#347A64]">
+            GFRP (Glass Fiber Reinforced Polymer) Rebar
+          </b>{" "}
+          has emerged as a game-changer. Known for its exceptional strength and
+          lightweight properties, GFRP rebar addresses traditional challenges in
+          construction while setting a new benchmark for performance.
         </p>
 
         {/* ================= WHY CHOOSE ================= */}
         <div className="">
-          <h2 className="text-xl md:text-2xl text-[#347A63] font-semibold mb-4">
+          <div className="text-2xl md:text-3xl text-[#347A63] font-semibold mb-4">
             What Are the Problems Caused by Heavy Construction Materials?
-          </h2>
+          </div>
 
           <p>
             Construction has relied on heavy materials like steel and concrete
@@ -43,28 +45,28 @@ export default function CostEffectivePage() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Excessive Load on Structures</b> <br /> Heavy materials
-              increase the dead load of buildings, bridges, and other
-              infrastructure. This additional weight places stress on
-              foundations, requiring complex designs and increasing material
-              usage.
+              <b className="text-[#347A64]">Excessive Load on Structures</b>{" "}
+              <br /> Heavy materials increase the dead load of buildings,
+              bridges, and other infrastructure. This additional weight places
+              stress on foundations, requiring complex designs and increasing
+              material usage.
             </li>
 
             <li>
-              <b>Higher Transportation Costs</b> <br /> Transporting heavy
-              materials requires more fuel, larger vehicles, and multiple trips,
-              driving up logistical expenses.
+              <b className="text-[#347A64]">Higher Transportation Costs</b>{" "}
+              <br /> Transporting heavy materials requires more fuel, larger
+              vehicles, and multiple trips, driving up logistical expenses.
             </li>
 
             <li>
-              <b>Slower Construction Processes</b>
+              <b className="text-[#347A64]">Slower Construction Processes</b>
               <br />
               Heavy materials demand specialized handling equipment, additional
               labor, and extended installation time, delaying project timelines.
             </li>
 
             <li>
-              <b>Limited Seismic Performance</b>
+              <b className="text-[#347A64]">Limited Seismic Performance</b>
               <br />
               In earthquake-prone areas, the weight of traditional materials
               amplifies structural risks, making buildings more vulnerable to
@@ -81,9 +83,9 @@ export default function CostEffectivePage() {
 
         {/* ================= COMPARISON ================= */}
         <div className="">
-          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
+          <div className="text-2xl text-[#347A63] md:text-3xl font-semibold mb-4">
             The Advantages of Lightweight Construction Materials
-          </h2>
+          </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
             Switching to lightweight materials in construction offers
@@ -92,26 +94,29 @@ export default function CostEffectivePage() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Simplified Design</b> <br /> Lighter materials reduce the
-              stress on foundations, allowing for more straightforward and
-              cost-effective designs.
+              <b className="text-[#347A64]">Simplified Design</b> <br /> Lighter
+              materials reduce the stress on foundations, allowing for more
+              straightforward and cost-effective designs.
             </li>
 
             <li>
-              <b>Lower Transportation and Handling Costs</b> <br /> Lightweight
-              materials are easier to transport and require less heavy machinery
-              during installation, significantly cutting costs.
+              <b className="text-[#347A64]">
+                Lower Transportation and Handling Costs
+              </b>{" "}
+              <br /> Lightweight materials are easier to transport and require
+              less heavy machinery during installation, significantly cutting
+              costs.
             </li>
 
             <li>
-              <b>Faster Installation</b>
+              <b className="text-[#347A64]">Faster Installation</b>
               <br />
               With fewer handling challenges, lightweight materials accelerate
               project timelines and reduce labor requirements.
             </li>
 
             <li>
-              <b>Improved Structural Safety</b>
+              <b className="text-[#347A64]">Improved Structural Safety</b>
               <br />
               Buildings and infrastructure made with lightweight materials
               exhibit better seismic resistance, reducing the likelihood of
@@ -119,7 +124,7 @@ export default function CostEffectivePage() {
             </li>
 
             <li>
-              <b>Energy Efficiency</b>
+              <b className="text-[#347A64]">Energy Efficiency</b>
               <br />
               Many lightweight materials provide superior thermal insulation,
               making buildings more energy-efficient and sustainable.
@@ -131,9 +136,9 @@ export default function CostEffectivePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* TEXT */}
           <div>
-            <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+            <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
               What Is GFRP Rebar?
-            </h2>
+            </div>
             <p className="text-gray-700 mb-4">
               GFRP rebar is a cutting-edge composite material crafted from glass
               fibers embedded in a high-performance polymer matrix. It is
@@ -141,32 +146,35 @@ export default function CostEffectivePage() {
               offering the same, if not better, performance with a fraction of
               the weight.
             </p>
-            <h5 className="text-gray-700 mb-6">
+            <h5 className="text-[#347A63] mb-6">
               Unique Characteristics of GFRP Rebar
             </h5>
 
             <ol>
               <li>
-                <b>Lightweight:</b> GFRP Rebar is ¼ lighter than steel,It takes
-                less energy for transportation.
+                <b className="text-[#347A64]">Lightweight:</b> GFRP Rebar is ¼
+                lighter than steel,It takes less energy for transportation.
               </li>
 
               <li>
-                <b>Corrosion-Free:</b> Unlike steel, GFRP rebar does not rust,
-                even in marine or chemically aggressive environments.
+                <b className="text-[#347A64]">Corrosion-Free:</b> Unlike steel,
+                GFRP rebar does not rust, even in marine or chemically
+                aggressive environments.
               </li>
 
               <li>
-                <b>High Strength-to-Weight Ratio:</b> GFRP Rebar is two times
-                stronger than traditional steel reinforcement bars. GFRP Rebar
-                makes the construction stronger, and provides light weight to
-                construction.
+                <b className="text-[#347A64]">High Strength-to-Weight Ratio:</b>{" "}
+                GFRP Rebar is two times stronger than traditional steel
+                reinforcement bars. GFRP Rebar makes the construction stronger,
+                and provides light weight to construction.
               </li>
 
               <li>
-                <b>Non-Magnetic and Non-Conductive: </b> Perfect for
-                applications requiring electromagnetic neutrality, such as MRI
-                facilities.
+                <b className="text-[#347A64]">
+                  Non-Magnetic and Non-Conductive:{" "}
+                </b>{" "}
+                Perfect for applications requiring electromagnetic neutrality,
+                such as MRI facilities.
               </li>
             </ol>
 
@@ -189,9 +197,9 @@ export default function CostEffectivePage() {
 
         {/* WHY CHOOSE */}
         <div className="">
-          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
+          <div className="text-2xl text-[#347A63] md:text-3xl font-semibold mb-4">
             What Are the Problems Caused by Heavy Construction Materials?
-          </h2>
+          </div>
 
           <p>
             Construction has relied on heavy materials like steel and concrete
@@ -201,34 +209,36 @@ export default function CostEffectivePage() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Ease of Handling</b> <br /> The lightweight nature of GFRP
-              rebar makes it easy to transport, carry, and position during
-              construction, reducing reliance on heavy machinery.
+              <b className="text-[#347A64]">Ease of Handling</b> <br /> The
+              lightweight nature of GFRP rebar makes it easy to transport,
+              carry, and position during construction, reducing reliance on
+              heavy machinery.
             </li>
 
             <li>
-              <b>Corrosion Resistance</b> <br /> GFRP rebar is immune to rust,
-              ensuring longer-lasting structures and reducing maintenance costs.
-              This is especially beneficial for projects exposed to water or
-              chemicals, such as bridges and coastal infrastructure.
+              <b className="text-[#347A64]">Corrosion Resistance</b> <br /> GFRP
+              rebar is immune to rust, ensuring longer-lasting structures and
+              reducing maintenance costs. This is especially beneficial for
+              projects exposed to water or chemicals, such as bridges and
+              coastal infrastructure.
             </li>
 
             <li>
-              <b>Enhanced Durability</b>
+              <b className="text-[#347A64]">Enhanced Durability</b>
               <br />
               The durability of GFRP rebar extends the lifespan of structures,
               even in harsh environments, providing long-term value.
             </li>
 
             <li>
-              <b>Eco-Friendly</b>
+              <b className="text-[#347A64]">Eco-Friendly</b>
               <br />
               With a lower carbon footprint than steel and fewer maintenance
               needs, GFRP rebar supports sustainable construction practices.
             </li>
 
             <li>
-              <b>Adaptability</b>
+              <b className="text-[#347A64]">Adaptability</b>
               <br />
               Its unique properties make GFRP rebar suitable for various
               applications, from bridges and high-rises to precast elements and
@@ -239,9 +249,9 @@ export default function CostEffectivePage() {
 
         {/* APPLICATIONS */}
         <div className="">
-          <h2 className="text-xl text-[#347A63] md:text-2xl font-semibold mb-4">
+          <div className="text-2xl text-[#347A63] md:text-3xl font-semibold mb-4">
             How GFRP Rebar Supports Lightweight Construction
-          </h2>
+          </div>
 
           <p>
             The lightweight properties of GFRP rebar are revolutionizing how
@@ -250,19 +260,21 @@ export default function CostEffectivePage() {
 
           <ol className="list-decimal pl-5 space-y-5 text-gray-700 leading-relaxed mb-10">
             <li>
-              <b>Bridge Construction</b> <br /> GFRP rebar minimizes dead loads,
-              enabling longer spans and reducing the need for heavy foundations.
-              This leads to cost-effective and durable bridge designs.
+              <b className="text-[#347A64]">Bridge Construction</b> <br /> GFRP
+              rebar minimizes dead loads, enabling longer spans and reducing the
+              need for heavy foundations. This leads to cost-effective and
+              durable bridge designs.
             </li>
 
             <li>
-              <b>Marine Applications</b> <br /> In marine environments, GFRP
-              rebar’s light weight and corrosion resistance ensure structures
-              withstand the test of time without adding excessive load.
+              <b className="text-[#347A64]">Marine Applications</b> <br /> In
+              marine environments, GFRP rebar’s light weight and corrosion
+              resistance ensure structures withstand the test of time without
+              adding excessive load.
             </li>
 
             <li>
-              <b>Seismic-Resilient High-Rises</b>
+              <b className="text-[#347A64]">Seismic-Resilient High-Rises</b>
               <br />
               In earthquake-prone regions, GFRP rebar reduces the overall weight
               of buildings, enhancing stability and reducing the risk of
@@ -270,7 +282,7 @@ export default function CostEffectivePage() {
             </li>
 
             <li>
-              <b>Precast Concrete Elements</b>
+              <b className="text-[#347A64]">Precast Concrete Elements</b>
               <br />
               The lightness of GFRP rebar allows for easier transportation and
               faster installation of precast components, cutting down
@@ -281,9 +293,9 @@ export default function CostEffectivePage() {
 
         {/* CONCLUSION */}
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
             GFRP Rebar vs. Steel Rebar for Lightweight Construction
-          </h2>
+          </div>
 
           <p className="text-gray-700">
             When it comes to lightweight construction, GFRP rebar outperforms
@@ -307,16 +319,18 @@ export default function CostEffectivePage() {
         </div>
 
         <div className="">
-          <h2 className="text-2xl font-semibold text-[#347A64] mb-4">
+          <div className="text-2xl md:text-3xl font-semibold text-[#347A64] mb-4">
             Why GFRP Rebar is the Future of Lightweight Construction
-          </h2>
+          </div>
 
           <p className="text-gray-700">
             As the construction industry moves toward more sustainable and
-            efficient practices, <b>GFRP rebar</b> stands out as the ultimate <b>lighter
-            construction material</b>. Its lightweight nature simplifies logistics
-            and installation, while its corrosion resistance and durability
-            enhance the lifespan of structures.
+            efficient practices, <b className="text-[#347A64]">GFRP rebar</b>{" "}
+            stands out as the ultimate{" "}
+            <b className="text-[#347A64]">lighter construction material</b>. Its
+            lightweight nature simplifies logistics and installation, while its
+            corrosion resistance and durability enhance the lifespan of
+            structures.
           </p>
 
           <p className="text-gray-700">

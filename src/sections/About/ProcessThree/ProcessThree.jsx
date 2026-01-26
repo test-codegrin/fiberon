@@ -24,11 +24,11 @@ const ProcessThree = () => {
   return (
     <>
       {/* ===== PROCESS SECTION ===== */}
-      <section className="relative w-full max-w-[1400px] mt-16 mx-auto rounded-2xl py-20 overflow-hidden">
+      <section className="relative w-full max-w-[1400px] mt-14 xl:mt-25 mx-auto rounded-2xl py-20 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6">
 
           {/* ===== HEADER ===== */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-16">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-12">
             <div className="w-full">
               <span className="flex items-center justify-center text-[#347A64] text-md font-semibold uppercase tracking-wide">
                 Work Process
@@ -38,16 +38,6 @@ const ProcessThree = () => {
                 Our Services That We Provide
               </div>
             </div>
-
-            {/* <button
-              onClick={openPopup}
-              className="inline-flex items-center gap-4 px-6 py-3 bg-white text-[#347A64] font-semibold rounded-full hover:bg-gray-100 transition"
-            >
-              Play Video
-              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#347A64] text-white">
-                ▶
-              </span>
-            </button> */}
           </div>
 
           {/* ===== PROCESS STEPS ===== */}

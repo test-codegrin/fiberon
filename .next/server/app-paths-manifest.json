@@ -1,7 +1,8 @@
 {
-  "/contact/page": "app/contact/page.js",
-  "/cost/page": "app/cost/page.js",
-  "/shop/page": "app/shop/page.js",
-  "/about/page": "app/about/page.js",
-  "/gfrp-mesh/page": "app/gfrp-mesh/page.js"
+  "/Durable/page": "app/Durable/page.js",
+  "/lighter/page": "app/lighter/page.js",
+  "/corrosion/page": "app/corrosion/page.js",
+  "/strength/page": "app/strength/page.js",
+  "/non-Conductive/page": "app/non-Conductive/page.js",
+  "/shop/page": "app/shop/page.js"
 }

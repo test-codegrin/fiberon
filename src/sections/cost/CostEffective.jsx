@@ -2,17 +2,17 @@
 
 export default function CostEffectivePage() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-0">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* ================= TITLE ================= */}
-        <h1 className="text-3xl md:text-4xl font-bold text-[#347A64] mb-6">
+        <h1 className="text-3xl pt-4 md:pt-0 md:text-4xl font-bold text-[#347A64] mb-6">
           Cost Effective
         </h1>
 
         {/* ================= INTRO ================= */}
-        <h2 className="text-xl md:text-2xl text-[#347A63] font-semibold mb-3">
+        <div className="text-2xl md:text-2xl text-[#347A63] font-semibold mb-3">
           What is GFRP Rebar?
-        </h2>
+        </div>
 
         <p className="text-gray-700 leading-relaxed mb-6">
           As construction demand evolves, there is an increment of durable,

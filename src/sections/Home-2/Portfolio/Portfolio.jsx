@@ -2,11 +2,11 @@
 
 const Portfolio = () => {
   return (
-    <main className="min-h-screen max-w-[1400px] mx-auto w-full py-14 md:py-20 xl:py-10">
+    <main className="min-h-screen max-w-[1400px] mx-auto w-full py-12 md:py-20 xl:py-10">
       <div className="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-4">
 
         {/* ================= HEADER ================= */}
-        <div className="text-center mb-10 md:mb-14">
+        <div className="text-center mb-7 md:mb-14">
           <span className="inline-block rounded-full bg-[#347A64] text-white px-4 sm:px-6 py-2 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest uppercase shadow-lg">
             Comparison
           </span>

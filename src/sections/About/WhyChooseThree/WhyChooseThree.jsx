@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyChooseThree = () => {
   return (
-    <section className="w-full md:py-20 bg-white overflow-hidden">
+    <section className="w-full mt-[40px] md:mt-0 lg:py-0 bg-white overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6">
 
         {/* ===== SECTION TITLE ===== */}

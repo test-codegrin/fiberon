@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const TeamThree = () => {
   return (
-    <div className="mt-16 max-w-[1400px] mx-auto mb-16">
+    <div className="mt-10 max-w-[1400px] mx-auto mb-10">
       <div
         className=""
         style={{ backgroundImage: "url('/main-assets/img/shape/global-line-shape2.png')", bottom: '0px' }}
@@ -20,7 +20,7 @@ const TeamThree = () => {
           </div>
           <div className="">
             <div className="hover:bg-[#347A64] hover:text-white inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition">
-              <Link href="/pages/innerpage/about">
+              <Link href="/about">
                 View All Members <i className="ri-arrow-right-up-line"></i>
               </Link>
             </div>

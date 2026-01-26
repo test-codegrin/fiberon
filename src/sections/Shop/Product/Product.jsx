@@ -1,11 +1,62 @@
 "use client";
 
 import Portfolio from "~/sections/Home-2/Portfolio";
-import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+
+const stats = [
+  { value: 5000, suffix: "+", label: "Projects Completed" },
+  { value: 17, suffix: "+", label: "Years of Experience" },
+  { value: 5000, suffix: "+", label: "Metric Tons Sold" },
+  { value: 100, suffix: "%", label: "Customer Satisfaction" },
+];
 
 export default function Product() {
   const [activeHover, setActiveHover] = useState(null);
+  const sectionRef = useRef(null);
+  const [startCount, setStartCount] = useState(false);
+  const [counts, setCounts] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartCount(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!startCount) return;
+
+    stats.forEach((stat, index) => {
+      let start = 0;
+      const duration = 2000; // animation time (ms)
+      const increment = Math.ceil(stat.value / (duration / 16));
+
+      const counter = setInterval(() => {
+        start += increment;
+        if (start >= stat.value) {
+          start = stat.value;
+          clearInterval(counter);
+        }
+
+        setCounts((prev) => {
+          const updated = [...prev];
+          updated[index] = start;
+          return updated;
+        });
+      }, 16);
+    });
+  }, [startCount]);
+
   const metalRebar = [
     ["2.75 kg", "Ø6"],
     ["4.74 kg", "Ø8"],
@@ -48,7 +99,7 @@ export default function Product() {
             </span>
           </div>
 
-          <p className="mt-6 text-gray-600 max-w-150 text-lg">
+          <p className="mt-6 text-gray-600 max-w-150 w-full text-lg">
             The pioneers of GFRP Rebar manufacturing in India, delivering
             corrosion-free and future-ready construction solutions.
           </p>
@@ -68,25 +119,27 @@ export default function Product() {
       </section>
 
       {/* ================= STATS SECTION ================= */}
-      <section className="bg-[#347A64] max-w-350 mx-auto py-20 text-white">
+      <section
+        ref={sectionRef}
+        className="bg-[#347A64] max-w-350 mx-auto py-20 text-white"
+      >
         <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-10 items-center text-center">
-          {[
-            ["5000+", "Projects Completed"],
-            ["17+", "Years of Experience"],
-            ["5000+", "Metric Tons Sold"],
-            ["100%", "Customer Satisfaction"],
-          ].map(([value, label], i) => (
+          {stats.map((item, i) => (
             <div key={i}>
-              <div className="text-4xl font-bold">{value}</div>
-              <p className="mt-2 text-sm opacity-90">{label}</p>
+              <div className="text-4xl font-bold">
+                {counts[i]}
+                {item.suffix}
+              </div>
+              <p className="mt-2 text-sm opacity-90">{item.label}</p>
             </div>
           ))}
 
-          <div className="w-87.5 ml-auto h-55">
+          {/* Image */}
+          <div className="w-[350px] ml-auto h-[220px]">
             <img
               src="/main-assets/img/product/Man-Bar.png"
-              alt="steel-3"
-              className="h-100 max-w-full w-50 mx-auto"
+              alt="steel"
+              className="md:h-[223px] h-[230px] mx-auto mt-2 md:mt-3 object-contain"
             />
           </div>
         </div>
@@ -131,7 +184,7 @@ export default function Product() {
 
         {/* Advantages Grid */}
         <div className="bg-[#347A64] max-w-[1400px] mx-auto py-16 px-6 rounded-2xl">
-          <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 text-center">
+          <div className="max-w-[1300px] mx-auto px-3 md:px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 text-center">
             {[
               {
                 title: "Corrosion Resistant",
@@ -171,8 +224,8 @@ export default function Product() {
               },
               { title: "Durable", img: "/main-assets/img/product/13.png" },
               {
-                title: "Lower Installation Cost",
-                img: "/main-assets/img/product/14.png",
+                title: "Overlap Cost Savings",
+                img: "/main-assets/img/product/18.png",
               },
               {
                 title: "Easy Site Handling",
@@ -187,13 +240,13 @@ export default function Product() {
                 img: "/main-assets/img/product/17-1.png",
               },
               {
-                title: "Overlap Cost Savings",
-                img: "/main-assets/img/product/18.png",
+                title: "Lower Installation Cost",
+                img: "/main-assets/img/product/14.png",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center gap-4 hover:scale-105 transition-transform duration-300"
+                className="flex flex-col -mt-10 items-center gap-4 hover:scale-105 transition-transform duration-300"
               >
                 {/* Icon Box */}
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white">
@@ -224,16 +277,16 @@ export default function Product() {
 
         {/* Content */}
         <div className="relative">
-          <div className="md:text-4xl text-xl font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
+          <div className="md:text-4xl text-lg font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
             <div className="flex items-center justify-center h-full">
               Attributes of REBAR-X GFRP Rebars
             </div>
           </div>
 
-          <div className="max-w-[1100px] mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+          <div className="max-w-[1100px] mx-auto px-0 grid md:grid-cols-2 gap-14 items-center">
             {/* Left Content */}
-            <div className="bg-[#347A64] text-white p-10 rounded-2xl shadow-xl">
-              <div className="font-bold text-2xl mb-6">
+            <div className="bg-[#347A64] text-white p-6 rounded-2xl shadow-xl">
+              <div className="font-bold md:text-2xl text-[20px] mb-6">
                 Corrosion-Free Applications
               </div>
 
@@ -272,7 +325,7 @@ export default function Product() {
         </div>
 
         {/* Application Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {[
             {
               title: "Parking Areas",
@@ -354,14 +407,14 @@ export default function Product() {
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-2">
               Table of Substitution
             </div>
-            <p className="text-[#347A64] max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
+            <p className="text-[#347A64] max-w-2xl mx-auto text-md sm:text-md md:text-base">
               Equivalent tensile strength comparison between Metal Rebar and FRP
               Rebar
             </p>
           </div>
 
           {/* ================= TABLE WRAPPER ================= */}
-          <div className="rounded-2xl p-4 sm:p-5 md:p-8 overflow-x-auto">
+          <div className="p-0 sm:p-5 md:p-8 overflow-x-auto">
             <div className="min-w-[280px] md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
               {/* ================= METAL TABLE ================= */}
               <div>
@@ -416,9 +469,9 @@ export default function Product() {
               {/* ================= FRP TABLE ================= */}
               <div>
                 <div className="bg-[#224F3E] p-3 mb-2">
-                  <h4 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
+                  <h5 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
                     FIBERGLASS REBAR (FRP)
-                  </h4>
+                  </h5>
 
                   <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
                     <div className="border w-[48%] py-2 text-center">
@@ -452,7 +505,9 @@ export default function Product() {
         </div>
       </section>
 
-      <Portfolio />
+      <div className="mt-5">
+        <Portfolio />
+      </div>
 
       {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
       <div

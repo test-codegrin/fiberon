@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 
 const Service = () => {
   return (
-    <section className="w-full max-w-350 lg:mt-12.5 xl:mt-0 mx-auto py-20">
+    <section className="w-full max-w-350 lg:mt-12.5 xl:mt-0 sm:mt-[30px] mt-[15px] mx-auto py-20">
       <div className="max-w-350 mx-auto px-4 md:px-8 lg:px-10">
 
         {/* ================= HEADER ================= */}

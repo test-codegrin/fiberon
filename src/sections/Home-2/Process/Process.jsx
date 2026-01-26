@@ -70,7 +70,7 @@ const Process = () => {
     <section className="w-full max-w-350 xl:mt-[100px] mx-auto py-20">
       <div className="max-w-8xl mx-auto px-4">
         {/* ================= ADVANTAGES ================= */}
-        <div className="mb-20">
+        <div className="mb-0">
           <div className="text-[#347A64] text-[35px] text-center px-4 py-2 text-sm font-semibold tracking-wide mb-10">
             ADVANTAGES
           </div>
@@ -101,7 +101,7 @@ const Process = () => {
         </div>
 
         {/* ================= APPLICATION GRID ================= */}
-        <section className="py-24 xl:py-34 max-w-350 mx-auto">
+        <section className="py-16 xl:py-34 max-w-350 mx-auto">
           {/* Section Title */}
           <div className="text-center text-2xl font-bold text-[#347A64] mb-6 md:mb-16">
             FIBERON in Real-World Projects

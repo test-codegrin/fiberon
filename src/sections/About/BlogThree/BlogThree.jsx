@@ -47,26 +47,24 @@ const BlogThree = () => {
   };
 
   return (
-    <section className="w-full bg-white py-14 sm:py-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
+    <section className="w-full bg-white py-12 sm:py-15 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-0 sm:px-6">
         {/* ================= HEADER ================= */}
-        <div className="flex flex-col lg:flex-row max-w-[1400px] lg:items-center justify-between mb-12 sm:mb-14">
-          <div className="text-center lg:text-left">
-            <span className="block text-[#347A64] font-semibold text-sm sm:text-base uppercase">
-              Latest News
-            </span>
-            <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64]">
-              Recent news and events
-            </h2>
+        <div className="flex md:justify-between px-4 justify-center items-center mb-12 flex-wrap gap-4">
+          <div className="col-lg-7 col-md-7">
+            <div className="">
+              <span className="text-[#347A64] font-semibold text-lg uppercase">
+                Latest News
+              </span>
+              <div className="text-[#347A64] font-semibold text-[22px] md:text-4xl uppercase">Recent news and events</div>
+            </div>
           </div>
-
           <div className="">
-            <Link
-              href="/pages/innerpage/blog"
-              className="mx-auto lg:mx-0 ml-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition hover:bg-[#347A64] hover:text-white"
-            >
-              View All News{""} →
-            </Link>
+            <div className="hover:bg-[#347A64] hover:text-white inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#347A64] text-[#347A64] font-semibold transition">
+              <Link href="/about">
+                View All News <i className="ri-arrow-right-up-line"></i>
+              </Link>
+            </div>
           </div>
         </div>
 
