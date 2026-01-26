@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="pb-50 max-w-350 mx-auto">
         {/* ================= HERO SECTION ================= */}
         <div className="relative">
-          <div className="max-w-350 mx-auto mt-[80px] lg:flex items-center justify-between lg:h-125 px-6">
+          <div className="max-w-350 mx-auto mt-10 md:mt-[80px] lg:flex items-center justify-between lg:h-125 px-6">
             {/* Left Content */}
             <div className="mx-auto max-w-full w-[700px] lg:w-full">
               <div className="md:text-[50px] xl:text-[83px] text-[33px] leading-10 md:leading-12 xl:leading-20 w-full font-bold">

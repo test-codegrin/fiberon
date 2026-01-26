@@ -88,7 +88,7 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section className="max-w-[1400px] mx-auto px-6 py-24 md:flex justify-between items-center">
+      <section className="max-w-[1400px] mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
         <div className="sm:w-full w-[300px]">
           <div className="w-full">
             <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight">
@@ -121,7 +121,7 @@ export default function Product() {
       {/* ================= STATS SECTION ================= */}
       <section
         ref={sectionRef}
-        className="bg-[#347A64] max-w-350 mx-auto py-20 text-white"
+        className="bg-[#347A64] mt-40 max-w-350 mx-auto py-20 text-white"
       >
         <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-10 items-center text-center">
           {stats.map((item, i) => (

@@ -15,7 +15,7 @@ export default function Advantages() {
           <div className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-52 lg:32 w-40 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-52 lg:w-36 xl:w-28 w-40 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -33,7 +33,7 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-65 w-49 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-65 lg:w-44 xl:w-35 w-49 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -50,7 +50,7 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-42 w-30 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-42 lg:w-28 xl:w-22 w-30 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -67,7 +67,7 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-50 w-35 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-50 lg:w-32 xl:w-26 w-35 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -88,7 +88,7 @@ export default function Advantages() {
           <div className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-60 w-42 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-60 lg:w-40 xl:w-30 w-42 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -107,7 +107,7 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-45 w-32 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-45 lg:w-32 xl:w-25 w-32 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
@@ -124,7 +124,7 @@ export default function Advantages() {
 
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
-              <span className="md:w-46 w-33 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
+              <span className="md:w-46 lg:w-33 xl:w-25 w-33 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
                 ✓
               </span>
               <div>
