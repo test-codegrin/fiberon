@@ -28,7 +28,7 @@ export default function WhyChooseBentGFRP() {
       {/* OVERLAY */}
       <div className="absolute inset-0"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-[1400px] mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* ================= LEFT CONTENT ================= */}

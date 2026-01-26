@@ -467,6 +467,9 @@
   .mt-70 {
     margin-top: calc(var(--spacing) * 70);
   }
+  .mt-\[0px\] {
+    margin-top: 0px;
+  }
   .mt-\[10px\] {
     margin-top: 10px;
   }
@@ -3115,6 +3118,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .xl\:mt-20 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .xl\:mt-22 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 22);
@@ -3123,6 +3131,16 @@
   .xl\:mt-25 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 25);
+    }
+  }
+  .xl\:mt-30 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 30);
+    }
+  }
+  .xl\:mt-\[0px\] {
+    @media (width >= 80rem) {
+      margin-top: 0px;
     }
   }
   .xl\:mt-\[70px\] {
@@ -3165,6 +3183,16 @@
       height: 1000px;
     }
   }
+  .xl\:w-20 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:w-21 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 21);
+    }
+  }
   .xl\:w-22 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 22);
@@ -3173,6 +3201,11 @@
   .xl\:w-23 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 23);
+    }
+  }
+  .xl\:w-24 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 24);
     }
   }
   .xl\:w-25 {
@@ -3198,6 +3231,11 @@
   .xl\:w-30 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 30);
+    }
+  }
+  .xl\:w-32 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 32);
     }
   }
   .xl\:w-33 {

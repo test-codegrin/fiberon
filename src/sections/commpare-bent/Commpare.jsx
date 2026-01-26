@@ -6,8 +6,8 @@ export default function Advantages() {
   return (
     <>
       {/* ================= ADVANTAGES SECTION ================= */}
-      <section className="w-full bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="w-full bg-white xl:mt-20 py-20">
+        <div className="max-w-[1400px] mx-auto px-6">
           <h2 className="text-3xl text-[#347A64] md:text-4xl font-bold text-center">
             Bent GFRP Rebar vs. Steel Rebar
           </h2>
@@ -31,7 +31,7 @@ export default function Advantages() {
               ].map((item, i) => (
                 <div key={i} className="flex gap-3 md:gap-5 items-start">
                   <div className="w-[45px] rounded-full bg-[#347A64] text-white font-bold">
-                    <div className="flex w-10 h-10  items-center justify-center">
+                    <div className="flex w-10 h-10 items-center justify-center">
                       ✓
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export default function Advantages() {
 
       {/* ================= APPLICATIONS IMAGE SECTION ================= */}
       <section className="w-full bg-[#f9f9f9] py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-[1400px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-[#347A63] font-bold text-center mb-6">
             Applications of Bent GFRP Rebar
           </h2>
