@@ -1,7 +1,11 @@
 {
-  "/non-Conductive/page": "app/non-Conductive/page.js",
-  "/shop/page": "app/shop/page.js",
-  "/gfrp-mesh/page": "app/gfrp-mesh/page.js",
   "/page": "app/page.js",
-  "/about/page": "app/about/page.js"
+  "/cost/page": "app/cost/page.js",
+  "/about/page": "app/about/page.js",
+  "/corrosion/page": "app/corrosion/page.js",
+  "/Durable/page": "app/Durable/page.js",
+  "/strength/page": "app/strength/page.js",
+  "/lighter/page": "app/lighter/page.js",
+  "/non-Conductive/page": "app/non-Conductive/page.js",
+  "/shop/page": "app/shop/page.js"
 }
