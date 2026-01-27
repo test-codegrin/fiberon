@@ -1,7 +1,9 @@
 {
   "/page": "app/page.js",
   "/strength/page": "app/strength/page.js",
-  "/shop/page": "app/shop/page.js",
   "/non-Conductive/page": "app/non-Conductive/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/shop/page": "app/shop/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/about/page": "app/about/page.js",
+  "/gfrp-mesh/page": "app/gfrp-mesh/page.js"
 }

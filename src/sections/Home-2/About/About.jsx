@@ -103,7 +103,7 @@ const About = () => {
             {/* CTA Button */}
             <Link
               href="/pages/innerpage/about"
-              className="inline-flex items-center justify-center w-full md:w-[300px] gap-1.5 px-8 py-3 text-white font-semibold rounded-md bg-[#347A64] transition"
+              className="inline-flex items-center justify-center w-full md:w-75 gap-1.5 px-8 py-3 text-white font-semibold rounded-md bg-[#347A64] transition"
             >
               Explore Our Company
               <i className="ri-arrow-right-up-line text-[20px]"></i>

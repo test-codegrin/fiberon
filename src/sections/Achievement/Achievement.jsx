@@ -1,7 +1,5 @@
 "use client";
-
 import { useState } from "react";
-import Image from "next/image";
 
 const tabsData = [
   {
@@ -79,12 +77,11 @@ const tabsData = [
 export default function Achievement() {
   const [activeTab, setActiveTab] = useState("cai");
 
-  const activeImages =
-    tabsData.find((tab) => tab.id === activeTab)?.images || [];
+  const activeImages = tabsData.find((tab) => tab.id === activeTab)?.images || [];
 
   return (
     <section className="w-full py-16 bg-white">
-      <div className="max-w-[1400px] mx-auto px-6">
+      <div className="max-w-350 mx-auto px-6">
         {/* ================= TABS ================= */}
         <div className="flex flex-wrap gap-3 justify-center mb-12">
           {tabsData.map((tab) => (
@@ -109,7 +106,7 @@ export default function Achievement() {
           {activeImages.map((img, index) => (
             <div
               key={index}
-              className="relative w-full h-[280px] overflow-hidden rounded-md group"
+              className="relative w-full h-70 overflow-hidden rounded-md group"
             >
               <img
                 src={img}

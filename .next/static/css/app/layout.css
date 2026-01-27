@@ -671,6 +671,9 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
@@ -2570,6 +2573,11 @@
   .md\:w-65 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 65);
+    }
+  }
+  .md\:w-75 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 75);
     }
   }
   .md\:w-95 {
