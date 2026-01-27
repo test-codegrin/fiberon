@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="relative overflow-hidden max-w-350 mx-auto py-5 bg-white">
       <div className="relative h-550.5 md:h-450 lg:h-412.5 xl:h-250 py-0 max-w-350 mx-auto px-6 xl:px-0">
-        <div className="grid grid-cols-1 xl:grid-cols-2 max-w-[1400px] items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 max-w-350 items-center">
           {/* Image Section */}
           <div className="relative max-w-150 md:flex justify-between">
             <div className="max-h-200 mx-auto">
