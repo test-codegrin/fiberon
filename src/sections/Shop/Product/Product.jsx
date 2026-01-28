@@ -87,8 +87,8 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section className="max-w-[1400px] mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
-        <div className="sm:w-full w-[300px]">
+      <section className="max-w-350 mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
+        <div className="sm:w-full w-75">
           <div className="w-full">
             <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight">
               <span className="text-[#347A64]">GFRP</span> Rebar
@@ -108,11 +108,11 @@ export default function Product() {
           </button>
         </div>
 
-        <div className="max-w-[400px] h-[320px] mt-[50px] md:mt-0 rounded-xl">
+        <div className="max-w-100 h-80 mt-12.5 md:mt-0 rounded-xl">
           <img
             src="/main-assets/img/product/steel-3.webp"
             alt="steel-3"
-            className="h-[320px] rounded-xl"
+            className="h-80 rounded-xl"
           />
         </div>
       </section>
@@ -122,7 +122,7 @@ export default function Product() {
         ref={sectionRef}
         className="bg-[#347A64] mt-40 max-w-350 mx-auto py-20 text-white"
       >
-        <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-10 items-center text-center">
+        <div className="max-w-325 mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-10 items-center text-center">
           {stats.map((item, i) => (
             <div key={i}>
               <div className="text-4xl font-bold">
@@ -134,11 +134,11 @@ export default function Product() {
           ))}
 
           {/* Image */}
-          <div className="w-[350px] ml-auto h-[220px]">
+          <div className="w-87.5 ml-auto h-55">
             <img
               src="/main-assets/img/product/Man-Bar.png"
               alt="steel"
-              className="md:h-[223px] h-[230px] mx-auto mt-2 md:mt-3 object-contain"
+              className="md:h-55.75 h-57.5 mx-auto mt-2 md:mt-3 object-contain"
             />
           </div>
         </div>
@@ -175,15 +175,15 @@ export default function Product() {
       </section>
 
       {/* ================= ADVANTAGES ================= */}
-      <section className="max-w-[1400px] mx-auto py-20 px-4">
+      <section className="max-w-350 mx-auto py-20 px-4">
         {/* Section Title */}
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
           REBAR-X GFRP Rebar Advantages
         </div>
 
         {/* Advantages Grid */}
-        <div className="bg-[#347A64] max-w-[1400px] mx-auto py-16 px-6 rounded-2xl">
-          <div className="max-w-[1300px] mx-auto px-3 md:px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 text-center">
+        <div className="bg-[#347A64] max-w-350 mx-auto py-16 px-6 rounded-2xl">
+          <div className="max-w-325 mx-auto px-3 md:px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 text-center">
             {[
               {
                 title: "Corrosion Resistant",
@@ -266,7 +266,7 @@ export default function Product() {
 
       {/* ================= ATTRIBUTES ================= */}
       <section
-        className="relative max-w-350 px-6 mx-auto py-24 bg-center rounded-lg mt-[50px] bg-cover bg-no-repeat"
+        className="relative max-w-350 px-6 mx-auto py-24 bg-center rounded-lg mt-12.5 bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/main-assets/img/product/steel-1.webp')",
         }}
@@ -276,13 +276,13 @@ export default function Product() {
 
         {/* Content */}
         <div className="relative">
-          <div className="md:text-4xl text-lg font-semibold text-white max-w-[700px] w-full mx-auto h-15 bg-[#347A64] mb-16">
+          <div className="md:text-4xl text-lg font-semibold text-white max-w-175 w-full mx-auto h-15 bg-[#347A64] mb-16">
             <div className="flex items-center justify-center h-full">
               Attributes of REBAR-X GFRP Rebars
             </div>
           </div>
 
-          <div className="max-w-[1100px] mx-auto px-0 grid md:grid-cols-2 gap-14 items-center">
+          <div className="max-w-275 mx-auto px-0 grid md:grid-cols-2 gap-14 items-center">
             {/* Left Content */}
             <div className="bg-[#347A64] text-white p-6 rounded-2xl shadow-xl">
               <div className="font-bold md:text-2xl text-[20px] mb-6">
@@ -305,7 +305,7 @@ export default function Product() {
             </div>
 
             {/* Right Image / Visual */}
-            <div className="w-full h-[320px] rounded-2xl shadow-lg overflow-hidden">
+            <div className="w-full h-80 rounded-2xl shadow-lg overflow-hidden">
               <img
                 src="/main-assets/img/product/steel-2.jpg"
                 alt="GFRP Rebar"
@@ -380,7 +380,7 @@ export default function Product() {
               className="group border rounded-2xl overflow-hidden text-center hover:shadow-lg transition duration-300"
             >
               {/* Image */}
-              <div className="w-full h-[200px] overflow-hidden">
+              <div className="w-full h-50 overflow-hidden">
                 <img
                   src={item.img}
                   alt={item.title}
@@ -414,7 +414,7 @@ export default function Product() {
 
           {/* ================= TABLE WRAPPER ================= */}
           <div className="p-0 sm:p-5 md:p-8 overflow-x-auto">
-            <div className="min-w-[280px] md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
+            <div className="min-w-70 md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
               {/* ================= METAL TABLE ================= */}
               <div>
                 <div className="bg-[#224F3E] p-3 mb-2">
@@ -422,7 +422,7 @@ export default function Product() {
                     METAL REBAR
                   </h4>
 
-                  <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
+                  <div className="max-w-100 uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
                     <div className="border w-[48%] py-2 text-center">
                       Weight <br /> (PER 12m BAR)
                     </div>
@@ -452,12 +452,12 @@ export default function Product() {
 
               {/* ================= CENTER EQUAL ================= */}
               <div className="hidden md:flex flex-col items-center">
-                <div className="h-[48px]" />
-                <div className="space-y-2 w-full mt-[114px]">
+                <div className="h-12" />
+                <div className="space-y-2 w-full mt-28.5">
                   {metalRebar.map((_, i) => (
                     <div
                       key={i}
-                      className="h-[38px] mt-[14px] flex items-center justify-center bg-[#347A64] text-white font-bold rounded-sm"
+                      className="h-9.5 mt-3.5 flex items-center justify-center bg-[#347A64] text-white font-bold rounded-sm"
                     >
                       =
                     </div>
@@ -472,7 +472,7 @@ export default function Product() {
                     FIBERGLASS REBAR (FRP)
                   </h5>
 
-                  <div className="max-w-[400px] uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
+                  <div className="max-w-100 uppercase text-white mb-2 mx-auto flex justify-between text-xs md:text-[16px]">
                     <div className="border w-[48%] py-2 text-center">
                       Weight <br /> (PER 12m BAR)
                     </div>
@@ -516,16 +516,16 @@ export default function Product() {
         {/* ===== Email ===== */}
         <div
           onMouseEnter={() => setActiveHover("email")}
-          className="relative h-[50px] w-[260px]"
+          className="relative h-12.5 w-65"
         >
           {/* Sliding Text */}
           <div
-            className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+            className={`absolute right-12.5 top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "email"
                   ? "translate-x-0"
-                  : "translate-x-[230px]"
+                  : "translate-x-57.5"
               }`}
           >
             <span className="px-4 text-sm whitespace-nowrap">
@@ -534,7 +534,7 @@ export default function Product() {
           </div>
 
           {/* Fixed Icon */}
-          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+          <div className="absolute right-0 top-0 w-12.5 h-12.5 bg-[#347A64] text-white flex items-center justify-center">
             <div className="">
               <Mail size={20} />
             </div>
@@ -544,15 +544,15 @@ export default function Product() {
         {/* ===== Phone ===== */}
         <div
           onMouseEnter={() => setActiveHover("phone")}
-          className="relative h-[50px] w-[260px]"
+          className="relative h-12.5 w-65"
         >
           <div
-            className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
+            className={`absolute right-12.5 top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "phone"
                   ? "translate-x-0"
-                  : "translate-x-[230px]"
+                  : "translate-x-57.5"
               }`}
           >
             <span className="px-4 text-sm whitespace-nowrap">
@@ -560,7 +560,7 @@ export default function Product() {
             </span>
           </div>
 
-          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+          <div className="absolute right-0 top-0 w-12.5 h-12.5 bg-[#347A64] text-white flex items-center justify-center">
             <Phone size={20} />
           </div>
         </div>
@@ -568,15 +568,15 @@ export default function Product() {
         {/* ===== Location ===== */}
         <div
           onMouseEnter={() => setActiveHover("location")}
-          className="relative h-[50px] w-[260px]"
+          className="relative h-12.5 w-65"
         >
           <div
-            className={`absolute right-[50px] top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
+            className={`absolute right-12.5 top-0 h-full flex items-center bg-white shadow-md text-[#347A64] border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
                 activeHover === "location"
                   ? "translate-x-0"
-                  : "translate-x-[230px]"
+                  : "translate-x-57.5"
               }`}
           >
             <span className="px-4 text-sm whitespace-nowrap">
@@ -584,7 +584,7 @@ export default function Product() {
             </span>
           </div>
 
-          <div className="absolute right-0 top-0 w-[50px] h-[50px] bg-[#347A64] text-white flex items-center justify-center">
+          <div className="absolute right-0 top-0 w-12.5 h-12.5 bg-[#347A64] text-white flex items-center justify-center">
             <MapPin size={20} />
           </div>
         </div>
