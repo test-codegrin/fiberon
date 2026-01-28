@@ -1,5 +1,4 @@
 "use client";
-
 import Portfolio from "~/sections/Home-2/Portfolio";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
