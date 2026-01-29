@@ -81,7 +81,7 @@ const Process = () => {
   ];
 
   return (
-    <section className="w-full max-w-350 xl:mt-[100px] mx-auto py-20">
+    <section data-aos="fade-up" className="w-full max-w-350 xl:mt-[100px] mx-auto py-20">
       <div className="max-w-8xl mx-auto px-4">
         {/* ================= ADVANTAGES ================= */}
         <div className="mb-0">
@@ -91,7 +91,6 @@ const Process = () => {
 
           <div className="flex flex-col max-w-[1400px] md:flex-row gap-20">
             <div
-              data-aos="fade-right"
               className="grid grid-cols-1 max-w-full w-full mx-auto gap-x-14 gap-y-8"
             >
               {advantages.map((item, index) => {
@@ -120,7 +119,6 @@ const Process = () => {
             </div>
 
             <div
-              data-aos="fade-left"
               className="grid grid-cols-1 max-w-full w-full mx-auto gap-x-14 gap-y-8"
             >
               {advantage.map((item, index) => {

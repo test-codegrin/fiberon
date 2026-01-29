@@ -677,14 +677,8 @@
   .h-34 {
     height: calc(var(--spacing) * 34);
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
   .h-51 {
     height: calc(var(--spacing) * 51);
-  }
-  .h-52 {
-    height: calc(var(--spacing) * 52);
   }
   .h-52\.5 {
     height: calc(var(--spacing) * 52.5);
@@ -697,9 +691,6 @@
   }
   .h-57\.5 {
     height: calc(var(--spacing) * 57.5);
-  }
-  .h-60 {
-    height: calc(var(--spacing) * 60);
   }
   .h-70 {
     height: calc(var(--spacing) * 70);

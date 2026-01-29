@@ -29,10 +29,10 @@ const Hero = () => {
     <>
       <div className="pb-50 max-w-[1400px] mx-auto">
         {/* ================= HERO SECTION ================= */}
-        <div className="relative">
+        <div data-aos="fade-up" className="relative">
           <div className="max-w-[1400px] mx-auto mt-[50px] xl:mt-[0px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
-            <div data-aos="fade-right" className="lg:w-[730px]">
+            <div className="lg:w-[730px]">
               <div className="md:text-[40px] text-[24px] leading-2 w-full text-[#347A64] font-bold leading-tight">
                 What is Bent GFRP Rebar?
               </div>
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div data-aos="fade-left" className="mt-20 h-[400px] w-[300px] flex items-center justify-center">
+            <div className="mt-20 h-[400px] w-[300px] flex items-center justify-center">
               <img
                 src="/main-assets/img/service/Bent-GFRP.jpg"
                 alt="Building"
@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="max-w-[1400px] mx-auto mt-10 px-6 space-y-4 text-gray-600">
+        <div data-aos="fade-up" className="max-w-[1400px] mx-auto mt-10 px-6 space-y-4 text-gray-600">
           <p>
             The composition of Bent GFRP rebar allows it to combine strength
             with flexibility. This unique combination ensures that it meets the

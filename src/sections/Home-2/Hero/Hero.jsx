@@ -20,11 +20,10 @@ const Hero = () => {
     <>
       <div className="pb-50 max-w-350 mx-auto">
         {/* ================= HERO SECTION ================= */}
-        <div className="relative" data-aos="fade-up">
+        <div data-aos="fade-up" className="relative">
           <div className="max-w-350 mx-auto mt-10 md:mt-20 lg:flex items-center justify-between lg:h-125 px-6">
             {/* Left Content */}
             <div
-              data-aos="fade-right"
               className="mx-auto max-w-full w-175 lg:w-full"
             >
               <div className="md:text-[50px] xl:text-[83px] text-[33px] leading-10 md:leading-12 xl:leading-20 w-full font-bold">
@@ -45,7 +44,7 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div data-aos="fade-left" className="mt-20 mx-auto max-w-100">
+            <div className="mt-20 mx-auto max-w-100">
               <img src="/main-assets/img/hero/hero_img.png" alt="Building" />
             </div>
           </div>

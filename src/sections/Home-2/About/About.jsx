@@ -17,10 +17,9 @@ const About = () => {
   return (
     <section className="relative overflow-hidden max-w-350 mx-auto py-5 bg-white">
       <div className="relative h-550.5 md:h-450 lg:h-412.5 xl:h-250 py-0 max-w-350 mx-auto px-6 xl:px-0">
-        <div className="grid grid-cols-1 xl:grid-cols-2 max-w-350 items-center">
+        <div data-aos="fade-up" className="grid grid-cols-1 xl:grid-cols-2 max-w-350 items-center">
           {/* Image Section */}
           <div
-            data-aos="fade-up"
             className="relative max-w-150 md:flex justify-between"
           >
             <div className="max-h-200 mx-auto">
@@ -52,7 +51,7 @@ const About = () => {
           </div>
 
           {/* Content Section */}
-          <div data-aos="fade-down" className="h-225 mt-12.5 md:mt-25 xl:mt-0">
+          <div className="h-225 mt-12.5 md:mt-25 xl:mt-0">
             <div className="flex justify-center md:justify-start underline leading-2 items-center gap-1.5 text-2xl font-semibold text-[#347A64] uppercase">
               About Us
             </div>
