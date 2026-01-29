@@ -89,7 +89,7 @@ const Process = () => {
             ADVANTAGES
           </div>
 
-          <div className="flex flex-col max-w-[1400px] border-2 md:flex-row gap-20">
+          <div className="flex flex-col max-w-[1400px] md:flex-row gap-20">
             <div
               data-aos="fade-right"
               className="grid grid-cols-1 max-w-full w-full mx-auto gap-x-14 gap-y-8"
