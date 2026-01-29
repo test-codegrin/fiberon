@@ -29,7 +29,7 @@ export default function Advantages() {
                   desc: "GFRP rebar offers long-term durability with minimal maintenance, while steel often demands regular upkeep.",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-3 md:gap-5 items-start">
+                <div data-aos="fade-right" key={i} className="flex gap-3 md:gap-5 items-start">
                   <div className="w-[45px] rounded-full bg-[#347A64] text-white font-bold">
                     <div className="flex w-10 h-10 items-center justify-center">
                       ✓
@@ -57,7 +57,7 @@ export default function Advantages() {
                   desc: "Bent GFRP rebar resists corrosion, unlike steel rebar which is prone to rust over time.",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-3 md:gap-5 items-start">
+                <div data-aos="fade-left" key={i} className="flex gap-3 md:gap-5 items-start">
                   <div className="w-[45px] rounded-full bg-[#347A64] text-white font-bold">
                     <div className="flex w-10 h-10  items-center justify-center">
                       ✓
@@ -118,6 +118,7 @@ export default function Advantages() {
             ].map((item, i) => (
               <div
                 key={i}
+                data-aos="fade-left"
                 className="bg-white border-b-4 border-[#347A63] rounded-lg shadow-lg p-6 md:flex gap-5"
               >
                 <div className="md:w-34 w-full h-34 relative flex-shrink-0 rounded-md overflow-hidden">

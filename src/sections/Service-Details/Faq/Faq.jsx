@@ -5,14 +5,14 @@ export default function Advantages() {
     <section className="w-full bg-white py-20">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* TITLE */}
-        <h2 className="text-3xl text-[#347A64] md:text-4xl font-bold text-center mb-16">
+        <h2 data-aos="fade-up" className="text-3xl text-[#347A64] md:text-4xl font-bold text-center mb-16">
           Advantages of Bent GFRP Rebar
         </h2>
 
         {/* GRID */}
         <div className="grid md:grid-cols-2 gap-x-20 gap-y-14 mt-[30px]">
           {/* LEFT COLUMN */}
-          <div className="space-y-12">
+          <div data-aos="fade-right" className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
               <span className="md:w-52 lg:w-36 xl:w-25 w-40 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">
@@ -85,7 +85,7 @@ export default function Advantages() {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="space-y-12">
+          <div data-aos="fade-left" className="space-y-12">
             {/* ITEM */}
             <div className="flex gap-3 md:gap-5 items-start">
               <span className="md:w-60 lg:w-40 xl:w-28 w-42 h-10 flex items-center justify-center rounded-full bg-[#347A64] text-white font-bold">

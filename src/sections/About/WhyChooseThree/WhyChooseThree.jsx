@@ -2,15 +2,17 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 const WhyChooseThree = () => {
   return (
-    <section className="w-full mt-[40px] md:mt-0 lg:py-0 bg-white overflow-hidden">
+    <section className="w-full mt-[40px] md:mt-0 lg:py-0 bg-white">
       <div className="max-w-[1400px] mx-auto px-6">
 
         {/* ===== SECTION TITLE ===== */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+          data-aos="fade-up"
+        >
           <span className="inline-flex items-center gap-2 text-[#347A64] font-semibold text-md uppercase tracking-wide">
             Why Choose Us
           </span>
@@ -49,7 +51,9 @@ const WhyChooseThree = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64] hover:border-[#347A64] transition"
+                data-aos="fade-right"
+                data-aos-delay={index * 150}
+                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64]"
               >
                 <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#347A64]/10">
                   <img src={item.icon} width={32} height={32} alt="icon" />
@@ -58,16 +62,14 @@ const WhyChooseThree = () => {
                   <div className="text-2xl font-semibold text-[#347A64]">
                     {item.title}
                   </div>
-                  <p className="mt-2 text-gray-600 text-sm">
-                    {item.text}
-                  </p>
+                  <p className="mt-2 text-gray-600 text-sm">{item.text}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* ===== CENTER IMAGE ===== */}
-          <div className="flex justify-center">
+          <div data-aos="zoom-in" className="flex justify-center">
             <img
               src="/main-assets/img/normal/why_1-1.png"
               width={420}
@@ -98,7 +100,9 @@ const WhyChooseThree = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64] hover:border-[#347A64] transition"
+                data-aos="fade-left"
+                data-aos-delay={index * 150}
+                className="flex gap-4 p-6 rounded-xl border-2 border-[#347A64]"
               >
                 <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#347A64]/10">
                   <img src={item.icon} width={32} height={32} alt="icon" />
@@ -107,9 +111,7 @@ const WhyChooseThree = () => {
                   <div className="text-2xl font-semibold text-[#347A64]">
                     {item.title}
                   </div>
-                  <p className="mt-2 text-gray-600 text-sm">
-                    {item.text}
-                  </p>
+                  <p className="mt-2 text-gray-600 text-sm">{item.text}</p>
                 </div>
               </div>
             ))}

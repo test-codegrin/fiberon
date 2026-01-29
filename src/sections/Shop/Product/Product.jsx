@@ -1,7 +1,11 @@
 "use client";
+
 import Portfolio from "~/sections/Home-2/Portfolio";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const stats = [
   { value: 5000, suffix: "+", label: "Projects Completed" },
@@ -15,6 +19,25 @@ export default function Product() {
   const sectionRef = useRef(null);
   const [startCount, setStartCount] = useState(false);
   const [counts, setCounts] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: false,
+    mirror: true,
+    offset: 120,
+  });
+
+  const handleScroll = () => {
+    AOS.refreshHard();
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -87,7 +110,7 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section className="max-w-350 mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
+      <section data-aos="fade-up" className="max-w-350 mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
         <div className="sm:w-full w-75">
           <div className="w-full">
             <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight">
@@ -119,6 +142,7 @@ export default function Product() {
 
       {/* ================= STATS SECTION ================= */}
       <section
+        data-aos="fade-up"
         ref={sectionRef}
         className="bg-[#347A64] mt-40 max-w-350 mx-auto py-20 text-white"
       >
@@ -145,7 +169,7 @@ export default function Product() {
       </section>
 
       {/* ================= GFRP INFO ================= */}
-      <section className="max-w-350 mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+      <section data-aos="fade-up" className="max-w-350 mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
         {/* IMAGE BOX */}
         <div className="w-full max-w-115 mx-auto  rounded-xl flex items-center justify-center p-6 sm:p-10">
           <img
@@ -245,6 +269,8 @@ export default function Product() {
             ].map((item, i) => (
               <div
                 key={i}
+                data-aos="zoom-in"
+                data-aos-delay={i * 50}
                 className="flex flex-col -mt-10 items-center gap-4 hover:scale-105 transition-transform duration-300"
               >
                 {/* Icon Box */}
@@ -266,6 +292,7 @@ export default function Product() {
 
       {/* ================= ATTRIBUTES ================= */}
       <section
+        data-aos="fade-up"
         className="relative max-w-350 px-6 mx-auto py-24 bg-center rounded-lg mt-12.5 bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/main-assets/img/product/steel-1.webp')",
@@ -377,10 +404,12 @@ export default function Product() {
           ].map((item, i) => (
             <div
               key={i}
+              data-aos="fade-up"
+              data-aos-delay={i * 80}
               className="group border rounded-2xl overflow-hidden text-center hover:shadow-lg transition duration-300"
             >
               {/* Image */}
-              <div className="w-full h-50 overflow-hidden">
+              <div className="w-full h-51 overflow-hidden">
                 <img
                   src={item.img}
                   alt={item.title}
@@ -399,7 +428,7 @@ export default function Product() {
         </div>
       </section>
 
-      <section>
+      <section data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-3 sm:px-4">
           {/* ================= HEADER ================= */}
           <div className="text-center mb-10 md:mb-14">
@@ -504,7 +533,7 @@ export default function Product() {
         </div>
       </section>
 
-      <div className="mt-5">
+      <div data-aos="fade-up" className="mt-5">
         <Portfolio />
       </div>
 

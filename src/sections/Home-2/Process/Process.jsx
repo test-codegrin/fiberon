@@ -11,8 +11,19 @@ import {
   ZapOff,
   ShieldCheck,
 } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Process = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   const advantages = [
     {
       title: "Lightweight & Durable",
@@ -39,6 +50,9 @@ const Process = () => {
       desc: "Withstands heat and chemicals",
       icon: Flame,
     },
+  ];
+
+  const advantage = [
     {
       title: "Eco-Friendly & Sustainable",
       desc: "Greener, energy-efficient choice",
@@ -75,28 +89,64 @@ const Process = () => {
             ADVANTAGES
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-8">
-            {advantages.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={index}
-                  className="flex items-start gap-2  md:gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#347A64]"
-                >
-                  <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center">
-                    <div className="bg-[#347A64] w-10 h-10 rounded-full border border-[#347A64] flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-white " />
+          <div className="flex flex-col max-w-[1400px] border-2 md:flex-row gap-20">
+            <div
+              data-aos="fade-right"
+              className="grid grid-cols-1 max-w-full w-full mx-auto gap-x-14 gap-y-8"
+            >
+              {advantages.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex items-start gap-2  md:gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#347A64]"
+                  >
+                    <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center">
+                      <div className="bg-[#347A64] w-10 h-10 rounded-full border border-[#347A64] flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-white " />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-[#347A64] md:text-[23px]">
+                        {item.title}
+                      </div>
+                      <div className="text-base text-[#347A64]">
+                        {item.desc}
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="font-semibold text-[#347A64] md:text-[23px]">
-                      {item.title}
+                );
+              })}
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="grid grid-cols-1 max-w-full w-full mx-auto gap-x-14 gap-y-8"
+            >
+              {advantage.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex items-start gap-2 max-w-full w-full md:gap-4 bg-[#F5F5F5] p-1.5 border-l-4 border-[#347A64]"
+                  >
+                    <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center">
+                      <div className="bg-[#347A64] w-10 h-10 rounded-full border border-[#347A64] flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-white " />
+                      </div>
                     </div>
-                    <div className="text-base text-[#347A64]">{item.desc}</div>
+                    <div>
+                      <div className="font-semibold text-[#347A64] md:text-[23px]">
+                        {item.title}
+                      </div>
+                      <div className="text-base text-[#347A64]">
+                        {item.desc}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 

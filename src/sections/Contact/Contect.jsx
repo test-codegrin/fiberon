@@ -1,14 +1,28 @@
-import React from 'react'
-import { MapPin, Mail, Phone } from 'lucide-react'
+"use client";
+
+import { useEffect } from "react";
+import { MapPin, Mail, Phone } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contect() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div>
       <section className="relative max-w-350 mt-25 mb-12.5 rounded-xl mx-auto bg-[#347A64] py-12 text-white">
         {/* Decorative Overlay */}
         <div className="relative max-w-325 mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
           {/* ================= LEFT INFO ================= */}
-          <div className="space-y-6 md:mt-37.5 ml-auto max-w-137.5 w-full">
+          <div
+            data-aos="fade-right"
+            className="space-y-6 md:mt-37.5 ml-auto max-w-137.5 w-full"
+          >
             <div className="text-4xl font-bold mb-6">Contact Us</div>
 
             <p className="text-white/90 mb-10 text-lg max-w-md">
@@ -45,7 +59,10 @@ export default function Contect() {
           </div>
 
           {/* ================= RIGHT FORM ================= */}
-          <div className="bg-white p-3 rounded-2xl shadow-2xl text-black">
+          <div
+            data-aos="fade-left"
+            className="bg-white p-3 rounded-2xl shadow-2xl text-black"
+          >
             <h3 className="text-2xl font-bold text-[#347A64] mb-6">
               Send Us a Message
             </h3>
@@ -53,20 +70,20 @@ export default function Contect() {
             <form className="gap-5">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <div className="rounded-lg h-15 border border-[#347A64]">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="col-span-2 w-full md:col-span-1 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-                />
-              </div>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="col-span-2 w-full md:col-span-1 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#347A64]"
+                  />
+                </div>
 
-              <div className="rounded-lg h-15 border border-[#347A64]">
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="col-span-2 w-full md:col-span-1 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#347A64]"
-                />
-              </div>
+                <div className="rounded-lg h-15 border border-[#347A64]">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="col-span-2 w-full md:col-span-1 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#347A64]"
+                  />
+                </div>
               </div>
 
               <div className="rounded-lg h-15 mt-3 border border-[#347A64]">
@@ -101,16 +118,16 @@ export default function Contect() {
 
               <div className="w-full mt-4">
                 <button
-                type="submit"
-                className="col-span-2 w-full bg-[#347A64] px-3 text-white py-3 font-semibold rounded-lg hover:opacity-90 transition"
-              >
-                Submit Message
-              </button>
+                  type="submit"
+                  className="col-span-2 w-full bg-[#347A64] px-3 text-white py-3 font-semibold rounded-lg hover:opacity-90 transition"
+                >
+                  Submit Message
+                </button>
               </div>
             </form>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

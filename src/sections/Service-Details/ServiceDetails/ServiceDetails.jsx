@@ -1,10 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Hero = () => {
   const [activeHover, setActiveHover] = useState(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
+      offset: 120,
+    });
+
+    const handleScroll = () => {
+      AOS.refreshHard();
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -13,7 +32,7 @@ const Hero = () => {
         <div className="relative">
           <div className="max-w-[1400px] mx-auto mt-[50px] xl:mt-[0px] md:flex items-center justify-between md:h-[500px] px-6">
             {/* Left Content */}
-            <div className="lg:w-[730px]">
+            <div data-aos="fade-right" className="lg:w-[730px]">
               <div className="md:text-[40px] text-[24px] leading-2 w-full text-[#347A64] font-bold leading-tight">
                 What is Bent GFRP Rebar?
               </div>
@@ -43,7 +62,7 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="mt-20 h-[400px] w-[300px] flex items-center justify-center">
+            <div data-aos="fade-left" className="mt-20 h-[400px] w-[300px] flex items-center justify-center">
               <img
                 src="/main-assets/img/service/Bent-GFRP.jpg"
                 alt="Building"

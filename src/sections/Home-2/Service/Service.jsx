@@ -2,12 +2,22 @@
 
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Service = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section className="w-full max-w-350 lg:mt-12.5 xl:mt-0 sm:mt-[30px] mt-[15px] mx-auto py-20">
       <div className="max-w-350 mx-auto px-4 md:px-8 lg:px-10">
-
         {/* ================= HEADER ================= */}
         <div className="text-center mb-16">
           {/* <p className="text-[#347A64] font-semibold tracking-wide uppercase mb-2">
@@ -32,26 +42,15 @@ const Service = () => {
             <div className="absolute hidden xl:block bottom-0 left-0 w-full bg-white/90 backdrop-blur">
               <div className="max-w-350 bg-[#347A63] text-white flex-1 flex gap-19 mx-auto">
                 <div className="flex gap-15 ml-[18px] items-center text-xs sm:text-sm font-medium ">
-                  {[
-                    "6 mm",
-                    "8 mm",
-                    "10 mm",
-                  ].map((size) => (
-                    <div
-                      key={size}
-                      className="flex w-13 text-center py-2"
-                    >
+                  {["6 mm", "8 mm", "10 mm"].map((size) => (
+                    <div key={size} className="flex w-13 text-center py-2">
                       {size}
                     </div>
                   ))}
                 </div>
 
                 <div className="flex gap-18 items-center text-xs sm:text-sm font-medium">
-                  {[
-                    "12 mm",
-                    "14 mm",
-                    "16 mm",
-                  ].map((size) => (
+                  {["12 mm", "14 mm", "16 mm"].map((size) => (
                     <div
                       key={size}
                       className="flex text-center py-2 w-20 items-center justify-center"
@@ -62,11 +61,7 @@ const Service = () => {
                 </div>
 
                 <div className="flex gap-27 ml-3 items-center text-xs sm:text-sm font-medium">
-                  {[
-                    "18 mm",
-                    "20 mm",
-                    "22 mm",
-                  ].map((size) => (
+                  {["18 mm", "20 mm", "22 mm"].map((size) => (
                     <div
                       key={size}
                       className="flex text-center py-2 w-22 items-center justify-center"
@@ -81,8 +76,10 @@ const Service = () => {
         </div>
 
         {/* ================= SERVICES GRID ================= */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-
+        <div
+          data-aos="fade-left"
+          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8"
+        >
           {/* Card 1 */}
           <div className="bg-white rounded-2xl border-t-4 border-[#347A64] shadow-md p-6 hover:shadow-xl transition">
             <span className="text-4xl font-bold text-[#347A64]">01</span>
@@ -155,12 +152,8 @@ const Service = () => {
         {/* ================= CTA SECTION ================= */}
         <div className="mt-20 bg-[#347A64] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between text-white">
           <div>
-            <div className="text-2xl font-bold">
-              Need any services?
-            </div>
-            <p className="text-white/70">
-              Get in touch with us today!
-            </p>
+            <div className="text-2xl font-bold">Need any services?</div>
+            <p className="text-white/70">Get in touch with us today!</p>
           </div>
 
           <div className="mt-6 md:mt-0 flex items-center gap-2">
@@ -180,7 +173,6 @@ const Service = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

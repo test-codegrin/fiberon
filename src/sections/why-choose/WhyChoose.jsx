@@ -32,7 +32,7 @@ export default function WhyChooseBentGFRP() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* ================= LEFT CONTENT ================= */}
-          <div className="">
+          <div data-aos="fade-up" className="">
             <h2 className="text-4xl text-[#347A64] font-bold mb-6">
               Why Choose Bent GFRP Rebar?
             </h2>
@@ -52,7 +52,7 @@ export default function WhyChooseBentGFRP() {
           </div>
 
           {/* ================= RIGHT ACCORDION ================= */}
-          <div className="space-y-6">
+          <div data-aos="fade-down" className="space-y-6">
             {items.map((item, index) => (
               <div key={index} className="overflow-hidden rounded-md">
                 {/* HEADER */}

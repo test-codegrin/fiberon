@@ -10,6 +10,7 @@ import "~/public/main-assets/css/remixicon.css";
 import "~/public/main-assets/css/slick.min.css";
 import "~/public/main-assets/css/style.css";
 import "~/public/main-assets/css/react-adjustment.css";
+import AOSProvider from "./providers/AOSProvider"; 
 
 /* ✅ Site Metadata */
 export const metadata = {
@@ -41,7 +42,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <AOSProvider>
+          {children}
+        </AOSProvider>
       </body>
     </html>
   );

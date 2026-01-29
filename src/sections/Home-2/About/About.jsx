@@ -2,14 +2,27 @@
 
 import Link from "next/link";
 import CountUp from "react-countup";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <section className="relative overflow-hidden max-w-350 mx-auto py-5 bg-white">
       <div className="relative h-550.5 md:h-450 lg:h-412.5 xl:h-250 py-0 max-w-350 mx-auto px-6 xl:px-0">
         <div className="grid grid-cols-1 xl:grid-cols-2 max-w-350 items-center">
           {/* Image Section */}
-          <div className="relative max-w-150 md:flex justify-between">
+          <div
+            data-aos="fade-up"
+            className="relative max-w-150 md:flex justify-between"
+          >
             <div className="max-h-200 mx-auto">
               <img
                 src="/main-assets/img/normal/about_2-1.png"
@@ -39,7 +52,7 @@ const About = () => {
           </div>
 
           {/* Content Section */}
-          <div className="h-225 mt-12.5 md:mt-25 xl:mt-0">
+          <div data-aos="fade-down" className="h-225 mt-12.5 md:mt-25 xl:mt-0">
             <div className="flex justify-center md:justify-start underline leading-2 items-center gap-1.5 text-2xl font-semibold text-[#347A64] uppercase">
               About Us
             </div>
@@ -70,11 +83,10 @@ const About = () => {
             <div className="bg-[#F5F5F5] p-1.5 my-6 border-l-4 border-[#347A64]">
               <p className="text-gray-700 mb-6 max-w-70 mx-auto mt-3 md:mt-0 md:max-w-full md:w-full">
                 <b className="text-[#347A64]">Over the years, FIBERON</b> has
-                earned trust across Indias infrastructure sector for
-                engineering reliability that endures generations. Every bar we
-                produce is enhanced with nano composite reinforcement
-                technology, delivering superior strength, flexibility, and
-                sustainability.
+                earned trust across Indias infrastructure sector for engineering
+                reliability that endures generations. Every bar we produce is
+                enhanced with nano composite reinforcement technology,
+                delivering superior strength, flexibility, and sustainability.
               </p>
             </div>
 
@@ -95,8 +107,8 @@ const About = () => {
 
             <div className="bg-[#347A64] p-1.5 text-center text-white text-[19px] my-6 border-l-4 border-[#347A64]">
               <p className="text-white mb-6 max-w-70 mx-auto mt-3 md:mt-0 md:max-w-full md:w-full">
-                GFRP REBAR IS APPROVED BY HYDERABAD IIT - MUMBAI IIT AND
-                ALSO APPROVED BY GOVT OF INDIA
+                GFRP REBAR IS APPROVED BY HYDERABAD IIT - MUMBAI IIT AND ALSO
+                APPROVED BY GOVT OF INDIA
               </p>
             </div>
 

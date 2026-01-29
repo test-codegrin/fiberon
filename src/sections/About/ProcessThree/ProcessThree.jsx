@@ -1,32 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import PopupVideo from "../../Common/PopupVideo/PopupVideo";
 
 const ProcessThree = () => {
   const [popup, setPopup] = useState(false);
   const [isActive, setIsActive] = useState(false);
-
-  // const openPopup = () => {
-  //   setPopup(true);
-  //   setIsActive(true);
-
-  //   const iframe = document.getElementById("youtube-video") | null;
-  //   if (iframe) {
-  //     iframe.src =
-  //       "https://www.youtube.com/embed/Mp8IXI1kzvQ?autoplay=1";
-  //   }
-
-  //   document.body.style.overflow = "hidden";
-  // };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+  
   return (
     <>
       {/* ===== PROCESS SECTION ===== */}
       <section className="relative w-full max-w-[1400px] mt-14 xl:mt-25 mx-auto rounded-2xl py-20 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6">
-
           {/* ===== HEADER ===== */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-12">
             <div className="w-full">
@@ -66,6 +60,7 @@ const ProcessThree = () => {
             ].map((item, index) => (
               <div
                 key={index}
+                data-aos="fade-right"
                 className="bg-white border-b-4 border-[#347A64] hover:border-[#347A64] hover:border-2 rounded-2xl p-8 text-center hover:shadow-xl transition"
               >
                 <div className="mb-6 flex flex-col items-center">
