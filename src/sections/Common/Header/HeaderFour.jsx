@@ -139,12 +139,12 @@ export default function HeaderFour() {
                       className="w-64"
                     >
                       {[
-                        ["Cost Effective", "/cost"],
-                        ["Corrosion Resistant", "/corrosion"],
-                        ["Durable", "/Durable"],
-                        ["Lighter", "/lighter"],
-                        ["Strength", "/strength"],
-                        ["Non Conductive", "/non-Conductive"],
+                        ["Cost Effective", "/advantages/cost"],
+                        ["Corrosion Resistant", "/advantages/corrosion"],
+                        ["Durable", "/advantages/Durable"],
+                        ["Lighter", "/advantages/lighter"],
+                        ["Strength", "/advantages/strength"],
+                        ["Non Conductive", "/advantages/non-Conductive"],
                       ].map(([label, link]) => (
                         <Link
                           key={label}
@@ -293,12 +293,12 @@ export default function HeaderFour() {
 
                   {mobileAdvantages && (
                     <div className="pl-4 flex flex-col gap-2">
-                      <Link href="/cost">Cost Effective</Link>
-                      <Link href="/corrosion">Corrosion Resistant</Link>
-                      <Link href="/Durable">Durable</Link>
-                      <Link href="/lighter">Lighter</Link>
-                      <Link href="/strength">Strength</Link>
-                      <Link href="/non-Conductive">Non Conductive</Link>
+                      <Link href="/advantages/cost">Cost Effective</Link>
+                      <Link href="/advantages/corrosion">Corrosion Resistant</Link>
+                      <Link href="/advantages/Durable">Durable</Link>
+                      <Link href="/advantages/lighter">Lighter</Link>
+                      <Link href="/advantages/strength">Strength</Link>
+                      <Link href="/advantages/non-Conductive">Non Conductive</Link>
                     </div>
                   )}
 

@@ -737,9 +737,6 @@
   .h-\[220px\] {
     height: 220px;
   }
-  .h-\[230px\] {
-    height: 230px;
-  }
   .h-\[240px\] {
     height: 240px;
   }
@@ -961,9 +958,6 @@
   }
   .w-\[320px\] {
     width: 320px;
-  }
-  .w-\[350px\] {
-    width: 350px;
   }
   .w-\[400px\] {
     width: 400px;
@@ -2517,11 +2511,6 @@
   .md\:h-\[50px\] {
     @media (width >= 48rem) {
       height: 50px;
-    }
-  }
-  .md\:h-\[223px\] {
-    @media (width >= 48rem) {
-      height: 223px;
     }
   }
   .md\:h-\[240px\] {

@@ -263,7 +263,7 @@ export default function CorrosionResistantPage() {
             decrease maintenance and construction replacement costs. At the same
             time, steel rebars are not compatible with water. Using steel rebar
             weakens the construction and increases maintenance and, at times,
-            construction replacement costs. MRG Composites provides the best
+            construction replacement costs. FIBERON-X Composites provides the best
             <b className="text-[#347A63]">GFRP rebar price quality in India.</b>
           </p>
         </div>
