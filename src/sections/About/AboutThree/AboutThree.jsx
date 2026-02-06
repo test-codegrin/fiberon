@@ -34,7 +34,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold w-auto text-white">
-                    <CountUp start={0} end={40} duration={1} /> +
+                    <CountUp start={0} end={10} duration={1} /> + years of
                   </h3>
                   <p className="text-sm text-white">Business Experience</p>
                 </div>

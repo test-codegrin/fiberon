@@ -41,8 +41,54 @@ const TestimonialThree = () => {
 
             {/* SLIDER */}
             <Slider ref={sliderRef} {...settings}>
-              {[1, 2, 3].map((item) => (
-                <div key={item}>
+              {[
+                {
+                  id: 1,
+                  name: "Aleesha Brown",
+                  role: "CEO at Construz",
+                  title: "Best Company!",
+                  text:
+                    "Tortor posuere ac ut consequat. Tellusi elem isis etum sagittis vitae et leo duis ut diam. Odio ut sem nulla phar. Purus sit ame nus mas do eiusmod.",
+                  image: 1,
+                },
+                {
+                  id: 2,
+                  name: "Aleesha Brown",
+                  role: "CEO at Construz",
+                  title: "Best Company!",
+                  text:
+                    "Tortor posuere ac ut consequat. Tellusi elem isis etum sagittis vitae et leo duis ut diam. Odio ut sem nulla phar. Purus sit ame nus mas do eiusmod.",
+                  image: 2,
+                },
+                {
+                  id: 3,
+                  name: "Aleesha Brown",
+                  role: "CEO at Construz",
+                  title: "Best Company!",
+                  text:
+                    "Tortor posuere ac ut consequat. Tellusi elem isis etum sagittis vitae et leo duis ut diam. Odio ut sem nulla phar. Purus sit ame nus mas do eiusmod.",
+                  image: 1,
+                },
+                {
+                  id: 4,
+                  name: "Michael Reyes",
+                  role: "Project Manager",
+                  title: "Reliable Partner",
+                  text:
+                    "Communication was clear, timelines were met, and the crew kept the site organized. The project stayed on budget and the final quality exceeded expectations.",
+                  image: 2,
+                },
+                {
+                  id: 5,
+                  name: "Hanna Patel",
+                  role: "Operations Lead",
+                  title: "Quality You Can Trust",
+                  text:
+                    "Materials arrived on schedule and the installation guidance was practical and responsive. We saw measurable improvements in durability on our latest build.",
+                  image: 1,
+                },
+              ].map((item) => (
+                <div key={item.id}>
                   <div className="bg-white border-b-4 border-[#347A64] rounded-2xl p-6 sm:p-8 relative min-h-[260px] sm:min-h-[330px]">
 
                     {/* QUOTE */}
@@ -53,28 +99,26 @@ const TestimonialThree = () => {
                     {/* PROFILE */}
                     <div className="flex items-center gap-4 sm:gap-5 mt-4 mb-6">
                       <img
-                        src={`/main-assets/img/testimonial/testi_1_${item === 2 ? 2 : 1}.png`}
+                        src={`/main-assets/img/testimonial/testi_1_${item.image}.png`}
                         alt="user"
                         className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover"
                       />
                       <div>
                         <div className="font-bold text-lg sm:text-xl text-gray-900">
-                          Aleesha Brown
+                          {item.name}
                         </div>
                         <span className="text-sm sm:text-md text-gray-500">
-                          CEO at Construz
+                          {item.role}
                         </span>
                       </div>
                     </div>
 
                     {/* CONTENT */}
                     <h3 className="text-xl sm:text-2xl font-semibold text-[#347A64] mb-3">
-                      Best Company!
+                      {item.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-md">
-                      Tortor posuere ac ut consequat. Tellusi elem isis etum
-                      sagittis vitae et leo duis ut diam. Odio ut sem nulla phar.
-                      Purus sit ame nus mas do eiusmod.
+                      {item.text}
                     </p>
                   </div>
                 </div>
@@ -103,10 +147,10 @@ const TestimonialThree = () => {
             <h3 className="text-xl sm:text-2xl font-bold mb-4 pb-3">
               Have you any questions?
             </h3>
-            <p className="text-white/90 text-sm sm:text-base mb-8">
+            {/* <p className="text-white/90 text-sm sm:text-base mb-8">
               Podcasting operational change management inside of making this
               the first true generator.
-            </p>
+            </p> */}
 
             <Link
               href="landing-assets/contact"

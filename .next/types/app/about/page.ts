@@ -1,4 +1,4 @@
-// File: C:\Users\HP\OneDrive\Documents\construz-main1\src\app\about\page.js
+// File: C:\Users\taman\Documents\GitHub\construz-main1\src\app\about\page.js
 import * as entry from '../../../../src/app/about/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -17,23 +17,39 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
     ],
+    "/pages/innerpage/project/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/innerpage/project/page.css",
+      "static/chunks/app/pages/innerpage/project/page.js"
+    ],
+    "/pages/innerpage/template": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/pages/innerpage/template.js"
+    ],
+    "/pages/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/pages/layout.css",
+      "static/chunks/app/pages/layout.js"
+    ],
     "/shop/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/shop/page.css",
       "static/chunks/app/shop/page.js"
-    ],
-    "/gfrp-mesh/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/gfrp-mesh/page.css",
-      "static/chunks/app/gfrp-mesh/page.js"
     ]
   }
 }
