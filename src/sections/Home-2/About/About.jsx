@@ -20,7 +20,7 @@ const About = () => {
         <div data-aos="fade-up" className="grid grid-cols-1 xl:grid-cols-2 max-w-350 items-center">
           {/* Image Section */}
           <div
-            className="relative max-w-150 md:flex justify-between"
+            className="relative max-w-155 md:flex justify-between"
           >
             <div className="max-h-200 mx-auto">
               <img
@@ -31,13 +31,13 @@ const About = () => {
             </div>
 
             {/* Experience Counter */}
-            <div className="md:absolute mt-5 md:ml-40 md:-bottom-20 w-full md:w-62.5 h-52.5 right-0 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
-              <div className="flex justify-center items-center h-full gap-3">
+            <div className="md:absolute mt-5 md:ml-40 md:-bottom-20 w-full md:w-62.5 xl:w-70 h-52.5 right-0 bg-[#347A64] rounded-xl px-0 py-5 shadow-md">
+              <div className="flex justify-center items-center h-full gap-2">
                 <div className="w-25 h-25">
                   <img
                     src="/main-assets/img/hero/trusted-white.webp"
                     alt="icon"
-                    className="-mt-7 md:mt-0 xl:-mt-7"
+                    className="-mt-7 md:mt-0 xl:mt-0"
                   />
                 </div>
                 <div>

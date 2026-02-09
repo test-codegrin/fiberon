@@ -69,7 +69,7 @@ const Hero = () => {
               }`}
             >
               <span className="px-4 text-sm whitespace-nowrap">
-                info@fiberonFIBERON.com
+                info@fiberonrebar.com
               </span>
             </div>
 
