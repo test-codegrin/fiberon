@@ -1,6 +1,3 @@
 {
-  "/about/page": "app/about/page.js",
-  "/gfrp-mesh/page": "app/gfrp-mesh/page.js",
-  "/shop/page": "app/shop/page.js",
   "/page": "app/page.js"
 }

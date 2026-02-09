@@ -119,13 +119,11 @@ const About = () => {
       {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
         <div
           className="fixed right-0 md:top-80 lg:top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3"
-          onMouseLeave={() => setActiveHover(null)}
-        >
+          onMouseLeave={() => setActiveHover(null)}>
           {/* ===== Email ===== */}
           <div
             onMouseEnter={() => setActiveHover("email")}
-            className="relative h-[50px] w-[260px]"
-          >
+            className="relative h-[50px] w-[260px]">
             {/* Sliding Text */}
             <div
               className={`absolute right-[50px] top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
@@ -134,8 +132,7 @@ const About = () => {
                 activeHover === "email"
                   ? "translate-x-0"
                   : "translate-x-[230px]"
-              }`}
-            >
+              }`}>
               <span className="px-4 text-sm whitespace-nowrap">
                 info@fiberonrebar.com
               </span>
