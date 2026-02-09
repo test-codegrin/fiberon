@@ -1,8 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/shop/page": "app/shop/page.js",
   "/about/page": "app/about/page.js",
   "/page": "app/page.js",
   "/gfrp-mesh/page": "app/gfrp-mesh/page.js",
-  "/shop/page": "app/shop/page.js"
+  "/certificates/page": "app/certificates/page.js",
+  "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js"
 }

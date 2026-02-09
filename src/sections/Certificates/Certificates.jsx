@@ -80,7 +80,7 @@ export default function Certificates() {
     <section className="w-full py-16 bg-white">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* ================= TABS ================= */}
-        <div className="flex flex-wrap gap-3 justify-center mb-12">
+        {/* <div className="flex flex-wrap gap-3 justify-center mb-12">
           {tabsData.map((tab) => (
             <button
               key={tab.id}
@@ -96,10 +96,10 @@ export default function Certificates() {
               {tab.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* ================= IMAGE GRID ================= */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {activeImages.map((img, index) => (
             <div
               key={index}
@@ -113,6 +113,10 @@ export default function Certificates() {
               />
             </div>
           ))}
+        </div> */}
+
+        <div className="">
+          <img src="/main-assets/img/certificates/Certificates-23.jpg" alt="Certificates" className="max-w-[400px] mx-auto h-auto" />
         </div>
       </div>
     </section>

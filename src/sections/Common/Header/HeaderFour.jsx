@@ -108,9 +108,10 @@ export default function HeaderFour() {
                     </Link>
                     <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
-                      href="/Certificate.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // href="/Certificate.pdf"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
+                      href="/certificates"
                     >
                       Certificates
                     </Link>
@@ -152,7 +153,7 @@ export default function HeaderFour() {
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                     href="/advantages/cost"
                   >
-                    Advantages
+                    ADVANTAGES
                   </Link>
                 </div>
               )}
