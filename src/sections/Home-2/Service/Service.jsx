@@ -20,12 +20,13 @@ const Service = () => {
       <div className="max-w-350 mx-auto px-4 md:px-8 lg:px-10">
         {/* ================= HEADER ================= */}
         <div className="text-center mb-16">
-          {/* <p className="text-[#347A64] font-semibold tracking-wide uppercase mb-2">
-            What We Do
-          </p> */}
+          
           <div className="text-3xl md:text-[45px] font-bold text-[#347A64]">
-            Our Services That We Provide
+            FIBERON GFRP Rebars
           </div>
+          <p className="text-xl text-[#347A64] font-semibold tracking-wide uppercase mb-2">
+            Available in Various Sizes
+          </p>
         </div>
 
         {/* ================= IMAGE SECTION ================= */}
@@ -76,11 +77,10 @@ const Service = () => {
         </div>
 
         {/* ================= SERVICES GRID ================= */}
-        <div
+        {/* <div
           data-aos="fade-left"
           className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8"
         >
-          {/* Card 1 */}
           <div className="bg-white rounded-2xl border-t-4 border-[#347A64] shadow-md p-6 hover:shadow-xl transition">
             <span className="text-4xl font-bold text-[#347A64]">01</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
@@ -97,7 +97,6 @@ const Service = () => {
             </Link>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white rounded-2xl border-t-4 border-[#347A64] shadow-md p-6 hover:shadow-xl transition">
             <span className="text-4xl font-bold text-[#347A64]">02</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
@@ -114,7 +113,6 @@ const Service = () => {
             </Link>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white rounded-2xl border-t-4 border-[#347A64] shadow-md p-6 hover:shadow-xl transition">
             <span className="text-4xl font-bold text-[#347A64]">03</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
@@ -131,7 +129,6 @@ const Service = () => {
             </Link>
           </div>
 
-          {/* Card 4 */}
           <div className="bg-white rounded-2xl border-t-4 border-[#347A64] shadow-md p-6 hover:shadow-xl transition">
             <span className="text-4xl font-bold text-[#347A64]">04</span>
             <h4 className="mt-4 text-xl font-semibold text-gray-900">
@@ -147,12 +144,12 @@ const Service = () => {
               Read More →
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* ================= CTA SECTION ================= */}
         <div className="mt-20 bg-[#347A64] rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between text-white">
           <div>
-            <div className="text-2xl font-bold">Need any services?</div>
+            <div className="text-2xl font-bold">Inquiry Now</div>
             <p className="text-white/70">Get in touch with us today!</p>
           </div>
 

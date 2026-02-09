@@ -1,3 +1,8 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/about/page": "app/about/page.js",
+  "/page": "app/page.js",
+  "/gfrp-mesh/page": "app/gfrp-mesh/page.js",
+  "/shop/page": "app/shop/page.js"
 }

@@ -19,13 +19,13 @@ export default function HeaderFour() {
 
   // Desktop dropdowns
   const [companyOpen, setCompanyOpen] = useState(false);
-  const [advantagesOpen, setAdvantagesOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [technicalOpen, setTechnicalOpen] = useState(false);
 
   // Mobile dropdowns
   const [mobileCompany, setMobileCompany] = useState(false);
-  const [mobileAdvantages, setMobileAdvantages] = useState(false);
   const [mobileProducts, setMobileProducts] = useState(false);
+  const [mobileTechnical, setMobileTechnical] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setIsSticky(window.scrollY > 120);
@@ -98,7 +98,7 @@ export default function HeaderFour() {
               </button>
 
               {companyOpen && (
-                <div className="absolute left-0 z-999 top-full bg-white shadow-xl rounded-lg flex">
+                <div className="absolute left-0 z-999 top-full bg-white shadow-xl rounded-lg">
                   <div className="w-64">
                     <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
@@ -106,92 +106,21 @@ export default function HeaderFour() {
                     >
                       About Us
                     </Link>
-
-                    <div className="">
-                      <button
-                        onMouseEnter={() => setAdvantagesOpen(true)}
-                        onMouseLeave={() => setAdvantagesOpen(false)}
-                        onClick={() => setAdvantagesOpen(true)}
-                        className="w-full px-6 py-4 text-left hover:bg-[#347A64]/10 flex items-center gap-1"
-                      >
-                        Advantages <ChevronDown size={16} />
-                      </button>
-                    </div>
-
-                    {/* <Link
+                    <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
-                      href="#"
-                    >
-                      Achievement
-                    </Link> */}
-                    {/* <Link
-                      className="block px-6 py-4 hover:bg-[#347A64]/10"
-                      href="/certificates"
+                      href="/Certificate.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Certificates
-                    </Link> */}
-                  </div>
-
-                  {advantagesOpen && (
-                    <div
-                      onMouseEnter={() => setAdvantagesOpen(true)}
-                      onMouseLeave={() => setAdvantagesOpen(false)}
-                      className="w-64"
+                    </Link>
+                    <Link
+                      className="block px-6 py-4 hover:bg-[#347A64]/10"
+                      href="/pages/innerpage/project"
                     >
-                      {[
-                        ["Cost Effective", "/advantages/cost"],
-                        ["Corrosion Resistant", "/advantages/corrosion"],
-                        ["Durable", "/advantages/Durable"],
-                        ["Lighter", "/advantages/lighter"],
-                        ["Strength", "/advantages/strength"],
-                        ["Non Conductive", "/advantages/non-Conductive"],
-                      ].map(([label, link]) => (
-                        <Link
-                          key={label}
-                          href={link}
-                          className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        >
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* {projectsOpen && (
-                    <div onMouseEnter={() => setProjectsOpen(true)}
-                        onMouseLeave={() => setProjectsOpen(false)} className="w-72">
-                      <Link
-                        className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        href="/project/RCCRoad"
-                      >
-                        RCC Road Construction Ahmedabad
-                      </Link>
-                      <Link
-                        className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        href="/project/JammuDrainageWork"
-                      >
-                        Jammu Drainage Work
-                      </Link>
-                      <Link
-                        className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        href="/project/bavla"
-                      >
-                        Bavla Industrial Flooring
-                      </Link>
-                      <Link
-                        className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        href="/project/industrialFlooring"
-                      >
-                        Industrial Flooring Amravati Maharashtra
-                      </Link>
-                      <Link
-                        className="block px-6 py-4 hover:bg-[#347A64]/10"
-                        href="/project/sixLane"
-                      >
-                        Six Lane Karala Kanjhawala Road
-                      </Link>
-                    </div>
-                  )} */}
+                      Projects
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -211,20 +140,51 @@ export default function HeaderFour() {
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                     href="/shop"
                   >
-                    GFRP FIBERON
+                    GFRP REBAR
                   </Link>
                   <Link
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
                     href="/gfrp-mesh"
                   >
-                    GFRP Bent Bars
+                    GFRP BENT REBAR
+                  </Link>
+                  <Link
+                    className="block px-4 py-3 hover:bg-[#347A64]/10"
+                    href="/advantages/cost"
+                  >
+                    Advantages
                   </Link>
                 </div>
               )}
             </div>
             
             <Link href="/applications">Application</Link>
-            <Link href="/contact">Contact</Link>
+
+            {/* TECHNICAL SPECIFICATION */}
+            <div
+              className="relative"
+              onMouseEnter={() => setTechnicalOpen(true)}
+              onMouseLeave={() => setTechnicalOpen(false)}
+            >
+              <button className="flex items-center gap-1">
+                Technical Specification <ChevronDown size={18} />
+              </button>
+              {technicalOpen && (
+                <div className="absolute z-999 top-full w-72 bg-white shadow-lg rounded-md">
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                    Comparison Steel Bar vs GFRP
+                  </Link>
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                    Tensile Strength Steel Bar vs GFRP
+                  </Link>
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                    Packaging Details
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/contact">Contact Us</Link>
           </nav>
           
           {/* ACTIONS */}
@@ -279,31 +239,14 @@ export default function HeaderFour() {
               {mobileCompany && (
                 <div className="pl-4 flex flex-col gap-3 text-sm">
                   <Link href="/about">About Us</Link>
-
-                  {/* ADVANTAGES */}
-                  <button
-                    onClick={() => setMobileAdvantages(!mobileAdvantages)}
-                    className="flex justify-between items-center">
-                    Advantages
-                    <ChevronDown
-                      size={16}
-                      className={mobileAdvantages ? "rotate-180" : ""}
-                    />
-                  </button>
-
-                  {mobileAdvantages && (
-                    <div className="pl-4 flex flex-col gap-2">
-                      <Link href="/advantages/cost">Cost Effective</Link>
-                      <Link href="/advantages/corrosion">Corrosion Resistant</Link>
-                      <Link href="/advantages/Durable">Durable</Link>
-                      <Link href="/advantages/lighter">Lighter</Link>
-                      <Link href="/advantages/strength">Strength</Link>
-                      <Link href="/advantages/non-Conductive">Non Conductive</Link>
-                    </div>
-                  )}
-
-                  {/* <Link href="/achievement">Achievement</Link>
-                  <Link href="/certificates">Certificates</Link> */}
+                  <Link
+                    href="/Certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Certificates
+                  </Link>
+                  <Link href="/pages/innerpage/project">Projects</Link>
                 </div>
               )}
 
@@ -321,13 +264,35 @@ export default function HeaderFour() {
 
               {mobileProducts && (
                 <div className="pl-4 flex flex-col gap-2 text-sm">
-                  <Link href="/shop">GFRP FIBERON</Link>
-                  <Link href="/gfrp-mesh">GFRP Bent Bars</Link>
+                  <Link href="/shop">GFRP REBAR</Link>
+                  <Link href="/gfrp-mesh">GFRP BENT REBAR</Link>
+                  <Link href="/advantages/cost">Advantages</Link>
                 </div>
               )}
 
               <Link href="/applications">Application</Link>
-              <Link href="/contact">Contact</Link>
+
+              {/* TECHNICAL SPECIFICATION */}
+              <button
+                onClick={() => setMobileTechnical(!mobileTechnical)}
+                className="flex justify-between items-center"
+              >
+                Technical Specification
+                <ChevronDown
+                  size={18}
+                  className={mobileTechnical ? "rotate-180" : ""}
+                />
+              </button>
+
+              {mobileTechnical && (
+                <div className="pl-4 flex flex-col gap-2 text-sm">
+                  <Link href="#">Comparison Steel Bar vs GFRP</Link>
+                  <Link href="#">Tensile Strength Steel Bar vs GFRP</Link>
+                  <Link href="#">Packaging Details</Link>
+                </div>
+              )}
+
+              <Link href="/contact">Contact Us</Link>
             </nav>
           </div>
         </div>

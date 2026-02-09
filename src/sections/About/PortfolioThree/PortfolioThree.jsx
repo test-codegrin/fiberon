@@ -67,9 +67,9 @@ const PortfolioThree = () => {
             Check our Latest Projects
           </h2>
 
-          <p className="mt-3 text-gray-600 max-w-xl mx-auto">
+          {/* <p className="mt-3 text-gray-600 max-w-xl mx-auto">
             We are the best construction agency in the world
-          </p>
+          </p> */}
         </div>
 
         {/* ===== SLIDER ===== */}

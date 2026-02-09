@@ -21,11 +21,11 @@ export default function AboutPage() {
       {/* <Breadcumb /> */}
       <About />
       <WhyChooseThree />
-      <ProcessThree />
+      {/* <ProcessThree /> */}
       <PortfolioThree />
       <CounterThree />
       <TestimonialThree />
-      <TeamThree />
+      {/* <TeamThree /> */}
       {/* <ClientThree /> */}
       <BlogThree />
       <ClientReviews />

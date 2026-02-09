@@ -173,16 +173,16 @@ const TestimonialThree = () => {
               <h3 className="testimonial-card-title">
                 Have you any questions?
               </h3>
-              <p className="testimonial-card-text">
+              {/* <p className="testimonial-card-text">
                 Podcasting operational change management inside of making this
                 the first true generator.
-              </p>
+              </p> */}
               <div className="btn-group">
                 <Link href="landing-assets/contact" className="btn style6">
                   Contact with Us <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       </div>
