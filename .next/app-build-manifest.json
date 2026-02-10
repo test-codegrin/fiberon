@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/about/page.css",
+      "static/chunks/app/about/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -17,16 +17,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/about/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/about/page.css",
-      "static/chunks/app/about/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/shop/page": [
       "static/chunks/webpack.js",
@@ -34,11 +29,26 @@
       "static/css/app/shop/page.css",
       "static/chunks/app/shop/page.js"
     ],
-    "/gfrp-mesh/page": [
+    "/advantages/cost/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/gfrp-mesh/page.css",
-      "static/chunks/app/gfrp-mesh/page.js"
+      "static/css/app/advantages/cost/page.css",
+      "static/chunks/app/advantages/cost/page.js"
+    ],
+    "/application/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/application/page.js"
+    ],
+    "/Tensile-Strength/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Tensile-Strength/page.js"
+    ],
+    "/Comparison-Steel/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Comparison-Steel/page.js"
     ],
     "/pages/innerpage/project/page": [
       "static/chunks/webpack.js",
@@ -57,15 +67,20 @@
       "static/css/app/pages/layout.css",
       "static/chunks/app/pages/layout.js"
     ],
-    "/advantages/cost/page": [
+    "/pages/innerpage/project-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/advantages/cost/page.js"
+      "static/chunks/app/pages/innerpage/project-details/page.js"
     ],
     "/certificates/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/certificates/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
     ]
   }
 }

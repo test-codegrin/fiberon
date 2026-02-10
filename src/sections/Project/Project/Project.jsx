@@ -11,9 +11,9 @@ const images = [
   "/main-assets/img/project/project2_4.png",
   "/main-assets/img/project/project2_5.png",
   "/main-assets/img/project/project2_6.png",
-  "/main-assets/img/project/project2_7.png",
-  "/main-assets/img/project/project2_8.png",
-  "/main-assets/img/project/project2_9.png",
+  // "/main-assets/img/project/project2_7.png",
+  // "/main-assets/img/project/project2_8.png",
+  // "/main-assets/img/project/project2_9.png",
 ];
 
 const Project = () => {
@@ -36,7 +36,7 @@ const Project = () => {
 
   return (
     <section className="py-20 mt-[50px]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-350 mx-auto px-6">
         
         {/* Title */}
         <div className="text-center mb-16">
@@ -103,7 +103,7 @@ const Project = () => {
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center gap-3 mt-16 space-x-2">
+        {/* <div className="flex justify-center gap-3 mt-16 space-x-2">
           <button className="w-10 h-10 rounded-full bg-[#347A63] text-white font-semibold">
             01
           </button>
@@ -113,7 +113,7 @@ const Project = () => {
           <button className="w-10 h-10 rounded-full border border-gray-300 hover:bg-[#347A63] hover:text-white transition">
             03
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Lightbox */}

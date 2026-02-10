@@ -159,7 +159,7 @@ export default function HeaderFour() {
               )}
             </div>
             
-            <Link href="/applications">Application</Link>
+            <Link href="/application">Application</Link>
 
             {/* TECHNICAL SPECIFICATION */}
             <div
@@ -172,10 +172,10 @@ export default function HeaderFour() {
               </button>
               {technicalOpen && (
                 <div className="absolute z-999 top-full w-72 bg-white shadow-lg rounded-md">
-                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/Comparison-Steel">
                     Comparison Steel Bar vs GFRP
                   </Link>
-                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/Tensile-Strength">
                     Tensile Strength Steel Bar vs GFRP
                   </Link>
                   <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">

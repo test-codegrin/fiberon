@@ -35,9 +35,7 @@ const tabsData = [
   {
     id: "geo",
     label: "GEO DESIGNS & RESEARCH (P) LTD",
-    images: [
-      "/main-assets/img/certificates/Certificates-11.jpg",
-    ],
+    images: ["/main-assets/img/certificates/Certificates-11.jpg"],
   },
   {
     id: "g.s",
@@ -78,7 +76,7 @@ export default function Certificates() {
 
   return (
     <section className="w-full py-16 bg-white">
-      <div className="max-w-[1400px] mx-auto px-6">
+      <div className="max-w-350 mx-auto px-6">
         {/* ================= TABS ================= */}
         {/* <div className="flex flex-wrap gap-3 justify-center mb-12">
           {tabsData.map((tab) => (
@@ -115,8 +113,116 @@ export default function Certificates() {
           ))}
         </div> */}
 
-        <div className="">
-          <img src="/main-assets/img/certificates/Certificates-23.jpg" alt="Certificates" className="max-w-[400px] mx-auto h-auto" />
+        {/* Certifications & Quality Commitment */}
+        <div className="grid grid-cols-1 lg:flex lg:items-center max-w-full w-full mx-auto gap-x-14 gap-y-8">
+          <div>
+            <img
+              src="/main-assets/img/certificates/Certificates-23.jpg"
+              alt="Certificates"
+              className="max-w-100 mx-auto h-auto"
+            />
+          </div>
+
+          <div className="">
+            <p className="text-[35px] text-[#347A63] font-bold">
+              Certifications & Quality Commitment
+            </p>
+            <p className="text-[20px] mt-5">
+              At <b className="text-[#347A63]">REBAR-X Composites Industries</b>
+              , quality is not a claim - it is a system we follow every day.
+            </p>
+            <p className="text-[20px] mt-5">
+              We are <b className="text-[#347A63]">ISO 9001:2015 certified</b>,
+              demonstrating our commitment to consistent quality, controlled
+              processes, and continuous improvement across all operations.
+            </p>
+            <p className="text-[#347A63] font-bold text-[20px] mt-5">
+              ISO 9001:2015 – Quality Management System
+            </p>
+            <p className="text-[20px] mt-5">
+              Our manufacturing and management processes have been independently
+              assessed and certified to meet the requirements of{" "}
+              <b className="text-[#347A63]">ISO 9001:2015</b>, the globally
+              recognized standard for Quality Management Systems.
+            </p>
+          </div>
+        </div>
+
+        {/* This certification covers: */}
+        <div className="mt-10">
+          <p className="text-[30px] font-semibold text-[#347A63] mt-5">
+            This certification covers :
+          </p>
+          <li className="text-[20px] mt-5">
+            Design, manufacturing, and supply of non-metallic building and
+            construction materials
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Glass Fiber Reinforced Polymer (GFRP) products including panels,
+            sheets, pipes, bars, tanks, and gratings
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Roofing sheets, ducts, and allied composite construction materials
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Structural and decorative GFRP products for building, civil
+            engineering, and industrial applications
+          </li>
+        </div>
+
+        {/* What This Means for Our Customers */}
+        <div className="mt-10">
+          <p className="text-[30px] font-semibold text-[#347A63] mt-5">
+            What This Means for Our Customers
+          </p>
+          <li className="text-[20px] mt-5">
+            Consistent product quality across every batch
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Standardized and controlled manufacturing processes
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Strong focus on customer satisfaction
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Continuous improvement in quality, efficiency, and performance
+          </li>
+
+          <li className="text-[20px] mt-5">
+            Reliable documentation and traceability
+          </li>
+        </div>
+
+        {/* Certification Details */}
+        <div className="mt-10">
+          <p className="text-[30px] font-semibold text-[#347A63] mt-5">
+            Certification Details
+          </p>
+          <li className="text-[20px] mt-5">
+            <b className="text-[#347A63]">Standard:</b> ISO 9001:2015
+          </li>
+
+          <li className="text-[20px] mt-5">
+            <b className="text-[#347A63]">Certifying Body:</b> Royal Assessments Pvt. Ltd.
+          </li>
+
+          <li className="text-[20px] mt-5">
+            <b className="text-[#347A63]">Accreditation:</b> EGAC (Member of International Accreditation Forum – IAF)
+          </li>
+
+          <li className="text-[20px] mt-5">
+            <b className="text-[#347A63]">Validity:</b> February 2029
+          </li>
+
+          <li className="text-[20px] mt-5">
+            <b className="text-[#347A63]">Surveillance Audits:</b> Conducted annually to ensure ongoing compliance
+          </li>
         </div>
       </div>
     </section>

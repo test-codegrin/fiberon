@@ -1,157 +1,168 @@
 /* eslint-disable react/no-unescaped-entities */
-'use client';
+"use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import PopupVideo from "../../Common/PopupVideo/PopupVideo";
 
 const ProjectDetails = () => {
-    const [popup, setPopup] = useState(false);
-    const [isActive, setIsActive] = useState(false);
-    const openPopup = () => {
-        setPopup(true);
-        const iframe = document.getElementById("youtube-video");
-        if (iframe) {
-            iframe.src = "https://www.youtube.com/embed/Mp8IXI1kzvQ?si=UQVMsmBriHPfD6Vf";
-        }
-        setIsActive(true);
-        document.body.style.overflow = 'hidden';
-    };
-    return (
-        <div>
-            <div className="project-details-area space-top overflow-hidden">
-                <div className="container">
-                    <div className="row gy-30 gx-30">
-                        <div className="col-12">
-                            <div className="single-page">
-                                <div className="project-page-thumb mb-50">
-                                    <img className="w-100" src="/main-assets/img/project/project_details1_1.png" alt="img" />
-                                    <aside className="sidebar-area">
-                                        <div className="widget widget_project_info style2">
-                                            <h3 className="widget_title">Project Info</h3>
-                                            <ul className="project-info-list border-0 p-0 m-0">
-                                                <li><strong>Client<span>:</span></strong> <span>Rebecca Tylor</span></li>
-                                                <li><strong>Category<span>:</span></strong> <span>Building</span></li>
-                                                <li><strong>Location<span>:</span></strong> <span>New York to London</span></li>
-                                                <li><strong>Date<span>:</span></strong> <span>12 January, 2024</span></li>
-                                                <li><strong>Status<span>:</span></strong> <span>Completed</span></li>
-                                                <li><strong>Budget<span>:</span></strong> <span>$200,560</span></li>
-                                            </ul>
-                                        </div>
-                                    </aside>
-                                </div>
-                                <h2 className="sec-title mb-25">Project Overview</h2>
-                                <p className="mb-50">Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapinto electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                    letraset sheets containing. Richard Clintock a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure latin words, consectetur, from a Lorem Ipsum passage.</p>
-                                <div className="row gy-4 justify-content-center">
-                                    <div className="col-xl-4 col-lg-6">
-                                        <div className="service-card style4">
-                                            <div className="service-card_icon">
-                                                <img src="/main-assets/img/icon/service-icon1-1.png" alt="img" />
-                                            </div>
-                                            <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Full Principal Contractor service</Link></h4>
-                                                <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-4 col-lg-6">
-                                        <div className="service-card style4">
-                                            <div className="service-card_icon">
-                                                <img src="/main-assets/img/icon/service-icon1-2.png" alt="img" />
-                                            </div>
-                                            <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Full-time Onsite Supervision</Link></h4>
-                                                <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-4 col-lg-6">
-                                        <div className="service-card style4">
-                                            <div className="service-card_icon">
-                                                <img src="/main-assets/img/icon/service-icon1-3.png" alt="img" />
-                                            </div>
-                                            <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Timber and steel frame construction</Link></h4>
-                                                <p className="service-card_text">There are many passages of lorem ipsum available</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <blockquote>
-                                    <p>“Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae
-                                        atleo duis ut diam odio ut sem nulla phar. Purus sit ame  nus mas highly efficient solution whereas open-source application.”</p>
-                                    <cite>Aleesha brown</cite>
-                                    <span className="desig">Company, CEO</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="video-area overflow-hidden">
-                <div className="video-wrap mt-20">
-                    <img src="/main-assets/img/project/project_details1_2.png" alt="img" />
-                    <a onClick={openPopup} className="play-btn style3"><i className="ri-play-fill"></i></a>
-                </div>
-                <div className="container">
-                    <p className="mt-40 mb-0">Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leapinto electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                        letraset sheets containing.</p>
-                </div>
+  const [popup, setPopup] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  return (
+    <div className="w-full py-24">
+
+      {/* ================= PROJECT DETAILS SECTION ================= */}
+      <section className="py-20 px-6">
+        <div className="max-w-350 mx-auto">
+
+          {/* Top Image + Sidebar */}
+          <div className="grid lg:grid-cols-3 gap-10 mb-16">
+
+            {/* Main Image */}
+            <div className="lg:col-span-2">
+              <img
+                src="/main-assets/img/project/project_details1_1.png"
+                alt="Project"
+                className="w-full rounded-2xl shadow-lg"
+              />
             </div>
 
-
-            <div className="pt-60 pb-60 overflow-hidden">
-                <div className="container">
-                    <div className="row justify-content-between align-items-center gy-40">
-                        <div className="col-lg-6">
-                            <div className="title-area text-md-start text-left">
-                                <h2 className="sec-title">Features of Project</h2>
-                            </div>
-                            <div className="process-thumb2-1">
-                                <img src="/main-assets/img/normal/process-thumb2-1.png" alt="img" />
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="process-grid-list style2">
-                                <div className="process-grid-list-bg-text">
-                                    BENEFIT
-                                </div>
-                                <div className="process-grid">
-                                    <div className="process-grid-number">01</div>
-                                    <div className="process-grid-details">
-                                        <h3 className="process-grid-title">Advanced Technology </h3>
-                                        <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                    </div>
-                                </div>
-                                <div className="process-grid">
-                                    <div className="process-grid-number">02</div>
-                                    <div className="process-grid-details">
-                                        <h3 className="process-grid-title">Trusted Company </h3>
-                                        <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                    </div>
-                                </div>
-                                <div className="process-grid">
-                                    <div className="process-grid-number">03</div>
-                                    <div className="process-grid-details">
-                                        <h3 className="process-grid-title">Professional Teams </h3>
-                                        <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                    </div>
-                                </div>
-                                <div className="process-grid">
-                                    <div className="process-grid-number">04</div>
-                                    <div className="process-grid-details">
-                                        <h3 className="process-grid-title">Stylistic formula method</h3>
-                                        <p className="process-grid-text">We craft unique digital experiences. With more years of expertise we design </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            {/* Sidebar */}
+            <div className="bg-[#347A63]/5 p-6 rounded-2xl shadow-md border border-[#347A63]/20">
+              <h3 className="text-xl font-semibold mb-6 text-[#347A63]">
+                Project Info
+              </h3>
+              <ul className="space-y-4 text-gray-700">
+                <li><span className="font-semibold text-black">Client:</span> Rebecca Tylor</li>
+                <li><span className="font-semibold text-black">Category:</span> Building</li>
+                <li><span className="font-semibold text-black">Location:</span> New York to London</li>
+                <li><span className="font-semibold text-black">Date:</span> 12 January, 2024</li>
+                <li><span className="font-semibold text-black">Status:</span> Completed</li>
+                <li><span className="font-semibold text-black">Budget:</span> $200,560</li>
+              </ul>
             </div>
-            <PopupVideo popup={popup} setPopup={setPopup} isActive={isActive} setIsActive={setIsActive}></PopupVideo>
+          </div>
+
+          {/* Overview */}
+          <h2 className="text-3xl font-bold mb-6 text-[#347A63]">
+            Project Overview
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-16">
+            Industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also
+            the leap into electronic typesetting, remaining essentially
+            unchanged.
+          </p>
+
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "Full Principal Contractor service",
+                icon: "/main-assets/img/icon/service-icon1-1.png",
+              },
+              {
+                title: "Full-time Onsite Supervision",
+                icon: "/main-assets/img/icon/service-icon1-2.png",
+              },
+              {
+                title: "Timber and steel frame construction",
+                icon: "/main-assets/img/icon/service-icon1-3.png",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:border-[#347A63] border transition duration-300"
+              >
+                <img
+                  src={item.icon}
+                  alt="icon"
+                  className="w-14 mb-4"
+                />
+                <h4 className="text-lg font-semibold mb-2 text-[#347A63]">
+                  <Link href="/pages/innerpage/service-details">
+                    {item.title}
+                  </Link>
+                </h4>
+                <p className="text-gray-500 text-sm">
+                  There are many passages of lorem ipsum available
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Quote */}
+          <blockquote className="bg-gray-50 p-8 rounded-2xl italic text-gray-700 border-l-4 border-[#347A63]">
+            “Tortor posuere ac ut consequat tellusi elem isis etum sag ittis vitae
+            atleo duis ut diam odio ut sem nulla phar. Purus sit ame nus mas
+            highly efficient solution whereas open-source application.”
+            <div className="mt-4 font-semibold not-italic text-[#347A63]">
+              Aleesha Brown
+              <span className="block text-sm text-gray-500 font-normal">
+                Company, CEO
+              </span>
+            </div>
+          </blockquote>
         </div>
-    );
+      </section>
+
+      {/* ================= VIDEO SECTION ================= */}
+      {/* <section className="py-16 bg-[#347A63]/5 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-gray-700 max-w-3xl mx-auto">
+            Industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make
+            a type specimen book.
+          </p>
+        </div>
+      </section> */}
+
+      {/* ================= FEATURES SECTION ================= */}
+      <section className="py-20 px-6">
+        <div className="max-w-350 pt-24 mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* Image */}
+          <div>
+            <h2 className="text-3xl text-center font-bold mb-8 text-[#347A63]">
+              Features of Project
+            </h2>
+            <img
+              src="/main-assets/img/normal/process-thumb2-1.png"
+              alt="Feature"
+              className="rounded-2xl mt-50"
+            />
+          </div>
+
+          {/* Features List */}
+          <div className="space-y-8">
+            {[
+              "Advanced Technology",
+              "Trusted Company",
+              "Professional Teams",
+              "Stylistic formula method",
+            ].map((feature, index) => (
+              <div key={index} className="flex gap-6 items-start">
+                <div className="text-3xl font-bold text-[#347A63]">
+                  0{index + 1}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-[#347A63]">
+                    {feature}
+                  </h3>
+                  <p className="text-gray-600">
+                    We craft unique digital experiences. With more years of expertise we design.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
 };
 
 export default ProjectDetails;

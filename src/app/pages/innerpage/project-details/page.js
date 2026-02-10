@@ -4,14 +4,15 @@ import ProjectDetails from "~/sections/Project-Details/ProjectDetails";
 import FooterTwo from "~/sections/Common/Footer/FooterTwo";
 import Scroll from "~/sections/Common/Scroll";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import FooterThree from "~/sections/Common/Footer/FooterThree";
 export default function ProjectDetailsPage() {
     return (
         <div style={{overflow: 'hidden'}}>
             <HeaderFour />
-            <BreadcumbEight />
+            {/* <BreadcumbEight /> */}
             <ProjectDetails />
-            <ContactSix />
-            <FooterTwo />
+            {/* <ContactSix /> */}
+            <FooterThree />
             <Scroll />
         </div>
     );

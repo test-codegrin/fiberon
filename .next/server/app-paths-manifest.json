@@ -1,7 +1,8 @@
 {
-  "/gfrp-mesh/page": "app/gfrp-mesh/page.js",
-  "/certificates/page": "app/certificates/page.js",
-  "/about/page": "app/about/page.js",
+  "/advantages/cost/page": "app/advantages/cost/page.js",
   "/page": "app/page.js",
+  "/Tensile-Strength/page": "app/Tensile-Strength/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/application/page": "app/application/page.js",
   "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js"
 }

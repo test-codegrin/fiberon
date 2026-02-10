@@ -57,14 +57,14 @@ const FooterThree = () => {
                     News & Article
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="/achievement"
                     className="hover:underline"
                   >
                     Success Story
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="/contact"

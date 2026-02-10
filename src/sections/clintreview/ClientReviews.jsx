@@ -6,17 +6,17 @@ const reviews = [
   {
     name: "Suresh",
     role: "DASHLANK PVT LTD",
-    text: "REBAR-X Composites' GFRP rebar made a remarkable difference in our project. Lightweight yet strong, it sped up installation effortlessly.",
+    text: "FIBERON Composites' GFRP rebar made a remarkable difference in our project. Lightweight yet strong, it sped up installation effortlessly.",
   },
   {
     name: "Raj",
     role: "Founder & CEO",
-    text: "Working with REBAR-X Composites Rebar was a game-changer for us. Their expertise and dedication helped us achieve our goals faster.",
+    text: "Working with FIBERON Composites Rebar was a game-changer for us. Their expertise and dedication helped us achieve our goals faster.",
   },
   {
     name: "Kacey",
     role: "Purchase Manager",
-    text: "REBAR-X Composites truly understands our needs. Their personalized approach and attention to detail made all the difference.",
+    text: "FIBERON Composites truly understands our needs. Their personalized approach and attention to detail made all the difference.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function ClientReviews() {
     let animationFrame;
 
     const animate = () => {
-      positionRef.current -= 2; // speed control (smaller = slower)
+      positionRef.current -= 1; // speed control (smaller = slower)
 
       // Reset seamlessly at half width
       if (Math.abs(positionRef.current) >= slider.scrollWidth / 2) {

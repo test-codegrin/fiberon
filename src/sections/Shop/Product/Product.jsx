@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const stats = [
   { value: 5000, suffix: "+", label: "Projects Completed" },
   { value: 17, suffix: "+", label: "Years of Experience" },
@@ -21,23 +20,22 @@ export default function Product() {
   const [counts, setCounts] = useState(stats.map(() => 0));
 
   useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    once: false,
-    mirror: true,
-    offset: 120,
-  });
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
+      offset: 120,
+    });
 
-  const handleScroll = () => {
-    AOS.refreshHard();
-  };
+    const handleScroll = () => {
+      AOS.refreshHard();
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -110,14 +108,17 @@ export default function Product() {
   return (
     <main className="w-full overflow-hidden bg-white text-gray-800">
       {/* ================= HERO SECTION ================= */}
-      <section data-aos="fade-up" className="max-w-350 mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center">
+      <section
+        data-aos="fade-up"
+        className="max-w-350 mx-auto px-6 md:py-24 py-4 md:flex justify-between items-center"
+      >
         <div className="sm:w-full w-75">
           <div className="w-full">
             <div className="text-3xl md:text-5xl xl:text-[80px] font-bold leading-tight">
               <span className="text-[#347A64]">GFRP</span> Rebar
             </div>
             <span className="block text-2xl xl:text-[50px] font-bold text-black">
-              Building Tomorrow Today
+              Strength You can trust.
             </span>
           </div>
 
@@ -139,6 +140,53 @@ export default function Product() {
           />
         </div>
       </section>
+
+      {/* ================= IMAGE SECTION ================= */}
+      <div className="mb-20 mt-30">
+        <div className="relative max-w-350 mx-auto overflow-hidden">
+          {/* ===== Rod Image ===== */}
+          <img
+            src="/main-assets/img/hero/AllRoads.png"
+            alt="Rebar Rod Sizes"
+            className="max-w-350 w-full h-auto object-cover"
+          />
+
+          {/* ===== Sizes Bar ===== */}
+          <div className="absolute hidden xl:block bottom-0 left-0 w-full bg-white/90 backdrop-blur">
+            <div className="max-w-350 bg-[#347A63] text-white flex-1 flex gap-19 mx-auto">
+              <div className="flex gap-16 ml-7 items-center text-xs sm:text-sm font-medium ">
+                {["6 mm", "8 mm", "10 mm"].map((size) => (
+                  <div key={size} className="flex w-13 text-center py-2">
+                    {size}
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex gap-20 items-center text-xs sm:text-sm font-medium">
+                {["12 mm", "14 mm", "16 mm"].map((size) => (
+                  <div
+                    key={size}
+                    className="flex text-center py-2 w-20 items-center justify-center"
+                  >
+                    {size}
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex gap-28 ml-3 items-center text-xs sm:text-sm font-medium">
+                {["18 mm", "20 mm", "22 mm"].map((size) => (
+                  <div
+                    key={size}
+                    className="flex text-center py-2 w-22 items-center justify-center"
+                  >
+                    {size}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* ================= STATS SECTION ================= */}
       <section
@@ -169,7 +217,10 @@ export default function Product() {
       </section>
 
       {/* ================= GFRP INFO ================= */}
-      <section data-aos="fade-up" className="max-w-350 mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+      <section
+        data-aos="fade-up"
+        className="max-w-350 mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center"
+      >
         {/* IMAGE BOX */}
         <div className="w-full max-w-115 mx-auto  rounded-xl flex items-center justify-center p-6 sm:p-10">
           <img
@@ -344,13 +395,13 @@ export default function Product() {
       </section>
 
       {/* ================= APPLICATION GRID ================= */}
-      <section className="py-24 max-w-350 mx-auto px-6">
-        {/* Section Title */}
+      {/* <section className="py-24 max-w-350 mx-auto px-6">
+        {/* Section Title *
         <div className="text-center text-3xl font-bold text-[#347A64] mb-16">
           GFRP Rebar Applications
         </div>
 
-        {/* Application Grid */}
+        {/* Application Grid *
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {[
             {
@@ -408,7 +459,7 @@ export default function Product() {
               data-aos-delay={i * 80}
               className="group border rounded-2xl overflow-hidden text-center hover:shadow-lg transition duration-300"
             >
-              {/* Image */}
+              {/* Image *
               <div className="w-full h-51 overflow-hidden">
                 <img
                   src={item.img}
@@ -417,20 +468,20 @@ export default function Product() {
                 />
               </div>
 
-              {/* Title */}
+              {/* Title *
               <div className="p-2 border-b-3 border-[#347A64] rounded-2xl">
                 <div className="font-semibold text-md text-[#347A64] ">
                   {item.title}
                 </div>
               </div>
             </div>
-          ))}
+          ))} 
         </div>
-      </section>
+      </section> */}
 
-      <section data-aos="fade-up">
+      {/* ================= ATTRIBUTES ================= */}
+      {/* <section data-aos="fade-up">
         <div className="max-w-6xl mx-auto px-3 sm:px-4">
-          {/* ================= HEADER ================= */}
           <div className="text-center mb-10 md:mb-14">
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#347A64] mb-2">
               Table of Substitution
@@ -441,10 +492,8 @@ export default function Product() {
             </p>
           </div>
 
-          {/* ================= TABLE WRAPPER ================= */}
           <div className="p-0 sm:p-5 md:p-8 overflow-x-auto">
             <div className="min-w-70 md:min-w-full grid grid-cols-1 md:grid-cols-[1fr_80px_1fr] gap-6">
-              {/* ================= METAL TABLE ================= */}
               <div>
                 <div className="bg-[#224F3E] p-3 mb-2">
                   <h4 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
@@ -479,7 +528,6 @@ export default function Product() {
                 </div>
               </div>
 
-              {/* ================= CENTER EQUAL ================= */}
               <div className="hidden md:flex flex-col items-center">
                 <div className="h-12" />
                 <div className="space-y-2 w-full mt-28.5">
@@ -494,7 +542,6 @@ export default function Product() {
                 </div>
               </div>
 
-              {/* ================= FRP TABLE ================= */}
               <div>
                 <div className="bg-[#224F3E] p-3 mb-2">
                   <h5 className="text-center text-white font-semibold mb-3 tracking-wide text-sm md:text-base">
@@ -531,7 +578,7 @@ export default function Product() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div data-aos="fade-up" className="mt-5">
         <Portfolio />
@@ -552,9 +599,7 @@ export default function Product() {
             className={`absolute right-12.5 top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
-                activeHover === "email"
-                  ? "translate-x-0"
-                  : "translate-x-57.5"
+                activeHover === "email" ? "translate-x-0" : "translate-x-57.5"
               }`}
           >
             <span className="px-4 text-sm whitespace-nowrap">
@@ -579,9 +624,7 @@ export default function Product() {
             className={`absolute right-12.5 top-0 h-full flex items-center bg-white text-[#347A64] shadow-md border-2 border-[#347A64]
               transition-transform duration-500 ease-in-out
               ${
-                activeHover === "phone"
-                  ? "translate-x-0"
-                  : "translate-x-57.5"
+                activeHover === "phone" ? "translate-x-0" : "translate-x-57.5"
               }`}
           >
             <span className="px-4 text-sm whitespace-nowrap">

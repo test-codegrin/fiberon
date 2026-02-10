@@ -53,9 +53,9 @@ export default function Contect() {
               </div>
             </div>
 
-            <button className="mt-10 border-white border text-[#FFF] px-10 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">
+            {/* <button className="mt-10 border-white border text-[#FFF] px-10 py-3 font-semibold rounded-lg hover:bg-gray-100 transition">
               Download Brochure
-            </button>
+            </button> */}
           </div>
 
           {/* ================= RIGHT FORM ================= */}
