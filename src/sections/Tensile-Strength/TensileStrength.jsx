@@ -84,14 +84,15 @@ export default function TensileStrength() {
                 </div>
               </div>
 
+              
               {/* ================= CENTER EQUAL ================= */}
               <div className="hidden md:flex flex-col items-center">
                 <div className="h-12" />
-                <div className="space-y-2 w-full mt-20">
+                <div className="space-y-2 w-full mt-28.5">
                   {metalRebar.map((_, i) => (
                     <div
                       key={i}
-                      className="h-10 mt-5 flex items-center justify-center bg-[#347A64] text-white font-bold rounded-sm"
+                      className="h-9.5 mt-3.5 flex items-center justify-center bg-[#347A64] text-white font-bold rounded-sm"
                     >
                       =
                     </div>
