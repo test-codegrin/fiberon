@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/about/page": [
+    "/Tensile-Strength/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/about/page.css",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/Tensile-Strength/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -17,70 +16,26 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
+    "/faq/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/faq/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/shop/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/shop/page.css",
-      "static/chunks/app/shop/page.js"
-    ],
-    "/advantages/cost/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/advantages/cost/page.css",
-      "static/chunks/app/advantages/cost/page.js"
-    ],
-    "/application/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/application/page.js"
-    ],
-    "/Tensile-Strength/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Tensile-Strength/page.js"
-    ],
-    "/Comparison-Steel/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Comparison-Steel/page.js"
-    ],
-    "/pages/innerpage/project/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/pages/innerpage/project/page.css",
-      "static/chunks/app/pages/innerpage/project/page.js"
-    ],
-    "/pages/innerpage/template": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/pages/innerpage/template.js"
-    ],
-    "/pages/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/pages/layout.css",
-      "static/chunks/app/pages/layout.js"
-    ],
-    "/pages/innerpage/project-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/pages/innerpage/project-details/page.js"
-    ],
-    "/certificates/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/certificates/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

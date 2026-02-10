@@ -1,7 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/advantages/cost/page": "app/advantages/cost/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/Tensile-Strength/page": "app/Tensile-Strength/page.js",
+  "/faq/page": "app/faq/page.js",
   "/contact/page": "app/contact/page.js",
-  "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js"
+  "/page": "app/page.js"
 }

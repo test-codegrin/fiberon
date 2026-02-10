@@ -67,7 +67,7 @@ const FooterThree = () => {
                 </li> */}
                 <li>
                   <a
-                    href="/contact"
+                    href="/faq"
                     className="hover:underline"
                   >
                     FAQ’s
