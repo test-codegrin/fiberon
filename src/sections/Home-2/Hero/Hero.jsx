@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Hero = () => {
   const [activeHover, setActiveHover] = useState(null);
@@ -23,9 +24,7 @@ const Hero = () => {
         <div data-aos="fade-up" className="relative">
           <div className="max-w-350 mx-auto mt-10 md:mt-20 lg:flex items-center justify-between lg:h-125 px-6">
             {/* Left Content */}
-            <div
-              className="mx-auto max-w-full w-175 lg:w-full"
-            >
+            <div className="mx-auto max-w-full w-175 lg:w-full">
               <div className="md:text-[50px] xl:text-[83px] text-[33px] leading-10 md:leading-12 xl:leading-20 w-full font-bold">
                 <span className="text-[#347A64]">GFRP </span>REBER <br />
                 MANUFACTURER
@@ -38,9 +37,11 @@ const Hero = () => {
                 for enduring performance in any environment.
               </p>
 
-              <button className="mt-6 bg-[#347A64] w-45 h-12.5 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition">
-                Download Brochure
-              </button>
+              <Link className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition" href="/contact?subject=Download%20Brochure">
+                <button>
+                  Download Brochure
+                </button>
+              </Link>
             </div>
 
             {/* Right Image */}
@@ -51,7 +52,8 @@ const Hero = () => {
         </div>
 
         {/* ================= RIGHT FIXED ICON + SLIDE DETAILS ================= */}
-        <div className="fixed right-0 hidden top-80 xl:top-1/2 -translate-y-1/2 z-50 lg:flex flex-col gap-3"
+        <div
+          className="fixed right-0 hidden top-80 xl:top-1/2 -translate-y-1/2 z-50 lg:flex flex-col gap-3"
           onMouseLeave={() => setActiveHover(null)}
         >
           {/* ===== Email ===== */}

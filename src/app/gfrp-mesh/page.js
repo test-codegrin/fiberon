@@ -7,7 +7,7 @@ import FooterThree from "~/sections/Common/Footer/FooterThree";
 import CommpareBent from "~/sections/commpare-bent";
 import Contect from "~/sections/Contact";
 import Clintreview from "~/sections/clintreview";
-export default function ServiceDetailsPage() {
+export default function GfrpMeshPage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HeaderFour />

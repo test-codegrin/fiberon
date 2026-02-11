@@ -24,7 +24,7 @@ export default function AboutPage() {
       {/* <ProcessThree /> */}
       <PortfolioThree />
       <CounterThree />
-      <TestimonialThree />
+      {/* <TestimonialThree /> */}
       {/* <TeamThree /> */}
       {/* <ClientThree /> */}
       <BlogThree />

@@ -81,7 +81,7 @@ const Process = () => {
   ];
 
   return (
-    <section data-aos="fade-up" className="w-full max-w-350 xl:mt-[100px] mx-auto py-20">
+    <section data-aos="fade-up" className="w-full max-w-350 xl:mt-[100px] mx-auto">
       <div className="max-w-8xl mx-auto px-4">
         {/* ================= ADVANTAGES ================= */}
         <div className="mb-0">

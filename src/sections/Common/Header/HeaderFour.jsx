@@ -139,7 +139,7 @@ export default function HeaderFour() {
                 <div className="absolute z-999 top-full w-56 bg-white shadow-lg rounded-md">
                   <Link
                     className="block px-4 py-3 hover:bg-[#347A64]/10"
-                    href="/shop"
+                    href="/gfrp-rebar"
                   >
                     GFRP REBAR
                   </Link>
@@ -178,7 +178,7 @@ export default function HeaderFour() {
                   <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/Tensile-Strength">
                     Tensile Strength Steel Bar vs GFRP
                   </Link>
-                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="#">
+                  <Link className="block px-4 py-3 hover:bg-[#347A64]/10" href="/packaging-details">
                     Packaging Details
                   </Link>
                 </div>
@@ -241,9 +241,9 @@ export default function HeaderFour() {
                 <div className="pl-4 flex flex-col gap-3 text-sm">
                   <Link href="/about">About Us</Link>
                   <Link
-                    href="/Certificate.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/certificates"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                   >
                     Certificates
                   </Link>
@@ -265,7 +265,7 @@ export default function HeaderFour() {
 
               {mobileProducts && (
                 <div className="pl-4 flex flex-col gap-2 text-sm">
-                  <Link href="/shop">GFRP REBAR</Link>
+                  <Link href="/gfrp-rebar">GFRP REBAR</Link>
                   <Link href="/gfrp-mesh">GFRP BENT REBAR</Link>
                   <Link href="/advantages/cost">Advantages</Link>
                 </div>
@@ -287,9 +287,9 @@ export default function HeaderFour() {
 
               {mobileTechnical && (
                 <div className="pl-4 flex flex-col gap-2 text-sm">
-                  <Link href="#">Comparison Steel Bar vs GFRP</Link>
-                  <Link href="#">Tensile Strength Steel Bar vs GFRP</Link>
-                  <Link href="#">Packaging Details</Link>
+                  <Link href="/Comparison-Steel">Comparison Steel Bar vs GFRP</Link>
+                  <Link href="/Tensile-Strength">Tensile Strength Steel Bar vs GFRP</Link>
+                  <Link href="/packaging-details">Packaging Details</Link>
                 </div>
               )}
 

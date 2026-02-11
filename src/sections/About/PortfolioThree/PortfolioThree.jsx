@@ -55,7 +55,7 @@ const PortfolioThree = () => {
 
   return (
     <section className="w-full py-10 mt-14 xl:mt-22 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-2 sm:px-6">
+      <div className="max-w-350 mx-auto px-2 sm:px-6">
 
         {/* ===== TITLE ===== */}
         <div className="text-center mb-14 px-3">

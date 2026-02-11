@@ -11,7 +11,7 @@ export default function Application() {
         </div>
 
         {/* Application Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
           {[
             {
               title: "Parking Areas",
@@ -61,6 +61,58 @@ export default function Application() {
               title: "Walls",
               img: "/main-assets/img/product/walls.avif",
             },
+
+            // ================================
+
+            {
+              title: "Columns",
+              img: "/main-assets/img/product/Columns.jpg",
+            },
+            {
+              title: "Barrier Walls",
+              img: "/main-assets/img/product/Barrier Walls.jpg",
+            },
+            {
+              title: "RCC Structures Built in or Close to the Sea",
+              img: "/main-assets/img/product/RCC Structures Built in.jpg",
+            },
+            {
+              title: "Approach Slabs",
+              img: "/main-assets/img/product/Approach Slabs.jpg",
+            },
+            {
+              title: "Water & Wastewater Treatment Plants",
+              img: "/main-assets/img/product/Water & Wastewater.webp",
+            },
+            {
+              title: "Underground Water Tanks",
+              img: "/main-assets/img/product/Underground.jpg",
+            },
+            {
+              title: "Highway Construction",
+              img: "/main-assets/img/product/Highway Construction.jpg",
+            },
+            {
+              title: "Bridge Decks",
+              img: "/main-assets/img/product/Bridge Decks.webp",
+            },
+            {
+              title: "Dam, Sea Walls & Marine Applications",
+              img: "/main-assets/img/product/Dam Walls.avif",
+            },
+            {
+              title: "Swimming Pools",
+              img: "/main-assets/img/product/Swimming Pools.webp",
+            },
+            {
+              title: "Hospital MRI Areas",
+              img: "/main-assets/img/product/Hospital MRI Areas.avif",
+            },
+            {
+              title: "Tunneling & Temporary Reinforcements",
+              img: "/main-assets/img/product/Tunneling.jpg",
+            },
+
           ].map((item, i) => (
             <div
               key={i}
@@ -78,7 +130,7 @@ export default function Application() {
               </div>
 
               {/* Title */}
-              <div className="p-2 border-b-3 border-[#347A64] rounded-2xl">
+              <div className="py-2 border-b-3 border-[#347A64] rounded-2xl">
                 <div className="font-semibold text-md text-[#347A64] ">
                   {item.title}
                 </div>

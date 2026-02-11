@@ -1,17 +1,31 @@
 "use client";
 
 import { Mail, MapPin, Phone } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function ContactPage() {
+  const searchParams = useSearchParams();
+  const subjectFromUrl = searchParams.get("subject") || "";
+
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
     phone: "",
     city: "",
     email: "",
+    subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (subjectFromUrl) {
+      setFormData((prev) => ({
+        ...prev,
+        subject: subjectFromUrl,
+      }));
+    }
+  }, [subjectFromUrl]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,168 +35,148 @@ export default function ContactPage() {
     e.preventDefault();
     console.log(formData);
     alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* HEADER */}
+      <div className="max-w-350 mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[#347A64] mb-4">
             Contact Us
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Have questions or need support? Reach out to us and our team will
-            get back to you shortly.
-          </p>
         </div>
 
-        {/* GRID */}
         <div className="grid lg:grid-cols-2 gap-16">
           {/* LEFT INFO */}
           <div className="space-y-8 xl:pt-[150px]">
-            <div className="font-bold text-xl flex items-center justify-center md:justify-start md:text-2xl lg:text-4xl text-[#347A63]">
+            <div className="font-bold text-xl md:text-2xl lg:text-4xl text-[#347A63]">
               Rebar-X Composites Industries
             </div>
+
             <div className="flex items-start gap-4">
-              <div className="md:w-12 w-17 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
+              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center">
                 <MapPin />
               </div>
-              <div>
-                <p className="text-gray-600 max-w-[350px]">
-                  Behind Hotel Fern, 8 /A National Highway, Kandla Road,
-                  Mahendrnagar, Morbi - 363641.
-                </p>
-              </div>
+              <p className="text-gray-600 w-100">
+                Behind Hotel Fern, 8 /A National Highway, Kandla Road,
+                Mahendrnagar, Morbi - 363641.
+              </p>
             </div>
 
             <div className="flex gap-3">
-              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
+              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center">
                 <Phone />
               </div>
-              <div>
-                <p className="text-gray-600 mt-2">+91 92748 31310</p>
-              </div>
+              <p className="text-gray-600 mt-2">+91 92748 31310</p>
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center text-xl">
+              <div className="w-12 h-12 rounded-full bg-[#347A64] text-white flex items-center justify-center">
                 <Mail />
               </div>
-              <div>
-                <p className="text-gray-600 mt-2">info@fiberonrebar.com</p>
-              </div>
+              <p className="text-gray-600 mt-2">info@fiberonrebar.com</p>
             </div>
           </div>
 
           {/* RIGHT FORM */}
           <form
             onSubmit={handleSubmit}
-            className="bg-white rounded-2xl p-8 shadow-md space-y-6"
+            className="bg-white rounded-2xl p-8 shadow-md space-y-3"
           >
-            <div className="grid md:grid-cols-2 gap-6 mb-4">  
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  First Name
-                </label>
-                <div className="text-[#347A63] border border-[#347A64] rounded-lg focus:outline-none focus:border-[#347A64]">
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={formData.fname}
-                    onChange={handleChange}
-                    placeholder="First name"
-                    className="w-full text-[#347A63] rounded-lg px-4 py-3"
-                  />
-                </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="">
+                <label className="text-gray-700 font-medium">First Name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="First Name"
+                  value={formData.fname}
+                  onChange={handleChange}
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                  required
+                />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  last Name
-                </label>
-                <div className="text-[#347A63] border border-[#347A64] rounded-lg focus:outline-none focus:border-[#347A64]">
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={formData.lname}
-                    onChange={handleChange}
-                    placeholder="Last name"
-                    className="w-full rounded-lg px-4 py-3"
-                  />
-                </div>
+              <div className="">
+                <label className="text-gray-700 font-medium">Last Name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  placeholder="Last Name"
+                  value={formData.lname}
+                  onChange={handleChange}
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                  required
+                />
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Your Email
-              </label>
-              <div className="border border-[#347A64] rounded-lg text-[#347A63] focus:outline-none focus:border-[#347A64]">
+            <div className="grid md:grid-cols-1 gap-6">
+              <div className="">
+                <label className="text-gray-700 font-medium">Email</label>
                 <input
                   type="email"
                   name="email"
-                  required
+                  placeholder="Email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3"
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                  required
                 />
               </div>
-            </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Phone Number
-              </label>
-              <div className="border border-[#347A64] rounded-lg text-[#347A63] focus:outline-none focus:border-[#347A64]">
+              <div className="">
+                <label className="text-gray-700 font-medium">Phone</label>
                 <input
-                  type="phone"
+                  type="text"
                   name="phone"
-                  required
+                  placeholder="Phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Phone Number"
-                  className="w-full px-4 py-3"
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                  required
                 />
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                City
-              </label>
-              <div className="border border-[#347A64] rounded-lg text-[#347A63] focus:outline-none focus:border-[#347A64]">
+            <div className="grid md:grid-cols-1 gap-6">
+              <div className="">
+                <label className="text-gray-700 font-medium">City</label>
                 <input
-                  type="city"
+                  type="text"
                   name="city"
-                  required
+                  placeholder="City"
                   value={formData.city}
                   onChange={handleChange}
-                  placeholder="City"
-                  className="w-full px-4 py-3"
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                  required
+                />
+              </div>
+
+              {/* SUBJECT AUTO FILLED */}
+              <div className="">
+                <label className="text-gray-700 font-medium">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="border border-[#347A64] w-full rounded-lg px-4 py-3"
                 />
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Message
-              </label>
-              <div className="text-[#347A63] border border-[#347A64] rounded-lg focus:outline-none focus:border-[#347A64]">
-                <textarea
-                  name="message"
-                  required
-                  rows="5"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Write your message..."
-                  className="w-full rounded-lg px-4 py-3"
-                />
-              </div>
+            <div className="w-full">
+              <label className="text-gray-700 font-medium">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                value={formData.message}
+                onChange={handleChange}
+                className="border border-[#347A64] w-full rounded-lg px-4 py-3"
+                required
+              />
             </div>
 
             <button
