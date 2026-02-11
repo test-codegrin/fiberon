@@ -1,9 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/certificates/page": "app/certificates/page.js",
   "/application/page": "app/application/page.js",
+  "/page": "app/page.js",
   "/advantages/cost/page": "app/advantages/cost/page.js",
   "/packaging-details/page": "app/packaging-details/page.js",
-  "/page": "app/page.js",
   "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js"
 }
