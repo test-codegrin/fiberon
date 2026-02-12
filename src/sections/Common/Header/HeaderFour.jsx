@@ -47,7 +47,7 @@ export default function HeaderFour() {
 
       {/* ================= CONTACT BAR ================= */}
       <div className="bg-white border-b text-sm hidden md:block">
-        <div className="max-w-[1400px] mx-auto flex justify-between items-center md:px-0 px-3 py-3">
+        <div className="max-w-350 mx-auto flex justify-between items-center md:px-0 px-3 py-3">
           <div className="flex gap-6 text-gray-600">
             <span className="flex gap-2">
               <Phone size={18} className="text-[#347A63]" /> +91 9274831310
@@ -271,7 +271,7 @@ export default function HeaderFour() {
                 </div>
               )}
 
-              <Link href="/applications">Application</Link>
+              <Link href="/application">Application</Link>
 
               {/* TECHNICAL SPECIFICATION */}
               <button

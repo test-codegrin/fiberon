@@ -1,7 +1,3 @@
 {
-  "/application/page": "app/application/page.js",
-  "/page": "app/page.js",
-  "/advantages/cost/page": "app/advantages/cost/page.js",
-  "/packaging-details/page": "app/packaging-details/page.js",
-  "/pages/innerpage/project/page": "app/pages/innerpage/project/page.js"
+  "/page": "app/page.js"
 }

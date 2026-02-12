@@ -156,7 +156,7 @@ const Process = () => {
           </div>
 
           {/* Application Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-10">
             {[
               {
                 title: "Parking Areas",
