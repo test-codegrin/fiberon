@@ -1,5 +1,6 @@
 import React from "react";
 import Contect from "../Contact";
+import Link from "next/link";
 
 export default function BavlaIndustrialFlooring() {
   return (
