@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function CostEffectivePage() {
   return (
@@ -178,9 +179,12 @@ export default function CostEffectivePage() {
               </li>
             </ol>
 
-            <button className="inline-flex items-center rounded-md bg-[#347A64] px-6 py-3 text-white font-semibold hover:bg-opacity-90 transition">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
 
           {/* IMAGE */}

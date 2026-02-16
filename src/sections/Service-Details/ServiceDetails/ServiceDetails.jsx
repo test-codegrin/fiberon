@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -56,9 +57,11 @@ const Hero = () => {
                 superior performance in demanding conditions.
               </p>
 
-              <button className="mt-6 bg-[#347A64] w-[200px] h-[50px] rounded flex items-center justify-center text-white font-semibold hover:bg-[#347A64] transition">
-                Download Brochure
-              </button>
+              <Link className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition" href="/contact?subject=Download%20Brochure">
+                <button>
+                  Download Brochure
+                </button>
+              </Link>
             </div>
 
             {/* Right Image */}

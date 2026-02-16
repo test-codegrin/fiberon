@@ -1,5 +1,6 @@
 import React from "react";
 import Contect from "../Contact";
+import Link from "next/link";
 
 export default function JammuDrainageWork() {
   return (
@@ -52,9 +53,7 @@ export default function JammuDrainageWork() {
               </li>
 
               <li>
-                <span className="font-bold">
-                  Structural Integrity Needs:
-                </span>
+                <span className="font-bold">Structural Integrity Needs:</span>
                 <br />
                 The drain system required strong, durable reinforcement to
                 handle high volumes of stormwater and resist potential
@@ -62,9 +61,12 @@ export default function JammuDrainageWork() {
               </li>
             </ol>
 
-            <button className="mt-6 bg-[#347A63] text-white font-bold px-6 py-3 rounded">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
         </div>
 
@@ -74,9 +76,7 @@ export default function JammuDrainageWork() {
 
           <ol className="space-y-4 text-gray-700 list-decimal pl-5">
             <li>
-              <span className="font-bold">
-                Incorporation of GFRP Rebar:
-              </span>
+              <span className="font-bold">Incorporation of GFRP Rebar:</span>
               <br />
               We selected GFRP rebar for its superior resistance to corrosion
               and weather conditions. GFRP rebar does not rust or weaken when
@@ -125,10 +125,10 @@ export default function JammuDrainageWork() {
           <h3 className="text-xl font-bold mb-4">Conclusion</h3>
 
           <p className="text-gray-700">
-            FIBERON Composites Rebar’s implementation of GFRP rebar in Jammu’s drain
-            work highlights our commitment to delivering innovative and durable
-            solutions for infrastructure projects. Our approach ensured the
-            drains can withstand the region’s demanding weather conditions,
+            FIBERON Composites Rebar’s implementation of GFRP rebar in Jammu’s
+            drain work highlights our commitment to delivering innovative and
+            durable solutions for infrastructure projects. Our approach ensured
+            the drains can withstand the region’s demanding weather conditions,
             providing a long-lasting and cost-effective solution for managing
             stormwater and preventing flooding.
           </p>

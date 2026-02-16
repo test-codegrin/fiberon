@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 const PRIMARY = "#347A64";
 
 export default function WhyChooseBentGFRP() {
@@ -28,7 +29,7 @@ export default function WhyChooseBentGFRP() {
       {/* OVERLAY */}
       <div className="absolute inset-0"></div>
 
-      <div className="relative max-w-[1400px] mx-auto px-6">
+      <div className="relative max-w-350 mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* ================= LEFT CONTENT ================= */}
@@ -44,11 +45,11 @@ export default function WhyChooseBentGFRP() {
               demanding environments.
             </p>
 
-            <button
-              className="px-10 py-3 font-semibold hover:text-white rounded-md transition hover:bg-[#347A64] border-2 border-[#347A64] text-[#347A64]"
-            >
-              Download Brochure
-            </button>
+            <Link className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition" href="/contact?subject=Download%20Brochure">
+                <button>
+                  Download Brochure
+                </button>
+              </Link>
           </div>
 
           {/* ================= RIGHT ACCORDION ================= */}

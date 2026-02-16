@@ -1,5 +1,6 @@
 import React from "react";
 import Contect from "../Contact";
+import Link from "next/link";
 
 export default function JammuDrainageWork() {
   return (
@@ -61,9 +62,12 @@ export default function JammuDrainageWork() {
               </li>
             </ol>
 
-            <button className="mt-6 bg-[#347A63] text-white font-bold px-6 py-3 rounded">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
         </div>
 

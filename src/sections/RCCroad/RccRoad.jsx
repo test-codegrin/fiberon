@@ -1,11 +1,11 @@
 import React from "react";
 import Contect from "../Contact";
+import Link from "next/link";
 
 export default function RccRoad() {
   return (
     <section className="w-full py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-6">
-
         {/* =================== TITLE =================== */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           RCC Road Construction Ahmedabad
@@ -21,7 +21,6 @@ export default function RccRoad() {
 
         {/* =================== IMAGE + CHALLENGES =================== */}
         <div className="grid lg:grid-cols-2 gap-10 items-start">
-
           {/* IMAGE */}
           <div className="border border-gray-200 rounded-md overflow-hidden">
             <img
@@ -33,17 +32,15 @@ export default function RccRoad() {
 
           {/* CHALLENGES */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">
-              Challenges Faced
-            </h3>
+            <h3 className="text-xl font-semibold mb-4">Challenges Faced</h3>
 
             <ol className="space-y-4 text-gray-700 list-decimal pl-5">
               <li>
                 <span className="font-semibold">Heavy Traffic Loads:</span>
                 <br />
                 The road construction handles a high volume of traffic,
-                including commercial vehicles. It requires reinforcement
-                bars that can withstand significant loads without compromising
+                including commercial vehicles. It requires reinforcement bars
+                that can withstand significant loads without compromising
                 structural integrity.
               </li>
 
@@ -52,9 +49,9 @@ export default function RccRoad() {
                   Harsh Environmental Conditions:
                 </span>
                 <br />
-                Ahmedabad’s extreme temperatures and monsoon flooding had
-                caused corrosion and fatigue in steel rebars used in the past,
-                leading to frequent repairs.
+                Ahmedabad’s extreme temperatures and monsoon flooding had caused
+                corrosion and fatigue in steel rebars used in the past, leading
+                to frequent repairs.
               </li>
 
               <li>
@@ -67,17 +64,18 @@ export default function RccRoad() {
               </li>
             </ol>
 
-            <button className="mt-6 bg-[#347A63] text-white font-semibold px-6 py-3 rounded">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
         </div>
 
         {/* =================== SOLUTIONS =================== */}
         <div className="mt-14">
-          <h3 className="text-xl font-semibold mb-4">
-            Solutions Implemented
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">Solutions Implemented</h3>
 
           <ol className="space-y-4 text-gray-700 list-decimal pl-5">
             <li>
@@ -90,8 +88,8 @@ export default function RccRoad() {
             <li>
               <span className="font-semibold">Efficient Installation:</span>
               <br />
-              The lightweight nature of GFRP rebar simplified transportation
-              and installation, reducing construction time and costs.
+              The lightweight nature of GFRP rebar simplified transportation and
+              installation, reducing construction time and costs.
             </li>
 
             <li>
@@ -105,9 +103,7 @@ export default function RccRoad() {
 
         {/* =================== PROJECT OUTCOME =================== */}
         <div className="mt-14">
-          <h3 className="text-xl font-semibold mb-4">
-            Project Outcome
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">Project Outcome</h3>
 
           <p className="text-gray-700">
             The road reinforcement project was completed on time and within
@@ -120,9 +116,7 @@ export default function RccRoad() {
 
         {/* =================== CONCLUSION =================== */}
         <div className="mt-10">
-          <h3 className="text-xl font-semibold mb-4">
-            Conclusion
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">Conclusion</h3>
 
           <p className="text-gray-700">
             By choosing GFRP rebar, MRG Composites Rebar delivered a durable and
@@ -131,7 +125,6 @@ export default function RccRoad() {
             ensuring safer and more reliable roads for residents.
           </p>
         </div>
-
       </div>
 
       <Contect />

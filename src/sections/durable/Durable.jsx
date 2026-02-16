@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 
 export default function DurablePage() {
@@ -86,9 +86,12 @@ export default function DurablePage() {
               enabling long-term durability in challenging environments.
             </p>
 
-            <button className="inline-flex items-center rounded-md bg-[#347A64] px-6 py-3 text-white font-semibold hover:bg-opacity-90 transition">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
 
           {/* IMAGE */}
@@ -117,40 +120,43 @@ export default function DurablePage() {
 
           <ol className="list-decimal px-3 space-y-4 text-gray-700 leading-relaxed mb-8">
             <li>
-              <b className="text-[#347A64]">Superior Durability:</b> GFRP Rebar resists moisture,
-              chemicals, and environmental stressors, ensuring long-term
-              structural integrity. GFRP Rebar is 2 times stronger and ¼ lighter
-              than traditional steel rebar. It makes the construction stronger
-              and can handle heavy traffic.
+              <b className="text-[#347A64]">Superior Durability:</b> GFRP Rebar
+              resists moisture, chemicals, and environmental stressors, ensuring
+              long-term structural integrity. GFRP Rebar is 2 times stronger and
+              ¼ lighter than traditional steel rebar. It makes the construction
+              stronger and can handle heavy traffic.
             </li>
 
             <li>
-              <b className="text-[#347A64]">Corrosion Resistance:</b> Unlike steel, GFRP Rebar does not
-              rust, even in humid or chemically aggressive conditions. The
-              combination of glass fibres and polymer resin ensures that GFRP
-              Rebar can withstand exposure to water, humidity, and harsh
-              chemicals without rusting.
+              <b className="text-[#347A64]">Corrosion Resistance:</b> Unlike
+              steel, GFRP Rebar does not rust, even in humid or chemically
+              aggressive conditions. The combination of glass fibres and polymer
+              resin ensures that GFRP Rebar can withstand exposure to water,
+              humidity, and harsh chemicals without rusting.
             </li>
 
             <li>
-              <b className="text-[#347A64]">Lightweight and Easy Installation:</b> GFRP Rebar is ¼ the
-              weight of steel, simplifying transportation and reducing
-              installation time and labour costs. GFRP Rebar is an ideal choice
-              for construction where weight is a major concern.
+              <b className="text-[#347A64]">
+                Lightweight and Easy Installation:
+              </b>{" "}
+              GFRP Rebar is ¼ the weight of steel, simplifying transportation
+              and reducing installation time and labour costs. GFRP Rebar is an
+              ideal choice for construction where weight is a major concern.
             </li>
 
             <li>
-              <b className="text-[#347A64]">Cost-Effectiveness:</b> GFRP Rebar is a durable construction
-              material That increases the life span of construction. It
-              decreases the maintenance costs and time.
+              <b className="text-[#347A64]">Cost-Effectiveness:</b> GFRP Rebar
+              is a durable construction material That increases the life span of
+              construction. It decreases the maintenance costs and time.
             </li>
 
             <li>
-              <b className="text-[#347A64]">High Strength-to-Weight Ratio:</b> GFRP Rebar provides twice
-              the tensile strength of steel, ensuring stronger and more reliable
-              construction. GFRP bars are ¼ lighter than traditional steel
-              rebar. It makes the construction lighter and provides more
-              strength, so construction can withstand harsh conditions.
+              <b className="text-[#347A64]">High Strength-to-Weight Ratio:</b>{" "}
+              GFRP Rebar provides twice the tensile strength of steel, ensuring
+              stronger and more reliable construction. GFRP bars are ¼ lighter
+              than traditional steel rebar. It makes the construction lighter
+              and provides more strength, so construction can withstand harsh
+              conditions.
             </li>
           </ol>
         </div>
@@ -162,37 +168,40 @@ export default function DurablePage() {
 
         <div className="space-y-3 mb-16 list-none">
           <li>
-            <b className="text-[#347A64]">Marine Structures:</b> It resists saltwater and humidity,
-            ensuring lasting durability in coastal and offshore projects.
+            <b className="text-[#347A64]">Marine Structures:</b> It resists
+            saltwater and humidity, ensuring lasting durability in coastal and
+            offshore projects.
           </li>
 
           <li>
-            <b className="text-[#347A64]">Industrial Plants:</b> GFRP Rebar withstands chemicals and
-            corrosive materials, making it ideal for industrial floors and power
-            plants. GFRP Rebar is a stronger material that can handle heavy
-            traffic in industrial plants and make it more durable for industrial
-            construction.
+            <b className="text-[#347A64]">Industrial Plants:</b> GFRP Rebar
+            withstands chemicals and corrosive materials, making it ideal for
+            industrial floors and power plants. GFRP Rebar is a stronger
+            material that can handle heavy traffic in industrial plants and make
+            it more durable for industrial construction.
           </li>
 
           <li>
-            <b className="text-[#347A64]">Bridges and Highways:</b> Its corrosion resistance enhances the
-            lifespan of infrastructure exposed to de-icing salts and
-            environmental wear. GFRP Rebar is a stronger and lighter material.
-            Bridges and highways go through heavy transportation, and
-            construction should require materials that can handle traffic and
-            harsh conditions.
+            <b className="text-[#347A64]">Bridges and Highways:</b> Its
+            corrosion resistance enhances the lifespan of infrastructure exposed
+            to de-icing salts and environmental wear. GFRP Rebar is a stronger
+            and lighter material. Bridges and highways go through heavy
+            transportation, and construction should require materials that can
+            handle traffic and harsh conditions.
           </li>
 
           <li>
-            <b className="text-[#347A64]">Water Treatment Plants:</b> GFRP Rebar endures moisture and
-            chemical exposure, making it a reliable choice for wastewater
-            treatment facilities.
+            <b className="text-[#347A64]">Water Treatment Plants:</b> GFRP Rebar
+            endures moisture and chemical exposure, making it a reliable choice
+            for wastewater treatment facilities.
           </li>
 
           <p>
-            <b className="text-[#347A64]">Residential and Commercial Buildings:</b> GFRP Rebar strengthens
-            foundations, parking garages, and rooftop pools, offering a
-            long-lasting solution for urban construction.
+            <b className="text-[#347A64]">
+              Residential and Commercial Buildings:
+            </b>{" "}
+            GFRP Rebar strengthens foundations, parking garages, and rooftop
+            pools, offering a long-lasting solution for urban construction.
           </p>
         </div>
 

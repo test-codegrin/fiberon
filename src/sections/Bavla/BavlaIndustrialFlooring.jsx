@@ -65,9 +65,12 @@ export default function BavlaIndustrialFlooring() {
               </li>
             </ol>
 
-            <button className="mt-6 bg-[#347A63] text-white font-bold px-6 py-3 rounded">
-              Download Brochure
-            </button>
+            <Link
+              className="w-45 h-12.5 bg-[#347A64] mt-6 rounded flex items-center justify-center text-white font-semibold hover:bg-[#2f6b58] transition"
+              href="/contact?subject=Download%20Brochure"
+            >
+              <button>Download Brochure</button>
+            </Link>
           </div>
         </div>
 
@@ -126,8 +129,8 @@ export default function BavlaIndustrialFlooring() {
           <h3 className="text-xl font-bold mb-4">Conclusion</h3>
 
           <p className="text-gray-700">
-            By implementing GFRP rebar, FIBERON Composites Rebar provided a robust
-            and innovative solution for industrial flooring in Bavla. Our
+            By implementing GFRP rebar, FIBERON Composites Rebar provided a
+            robust and innovative solution for industrial flooring in Bavla. Our
             approach ensured quick installation, high durability, and resistance
             to challenging conditions, showcasing our commitment to delivering
             effective and long-lasting reinforcement solutions for industrial
