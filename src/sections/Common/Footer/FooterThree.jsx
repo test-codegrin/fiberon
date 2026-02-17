@@ -51,7 +51,7 @@ const FooterThree = () => {
                 </li>
                 <li>
                   <a
-                    href="/shop"
+                    href="/blog"
                     className="hover:underline"
                   >
                     News & Article

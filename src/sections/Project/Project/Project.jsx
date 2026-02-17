@@ -4,129 +4,132 @@ import { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-const images = [
-  "/main-assets/img/project/project2_1.png",
-  "/main-assets/img/project/project2_2.png",
-  "/main-assets/img/project/project2_3.png",
-  "/main-assets/img/project/project2_4.png",
-  "/main-assets/img/project/project2_5.png",
-  "/main-assets/img/project/project2_6.png",
-  // "/main-assets/img/project/project2_7.png",
-  // "/main-assets/img/project/project2_8.png",
-  // "/main-assets/img/project/project2_9.png",
+const photos = [
+  "/main-assets/img/projects/Project-1.jpeg",
+  "/main-assets/img/projects/Project-2.jpeg",
+  "/main-assets/img/projects/Project-3.jpeg",
 ];
 
-const Project = () => {
+const videos = [
+  "/main-assets/img/projects/Project-video-1.mp4",
+  "/main-assets/img/projects/Project-video-2.mp4",
+];
+
+const GalleryPage = () => {
   const [photoIndex, setPhotoIndex] = useState(-1);
+  const [videoIndex, setVideoIndex] = useState(-1);
 
-  const handleOpen = (index) => {
-    setPhotoIndex(index);
-  };
-
+  // Disable body scroll when modal open
   useEffect(() => {
-    if (photoIndex >= 0) {
+    if (photoIndex >= 0 || videoIndex >= 0) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
+
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [photoIndex]);
+  }, [photoIndex, videoIndex]);
 
   return (
-    <section className="py-20 mt-[50px]">
-      <div className="max-w-350 mx-auto px-6">
-        
+    <section className="py-20 mt-12.5">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <div className="text-center mb-16">
-          <div className="text-3xl md:text-4xl xl:text-5xl font-bold text-[#347A63]">
-            Our Projects
-          </div>
-          <p className="text-gray-500 mt-2 text-lg">
-            Explore our latest completed works
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-[#347A63]">
+            PROJECTS
+          </h2>
+          <p className="text-gray-500 mt-3 text-lg">
+            Explore our latest media gallery
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((src, index) => (
-            <div
-              key={index}
-              className="bg-white border-b-4 border-[#347A63] rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group"
-            >
-              {/* Image */}
-              <div className="relative">
+        {/* PHOTOS */}
+        <div className="mb-20">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {photos.map((src, index) => (
+              <div
+                key={index}
+                className="relative group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer"
+                onClick={() => setPhotoIndex(index)}
+              >
                 <img
                   src={src}
-                  alt={`project ${index + 1}`}
-                  className="w-full h-64 object-cover "
+                  alt={`photo ${index + 1}`}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
                 />
 
-                {/* Number */}
-                <span className="absolute top-4 left-4 bg-[#347A63] text-white text-sm px-3 py-1 rounded-full">
-                  {index + 1 < 10 ? `0${index + 1}` : index + 1}
-                </span>
-
-                {/* View Button */}
-                <button
-                  onClick={() => handleOpen(index)}
-                  className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300"
-                >
-                  <span className="bg-[#347A63] text-white px-5 py-2 rounded-full font-medium hover:bg-[#2c6654] transition">
-                    View
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                  <span className="bg-[#347A63] text-white px-6 py-2 rounded-full font-medium">
+                    View Photo
                   </span>
-                </button>
+                </div>
               </div>
-
-              {/* Details */}
-              <div className="p-6">
-                <span className="text-sm text-[#347A63] font-medium">
-                  Category
-                </span>
-                <h4 className="text-lg font-semibold mt-2 text-gray-800">
-                  Project Title
-                </h4>
-                <p className="text-gray-500 text-sm mt-2">
-                  Building since 09,01,2024
-                </p>
-
-                <a
-                  href="/pages/innerpage/project-details"
-                  className="inline-flex border-2 border-[#347A63] rounded-full px-3 py-2 hover:bg-[#347A63] hover:text-white items-center gap-2 mt-2 text-[#347A63] font-medium hover:underline"
-                >
-                  View Details →
-                </a>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Pagination */}
-        {/* <div className="flex justify-center gap-3 mt-16 space-x-2">
-          <button className="w-10 h-10 rounded-full bg-[#347A63] text-white font-semibold">
-            01
-          </button>
-          <button className="w-10 h-10 rounded-full border border-gray-300 hover:bg-[#347A63] hover:text-white transition">
-            02
-          </button>
-          <button className="w-10 h-10 rounded-full border border-gray-300 hover:bg-[#347A63] hover:text-white transition">
-            03
-          </button>
-        </div> */}
+        {/* VIDEOS */}
+        <div>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {videos.map((src, index) => (
+              <div
+                key={index}
+                className="relative group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer"
+                onClick={() => setVideoIndex(index)}
+              >
+                <video src={src} className="w-full h-64 object-cover" muted />
+
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                  <span className="bg-[#347A63] text-white px-6 py-2 rounded-full font-medium">
+                    Play Video
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Lightbox */}
+      {/* PHOTO LIGHTBOX */}
       {photoIndex >= 0 && (
         <Lightbox
           open={photoIndex >= 0}
           close={() => setPhotoIndex(-1)}
-          slides={images.map((src) => ({ src }))}
+          slides={photos.map((src) => ({ src }))}
           index={photoIndex}
         />
+      )}
+
+      {/* VIDEO MODAL */}
+      {videoIndex >= 0 && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setVideoIndex(-1)} // ✅ close on outside click
+        >
+          <div
+            className="relative w-[20%] max-w-4xl"
+            onClick={(e) => e.stopPropagation()} // ✅ prevent close when clicking video
+          >
+            <button
+              onClick={() => setVideoIndex(-1)}
+              className="absolute -top-10 right-0 text-white text-2xl"
+            >
+              ✕
+            </button>
+            <video
+              src={videos[videoIndex]}
+              controls
+              autoPlay
+              loop // ✅ continue playing
+              className="w-full rounded-xl"
+            />
+          </div>
+        </div>
       )}
     </section>
   );
 };
 
-export default Project;
+export default GalleryPage;

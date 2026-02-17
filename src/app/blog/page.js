@@ -4,12 +4,13 @@ import BlogFour from "~/sections/Blog/BlogFour";
 import Scroll from "~/sections/Common/Scroll";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
 import FooterThree from "~/sections/Common/Footer/FooterThree";
+import Blog from "~/sections/Blog/Blog"
 export default function BlogPage() {
   return (
     <>
       <HeaderFour />
       {/* <BreadcumbTwo /> */}
-      <BlogFour />
+      <Blog />
       <FooterThree />
       <Scroll />
     </>

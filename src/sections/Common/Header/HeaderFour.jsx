@@ -117,7 +117,7 @@ export default function HeaderFour() {
                     </Link>
                     <Link
                       className="block px-6 py-4 hover:bg-[#347A64]/10"
-                      href="/pages/innerpage/project"
+                      href="/project"
                     >
                       Projects
                     </Link>
@@ -247,7 +247,7 @@ export default function HeaderFour() {
                   >
                     Certificates
                   </Link>
-                  <Link href="/pages/innerpage/project">Projects</Link>
+                  <Link href="/project">Projects</Link>
                 </div>
               )}
 
